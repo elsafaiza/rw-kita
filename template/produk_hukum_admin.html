@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produk Hukum - RW Kita</title>
+
+    <!-- Poppins -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/produk_hukum_admin.css">
+    <link rel="stylesheet" href="../static/css/global.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+  <aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="sidebar-logo">
+            <img
+                src="../static/image/Logo_Footer.png"
+                alt="RW Kita">
+        </div>
+
+
+        <!-- Menu Sidebar -->
+        <nav class="sidebar-menu">
+
+                <!-- ==================================================
+                    UTAMA
+                ================================================== -->
+
+                <div class="menu-label">
+                    UTAMA
+                </div>
+
+                <a href="dashboard_admin.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+
+                <!-- ==================================================
+                    KONTEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    KONTEN
+                </div>
+
+                <a href="berita.html" class="menu-item">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <span>Berita</span>
+                </a>
+
+                <a href="artikel_admin.html" class="menu-item">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Artikel</span>
+                </a>
+
+                <a href="pengumuman.html" class="menu-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Pengumuman</span>
+                </a>
+
+                <a href="agenda.html" class="menu-item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Agenda</span>
+                </a>
+
+                <a href="cerita_warga.html" class="menu-item">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Cerita Warga</span>
+                </a>
+
+
+                <!-- ==================================================
+                    INFORMASI RW
+                ================================================== -->
+
+                <div class="menu-label">
+                    INFORMASI RW
+                </div>
+
+                <a href="profil_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Profil RW</span>
+                </a>
+
+                <a href="potensi_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Potensi RW</span>
+                </a>
+
+                <a href="dokumentasi.html" class="menu-item">
+                    <i class="fa-regular fa-images"></i>
+                    <span>Dokumentasi</span>
+                </a>
+
+
+                <!-- ==================================================
+                    DOKUMEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    DOKUMEN
+                </div>
+
+                <a href="produk_hukum_admin.html" class="menu-item active">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Produk Hukum</span>
+                </a>
+
+                <a href="arsip_digital_admin.html" class="menu-item">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <span>Arsip Digital</span>
+                </a>
+
+
+                <!-- ==================================================
+                    PENGELOLAAN
+                ================================================== -->
+
+                <div class="menu-label">
+                    PENGELOLAAN
+                </div>
+
+                <a href="pengaturan-admin.html" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Pengaturan</span>
+                </a>
+
+            </nav>
+
+
+                <!-- ==================================================
+                PROFIL ADMIN
+            ================================================== -->
+
+            <details class="admin-profile">
+
+                <summary class="sidebar-admin">
+
+                    <div class="admin-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="admin-info">
+                        <strong>Admin RW01</strong>
+                        <small>Administrator</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down admin-arrow"></i>
+
+                </summary>
+
+
+                <!-- DROPDOWN LOGOUT -->
+
+                <div class="admin-dropdown">
+
+                    <a href="beranda_RW.html" class="admin-logout">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <span>Logout</span>
+
+                    </a>
+
+                </div>
+
+            </details>
+    </aside>
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main class="main-content">
+
+
+    <!-- HEADER -->
+    <header class="page-header">
+
+        <div class="header-title">
+
+            <h1>Produk Hukum</h1>
+
+            <p>
+                Kelola dokumen resmi sebagai dasar tata kelola dan administrasi RW.
+            </p>
+
+        </div>
+
+
+         <div class="header-right">
+
+
+                <!-- Notification -->
+                <button class="notification-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- Pilihan RW -->
+                <div class="rw-selector">
+
+                    <div class="rw-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="rw-text">
+
+                        <strong>RW 01</strong>
+
+                        <small>
+                            Kel. XYZ, Kec. XYZ
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+    <!-- =====================================================
+         STATISTIC CARDS
+    ====================================================== -->
+
+    <section class="stats-grid">
+
+
+        <!-- TOTAL DOKUMEN -->
+        <div class="stat-card">
+
+            <div class="stat-icon orange">
+                <i class="fa-regular fa-file-lines"></i>
+            </div>
+
+            <div class="stat-content">
+
+                <strong>42</strong>
+
+                <span>Total Dokumen</span>
+
+                <small>Semua dokumen hukum</small>
+
+            </div>
+
+        </div>
+
+
+        <!-- KATEGORI -->
+        <div class="stat-card">
+
+            <div class="stat-icon purple">
+                <i class="fa-regular fa-folder"></i>
+            </div>
+
+            <div class="stat-content">
+
+                <strong>6</strong>
+
+                <span>Kategori</span>
+
+                <small>Kategori dokumen</small>
+
+            </div>
+
+        </div>
+
+
+        <!-- TAHUN -->
+        <div class="stat-card">
+
+            <div class="stat-icon green">
+                <i class="fa-regular fa-calendar"></i>
+            </div>
+
+            <div class="stat-content">
+
+                <strong>2026</strong>
+
+                <span>Tahun Terbaru</span>
+
+                <small>Dokumen terbaru</small>
+
+            </div>
+
+        </div>
+       
+    </section>
+
+
+
+    <!-- =====================================================
+         SEARCH + FILTER
+    ====================================================== -->
+
+    <section class="filter-box">
+
+
+        <!-- SEARCH -->
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                placeholder="Cari dokumen hukum..."
+            >
+
+        </div>
+
+
+        <!-- CATEGORY -->
+        <select>
+            <option>Semua Kategori</option>
+            <option>Keputusan</option>
+            <option>Peraturan</option>
+            <option>Pedoman</option>
+            <option>Surat</option>
+            <option>Laporan</option>
+        </select>
+
+
+        <!-- YEAR -->
+        <select>
+            <option>Semua Tahun</option>
+            <option>2026</option>
+            <option>2025</option>
+            <option>2024</option>
+        </select>
+
+
+        <!-- FILTER BUTTON -->
+        <button class="btn-filter">
+
+            <i class="fa-solid fa-filter"></i>
+
+            Filter
+
+        </button>
+
+
+        <!-- ADD -->
+        <a href="tambah-produk-hukum.html" class="btn-add">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Tambah Dokumen
+
+        </a>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         TABLE CARD
+    ====================================================== -->
+
+    <section class="table-card">
+
+
+        <div class="table-header">
+
+            <h2>Daftar Produk Hukum</h2>
+
+            <p>
+                Daftar semua dokumen hukum yang telah diunggah.
+            </p>
+
+        </div>
+
+
+        <!-- TABLE WRAPPER -->
+        <div class="table-wrapper">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Dokumen</th>
+
+                        <th>Kategori</th>
+
+                        <th>Nomor Dokumen</th>
+
+                        <th>Tahun</th>
+
+                        <th>Tanggal</th>
+
+                        <th>Ukuran</th>
+                        <th>Aksi</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+
+                    <!-- ROW 1 -->
+
+                    <tr>
+
+                        <td>
+
+                            <div class="document-cell">
+
+                                <div class="file-icon pdf">
+                                    <i class="fa-solid fa-file-pdf"></i>
+                                </div>
+
+                                <div class="document-info">
+
+                                    <strong>
+                                        SK Penetapan RW 01
+                                    </strong>
+
+                                    <small>
+                                        Surat Keputusan Penetapan
+                                    </small>
+
+                                    <small>
+                                        Rukun Warga 01
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="category blue-category">
+                                Keputusan
+                            </span>
+
+                        </td>
+
+
+                        <td>
+                            001/SK/RW/2026
+                        </td>
+
+
+                        <td>
+                            2026
+                        </td>
+
+
+                        <td>
+                            10 Januari 2026
+                        </td>
+
+
+                        <td>
+                            2.4 MB
+                        </td>
+
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <button
+                                    class="action-btn view"
+                                    title="Lihat"
+                                >
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+
+                                <button
+                                    class="action-btn download"
+                                    title="Download"
+                                >
+                                    <i class="fa-solid fa-download"></i>
+                                </button>
+
+                                <a
+                                    href="edit-produk-hukum.html"
+                                    class="action-btn edit"
+                                    title="Edit"
+                                >
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+
+                                <button
+                                    class="action-btn delete"
+                                    title="Hapus"
+                                >
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </button>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- ROW 2 -->
+
+                    <tr>
+
+                        <td>
+
+                            <div class="document-cell">
+
+                                <div class="file-icon doc">
+                                    <i class="fa-solid fa-file-word"></i>
+                                </div>
+
+                                <div class="document-info">
+
+                                    <strong>
+                                        Peraturan RW tentang Ketertiban
+                                    </strong>
+
+                                    <small>
+                                        Peraturan tentang ketertiban dan
+                                    </small>
+
+                                    <small>
+                                        keamanan lingkungan
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="category green-category">
+                                Peraturan
+                            </span>
+
+                        </td>
+
+
+                        <td>
+                            002/PR/RW/2026
+                        </td>
+
+
+                        <td>
+                            2026
+                        </td>
+
+
+                        <td>
+                            15 Februari 2026
+                        </td>
+
+
+                        <td>
+                            1.8 MB
+                        </td>
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <button class="action-btn view">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+
+                                <button class="action-btn download">
+                                    <i class="fa-solid fa-download"></i>
+                                </button>
+
+                                <a
+                                    href="edit-produk-hukum.html"
+                                    class="action-btn edit"
+                                >
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+
+                                <button class="action-btn delete">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </button>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- ROW 3 -->
+
+                    <tr>
+
+                        <td>
+
+                            <div class="document-cell">
+
+                                <div class="file-icon xls">
+                                    <i class="fa-solid fa-file-excel"></i>
+                                </div>
+
+                                <div class="document-info">
+
+                                    <strong>
+                                        LPJ Kegiatan Tahun 2025
+                                    </strong>
+
+                                    <small>
+                                        Laporan Pertanggungjawaban
+                                    </small>
+
+                                    <small>
+                                        Kegiatan Tahun 2025
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="category orange-category">
+                                Laporan
+                            </span>
+
+                        </td>
+
+
+                        <td>
+                            003/LPJ/RW/2026
+                        </td>
+
+
+                        <td>
+                            2026
+                        </td>
+
+
+                        <td>
+                            5 Januari 2026
+                        </td>
+
+
+                        <td>
+                            856 KB
+                        </td>
+
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <button class="action-btn view">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+
+                                <button class="action-btn download">
+                                    <i class="fa-solid fa-download"></i>
+                                </button>
+
+                                <a
+                                    href="edit-produk-hukum.html"
+                                    class="action-btn edit"
+                                >
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+
+                                <button class="action-btn delete">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </button>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- ROW 4 -->
+
+                    <tr>
+
+                        <td>
+
+                            <div class="document-cell">
+
+                                <div class="file-icon pdf">
+                                    <i class="fa-solid fa-file-pdf"></i>
+                                </div>
+
+                                <div class="document-info">
+
+                                    <strong>
+                                        Peraturan Iuran Warga
+                                    </strong>
+
+                                    <small>
+                                        Peraturan tentang iuran dan
+                                    </small>
+
+                                    <small>
+                                        sumbangan warga
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="category blue-category">
+                                Peraturan
+                            </span>
+
+                        </td>
+
+
+                        <td>
+                            004/PR/RW/2025
+                        </td>
+
+
+                        <td>
+                            2025
+                        </td>
+
+
+                        <td>
+                            20 Desember 2025
+                        </td>
+
+
+                        <td>
+                            1.2 MB
+                        </td>
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <button class="action-btn view">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+
+                                <button class="action-btn download">
+                                    <i class="fa-solid fa-download"></i>
+                                </button>
+
+                                <a
+                                    href="edit-produk-hukum.html"
+                                    class="action-btn edit"
+                                >
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+
+                                <button class="action-btn delete">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </button>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- ROW 5 -->
+
+                    <tr>
+
+                        <td>
+
+                            <div class="document-cell">
+
+                                <div class="file-icon doc">
+                                    <i class="fa-solid fa-file-word"></i>
+                                </div>
+
+                                <div class="document-info">
+
+                                    <strong>
+                                        Surat Keputusan Pengurus RW
+                                    </strong>
+
+                                    <small>
+                                        SK Pengurus RW
+                                    </small>
+
+                                    <small>
+                                        Periode 2025-2028
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="category blue-category">
+                                Keputusan
+                            </span>
+
+                        </td>
+
+
+                        <td>
+                            005/SK/RW/2025
+                        </td>
+
+
+                        <td>
+                            2025
+                        </td>
+
+
+                        <td>
+                            1 November 2025
+                        </td>
+
+
+                        <td>
+                            2.1 MB
+                        </td>
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <button class="action-btn view">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+
+                                <button class="action-btn download">
+                                    <i class="fa-solid fa-download"></i>
+                                </button>
+
+                                <a
+                                    href="edit-produk-hukum.html"
+                                    class="action-btn edit"
+                                >
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+
+                                <button class="action-btn delete">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </button>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- ROW 6 -->
+
+                    <tr>
+
+                        <td>
+
+                            <div class="document-cell">
+
+                                <div class="file-icon pdf">
+                                    <i class="fa-solid fa-file-pdf"></i>
+                                </div>
+
+                                <div class="document-info">
+
+                                    <strong>
+                                        Pedoman Administrasi RW
+                                    </strong>
+
+                                    <small>
+                                        Pedoman pelaksanaan administrasi
+                                    </small>
+
+                                    <small>
+                                        Rukun Warga
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="category purple-category">
+                                Pedoman
+                            </span>
+
+                        </td>
+
+
+                        <td>
+                            006/PD/RW/2025
+                        </td>
+
+
+                        <td>
+                            2025
+                        </td>
+
+
+                        <td>
+                            10 Oktober 2025
+                        </td>
+
+
+                        <td>
+                            3.5 MB
+                        </td>
+
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <button class="action-btn view">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+
+                                <button class="action-btn download">
+                                    <i class="fa-solid fa-download"></i>
+                                </button>
+
+                                <a
+                                    href="edit-produk-hukum.html"
+                                    class="action-btn edit"
+                                >
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+
+                                <button class="action-btn delete">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </button>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+
+        <!-- =================================================
+             TABLE FOOTER
+        ================================================== -->
+
+        <div class="table-footer">
+
+            <div class="pagination">
+
+                <button>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <button class="active">
+                    1
+                </button>
+
+                <button>
+                    2
+                </button>
+
+                <button>
+                    3
+                </button>
+
+                <button>
+                    ...
+                </button>
+
+                <button>
+                    7
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="admin-footer">
+
+            © 2026 RW KITA | Suku Dinas Komunikasi,
+            Informatika dan Statistik Kota Administrasi
+            Jakarta Timur.
+
+        </footer>
+
+</main>
+
+</body>
+</html>

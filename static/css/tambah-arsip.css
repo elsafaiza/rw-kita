@@ -1,0 +1,610 @@
+/* =========================================================
+   TAMBAH ARSIP
+========================================================= */
+
+.archive-form-card {
+
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e8ed;
+
+    border-radius: 10px;
+
+    padding: 25px 28px;
+
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.03);
+
+}
+
+
+/* =========================================================
+   FORM HEADING
+========================================================= */
+
+.form-heading {
+
+    margin-bottom: 28px;
+
+}
+
+
+.form-heading h2 {
+
+    margin: 0 0 6px;
+
+    color: #082f57;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+.form-heading p {
+
+    margin: 0;
+
+    color: #718096;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.archive-form {
+
+    width: 100%;
+
+}
+
+
+.form-group {
+
+    width: 100%;
+
+    margin-bottom: 22px;
+
+}
+
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #071f41;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+.form-group label span {
+
+    color: #e04444;
+
+    margin-left: 2px;
+
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.form-group input {
+
+    width: 100%;
+
+    height: 43px;
+
+    padding: 0 13px;
+
+    border: 1px solid #cbd4df;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #082f57;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+
+}
+
+
+.form-group input::placeholder {
+
+    color: #aeb7c3;
+
+}
+
+
+.form-group input:focus {
+
+    border-color: var(--gold);
+
+    box-shadow:
+        0 0 0 2px rgba(217, 151, 0, 0.10);
+
+}
+
+
+/* =========================================================
+   FORM ROW
+========================================================= */
+
+.form-row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+}
+
+
+/* =========================================================
+   SELECT
+========================================================= */
+
+.select-wrapper {
+
+    position: relative;
+
+    width: 100%;
+
+}
+
+
+.select-wrapper select {
+
+    width: 100%;
+
+    height: 43px;
+
+    padding: 0 40px 0 13px;
+
+    border: 1px solid #cbd4df;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #082f57;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    outline: none;
+
+    appearance: none;
+
+    -webkit-appearance: none;
+
+    cursor: pointer;
+
+}
+
+
+.select-wrapper select:focus {
+
+    border-color: var(--gold);
+
+    box-shadow:
+        0 0 0 2px rgba(217, 151, 0, 0.10);
+
+}
+
+
+.select-wrapper > i {
+
+    position: absolute;
+
+    right: 14px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #4f5967;
+
+    font-size: 11px;
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================================
+   UPLOAD FILE
+========================================================= */
+
+.upload-box {
+
+    width: 100%;
+
+    min-height: 170px;
+
+    padding: 25px;
+
+    border: 1px dashed #c8d0da;
+
+    border-radius: 9px;
+
+    background: #fafbfc;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+}
+
+
+.upload-box:hover {
+
+    border-color: var(--gold);
+
+    background: #fffaf0;
+
+}
+
+
+.upload-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    margin-bottom: 10px;
+
+    border-radius: 50%;
+
+    background: #fff2d1;
+
+    color: var(--gold);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 20px;
+
+}
+
+
+.upload-box strong {
+
+    color: #082f57;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+.upload-box small {
+
+    margin-top: 6px;
+
+    color: #8a95a3;
+
+    font-size: 9px;
+
+    line-height: 1.6;
+
+}
+
+
+.upload-box span {
+
+    margin-top: 10px;
+
+    color: var(--gold-dark);
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+}
+
+
+/* =========================================================
+   TEXTAREA
+========================================================= */
+
+.form-group textarea {
+
+    width: 100%;
+
+    min-height: 105px;
+
+    padding: 12px 13px;
+
+    border: 1px solid #cbd4df;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #082f57;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    resize: vertical;
+
+    outline: none;
+
+    transition: 0.2s ease;
+
+}
+
+
+.form-group textarea::placeholder {
+
+    color: #aeb7c3;
+
+}
+
+
+.form-group textarea:focus {
+
+    border-color: var(--gold);
+
+    box-shadow:
+        0 0 0 2px rgba(217, 151, 0, 0.10);
+
+}
+
+
+/* =========================================================
+   FORM ACTIONS
+========================================================= */
+
+.form-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    margin-top: 32px;
+
+    padding-top: 22px;
+
+    border-top: 1px solid #e8ebef;
+
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.btn-cancel,
+.btn-save {
+
+    height: 40px;
+
+    padding: 0 20px;
+
+    border-radius: 7px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+}
+
+
+/* =========================================================
+   BATAL
+========================================================= */
+
+.btn-cancel {
+
+    min-width: 95px;
+
+    border: 1px solid #d2d7de;
+
+    background: #ffffff;
+
+    color: #4f5967;
+
+}
+
+
+.btn-cancel:hover {
+
+    background: #f5f6f8;
+
+}
+
+
+/* =========================================================
+   SIMPAN
+========================================================= */
+
+.btn-save {
+
+    min-width: 145px;
+
+    border: 1px solid var(--gold);
+
+    background: var(--gold);
+
+    color: #ffffff;
+
+}
+
+
+.btn-save:hover {
+
+    background: var(--gold-dark);
+
+    border-color: var(--gold-dark);
+
+}
+/* =========================================================
+   FIX POSISI UPLOAD
+========================================================= */
+
+.archive-form .upload-box {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+
+/* ICON UPLOAD */
+
+.archive-form .upload-box .upload-icon {
+    position: static !important;
+
+    width: 48px;
+    height: 48px;
+
+    margin: 0 auto 10px !important;
+
+    border-radius: 50%;
+
+    background: #fff2d1;
+
+    color: var(--gold);
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 20px;
+
+    transform: none !important;
+}
+
+
+/* JUDUL */
+
+.archive-form .upload-box strong {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* KETERANGAN */
+
+.archive-form .upload-box small {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* NAMA FILE */
+
+.archive-form .upload-box span {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .form-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .archive-form-card {
+
+        padding: 20px;
+
+    }
+
+
+    .form-actions {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .btn-cancel,
+    .btn-save {
+
+        width: 100%;
+
+    }
+
+}

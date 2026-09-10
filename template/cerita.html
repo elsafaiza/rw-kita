@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>RW KITA | Cerita Warga</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/global.css" />
+    <link rel="stylesheet" href="../static/css/navbar.css" />
+    <link rel="stylesheet" href="../static/css/cerita.css" />
+     <link rel="stylesheet" href="../static/css/footer.css" />
+
+
+  </head>
+
+  <body>
+    <!-- ==================================================
+         NAVBAR
+    ================================================== -->
+
+    <header class="navbar navbar-main-only">
+      <div class="navbar-container">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <img src="../static/image/logo.png" alt="RW KITA" />
+        </a>
+
+        <!-- Menu -->
+        <!-- <nav class="nav-menu">
+          <a href="index.html" class="nav-link active"> Beranda </a>
+
+          <a href="profilRW.html" class="nav-link"> Profil RW </a>
+
+          <a href="informasi.html" class="nav-link"> Informasi </a>
+
+          <a href="hubungi_kami.html" class="nav-link"> Hubungi Kami </a>
+        </nav> -->
+
+        <!-- Bagian kanan -->
+        <div class="nav-right">
+          <!-- Bahasa -->
+                            <div class="language-wrapper">
+
+                        <div class="language-switch">
+                            <span class="language-label">ID</span>
+
+                            <label class="switch">
+                                <input
+                                type="checkbox"
+                                id="languageToggle"
+                                aria-label="Switch language"
+                                >
+
+                                <span class="slider"></span>
+                            </label>
+
+                            <span class="language-label">EN</span>
+                            </div>
+
+                            </div>
+
+          <!-- Login Admin -->
+          <a href="login-admin.html" class="login-btn">
+            <span class="User">
+              <img src="../static/icon/user.png" alt="User" />
+            </span>
+
+            Login Admin
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==================================================
+         MAIN
+    ================================================== -->
+
+    <main class="cerita-page">
+      <div class="cerita-container">
+        <!-- ==================================================
+                 BREADCRUMB
+            ================================================== -->
+
+        <div class="breadcrumb">
+          <a href="index.html"> Beranda </a>
+
+          <span>›</span>
+
+          <span> Cerita Warga </span>
+        </div>
+
+        <!-- ==================================================
+                 HEADER HALAMAN
+            ================================================== -->
+
+        <div class="cerita-header">
+          <div class="cerita-title">
+            <h1>Cerita Warga</h1>
+
+            <p>Kabar, kegiatan, dan kisah inspiratif dari warga di lingkungan RW Kita.</p>
+
+            <span class="total-cerita"> Total 12 cerita </span>
+          </div>
+
+          <!-- SEARCH -->
+          <div class="cerita-search">
+            <span class="search-icon">
+                <img src="../static/icon/search.png" alt="cari">
+                 </span>
+
+            <input type="text" id="searchCerita" placeholder="Cari cerita..." />
+          </div>
+        </div>
+
+        <!-- ==================================================
+                 CONTENT
+            ================================================== -->
+
+        <div class="cerita-content">
+          <!-- ==================================================
+                     DAFTAR CERITA
+                ================================================== -->
+
+          <section class="cerita-list-section">
+            <div class="cerita-grid" id="ceritaGrid">
+              <!-- ==================================================
+                             CERITA 1
+                        ================================================== -->
+
+              <article class="cerita-card">
+                <div class="cerita-card-image">
+                  <img src="../static/image/bergotong royong.jpg" alt="Semangat Gotong Royong Warga RW 01" />
+                </div>
+
+                <div class="cerita-card-content">
+
+                  <h2>Semangat Gotong Royong Warga RW 01</h2>
+
+                  <p>Warga RW 01 melaksanakan kegiatan gotong royong membersihkan lingkungan di area taman dan selokan.</p>
+                  
+                  <div class="cerita-date">20 Agustus 2026</div>
+
+                  <a href="detail-cerita.html?id=1" class="baca-cerita">
+                    Baca selengkapnya
+                    <span>→</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- ==================================================
+                             CERITA 2
+                        ================================================== -->
+
+              <article class="cerita-card">
+                <div class="cerita-card-image">
+                  <img src="../static/image/senamm.jpg" alt="Senam Sehat Bersama Warga" />
+                </div>
+
+                <div class="cerita-card-content">
+                 
+
+                  <h2>Senam Sehat Bersama Warga</h2>
+
+                  <p>Kegiatan senam bersama yang rutin diadakan setiap minggu untuk menjaga kebugaran dan mempererat silaturahmi.</p>
+
+                   <div class="cerita-date"> 18 Agustus 2026</div>
+
+                  <a href="detail-cerita.html?id=2" class="baca-cerita">
+                    Baca selengkapnya
+                    <span>→</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- ==================================================
+                             CERITA 3
+                        ================================================== -->
+
+              <article class="cerita-card">
+                <div class="cerita-card-image">
+                  <img src="../static/image/gotongroyong.jpg" alt="Penanaman Pohon di Taman RW 01" />
+                </div>
+
+                <div class="cerita-card-content">
+                  
+
+                  <h2>Penanaman Pohon di Taman RW 01</h2>
+
+                  <p>Warga bersama-sama menanam berbagai jenis pohon sebagai upaya penghijauan dan menjaga lingkungan.</p>
+                   
+                  <div class="cerita-date">10 Agustus 2026</div>
+
+                  <a href="detail-cerita.html?id=3" class="baca-cerita">
+                    Baca selengkapnya
+                    <span>→</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- ==================================================
+                             CERITA 4
+                        ================================================== -->
+
+              <article class="cerita-card">
+                <div class="cerita-card-image">
+                  <img src="../static/image/17 agustus.jpg" alt="Upacara HUT RI ke-81" />
+                </div>
+
+                <div class="cerita-card-content">
+
+                  <h2>Upacara HUT RI ke-81 di Lapangan RW 01</h2>
+
+                  <p>Pelaksanaan upacara bendera dalam rangka memperingati Hari Kemerdekaan Republik Indonesia ke-81.</p>
+                    
+                  <div class="cerita-date"> 6 Agustus 2026</div>
+
+                  <a href="detail-cerita.html?id=4" class="baca-cerita">
+                    Baca selengkapnya
+                    <span>→</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- ==================================================
+                             CERITA 5
+                        ================================================== -->
+
+              <article class="cerita-card">
+                <div class="cerita-card-image">
+                  <img src="../static/image/rapat.jpg" alt="Musyawarah Warga" />
+                </div>
+
+                <div class="cerita-card-content">
+
+                  <h2>Musyawarah Warga Bahas Program Kerja</h2>
+
+                  <p>Musyawarah warga untuk membahas program kerja dan rencana kegiatan di lingkungan RW 01.</p>
+                    
+                  <div class="cerita-date"> 28 Juli 2026</div>
+
+                  <a href="detail-cerita.html?id=5" class="baca-cerita">
+                    Baca selengkapnya
+                    <span>→</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- ==================================================
+                             CERITA 6
+                        ================================================== -->
+
+              <article class="cerita-card">
+                <div class="cerita-card-image">
+                  <img src="../static/image/belajar di taman.jpeg" alt="Belajar Bersama Anak-Anak" />
+                </div>
+
+                <div class="cerita-card-content">
+                  
+
+                  <h2>Belajar Bersama Anak-Anak Setiap Sore</h2>
+
+                  <p>Kegiatan belajar bersama untuk anak-anak setiap sore di balai RW sebagai dukungan pendidikan mereka.</p>
+
+                  <div class="cerita-date"> 22 Juli 2026</div>
+
+                  <a href="detail-cerita.html?id=6" class="baca-cerita">
+                    Baca selengkapnya
+                    <span>→</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- ==================================================
+                             CERITA 7
+                        ================================================== -->
+
+              <article class="cerita-card">
+                <div class="cerita-card-image">
+                  <img src="../static/image/umkm.jpeg" alt="Produk UMKM Warga" />
+                </div>
+
+                <div class="cerita-card-content">
+
+                  <h2>Produk UMKM Warga Semakin Diminati</h2>
+
+                  <p>Produk-produk UMKM warga RW 01 semakin diminati dan dipasarkan di berbagai kegiatan komunitas.</p>
+                    <div class="cerita-date"> 15 Juli 2026</div>
+                  <a href="detail-cerita.html?id=7" class="baca-cerita">
+                    Baca selengkapnya
+                    <span>→</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- ==================================================
+                             CERITA 8
+                ================================================== -->
+
+              <article class="cerita-card">
+                <div class="cerita-card-image">
+                  <img src="../static/image/cek kesehatan.jpg" alt="Cek Kesehatan Gratis" />
+                </div>
+
+                <div class="cerita-card-content">
+
+                  <h2>Cek Kesehatan Gratis untuk Warga</h2>
+
+                  <p>Kegiatan pemeriksaan kesehatan gratis bekerja sama dengan puskesmas setempat untuk warga RW 01.</p>
+                    
+                  <div class="cerita-date">8 Juli 2026</div>
+
+                  <a href="detail-cerita.html?id=8" class="baca-cerita">
+                    Baca selengkapnya
+                    <span>→</span>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <!-- ==================================================
+                         PAGINATION
+                    ================================================== -->
+
+            <div class="pagination">
+              <button type="button" class="pagination-prev" disabled>‹ </button>
+
+              <button type="button" class="page-number active">1</button>
+
+              <button type="button" class="page-number">2</button>
+
+              <button type="button" class="page-number">3</button>
+
+              <button type="button" class="pagination-next"> ›</button>
+            </div>
+          </section>
+
+          
+        </div>
+      </div>
+    </main>
+     <!-- ==================================================
+         FOOTER
+    ================================================== -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-about">
+
+                <img src="../static/image/Logo_Footer.png"
+                     alt="RW KITA"
+                     class="footer-logo">
+
+                <p>
+                    RW KITA merupakan platform microsite bagi
+                    10 RW yang menyediakan informasi, layanan
+                    digital, serta transparansi administrasi
+                    guna mewujudkan lingkungan yang kolaboratif,
+                    informatif, dan mudah diakses oleh masyarakat.
+                </p>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>Kontak Kami</h3>
+
+                <div class="contact-item">
+                    <span>
+                        <img src="../static/icon/location (1).png">
+                    </span>
+                    <p>
+                         Jl.Dr.Sumarno, Kel. Pulo Gebang<br>
+                        Kec. Cakung, Kota Jakarta Timur, DKI Jakarta
+                    </p>
+                </div>
+
+                <div class="contact-item">
+                    <span>
+                        <img src="../static/icon/phone-call (1).png">
+                    </span>
+                    <p>(+62)822334455</p>
+                </div>
+
+                <div class="contact-item">
+                    <span>
+                        <img src="../static/icon/email (1).png">
+                    </span>
+                    <p id="footer-email">Email belum tersedia.</p>
+                </div>
+
+            </div>
+
+
+            <div class="footer-location">
+
+                <h3>Lokasi Kami</h3>
+
+                <div class="map-box">
+                    <div class="map-placeholder">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=..."
+                            width="100%"
+                            height="300"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                         </iframe>
+                    </div>
+                </div>
+
+                <h3 class="social-title">
+                    Ikuti Kami
+                </h3>
+
+                <div class="social-media">
+
+                    <a href="#">
+                        <img src="../static/icon/whatsapp (3).png">
+                    </a>
+                    <a href="#">
+                        <img src="../static/icon/instagram (2).png">
+                    </a>
+                    <a href="#">
+                        <img src="../static/icon/youtube (3).png">
+                    </a>
+                    <a href="#">
+                        <img src="../static/icon/social (2).png">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 RW KITA | Suku Dinas Komunikasi,
+                Informatika dan Statistik Kota Administrasi Jakarta Timur
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ==================================================
+         JAVASCRIPT
+    ================================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="../static/js/supabase.js"></script>
+<script src="../static/js/rw-core.js"></script>
+<script src="../static/js/footer.js"></script>
+<script src="../static/js/language.js"></script>
+<script src="../static/js/rw-navigation.js"></script>
+<script src="../static/js/cerita.js"></script>
+  </body>
+</html>

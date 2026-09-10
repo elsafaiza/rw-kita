@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RW KITA | Beranda RW 01</title>
+
+    <script>
+        document.documentElement.classList.add("language-loading");
+    </script>
+
+    <link rel="stylesheet" href="../static/css/arsip.css">
+    <link rel="stylesheet" href="../static/css/global.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/navbar.css">
+
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+     <!-- ==================================================
+         NAVBAR
+    ================================================== -->
+    <header class="navbar">
+        <div class="navbar-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="../static/image/logo.png" alt="RW KITA">
+            </a>
+
+            <!-- Menu -->
+            <nav class="nav-menu">
+                <a href="beranda_RW.html" class="nav-link">Beranda</a>
+                <a href="profilRW.html" class="nav-link">Profil RW</a>
+                <a href="informasi.html" class="nav-link">Informasi</a>
+                <a href="potensi.html" class="nav-link">Potensi RW</a>
+                <a href="produk_hukum.html" class="nav-link">Produk Hukum</a>
+                <a href="arsip_digital.html" class="nav-link active">Arsip Digital</a>
+                <a href="hubungi_kami.html" class="nav-link">Hubungi Kami</a>
+            </nav>
+
+            <!-- Kanan -->
+           <div class="nav-right">
+
+                <div class="language-wrapper">
+
+                    <div class="language-switch">
+                        <span class="language-label">ID</span>
+                        <label class="switch">
+                            <input type="checkbox" id="languageToggle" aria-label="Switch language">
+                            <span class="slider"></span>
+                        </label>
+                        <span class="language-label">EN</span>
+                    </div>
+
+                </div>
+
+                <a href="login-admin.html" class="login-btn">
+                    <span class="User">
+                        <img src="../static/icon/user.png">
+                    </span>
+                    Login Admin
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main class="info-page">
+
+    <!-- ==================================================
+         HERO ARSIP DIGITAL
+    ================================================== -->
+    <section class="banner-hero">
+
+        <div class="banner-hero-content">
+
+            <span class="banner-line"></span>
+
+<h1 id="arsip-title">
+  Arsip Digital RW 01
+</h1>
+
+<p id="arsip-description">
+  Pusat penyimpanan dokumen, laporan, dan dokumentasi kegiatan RW.
+</p>
+
+            <div class="breadcrumb">
+                <span>⌂</span>
+                <b>Beranda</b>
+                /
+                <strong>Arsip Digital</strong>
+            </div>
+
+        </div>
+
+        <div class="banner-hero-image">
+            <img src="../static/image/arsip-digital.jpg"
+                 alt="Arsip Digital">
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         STATISTIK
+    ================================================== -->
+    <section class="arsip-statistik">
+
+        <div class="arsip-statistik-card">
+
+            <div class="arsip-statistik-icon">
+                <img src="../static/icon/document.png"
+                     alt="Dokumen">
+            </div>
+
+            <div class="arsip-statistik-content">
+                <h3>Jenis File</h3>
+<strong id="jenis-file">0</strong>
+                <span>Format</span>
+            </div>
+
+        </div>
+
+
+        <div class="arsip-statistik-card">
+
+            <div class="arsip-statistik-icon">
+                <img src="../static/icon/calendar.png"
+                     alt="Kalender">
+            </div>
+
+            <div class="arsip-statistik-content">
+<strong id="tahun-terbaru">-</strong>
+                <!-- <strong>2026</strong> -->
+            </div>
+
+        </div>
+
+
+        <div class="arsip-statistik-card">
+
+            <div class="arsip-statistik-icon">
+                <img src="../static/icon/documents-folder.png"
+                     alt="Arsip">
+            </div>
+
+            <div class="arsip-statistik-content">
+<strong id="total-arsip">0</strong>
+                <!-- <strong>128</strong> -->
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         FILTER
+    ================================================== -->
+<section class="arsip-filter">
+
+  <div class="arsip-search">
+    <input
+      type="text"
+      id="arsip-search"
+      placeholder="Cari arsip digital"
+    >
+  </div>
+
+  <select id="arsip-kategori">
+    <option value="">Semua kategori</option>
+    <option value="Laporan Kegiatan">Laporan Kegiatan</option>
+    <option value="Notulen">Notulen</option>
+    <option value="Surat">Surat</option>
+    <option value="Proposal">Proposal</option>
+    <option value="LPJ">LPJ</option>
+    <option value="Dokumentasi">Dokumentasi</option>
+  </select>
+
+  <select id="arsip-tahun">
+    <option value="">Semua tahun</option>
+    <option value="2026">2026</option>
+    <option value="2025">2025</option>
+    <option value="2024">2024</option>
+  </select>
+
+</section>
+
+
+    <!-- ==================================================
+         KATEGORI ARSIP
+    ================================================== -->
+    <section class="arsip-category-section">
+
+        <h2>Kategori Arsip</h2>
+
+        <div class="arsip-category-grid">
+
+            <a href="#" class="arsip-category-card">
+
+                <img src="../static/icon/checklist.png"
+                     alt="Laporan Kegiatan">
+
+                <span>Laporan Kegiatan</span>
+
+            </a>
+
+
+            <a href="#" class="arsip-category-card">
+
+                <img src="../static/icon/notes.png"
+                     alt="Notulen">
+
+                <span>Notulen</span>
+
+            </a>
+
+
+            <a href="#" class="arsip-category-card">
+
+                <img src="../static/icon/email (3).png"
+                     alt="Surat">
+
+                <span>Surat</span>
+
+            </a>
+
+
+            <a href="#" class="arsip-category-card">
+
+                <img src="../static/icon/business-proposal.png"
+                     alt="Proposal">
+
+                <span>Proposal</span>
+
+            </a>
+
+
+            <a href="#" class="arsip-category-card">
+
+                <img src="../static/icon/accountability.png"
+                     alt="LPJ">
+
+                <span>LPJ</span>
+
+            </a>
+
+
+            <a href="#" class="arsip-category-card">
+
+                <img src="../static/icon/camera.png"
+                     alt="Dokumentasi">
+
+                <span>Dokumentasi</span>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         ARSIP TERBARU
+    ================================================== -->
+
+<section class="arsip-terbaru">
+
+  <h2>Arsip Terbaru</h2>
+
+  <div
+    class="arsip-list"
+    id="arsip-list"
+  ></div>
+
+</section>
+
+    <!-- <section class="arsip-terbaru">
+
+        <h2>Arsip Terbaru</h2>
+
+        <div class="arsip-list">
+        -->
+
+
+            <!-- CARD 1 -->
+      <!--      <div class="arsip-card">
+
+                <div class="arsip-card-top">
+
+                    <img src="../static/icon/pdf.png"
+                         alt="PDF">
+
+                    <div class="arsip-card-title">
+
+                        <h3>
+                            Laporan Kegiatan Kerja Bakti
+                        </h3>
+
+                        <span class="arsip-label">
+                            Laporan Kegiatan
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="arsip-meta">
+                    <span><img class="gambar" src="../static/icon/placeholder.png">RW 04</span>
+                    <span><img class="gambar" src="../static/icon/calendar1.png">10 Juni 2026</span>
+                </div>
+
+                <hr>
+
+                <p>
+                    Laporan kegiatan kerja bakti
+                    lingkungan bulan Mei 2026.
+                </p>
+
+                <span class="arsip-size">
+                    2,4 MB
+                </span>
+
+                <div class="arsip-actions">
+
+                    <a href="#" class="arsip-detail">
+                        👁 Lihat detail
+                    </a>
+
+                    <a href="#" class="arsip-download">
+                        <img src="../static/icon/download_putih.png">Unduh
+                    </a>
+
+                </div>
+
+            </div>
+        -->
+
+
+            <!-- CARD 2 -->
+       <!--     <div class="arsip-card">
+
+                <div class="arsip-card-top">
+
+                    <img src="../static/icon/doc.png"
+                         alt="DOCX">
+
+                    <div class="arsip-card-title">
+
+                        <h3>
+                            Notulen Rapat Pengurus RW
+                        </h3>
+
+                        <span class="arsip-label">
+                            Notulen
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="arsip-meta">
+                    <span><img class="gambar" src="../static/icon/placeholder.png"> RW 04</span>
+                    <span><img class="gambar" src="../static/icon/calendar1.png"> 8 Juni 2026</span>
+                </div>
+
+                <hr>
+
+                <p>
+                    Notulensi rapat pengurus RW
+                    bulan Juni 2026.
+                </p>
+
+                <span class="arsip-size">
+                    1,1 MB
+                </span>
+
+                <div class="arsip-actions">
+
+                    <a href="#" class="arsip-detail">
+                       👁 Lihat detail
+                    </a>
+
+                    <a href="#" class="arsip-download">
+                       <img src="../static/icon/download_putih.png">Unduh
+                    </a>
+
+                </div>
+
+            </div>
+        -->
+
+
+            <!-- CARD 3 -->
+       <!--     <div class="arsip-card">
+
+                <div class="arsip-card-top">
+
+                    <img src="../static/icon/xls.png"
+                         alt="XLS">
+
+                    <div class="arsip-card-title">
+
+                        <h3>
+                            Proposal Kegiatan 17 Agustus
+                        </h3>
+
+                        <span class="arsip-label">
+                            Proposal
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="arsip-meta">
+                    <span><img class="gambar" src="../static/icon/placeholder.png"> RW 04</span>
+                    <span><img class="gambar" src="../static/icon/calendar1.png"> 5 Juni 2026</span>
+                </div>
+
+                <hr>
+
+                <p>
+                    Proposal kegiatan peringatan
+                    HUT RI ke-81.
+                </p>
+
+                <span class="arsip-size">
+                    856 KB
+                </span>
+
+                <div class="arsip-actions">
+
+                    <a href="#" class="arsip-detail">
+                       👁 Lihat detail
+                    </a>
+
+                    <a href="#" class="arsip-download">
+                      <img src="../static/icon/download_putih.png">Unduh
+                    </a>
+
+                </div>
+
+            </div>
+
+        -->
+
+
+            <!-- CARD 4 -->
+           <!--
+            <div class="arsip-card">
+
+                <div class="arsip-card-top">
+
+                    <img src="../static/icon/ppt.png"
+                         alt="PPT">
+
+                    <div class="arsip-card-title">
+
+                        <h3>
+                            LPJ Kegiatan Posyandu
+                        </h3>
+
+                        <span class="arsip-label">
+                            LPJ
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="arsip-meta">
+                    <span><img class="gambar" src="../static/icon/placeholder.png"> RW 04</span>
+                    <span><img class="gambar" src="../static/icon/calendar1.png"> 3 Juni 2026</span>
+                </div>
+
+                <hr>
+
+                <p>
+                    Laporan pertanggungjawaban
+                    kegiatan Posyandu Mei 2026.
+                </p>
+
+                <span class="arsip-size">
+                    5,2 MB
+                </span>
+
+                <div class="arsip-actions">
+
+                    <a href="#" class="arsip-detail">
+                      👁 Lihat detail
+                    </a>
+
+                    <a href="#" class="arsip-download">
+                        <img src="../static/icon/download_putih.png">Unduh
+                    </a>
+
+                </div>
+
+            </div>
+        -->
+
+
+            <!-- CARD 5 -->
+           <!--  <div class="arsip-card">
+
+                <div class="arsip-card-top">
+
+                    <img src="../static/icon/jpg.png"
+                         alt="JPG">
+
+                    <div class="arsip-card-title">
+
+                        <h3>
+                            Dokumentasi Festival Warga
+                        </h3>
+
+                        <span class="arsip-label">
+                            Dokumentasi
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="arsip-meta">
+                    <span><img class="gambar" src="../static/icon/placeholder.png">RW 04</span>
+                    <span><img class="gambar" src="../static/icon/calendar1.png"> 1 Juni 2026</span>
+                </div>
+
+                <hr>
+
+                <p>
+                    Dokumentasi kegiatan Festival
+                    Warga Tahun 2026.
+                </p>
+
+                <span class="arsip-size">
+                    186,7 MB
+                </span>
+
+                <div class="arsip-actions">
+
+                    <a href="#" class="arsip-detail">
+                        👁 Lihat detail
+                    </a>
+
+                    <a href="#" class="arsip-download">
+                     <img src="../static/icon/download_putih.png">Unduh
+                    </a>
+
+                </div>
+
+            </div>
+        -->
+
+
+            <!-- CARD 6 -->
+          <!--
+            <div class="arsip-card">
+
+                <div class="arsip-card-top">
+
+                    <img src="../static/icon/zip.png"
+                         alt="ZIP">
+
+                    <div class="arsip-card-title">
+
+                        <h3>
+                            Rekap Administrasi RW
+                        </h3>
+
+                        <span class="arsip-label">
+                            Laporan Kegiatan
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="arsip-meta">
+                    <span><img class="gambar" src="../static/icon/placeholder.png"> RW 04</span>
+                    <span><img class="gambar" src="../static/icon/calendar1.png"> 30 Mei 2026</span>
+                </div>
+
+                <hr>
+
+                <p>
+                    Rekap data administrasi warga
+                    triwulan II 2026.
+                </p>
+
+                <span class="arsip-size">
+                    6,5 MB
+                </span>
+
+                <div class="arsip-actions">
+
+                    <a href="#" class="arsip-detail">
+                        👁 Lihat detail
+                    </a>
+
+                    <a href="#" class="arsip-download">
+                       <img src="../static/icon/download_putih.png">Unduh
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section> -->
+
+
+    <!-- ==================================================
+         TENTANG ARSIP
+    ================================================== -->
+    <section class="arsip-about">
+
+        <div class="arsip-about-content">
+
+            <h2>Tentang Arsip Digital</h2>
+
+            <p>
+                Halaman ini memudahkan warga dan pengurus RW
+                untuk menemukan, menyimpan, dan mengakses
+                dokumen, laporan, serta dokumentasi kegiatan
+                secara transparan dan terstruktur.
+            </p>
+
+        </div>
+
+
+        <div class="arsip-about-side">
+
+            <div class="arsip-about-icon">
+                <img src="../static/icon/database.png">
+            </div>
+
+            <div>
+                <h3>
+                    Dokumen tersimpan
+                    secara terstruktur
+                </h3>
+
+                <p>
+                    dan dapat diunduh sesuai kebutuhan.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         PAGINATION
+    ================================================== -->
+    <!-- <div class="arsip-pagination">
+
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">›</a>
+
+    </div> -->
+
+</main>
+
+   <!-- ==================================================
+         FOOTER
+    ================================================== -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-about">
+
+                <img src="../static/image/Logo_Footer.png"
+                     alt="RW KITA"
+                     class="footer-logo">
+
+                <p>
+                    RW KITA merupakan platform microsite bagi
+                    10 RW yang menyediakan informasi, layanan
+                    digital, serta transparansi administrasi
+                    guna mewujudkan lingkungan yang kolaboratif,
+                    informatif, dan mudah diakses oleh masyarakat.
+                </p>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>Kontak Kami</h3>
+
+                <div class="contact-item">
+                    <span>
+                        <img src="../static/icon/location (1).png">
+                    </span>
+                    <p>
+                        Jl. XYZ No. 123, Kel. XYZ,
+                        Kec. XYZ, Jakarta Timur,
+                        DKI Jakarta
+                    </p>
+                </div>
+
+                <div class="contact-item">
+                    <span>
+                        <img src="../static/icon/phone-call (1).png">
+                    </span>
+                    <p>(021) 1234 5678</p>
+                </div>
+
+                <div class="contact-item">
+                    <span>
+                        <img src="../static/icon/email (1).png">
+                    </span>
+                    <p id="footer-email">
+  Email belum tersedia.
+</p>
+                </div>
+
+            </div>
+
+
+            <div class="footer-location">
+
+                <h3>Lokasi Kami</h3>
+
+                <div class="map-box">
+                    <div class="map-placeholder">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=..."
+                            width="100%"
+                            height="300"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                         </iframe>
+                    </div>
+                </div>
+
+                <h3 class="social-title">
+                    Ikuti Kami
+                </h3>
+
+                <div class="social-media">
+
+                    <a href="#">
+                        <img src="../static/icon/whatsapp (3).png">
+                    </a>
+                    <a href="#">
+                        <img src="../static/icon/instagram (2).png">
+                    </a>
+                    <a href="#">
+                        <img src="../static/icon/youtube (3).png">
+                    </a>
+                    <a href="#">
+                        <img src="../static/icon/social (2).png">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 RW KITA | Suku Dinas Komunikasi,
+                Informatika dan Statistik Kota Administrasi Jakarta Timur
+            </p>
+
+        </div>
+
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="../static/js/supabase.js"></script>
+<script src="../static/js/footer.js"></script>
+<script src="../static/js/rw-navigation.js"></script>
+<script src="../static/js/arsip.js"></script>
+<script src="../static/js/language.js"></script>
+
+</body>
+</html>

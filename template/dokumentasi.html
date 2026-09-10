@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dokumentasi - RW Kita</title>
+
+
+    <!-- ==================================================
+         GOOGLE FONT - POPPINS
+    ================================================== -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ==================================================
+         FONT AWESOME
+    ================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../static/css/global.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../static/css/dokumentasi.css"
+    >
+
+</head>
+
+
+<body>
+
+
+ <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="sidebar-logo">
+            <img
+                src="../static/image/Logo_Footer.png"
+                alt="RW Kita">
+        </div>
+
+
+        <!-- Menu Sidebar -->
+        <nav class="sidebar-menu">
+
+                <!-- ==================================================
+                    UTAMA
+                ================================================== -->
+
+                <div class="menu-label">
+                    UTAMA
+                </div>
+
+                <a href="dashboard_admin.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+
+                <!-- ==================================================
+                    KONTEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    KONTEN
+                </div>
+
+                <a href="berita.html" class="menu-item">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <span>Berita</span>
+                </a>
+
+                <a href="artikel_admin.html" class="menu-item">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Artikel</span>
+                </a>
+
+                <a href="pengumuman.html" class="menu-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Pengumuman</span>
+                </a>
+
+                <a href="agenda.html" class="menu-item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Agenda</span>
+                </a>
+
+                <a href="cerita_warga.html" class="menu-item">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Cerita Warga</span>
+                </a>
+
+
+                <!-- ==================================================
+                    INFORMASI RW
+                ================================================== -->
+
+                <div class="menu-label">
+                    INFORMASI RW
+                </div>
+
+                <a href="profil_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Profil RW</span>
+                </a>
+
+                <a href="potensi_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Potensi RW</span>
+                </a>
+
+                <a href="dokumentasi.html" class="menu-item active">
+                    <i class="fa-regular fa-images"></i>
+                    <span>Dokumentasi</span>
+                </a>
+
+
+                <!-- ==================================================
+                    DOKUMEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    DOKUMEN
+                </div>
+
+                <a href="produk_hukum_admin.html" class="menu-item">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Produk Hukum</span>
+                </a>
+
+                <a href="arsip_digital_admin.html" class="menu-item">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <span>Arsip Digital</span>
+                </a>
+
+
+                <!-- ==================================================
+                    PENGELOLAAN
+                ================================================== -->
+
+                <div class="menu-label">
+                    PENGELOLAAN
+                </div>
+
+                <a href="pengaturan-admin.html" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Pengaturan</span>
+                </a>
+
+            </nav>
+
+
+                <!-- ==================================================
+                PROFIL ADMIN
+            ================================================== -->
+
+            <details class="admin-profile">
+
+                <summary class="sidebar-admin">
+
+                    <div class="admin-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="admin-info">
+                        <strong>Admin RW01</strong>
+                        <small>Administrator</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down admin-arrow"></i>
+
+                </summary>
+
+
+                <!-- DROPDOWN LOGOUT -->
+
+                <div class="admin-dropdown">
+
+                    <a href="beranda_RW.html" class="admin-logout">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <span>Logout</span>
+
+                    </a>
+
+                </div>
+
+            </details>
+    </aside>
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main class="main-content">
+
+
+    <!-- ==================================================
+         HEADER
+    ================================================== -->
+
+    <header class="page-header">
+
+
+        <div class="header-title">
+
+            <h1>Dokumentasi</h1>
+
+            <p>
+                Koleksi foto dan video kegiatan di lingkungan RW.
+            </p>
+
+        </div>
+
+
+        <!-- HEADER RIGHT -->
+
+        <div class="header-right">
+
+
+                <!-- Notification -->
+                <button class="notification-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- Pilihan RW -->
+                <div class="rw-selector">
+
+                    <div class="rw-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="rw-text">
+
+                        <strong>RW 01</strong>
+
+                        <small>
+                            Kel. XYZ, Kec. XYZ
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+    <!-- =========================================================
+         STATISTIK DOKUMENTASI
+    ========================================================= -->
+
+    <section class="documentation-stats">
+
+
+        <!-- SEMUA FOTO -->
+
+        <div class="documentation-stat-card">
+
+
+            <div class="stat-icon blue">
+
+                <i class="fa-regular fa-image"></i>
+
+            </div>
+
+
+            <div class="stat-content">
+
+                <strong>24</strong>
+
+                <span>Semua Foto</span>
+
+                <small>
+                    Total semua foto
+                </small>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- VIDEO -->
+
+        <div class="documentation-stat-card">
+
+
+            <div class="stat-icon purple">
+
+                <i class="fa-solid fa-video"></i>
+
+            </div>
+
+
+            <div class="stat-content">
+
+                <strong>4</strong>
+
+                <span>Video</span>
+
+                <small>
+                    Total semua video
+                </small>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================================
+         TOOLBAR
+    ========================================================= -->
+
+    <section class="documentation-toolbar">
+
+
+        <!-- TABS -->
+
+        <div class="documentation-tabs">
+
+
+            <a
+                href="#"
+                class="documentation-tab active"
+            >
+
+                Semua Foto
+
+            </a>
+
+
+            <a
+                href="#"
+                class="documentation-tab"
+            >
+
+                Video
+
+            </a>
+
+
+        </div>
+
+
+        <!-- ACTION -->
+
+        <div class="documentation-actions">
+
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Cari foto..."
+                >
+
+            </div>
+
+
+            <!-- FILTER -->
+
+            <button
+                type="button"
+                class="btn-filter"
+            >
+
+                <i class="fa-solid fa-filter"></i>
+
+                Filter
+
+            </button>
+
+
+            <!-- TAMBAH -->
+
+            <a
+                href="tambah-dokumentasi.html"
+                class="btn-add"
+            >
+
+                <i class="fa-solid fa-plus"></i>
+
+                Tambah Foto
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================================
+         GALERI
+    ========================================================= -->
+
+    <section class="documentation-card">
+
+
+        <!-- CARD HEADER -->
+
+        <div class="documentation-card-header">
+
+
+            <div>
+
+                <h2>Galeri Dokumentasi</h2>
+
+                <p>
+                    Semua foto yang telah diunggah.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ==================================================
+             GALERI FOTO
+        ================================================== -->
+
+        <div class="gallery-grid">
+
+
+            <!-- FOTO 1 -->
+
+            <article class="gallery-item">
+
+
+                <div class="gallery-image">
+
+                    <img
+                        src="../static/image/gotongroyong 1.jpg"
+                        alt="Gotong Royong Kebersihan"
+                    >
+
+
+                    <button
+                        type="button"
+                        class="gallery-menu"
+                    >
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="gallery-info">
+
+                    <h3>
+                        Gotong Royong Kebersihan
+                    </h3>
+
+                    <p>
+                        28 Agustus 2026
+                    </p>
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- FOTO 2 -->
+
+            <article class="gallery-item">
+
+
+                <div class="gallery-image">
+
+                    <img
+                        src="../static/image/rapat.jpg"
+                        alt="Rapat Rutin Pengurus RW"
+                    >
+
+
+                    <button
+                        type="button"
+                        class="gallery-menu"
+                    >
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="gallery-info">
+
+                    <h3>
+                        Rapat Rutin Pengurus RW 01
+                    </h3>
+
+                    <p>
+                        27 Agustus 2026
+                    </p>
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- FOTO 3 -->
+
+            <article class="gallery-item">
+
+
+                <div class="gallery-image">
+
+                    <img
+                        src="../static/image/17 agustus.jpg"
+                        alt="Lomba 17 Agustus"
+                    >
+
+
+                    <button
+                        type="button"
+                        class="gallery-menu"
+                    >
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="gallery-info">
+
+                    <h3>
+                        Lomba 17 Agustus
+                    </h3>
+
+                    <p>
+                        17 Agustus 2026
+                    </p>
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- FOTO 4 -->
+
+            <article class="gallery-item">
+
+
+                <div class="gallery-image">
+
+                    <img
+                        src="../static/image/posyandu.jpg"
+                        alt="Posyandu Balita"
+                    >
+
+
+                    <button
+                        type="button"
+                        class="gallery-menu"
+                    >
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="gallery-info">
+
+                    <h3>
+                        Posyandu Balita & Lansia
+                    </h3>
+
+                    <p>
+                        16 Agustus 2026
+                    </p>
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- FOTO 5 -->
+
+            <article class="gallery-item">
+
+
+                <div class="gallery-image">
+
+                    <img
+                        src="../static/image/pengajian rutin.jpg"
+                        alt="Pengajian Rutin"
+                    >
+
+
+                    <button
+                        type="button"
+                        class="gallery-menu"
+                    >
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="gallery-info">
+
+                    <h3>
+                        Pengajian Rutin
+                    </h3>
+
+                    <p>
+                        15 Agustus 2026
+                    </p>
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- FOTO 6 -->
+
+            <article class="gallery-item">
+
+
+                <div class="gallery-image">
+
+                    <img
+                        src="../static/image/pembuatan jalan.jpg"
+                        alt="Pembangunan Jalan"
+                    >
+
+
+                    <button
+                        type="button"
+                        class="gallery-menu"
+                    >
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="gallery-info">
+
+                    <h3>
+                        Pembangunan Jalan Lingkungan
+                    </h3>
+
+                    <p>
+                        10 Agustus 2026
+                    </p>
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- FOTO 7 -->
+
+            <article class="gallery-item">
+
+
+                <div class="gallery-image">
+
+                    <img
+                        src="../static/image/sosialisasi program kerja.jpg"
+                        alt="Sosialisasi Program Kerja"
+                    >
+
+
+                    <button
+                        type="button"
+                        class="gallery-menu"
+                    >
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="gallery-info">
+
+                    <h3>
+                        Sosialisasi Program Kerja
+                    </h3>
+
+                    <p>
+                        8 Agustus 2026
+                    </p>
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- FOTO 8 -->
+
+            <article class="gallery-item">
+
+
+                <div class="gallery-image">
+
+                    <img
+                        src="../static/image/turnamen voli.jpg"
+                        alt="Turnamen Bola Voli"
+                    >
+
+
+                    <button
+                        type="button"
+                        class="gallery-menu"
+                    >
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="gallery-info">
+
+                    <h3>
+                        Turnamen Bola Voli
+                    </h3>
+
+                    <p>
+                        5 Agustus 2026
+                    </p>
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- FOTO 9 -->
+
+            <article class="gallery-item">
+
+
+                <div class="gallery-image">
+
+                    <img
+                        src="../static/image/dokumentasi 6.jpg"
+                        alt="Penanaman Pohon"
+                    >
+
+
+                    <button
+                        type="button"
+                        class="gallery-menu"
+                    >
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="gallery-info">
+
+                    <h3>
+                        Penanaman Pohon
+                    </h3>
+
+                    <p>
+                        3 Agustus 2026
+                    </p>
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- FOTO 10 -->
+
+            <article class="gallery-item">
+
+
+                <div class="gallery-image">
+
+                    <img
+                        src="../static/image/TPA Anak.jpg"
+                        alt="Kegiatan TPA Anak-anak"
+                    >
+
+
+                    <button
+                        type="button"
+                        class="gallery-menu"
+                    >
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="gallery-info">
+
+                    <h3>
+                        Kegiatan TPA Anak-anak
+                    </h3>
+
+                    <p>
+                        1 Agustus 2026
+                    </p>
+
+                </div>
+
+
+            </article>
+
+
+        </div>
+
+
+
+        <!-- ==================================================
+             BOTTOM
+        ================================================== -->
+
+        <div class="documentation-bottom">
+
+
+            <span>
+                Menampilkan 1 - 10 dari 24 foto
+            </span>
+
+
+            <div class="pagination">
+
+
+                <button
+                    type="button"
+                    class="page-btn disabled"
+                >
+
+                    <i class="fa-solid fa-chevron-left"></i>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="page-btn active"
+                >
+
+                    1
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="page-btn"
+                >
+
+                    2
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="page-btn"
+                >
+
+                    3
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="page-btn"
+                >
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="page-limit"
+                >
+
+                    10 / halaman
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================= -->
+
+    <footer class="admin-footer">
+
+            © 2026 RW KITA | Suku Dinas Komunikasi,
+            Informatika dan Statistik Kota Administrasi
+            Jakarta Timur.
+
+        </footer>
+
+
+</main>
+
+
+</body>
+
+</html>

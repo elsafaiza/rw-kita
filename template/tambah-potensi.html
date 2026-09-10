@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Tambah Potensi - RW Kita</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONT - POPPINS
+    ====================================================== -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =====================================================
+         GLOBAL CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../static/css/global.css"
+    >
+
+
+    <!-- =====================================================
+         HALAMAN TAMBAH POTENSI
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../static/css/tambah-potensi.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+ <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="sidebar-logo">
+            <img
+                src="../static/image/Logo_Footer.png"
+                alt="RW Kita">
+        </div>
+
+
+        <!-- Menu Sidebar -->
+        <nav class="sidebar-menu">
+
+                <!-- ==================================================
+                    UTAMA
+                ================================================== -->
+
+                <div class="menu-label">
+                    UTAMA
+                </div>
+
+                <a href="dashboard_admin.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+
+                <!-- ==================================================
+                    KONTEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    KONTEN
+                </div>
+
+                <a href="berita.html" class="menu-item">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <span>Berita</span>
+                </a>
+
+                <a href="artikel_admin.html" class="menu-item">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Artikel</span>
+                </a>
+
+                <a href="pengumuman.html" class="menu-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Pengumuman</span>
+                </a>
+
+                <a href="agenda.html" class="menu-item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Agenda</span>
+                </a>
+
+                <a href="cerita_warga.html" class="menu-item">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Cerita Warga</span>
+                </a>
+
+
+                <!-- ==================================================
+                    INFORMASI RW
+                ================================================== -->
+
+                <div class="menu-label">
+                    INFORMASI RW
+                </div>
+
+                <a href="profil_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Profil RW</span>
+                </a>
+
+                <a href="potensi_rw_admin.html" class="menu-item active">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Potensi RW</span>
+                </a>
+
+                <a href="dokumentasi.html" class="menu-item">
+                    <i class="fa-regular fa-images"></i>
+                    <span>Dokumentasi</span>
+                </a>
+
+
+                <!-- ==================================================
+                    DOKUMEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    DOKUMEN
+                </div>
+
+                <a href="produk_hukum_admin.html" class="menu-item">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Produk Hukum</span>
+                </a>
+
+                <a href="arsip_digital_admin.html" class="menu-item">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <span>Arsip Digital</span>
+                </a>
+
+
+                <!-- ==================================================
+                    PENGELOLAAN
+                ================================================== -->
+
+                <div class="menu-label">
+                    PENGELOLAAN
+                </div>
+
+                <a href="pengaturan-admin.html" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Pengaturan</span>
+                </a>
+
+            </nav>
+
+
+                <!-- ==================================================
+                PROFIL ADMIN
+            ================================================== -->
+
+            <details class="admin-profile">
+
+                <summary class="sidebar-admin">
+
+                    <div class="admin-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="admin-info">
+                        <strong>Admin RW01</strong>
+                        <small>Administrator</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down admin-arrow"></i>
+
+                </summary>
+
+
+                <!-- DROPDOWN LOGOUT -->
+
+                <div class="admin-dropdown">
+
+                    <a href="beranda_RW.html" class="admin-logout">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <span>Logout</span>
+
+                    </a>
+
+                </div>
+
+            </details>
+    </aside>
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main class="main-content">
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="page-header">
+
+
+        <div class="header-title">
+
+            <h1>Tambah Potensi</h1>
+
+            <p>
+                Tambah potensi unggulan RW untuk ditampilkan di website
+            </p>
+
+        </div>
+
+
+        <div class="header-right">
+
+
+                <!-- Notification -->
+                <button class="notification-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- Pilihan RW -->
+                <div class="rw-selector">
+
+                    <div class="rw-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="rw-text">
+
+                        <strong>RW 01</strong>
+
+                        <small>
+                            Kel. XYZ, Kec. XYZ
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+
+        </div>
+
+
+    </header>
+
+
+
+    <!-- =====================================================
+         FORM CONTAINER
+    ====================================================== -->
+
+    <form
+        class="potensi-form"
+        action="#"
+        method="post"
+        enctype="multipart/form-data"
+    >
+
+
+        <!-- =================================================
+             KOLOM KIRI
+        ================================================== -->
+
+        <section class="form-card">
+
+
+            <div class="card-title">
+
+                <h2>Informasi Potensi</h2>
+
+            </div>
+
+
+            <!-- =============================================
+                 NAMA POTENSI
+            ============================================== -->
+
+            <div class="form-group">
+
+
+                <label for="nama-potensi">
+
+                    Nama Potensi
+
+                    <span>*</span>
+
+                </label>
+
+
+                <input
+                    type="text"
+                    id="nama-potensi"
+                    name="nama-potensi"
+                    placeholder="Masukkan nama potensi"
+                    maxlength="100"
+                >
+
+
+                <div class="character-count">
+
+                    0/100
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =============================================
+                 KATEGORI
+            ============================================== -->
+
+            <div class="form-group">
+
+
+                <label for="kategori">
+
+                    Kategori
+
+                    <span>*</span>
+
+                </label>
+
+
+                <div class="select-wrapper">
+
+
+                    <select
+                        id="kategori"
+                        name="kategori"
+                    >
+
+                        <option value="" selected disabled>
+                            Pilih kategori
+                        </option>
+
+                        <option value="umkm">
+                            UMKM
+                        </option>
+
+                        <option value="bank-sampah">
+                            Bank Sampah
+                        </option>
+
+                        <option value="urban-farming">
+                            Urban Farming
+                        </option>
+
+                        <option value="kampung-tematik">
+                            Kampung Tematik
+                        </option>
+
+                        <option value="wisata-lokal">
+                            Wisata Lokal
+                        </option>
+
+                        <option value="inovasi-rw">
+                            Inovasi RW
+                        </option>
+
+                        <option value="lainnya">
+                            Lainnya
+                        </option>
+
+                    </select>
+
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =============================================
+                 DESKRIPSI
+            ============================================== -->
+
+            <div class="form-group">
+
+
+                <label for="deskripsi">
+
+                    Deskripsi Potensi
+
+                    <span>*</span>
+
+                </label>
+
+
+                <p class="form-description">
+
+                    Jelaskan tentang potensi ini
+                    (keunggulan, manfaat, proses, dll).
+
+                </p>
+
+
+                <textarea
+                    id="deskripsi"
+                    name="deskripsi"
+                    maxlength="500"
+                    placeholder="Jelaskan tentang potensi ini..."
+                ></textarea>
+
+
+                <div class="character-count">
+
+                    0/500
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =============================================
+                 LOKASI + KONTAK
+            ============================================== -->
+
+            <div class="two-column">
+
+
+                <!-- LOKASI -->
+
+                <div class="form-group">
+
+
+                    <label for="lokasi">
+
+                        Lokasi / Alamat
+
+                    </label>
+
+
+                    <div class="input-icon">
+
+
+                        <input
+                            type="text"
+                            id="lokasi"
+                            name="lokasi"
+                            placeholder="Contoh: Jl. xyz RT 03 / RW 01"
+                        >
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- KONTAK -->
+
+                <div class="form-group">
+
+
+                    <label for="kontak">
+
+                        Nomor Kontak
+
+                    </label>
+
+
+                    <div class="input-icon">
+
+
+                        <input
+                            type="text"
+                            id="kontak"
+                            name="kontak"
+                            placeholder="Contoh: 0812-3456-7890"
+                        >
+
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =============================================
+                 JAM OPERASIONAL
+            ============================================== -->
+
+            <div class="form-group">
+
+
+                <label>
+
+                    Jam Operasional
+
+                    <span class="optional">
+                        (Opsional)
+                    </span>
+
+                </label>
+
+
+                <div class="time-range">
+
+
+                    <div class="input-icon">
+
+
+                        <input
+                            type="time"
+                            name="jam-mulai"
+                        >
+
+
+                    </div>
+
+
+                    <span class="time-separator">
+                        –
+                    </span>
+
+
+                    <div class="input-icon">
+
+
+                        <input
+                            type="time"
+                            name="jam-selesai"
+                        >
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =============================================
+                 WEBSITE / MEDIA SOSIAL
+            ============================================== -->
+
+            <div class="form-group">
+
+
+                <label for="media-sosial">
+
+                    Media Sosial / Website
+
+                    <span class="optional">
+                        (Opsional)
+                    </span>
+
+                </label>
+
+
+                <input
+                    type="text"
+                    id="media-sosial"
+                    name="media-sosial"
+                    placeholder="Contoh: instagram.com/potensi_rw01"
+                >
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             KOLOM KANAN
+        ================================================== -->
+
+        <div class="form-right">
+
+
+            <!-- =============================================
+                 GAMBAR UTAMA
+            ============================================== -->
+
+            <section class="side-card">
+
+
+                <h2>
+
+                    Gambar Utama
+
+                    <span class="required">
+                        *
+                    </span>
+
+                </h2>
+
+
+                <p class="side-description">
+
+                    Gambar utama akan ditampilkan
+                    di halaman potensi.
+
+                </p>
+
+
+                <label
+                    class="upload-box main-upload"
+                    for="gambar-utama"
+                >
+
+
+                    <input
+                        type="file"
+                        id="gambar-utama"
+                        name="gambar-utama"
+                        accept=".jpg,.jpeg,.png,.webp"
+                    >
+
+
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+
+                    <strong>
+                        Klik untuk mengunggah gambar
+                    </strong>
+
+
+                    <span>
+                        atau seret file ke sini
+                    </span>
+
+
+                    <small>
+                        Format: JPG, PNG, WebP (Maks. 2MB)
+                    </small>
+
+
+                </label>
+
+
+            </section>
+
+
+
+            <!-- =============================================
+                 GAMBAR TAMBAHAN
+            ============================================== -->
+
+            <section class="side-card">
+
+
+                <h2>
+
+                    Gambar Tambahan
+
+                    <span class="optional">
+                        (Opsional)
+                    </span>
+
+                </h2>
+
+
+                <p class="side-description">
+
+                    Tambahkan maksimal 5 gambar
+                    untuk galeri potensi.
+
+                </p>
+
+
+                <label
+                    class="upload-box additional-upload"
+                    for="gambar-tambahan"
+                >
+
+
+                    <input
+                        type="file"
+                        id="gambar-tambahan"
+                        name="gambar-tambahan[]"
+                        accept=".jpg,.jpeg,.png,.webp"
+                        multiple
+                    >
+
+
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+
+                    <strong>
+                        Klik untuk mengunggah gambar
+                    </strong>
+
+
+                    <span>
+                        atau seret file ke sini
+                    </span>
+
+
+                </label>
+
+
+                <div class="upload-limit">
+
+                    Format: JPG, PNG, WebP (Maks. 2MB per gambar)
+
+                </div>
+
+
+                <!-- SLOT GAMBAR -->
+
+                <div class="image-slots">
+
+
+                    <div class="image-slot">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+
+                    <div class="image-slot">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+
+                    <div class="image-slot">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+
+                    <div class="image-slot">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+
+                    <div class="image-slot">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="image-counter">
+
+                    0/5 gambar
+
+                </div>
+
+
+            </section>
+
+
+        </div>
+
+
+        <!-- =================================================
+             BUTTON
+        ================================================== -->
+
+        <div class="form-actions">
+
+
+            <a
+                href="potensi_rw_admin.html"
+                class="btn-cancel"
+            >
+
+                Batal
+
+            </a>
+
+
+            <button
+                type="submit"
+                class="btn-draft"
+            >
+
+                Simpan Draft
+
+            </button>
+
+
+            <button
+                type="submit"
+                class="btn-publish"
+            >
+
+                Simpan &amp; Publikasikan
+
+            </button>
+
+
+        </div>
+
+
+    </form>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="page-footer">
+
+        © 2026 RW KITA | Suku Dinas Komunikasi, Informatika dan
+        Statistik Kota Administrasi Jakarta Timur.
+
+    </footer>
+
+
+</main>
+
+
+</body>
+
+</html>

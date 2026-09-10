@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RW KITA | Beranda RW 01</title>
+
+    <script>
+        document.documentElement.classList.add("language-loading");
+    </script>
+    
+    <link rel="stylesheet" href="../static/css/produk_hukum.css">
+    <link rel="stylesheet" href="../static/css/global.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/navbar.css">
+
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+     <!-- ==================================================
+         NAVBAR
+    ================================================== -->
+    <header class="navbar">
+        <div class="navbar-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="../static/image/logo.png" alt="RW KITA">
+            </a>
+
+            <!-- Menu -->
+            <nav class="nav-menu">
+                <a href="beranda_RW.html" class="nav-link">Beranda</a>
+                <a href="profilRW.html" class="nav-link">Profil RW</a>
+                <a href="informasi.html" class="nav-link">Informasi</a>
+                <a href="potensi.html" class="nav-link">Potensi RW</a>
+                <a href="produk_hukum.html" class="nav-link active">Produk Hukum</a>
+                <a href="arsip_digital.html" class="nav-link">Arsip Digital</a>
+                <a href="hubungi_kami.html" class="nav-link">Hubungi Kami</a>
+            </nav>
+
+            <!-- Kanan -->
+           <div class="nav-right">
+
+                <div class="language-wrapper">
+
+                    <div class="language-switch">
+                        <span class="language-label">ID</span>
+                        <label class="switch">
+                            <input type="checkbox" id="languageToggle" aria-label="Switch language">
+                            <span class="slider"></span>
+                        </label>
+                        <span class="language-label">EN</span>
+                    </div>
+
+                </div>
+
+                <a href="login-admin.html" class="login-btn">
+                    <span class="User">
+                        <img src="../static/icon/user.png">
+                    </span>
+                    Login Admin
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main class="info-page">
+
+        <!-- ==================================================
+            HERO PRODUK HUKUM
+        ================================================== -->
+
+        <section class="banner-hero">
+
+            <div class="banner-hero-content">
+
+                <span class="banner-line"></span>
+
+<h1 id="produk-title">
+  Produk Hukum RW 01
+</h1>
+
+<p id="produk-description">
+  Dokumen resmi sebagai dasar tata kelola dan administrasi RW.
+</p>
+
+                <div class="breadcrumb">
+                    <span>⌂</span>
+                    <div>
+                        Beranda /
+                        <strong>Produk Hukum</strong>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="banner-hero-image">
+
+                <img
+                    src="../static/image/ProdukHukum.png"
+                    alt="Produk Hukum"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+            STATISTIK
+        ================================================== -->
+
+        <section class="produk-statistik">
+
+            <div class="statistik-card">
+
+                <div class="statistik-icon">
+                    <img
+                        src="../static/icon/document.png"
+                        alt="Total Dokumen"
+                    >
+                </div>
+
+                <div class="statistik-content">
+                    <h3>Total Dokumen</h3>
+                    <strong id="total-dokumen">0</strong>
+                </div>
+
+            </div>
+
+
+            <div class="statistik-card">
+
+                <div class="statistik-icon">
+                    <img
+                        src="../static/icon/calendar.png"
+                        alt="Tahun Terbaru"
+                    >
+                </div>
+
+                <div class="statistik-content">
+                    <h3>Tahun Terbaru</h3>
+                    <strong id="tahun-terbaru">-</strong>
+                </div>
+
+            </div>
+
+
+            <div class="statistik-card">
+
+                <div class="statistik-icon">
+                    <img
+                        src="../static/icon/documents-folder.png"
+                        alt="Kategori Dokumen"
+                    >
+                </div>
+
+                <div class="statistik-content">
+                    <h3>Kategori Dokumen</h3>
+                    <strong id="jumlah-kategori">0</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+            FILTER
+        ================================================== -->
+
+<section class="produk-filter">
+
+  <div class="produk-search">
+    <input
+      type="text"
+      id="produk-search"
+      placeholder="Cari dokumen hukum"
+    >
+  </div>
+
+  <select id="produk-kategori">
+    <option value="">Semua kategori</option>
+    <option value="Keputusan">Keputusan</option>
+    <option value="Peraturan">Peraturan</option>
+    <option value="Surat Edaran">Surat Edaran</option>
+  </select>
+
+  <select id="produk-tahun">
+    <option value="">Semua tahun</option>
+    <option value="2026">2026</option>
+    <option value="2025">2025</option>
+    <option value="2024">2024</option>
+  </select>
+
+</section>
+
+
+        <!-- ==================================================
+            DAFTAR DOKUMEN
+        ================================================== -->
+
+
+
+<section class="produk-list" id="produk-list">
+            <!-- CARD 1 -->
+
+            <!-- <div class="produk-card">
+
+                <span class="produk-label">
+                    Keputusan
+                </span>
+
+                <h3>SK Penetapan RW</h3>
+
+                <p>
+                    Nomor &nbsp;&nbsp;: 001/SK/RW/2026<br>
+                    Tahun &nbsp;&nbsp;&nbsp;: 2026
+                </p>
+
+                <hr>
+
+                <p class="produk-description">
+                    Surat keputusan tentang penetapan
+                    rukun warga sebagai satuan wilayah
+                    masyarakat.
+                </p>
+
+                <div class="produk-actions">
+
+                    <a href="#" class="btn-detail">
+                        👁 Lihat detail
+                    </a>
+
+                    <a href="#" class="btn-unduh"> 
+                        <img src="../static/icon/download_putih.png">Unduh
+                    </a>
+
+                </div>
+
+            </div> -->
+
+
+            <!-- CARD 2 -->
+
+            <!-- <div class="produk-card">
+
+                <span class="produk-label">
+                    Keputusan
+                </span>
+
+                <h3>SK Penetapan RW</h3>
+
+                <p>
+                    Nomor &nbsp;&nbsp;: 001/SK/RW/2026<br>
+                    Tahun &nbsp;&nbsp;&nbsp;: 2026
+                </p>
+
+                <hr>
+
+                <p class="produk-description">
+                    Surat keputusan tentang penetapan
+                    rukun warga sebagai satuan wilayah
+                    masyarakat.
+                </p>
+
+                <div class="produk-actions">
+
+                    <a href="#" class="btn-detail">
+                        👁 Lihat detail
+                    </a>
+
+                    <a href="#" class="btn-unduh"> 
+                        <img src="../static/icon/download_putih.png">Unduh
+                    </a>
+
+                </div>
+
+            </div> -->
+
+
+            <!-- CARD 3 -->
+
+            <!-- <div class="produk-card">
+
+                <span class="produk-label">
+                    Keputusan
+                </span>
+
+                <h3>SK Penetapan RW</h3>
+
+                <p>
+                    Nomor &nbsp;&nbsp;: 001/SK/RW/2026<br>
+                    Tahun &nbsp;&nbsp;&nbsp;: 2026
+                </p>
+
+                <hr>
+
+                <p class="produk-description">
+                    Surat keputusan tentang penetapan
+                    rukun warga sebagai satuan wilayah
+                    masyarakat.
+                </p>
+
+                <div class="produk-actions">
+
+                    <a href="#" class="btn-detail">
+                        👁 Lihat detail
+                    </a>
+
+                    <a href="#" class="btn-unduh"> 
+                        <img src="../static/icon/download_putih.png">Unduh
+                    </a>
+
+                </div>
+
+            </div> -->
+
+
+            <!-- CARD 4 -->
+
+            <!-- <div class="produk-card">
+
+                <span class="produk-label">
+                    Keputusan
+                </span>
+
+                <h3>SK Penetapan RW</h3>
+
+                <p>
+                    Nomor &nbsp;&nbsp;: 001/SK/RW/2026<br>
+                    Tahun &nbsp;&nbsp;&nbsp;: 2026
+                </p>
+
+                <hr>
+
+                <p class="produk-description">
+                    Surat keputusan tentang penetapan
+                    rukun warga sebagai satuan wilayah
+                    masyarakat.
+                </p>
+
+                <div class="produk-actions">
+
+                    <a href="#" class="btn-detail">
+                        👁 Lihat detail
+                    </a>
+
+                    <a href="#" class="btn-unduh"> 
+                        <img src="../static/icon/download_putih.png">Unduh
+                    </a>
+
+                </div>
+
+            </div> -->
+
+
+            <!-- CARD 5 -->
+
+            <!-- <div class="produk-card">
+
+                <span class="produk-label">
+                    Keputusan
+                </span>
+
+                <h3>SK Penetapan RW</h3>
+
+                <p>
+                    Nomor &nbsp;&nbsp;: 001/SK/RW/2026<br>
+                    Tahun &nbsp;&nbsp;&nbsp;: 2026
+                </p>
+
+                <hr>
+
+                <p class="produk-description">
+                    Surat keputusan tentang penetapan
+                    rukun warga sebagai satuan wilayah
+                    masyarakat.
+                </p>
+
+                <div class="produk-actions">
+
+                    <a href="#" class="btn-detail">
+                        👁 Lihat detail
+                    </a>
+
+                   <a href="#" class="btn-unduh"> 
+                        <img src="../static/icon/download_putih.png">Unduh
+                    </a>
+
+                </div>
+
+            </div> -->
+
+
+            <!-- CARD 6 -->
+
+            <!-- <div class="produk-card">
+
+                <span class="produk-label">
+                    Keputusan
+                </span>
+
+                <h3>SK Penetapan RW</h3>
+
+                <p>
+                    Nomor &nbsp;&nbsp;: 001/SK/RW/2026<br>
+                    Tahun &nbsp;&nbsp;&nbsp;: 2026
+                </p>
+
+                <hr>
+
+                <p class="produk-description">
+                    Surat keputusan tentang penetapan
+                    rukun warga sebagai satuan wilayah
+                    masyarakat.
+                </p>
+
+                <div class="produk-actions">
+
+                    <a href="#" class="btn-detail">
+                        👁 Lihat detail
+                    </a>
+
+                    <a href="#" class="btn-unduh"> 
+                        <img src="../static/icon/download_putih.png">Unduh
+                    </a>
+
+                </div>
+
+            </div> -->
+
+        </section>
+
+
+        <!-- ==================================================
+            TENTANG PRODUK HUKUM
+        ================================================== -->
+
+        <section class="produk-about">
+
+            <div class="produk-about-content">
+
+                <h2>Tentang Produk Hukum</h2>
+
+                <p>
+                    Halaman ini menyediakan akses transparan
+                    terhadap dokumen resmi yang menjadi dasar
+                    tata kelola dan administrasi RW. Seluruh
+                    dokumen dapat diunduh dan digunakan sebagai
+                    referensi oleh pengurus dan warga sesuai
+                    kebutuhan.
+                </p>
+
+            </div>
+
+
+           <div class="produk-about-side"> 
+
+                <img src="../static/icon/reload.png" alt="reload"> 
+
+                <div class="produk-about-text">
+                    <h3>
+                        Dokumen diperbarui 
+                        secara berkala
+                    </h3>
+
+                    <p>
+                        Pastikan Anda selalu merujuk 
+                        ke versi terbaru.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+            PAGINATION
+        ================================================== -->
+
+        <!-- <div class="produk-pagination">
+
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">›</a>
+
+        </div> -->
+
+    </main>
+
+   <!-- ==================================================
+         FOOTER
+    ================================================== -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-about">
+
+                <img src="../static/image/Logo_Footer.png"
+                     alt="RW KITA"
+                     class="footer-logo">
+
+                <p>
+                    RW KITA merupakan platform microsite bagi
+                    10 RW yang menyediakan informasi, layanan
+                    digital, serta transparansi administrasi
+                    guna mewujudkan lingkungan yang kolaboratif,
+                    informatif, dan mudah diakses oleh masyarakat.
+                </p>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>Kontak Kami</h3>
+
+                <div class="contact-item">
+                    <span>
+                        <img src="../static/icon/location (1).png">
+                    </span>
+                    <p>
+                        Jl. XYZ No. 123, Kel. XYZ,
+                        Kec. XYZ, Jakarta Timur,
+                        DKI Jakarta
+                    </p>
+                </div>
+
+                <div class="contact-item">
+                    <span>
+                        <img src="../static/icon/phone-call (1).png">
+                    </span>
+                    <p>(021) 1234 5678</p>
+                </div>
+
+                <div class="contact-item">
+                    <span>
+                        <img src="../static/icon/email (1).png">
+                    </span>
+                    <p id="footer-email">
+  Email belum tersedia.
+</p>
+                </div>
+
+            </div>
+
+
+            <div class="footer-location">
+
+                <h3>Lokasi Kami</h3>
+
+                <div class="map-box">
+                    <div class="map-placeholder">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=..."
+                            width="100%"
+                            height="300"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                         </iframe>
+                    </div>
+                </div>
+
+                <h3 class="social-title">
+                    Ikuti Kami
+                </h3>
+
+                <div class="social-media">
+
+                    <a href="#">
+                        <img src="../static/icon/whatsapp (3).png">
+                    </a>
+                    <a href="#">
+                        <img src="../static/icon/instagram (2).png">
+                    </a>
+                    <a href="#">
+                        <img src="../static/icon/youtube (3).png">
+                    </a>
+                    <a href="#">
+                        <img src="../static/icon/social (2).png">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 RW KITA | Suku Dinas Komunikasi,
+                Informatika dan Statistik Kota Administrasi Jakarta Timur
+            </p>
+
+        </div>
+
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="../static/js/supabase.js"></script>
+<script src="../static/js/rw-navigation.js"></script>
+<script src="../static/js/produk-hukum.js"></script>
+<script src="../static/js/language.js"></script>
+
+</body>
+</html>

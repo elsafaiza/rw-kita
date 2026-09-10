@@ -1,0 +1,410 @@
+/* ==================================================
+   HALAMAN HUBUNGI KAMI
+================================================== */
+html.language-loading body {
+  opacity: 0;
+  pointer-events: none;
+}
+
+body {
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}
+
+.kontak-grid {
+    width: 100%;
+    max-width: 1180px;
+   
+    margin: 15px auto 40px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px 25px;
+    align-items: start;
+}
+
+
+/* ==================================================
+   CARD KONTAK
+================================================== */
+
+.kontak-card {
+
+    padding: 25px 28px;
+
+    background: #fffdf8;
+
+    border: 1px solid #d09100;
+
+    border-radius: 15px;
+
+    box-sizing: border-box;
+}
+
+
+.kontak-card h2 {
+
+    margin: 0 0 20px;
+
+    color: #092c4c;
+
+    font-size: 15px;
+
+    font-weight: 800;
+}
+
+
+/* ==================================================
+   INFORMASI KONTAK
+================================================== */
+
+.kontak-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 0 0 12px;
+
+    margin-bottom: 10px;
+
+    border-bottom: 1px solid #536b7d;
+}
+
+
+.kontak-item:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+/* ICON */
+
+.kontak-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+       border-radius: 50%;
+}
+
+
+.kontak-icon img {
+
+    width: 32px;
+
+    height: 32px;
+
+    object-fit: contain;
+}
+
+
+/* TEXT */
+
+.kontak-text {
+
+    flex: 1;
+}
+
+
+.kontak-text h3 {
+
+    margin: 0 0 4px;
+
+    color: #173a57;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+.kontak-text p {
+
+    margin: 0;
+
+    color: #536b7d;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* ==================================================
+   MAP
+================================================== */
+
+.lokasi-card {
+
+    min-height: 300px;
+}
+
+
+.kontak-map {
+
+    width: 100%;
+
+    height: 220px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+}
+
+
+.kontak-map img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ==================================================
+   KIRIM PESAN
+================================================== */
+
+.pesan-card {
+
+    min-height: 300px;
+}
+
+
+.pesan-row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px;
+
+    margin-bottom: 10px;
+}
+
+
+.input-group {
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 0 12px;
+
+    background: #fff9ed;
+
+    border: 1px solid #e1c47a;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+}
+
+
+.input-group img {
+
+    width: 14px;
+
+    height: 14px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+
+.input-group input {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #536b7d;
+
+    font-size: 12px;
+}
+
+
+.input-group input::placeholder {
+
+    color: #999;
+}
+
+
+/* TEXTAREA */
+
+.textarea-group {
+
+    min-height: 80px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+    padding: 12px;
+
+    background: #fff9ed;
+
+    border: 1px solid #e1c47a;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    margin-bottom: 20px;
+}
+
+
+.textarea-group img {
+
+    width: 14px;
+
+    height: 14px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+
+.textarea-group textarea {
+
+    width: 100%;
+
+    min-height: 55px;
+
+    resize: none;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #536b7d;
+
+    font-size: 12px;
+
+    font-family: inherit;
+}
+
+
+.textarea-group textarea::placeholder {
+
+    color: #999;
+}
+
+
+/* ==================================================
+   BUTTON KIRIM
+================================================== */
+
+.pesan-btn {
+
+    width: 100%;
+
+    height: 38px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #d09100;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+.pesan-btn:hover {
+
+    background: #b77b00;
+}
+
+
+/* ==================================================
+   SOSIAL MEDIA
+================================================== */
+
+.sosial-card {
+    min-height: 0;
+    height: 170px;
+    box-sizing: border-box;
+}
+
+
+.sosial-list {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    margin-top: 5px;
+}
+
+
+.sosial-list a {
+
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+
+.sosial-list img {
+
+    width: 40px;
+
+    height: 40px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+

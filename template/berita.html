@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Berita | Admin RW Kita</title>
+
+
+    <!-- ==================================================
+         FONT POPPINS
+    ================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../static/css/global.css"
+    >
+    <link
+        rel="stylesheet"
+        href="../static/css/berita.css"
+    >
+
+</head>
+
+
+<body>
+
+    <aside class="sidebar">
+
+
+        <!-- ==================================================
+             LOGO
+        ================================================== -->
+        <div class="sidebar-logo">
+            <img
+                src="../static/image/Logo_Footer.png"
+                alt="RW Kita">
+        </div>
+
+
+        <!-- Menu Sidebar -->
+        <nav class="sidebar-menu">
+
+                <!-- ==================================================
+                    UTAMA
+                ================================================== -->
+
+                <div class="menu-label">
+                    UTAMA
+                </div>
+
+                <a href="dashboard_admin.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+
+                <!-- ==================================================
+                    KONTEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    KONTEN
+                </div>
+
+                <a href="berita.html" class="menu-item active">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <span>Berita</span>
+                </a>
+
+                <a href="artikel_admin.html" class="menu-item">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Artikel</span>
+                </a>
+
+                <a href="pengumuman.html" class="menu-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Pengumuman</span>
+                </a>
+
+                <a href="agenda.html" class="menu-item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Agenda</span>
+                </a>
+
+                <a href="cerita_warga.html" class="menu-item">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Cerita Warga</span>
+                </a>
+
+
+                <!-- ==================================================
+                    INFORMASI RW
+                ================================================== -->
+
+                <div class="menu-label">
+                    INFORMASI RW
+                </div>
+
+                <a href="profil_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Profil RW</span>
+                </a>
+
+                <a href="potensi_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Potensi RW</span>
+                </a>
+
+                <a href="dokumentasi.html" class="menu-item">
+                    <i class="fa-regular fa-images"></i>
+                    <span>Dokumentasi</span>
+                </a>
+
+
+                <!-- ==================================================
+                    DOKUMEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    DOKUMEN
+                </div>
+
+                <a href="produk_hukum_admin.html" class="menu-item">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Produk Hukum</span>
+                </a>
+
+                <a href="arsip_digital_admin.html" class="menu-item">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <span>Arsip Digital</span>
+                </a>
+
+
+                <!-- ==================================================
+                    PENGELOLAAN
+                ================================================== -->
+
+                <div class="menu-label">
+                    PENGELOLAAN
+                </div>
+
+                <a href="pengaturan-admin.html" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Pengaturan</span>
+                </a>
+
+            </nav>
+
+
+                <!-- ==================================================
+                PROFIL ADMIN
+            ================================================== -->
+
+            <details class="admin-profile">
+
+                <summary class="sidebar-admin">
+
+                    <div class="admin-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="admin-info">
+                        <strong>Admin RW01</strong>
+                        <small>Administrator</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down admin-arrow"></i>
+
+                </summary>
+
+
+                <!-- DROPDOWN LOGOUT -->
+
+                <div class="admin-dropdown">
+
+                    <a href="beranda_RW.html" class="admin-logout">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <span>Logout</span>
+
+                    </a>
+
+                </div>
+
+            </details>
+    </aside>
+
+    <!-- ==================================================
+         MAIN CONTENT
+    ================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- ==================================================
+             HEADER
+        ================================================== -->
+
+        <header class="page-header">
+
+
+            <!-- HEADER TITLE -->
+
+            <div class="header-title">
+
+                <h1>
+                    Berita
+                </h1>
+
+                <p>
+                    Kelola semua berita yang ada di website
+                </p>
+
+            </div>
+
+
+            <!-- HEADER RIGHT -->
+
+           <div class="header-right">
+
+
+                <!-- Notification -->
+                <button class="notification-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- Pilihan RW -->
+                <div class="rw-selector">
+
+                    <div class="rw-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="rw-text">
+
+                        <strong>RW 01</strong>
+
+                        <small>
+                            Kel. XYZ, Kec. XYZ
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+           </div>
+
+
+        </header>
+
+
+
+        <!-- ==================================================
+             TOOLBAR BERITA
+        ================================================== -->
+
+        <section class="berita-toolbar">
+
+
+            <!-- ==================================================
+                 FILTER TAB
+            ================================================== -->
+
+            <div class="berita-tabs">
+
+
+                <a
+                    href="#"
+                    class="berita-tab active"
+                >
+                    Semua Berita
+                </a>
+
+
+                <a
+                    href="#"
+                    class="berita-tab"
+                >
+                    Dipublikasikan
+                </a>
+
+
+                <a
+                    href="#"
+                    class="berita-tab"
+                >
+                    Draft
+                </a>
+
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 SEARCH + TAMBAH
+            ================================================== -->
+
+            <div class="berita-actions">
+
+
+                <!-- SEARCH -->
+
+                <div class="search-box">
+
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+
+                    <input
+                        type="text"
+                        placeholder="Cari Berita"
+                    >
+
+
+                </div>
+
+
+                <!-- TAMBAH BERITA -->
+
+                <a
+                    href="tambah-berita.html"
+                    class="btn-add"
+                >
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    <span>
+                        Tambah Berita
+                    </span>
+
+                </a>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             TABLE BERITA
+        ================================================== -->
+
+        <section class="berita-table">
+
+
+            <!-- ==================================================
+                 TABLE HEADER
+            ================================================== -->
+
+            <div class="berita-table-header">
+
+
+                <div class="col-no">
+                    No
+                </div>
+
+
+                <div class="col-judul">
+                    Judul Berita
+                </div>
+
+
+                <div class="col-penulis">
+                    Penulis
+                </div>
+
+
+                <div class="col-tanggal">
+                    Tanggal
+                </div>
+
+
+                <div class="col-status">
+                    Status
+                </div>
+
+
+                <div class="col-aksi">
+                    Aksi
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 BERITA 1
+            ================================================== -->
+
+            <article class="berita-row">
+
+
+                <!-- NOMOR -->
+
+                <div class="col-no">
+                    1
+                </div>
+
+
+                <!-- BERITA -->
+
+                <div class="berita-info">
+
+
+                    <img
+                        src="../static/image/kerja bakti.jpg"
+                        alt="Kerja Bakti Lingkungan RW 01"
+                    >
+
+
+                    <div class="berita-detail">
+
+
+                        <h3>
+                            Kerja Bakti Lingkungan RW 01
+                        </h3>
+
+
+                        <p>
+                            Seluruh warga RW 01 melaksanakan
+                            kegiatan kerja bakti secara rutin
+                            membersihkan lingkungan sekitar.
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- PENULIS -->
+
+                <div class="table-text">
+                    Admin RW 01
+                </div>
+
+
+                <!-- TANGGAL -->
+
+                <div class="table-text">
+                    26 Agustus 2026
+                </div>
+
+
+                <!-- STATUS -->
+
+                <div class="status-column">
+
+                    <span class="status published">
+                        Dipublikasi
+                    </span>
+
+                </div>
+
+
+                <!-- AKSI -->
+
+                <div class="action-buttons">
+
+
+                    <a
+                        href="#"
+                        class="action-btn"
+                        title="Lihat berita"
+                    >
+
+                        <i class="fa-regular fa-eye"></i>
+
+                    </a>
+
+
+                    <a
+                        href="edit-berita.html"
+                        class="action-btn"
+                        title="Edit berita"
+                    >
+
+                        <i class="fa-regular fa-pen-to-square"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="action-btn delete"
+                        title="Hapus berita"
+                    >
+
+                        <i class="fa-regular fa-trash-can"></i>
+
+                    </a>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- ==================================================
+                 BERITA 2
+            ================================================== -->
+
+            <article class="berita-row">
+
+
+                <div class="col-no">
+                    2
+                </div>
+
+
+                <div class="berita-info">
+
+
+                    <img
+                        src="../static/image/Rapat.jpg"
+                        alt="Rapat Rutin Bulan Agustus"
+                    >
+
+
+                    <div class="berita-detail">
+
+
+                        <h3>
+                            Rapat Rutin Bulan Agustus
+                        </h3>
+
+
+                        <p>
+                            Telah dilaksanakan rapat rutin
+                            bulanan pada tanggal 25 Agustus
+                            2026 di balai RW.
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="table-text">
+                    Admin RW 01
+                </div>
+
+
+                <div class="table-text">
+                    25 Agustus 2026
+                </div>
+
+
+                <div class="status-column">
+
+                    <span class="status published">
+                        Dipublikasi
+                    </span>
+
+                </div>
+
+
+                <div class="action-buttons">
+
+
+                    <a
+                        href="#"
+                        class="action-btn"
+                        title="Lihat berita"
+                    >
+
+                        <i class="fa-regular fa-eye"></i>
+
+                    </a>
+
+
+                    <a
+                        href="edit-berita.html"
+                        class="action-btn"
+                        title="Edit berita"
+                    >
+
+                        <i class="fa-regular fa-pen-to-square"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="action-btn delete"
+                        title="Hapus berita"
+                    >
+
+                        <i class="fa-regular fa-trash-can"></i>
+
+                    </a>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- ==================================================
+                 BERITA 3
+            ================================================== -->
+
+            <article class="berita-row">
+
+
+                <div class="col-no">
+                    3
+                </div>
+
+
+                <div class="berita-info">
+
+
+                    <img
+                        src="../static/image/kerja bakti.jpg"
+                        alt="Kerja Bakti Lingkungan RW 01"
+                    >
+
+
+                    <div class="berita-detail">
+
+
+                        <h3>
+                            Kerja Bakti Lingkungan RW 01
+                        </h3>
+
+
+                        <p>
+                            Seluruh warga RW 01 melaksanakan
+                            kegiatan kerja bakti secara rutin
+                            membersihkan lingkungan sekitar.
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="table-text">
+                    Admin RW 01
+                </div>
+
+
+                <div class="table-text">
+                    26 Agustus 2026
+                </div>
+
+
+                <div class="status-column">
+
+                    <span class="status published">
+                        Dipublikasi
+                    </span>
+
+                </div>
+
+
+                <div class="action-buttons">
+
+
+                    <a
+                        href="#"
+                        class="action-btn"
+                        title="Lihat berita"
+                    >
+
+                        <i class="fa-regular fa-eye"></i>
+
+                    </a>
+
+
+                    <a
+                        href="edit-berita.html"
+                        class="action-btn"
+                        title="Edit berita"
+                    >
+
+                        <i class="fa-regular fa-pen-to-square"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="action-btn delete"
+                        title="Hapus berita"
+                    >
+
+                        <i class="fa-regular fa-trash-can"></i>
+
+                    </a>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- ==================================================
+                 BERITA 4
+            ================================================== -->
+
+            <article class="berita-row">
+
+
+                <div class="col-no">
+                    4
+                </div>
+
+
+                <div class="berita-info">
+
+
+                    <img
+                        src="../static/image/kerja bakti.jpg"
+                        alt="Kerja Bakti Lingkungan RW 01"
+                    >
+
+
+                    <div class="berita-detail">
+
+
+                        <h3>
+                            Kerja Bakti Lingkungan RW 01
+                        </h3>
+
+
+                        <p>
+                            Seluruh warga RW 01 melaksanakan
+                            kegiatan kerja bakti secara rutin
+                            membersihkan lingkungan sekitar.
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="table-text">
+                    Admin RW 01
+                </div>
+
+
+                <div class="table-text">
+                    26 Agustus 2026
+                </div>
+
+
+                <div class="status-column">
+
+                    <span class="status draft">
+                        Draft
+                    </span>
+
+                </div>
+
+
+                <div class="action-buttons">
+
+
+                    <a
+                        href="#"
+                        class="action-btn"
+                        title="Lihat berita"
+                    >
+
+                        <i class="fa-regular fa-eye"></i>
+
+                    </a>
+
+
+                    <a
+                        href="edit-berita.html"
+                        class="action-btn"
+                        title="Edit berita"
+                    >
+
+                        <i class="fa-regular fa-pen-to-square"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="action-btn delete"
+                        title="Hapus berita"
+                    >
+
+                        <i class="fa-regular fa-trash-can"></i>
+
+                    </a>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- ==================================================
+                 BERITA 5
+            ================================================== -->
+
+            <article class="berita-row">
+
+
+                <div class="col-no">
+                    5
+                </div>
+
+
+                <div class="berita-info">
+
+
+                    <img
+                        src="../static/image/kerja bakti.jpg"
+                        alt="Kerja Bakti Lingkungan RW 01"
+                    >
+
+
+                    <div class="berita-detail">
+
+
+                        <h3>
+                            Kerja Bakti Lingkungan RW 01
+                        </h3>
+
+
+                        <p>
+                            Seluruh warga RW 01 melaksanakan
+                            kegiatan kerja bakti secara rutin
+                            membersihkan lingkungan sekitar.
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="table-text">
+                    Admin RW 01
+                </div>
+
+
+                <div class="table-text">
+                    26 Agustus 2026
+                </div>
+
+
+                <div class="status-column">
+
+                    <span class="status draft">
+                        Draft
+                    </span>
+
+                </div>
+
+
+                <div class="action-buttons">
+
+
+                    <a
+                        href="#"
+                        class="action-btn"
+                        title="Lihat berita"
+                    >
+
+                        <i class="fa-regular fa-eye"></i>
+
+                    </a>
+
+
+                    <a
+                        href="edit-berita.html"
+                        class="action-btn"
+                        title="Edit berita"
+                    >
+
+                        <i class="fa-regular fa-pen-to-square"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="action-btn delete"
+                        title="Hapus berita"
+                    >
+
+                        <i class="fa-regular fa-trash-can"></i>
+
+                    </a>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- ==================================================
+                 PAGINATION
+            ================================================== -->
+
+            <div class="pagination">
+
+
+                <a
+                    href="#"
+                    class="pagination-btn"
+                    title="Sebelumnya"
+                >
+
+                    <i class="fa-solid fa-chevron-left"></i>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="pagination-btn active"
+                >
+                    1
+                </a>
+
+
+                <a
+                    href="#"
+                    class="pagination-btn"
+                    title="Berikutnya"
+                >
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                </a>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             FOOTER
+        ================================================== -->
+
+        <footer class="admin-footer">
+
+            © 2026 RW KITA | Suku Dinas Komunikasi,
+            Informatika dan Statistik Kota Administrasi
+            Jakarta Timur.
+
+        </footer>
+
+
+    </main>
+
+
+</body>
+
+</html>

@@ -1,0 +1,429 @@
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --navy: #062b52;
+    --navy-dark: #031f3c;
+
+    --gold: #dfa000;
+    --gold-dark: #c98c00;
+    --gold-light: #fff5d9;
+
+    --text: #10294b;
+    --muted: #718096;
+
+    --border: #dfe5ec;
+
+    --background: #f7f9fb;
+
+    --white: #ffffff;
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    font-family: "Poppins", sans-serif;
+
+    background: var(--background);
+
+    color: var(--text);
+
+}
+
+
+/* =========================================================
+   SETTINGS
+========================================================= */
+
+.settings-container {
+
+    max-width: 1050px;
+
+}
+
+
+/* =========================================================
+   SETTING CARD
+========================================================= */
+
+.setting-card {
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    padding: 21px 23px;
+
+    margin-bottom: 16px;
+
+}
+
+
+.setting-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding-bottom: 17px;
+
+    margin-bottom: 18px;
+
+    border-bottom: 1px solid #edf0f3;
+
+}
+
+
+.setting-icon {
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 8px;
+
+    background: var(--gold-light);
+
+    color: var(--gold-dark);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+
+}
+
+
+.setting-heading h2 {
+
+    font-size: 13px;
+
+    margin-bottom: 3px;
+
+}
+
+
+.setting-heading p {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   FORM GRID
+========================================================= */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.form-group {
+
+    width: 100%;
+
+}
+
+
+.form-group.full {
+
+    grid-column: 1 / -1;
+
+}
+
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+.form-group input,
+.form-group textarea {
+
+    width: 100%;
+
+    border: 1px solid #dfe4ea;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    background: white;
+
+    color: var(--text);
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    padding: 9px 11px;
+
+    transition: .2s ease;
+
+}
+
+
+.form-group input {
+
+    height: 36px;
+
+}
+
+
+.form-group textarea {
+
+    min-height: 75px;
+
+    resize: vertical;
+
+    line-height: 1.6;
+
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+
+    border-color: var(--gold);
+
+    box-shadow:
+        0 0 0 2px
+        rgba(223,160,0,.08);
+
+}
+
+
+/* =========================================================
+   INPUT ICON
+========================================================= */
+
+.input-icon {
+
+    position: relative;
+
+}
+
+
+.input-icon > i {
+
+    position: absolute;
+
+    left: 11px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #8290a1;
+
+    font-size: 12px;
+
+}
+
+
+.input-icon input {
+
+    padding-left: 33px;
+
+}
+
+
+.textarea-icon > i {
+
+    top: 16px;
+
+    transform: none;
+
+}
+
+
+.input-icon textarea {
+
+    padding-left: 33px;
+
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.settings-actions {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 9px;
+
+    padding: 15px 0;
+
+}
+
+
+.btn-reset,
+.btn-save {
+
+    height: 36px;
+
+    padding: 0 17px;
+
+    border-radius: 6px;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+
+.btn-reset {
+
+    background: white;
+
+    border: 1px solid #d4dbe3;
+
+    color: #637084;
+
+}
+
+
+.btn-save {
+
+    background: var(--gold);
+
+    border: 1px solid var(--gold);
+
+    color: white;
+
+}
+
+
+.btn-save:hover {
+
+    background: var(--gold-dark);
+
+}
+
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .form-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .form-group.full {
+
+        grid-column: auto;
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .sidebar {
+
+        width: 200px;
+
+    }
+
+
+    .main-content {
+
+        margin-left: 200px;
+
+        padding: 20px;
+
+    }
+
+
+    .header-right {
+
+        display: none;
+
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .sidebar {
+
+        position: relative;
+
+        width: 100%;
+
+    }
+
+
+    .main-content {
+
+        margin-left: 0;
+
+    }
+
+
+    .page-header {
+
+        flex-direction: column;
+
+        gap: 12px;
+
+    }
+
+}

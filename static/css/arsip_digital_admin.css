@@ -1,0 +1,962 @@
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.archive-statistics {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.archive-stat-card {
+
+    min-height: 108px;
+
+    background: white;
+
+    border: 1px solid #e4e7eb;
+
+    border-radius: 10px;
+
+    padding: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================================================
+   STAT ICON
+========================================================= */
+
+.stat-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 23px;
+}
+
+
+.stat-icon.blue {
+
+    background: #eaf2ff;
+
+    color: #2467d6;
+}
+
+
+.stat-icon.gold {
+
+    background: #fff3dc;
+
+    color: var(--gold);
+}
+
+
+.stat-icon.green {
+
+    background: #eaf7e9;
+
+    color: #388b42;
+}
+
+
+.stat-icon.purple {
+
+    background: #f7eaff;
+
+    color: #9b3fd1;
+}
+
+
+/* =========================================================
+   STAT CONTENT
+========================================================= */
+
+.stat-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 0;
+}
+
+
+.stat-content strong {
+
+    color: #071f41;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    line-height: 1.1;
+
+    margin-bottom: 4px;
+}
+
+
+.stat-content span {
+
+    color: #102b4d;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 3px;
+}
+
+
+.stat-content small {
+
+    color: #687384;
+
+    font-size: 11px;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   MAIN ARCHIVE CARD
+========================================================= */
+
+.archive-card {
+
+    background: white;
+
+    border: 1px solid #e4e7eb;
+
+    border-radius: 10px;
+
+    padding: 18px;
+
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+
+.archive-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+/* TAB */
+
+.archive-tabs {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-shrink: 0;
+}
+
+.archive-tab {
+    position: relative;
+
+    height: 40px;
+
+    padding: 0;
+
+    border: none;
+    background: none;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+
+    color: #071f41;
+
+    cursor: pointer;
+}
+
+.archive-tab.active {
+    color: var(--gold);
+}
+
+.archive-tab.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 2px;
+
+    background: var(--gold);
+}
+
+
+/* FILTER AREA */
+
+.archive-filters {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    margin-left: auto;
+}
+
+
+/* SEARCH */
+
+.archive-search {
+    width: 170px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 0 10px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d8dee6;
+    border-radius: 7px;
+
+    background: #fff;
+}
+
+.archive-search i {
+    color: #63748a;
+    font-size: 12px;
+}
+
+.archive-search input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+
+    color: #102b4d;
+}
+
+
+/* SELECT */
+
+.archive-filters select {
+    height: 36px;
+
+    min-width: 125px;
+
+    padding: 0 9px;
+
+    border: 1px solid #d8dee6;
+    border-radius: 7px;
+
+    background: #fff;
+
+    color: #263b55;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+
+/* FILTER BUTTON */
+
+.btn-filter {
+    height: 36px;
+
+    padding: 0 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    border: 1px solid #d8dee6;
+    border-radius: 7px;
+
+    background: #fff;
+
+    color: #071f41;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* TAMBAH */
+
+.btn-add {
+    height: 36px;
+
+    padding: 0 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    border-radius: 7px;
+
+    background: var(--gold);
+    color: #fff;
+
+    text-decoration: none;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.archive-table {
+
+    width: 100%;
+
+    min-width: 950px;
+
+    border-collapse: collapse;
+
+    table-layout: auto;
+}
+
+
+.archive-table thead {
+
+    background: #faf9f6;
+}
+
+
+.archive-table th {
+
+    height: 47px;
+
+    padding: 0 12px;
+
+    text-align: left;
+
+    color: #071f41;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    border-bottom: 1px solid #e5e7ea;
+
+    white-space: nowrap;
+}
+
+
+.archive-table td {
+
+    min-height: 70px;
+
+    padding: 10px 12px;
+
+    color: #24364f;
+
+    font-size: 11px;
+
+    border-bottom: 1px solid #edf0f2;
+
+    vertical-align: middle;
+}
+
+
+.archive-table tbody tr {
+
+    height: 78px;
+}
+
+
+.archive-table tbody tr:hover {
+
+    background: #fffdf8;
+}
+
+
+.archive-table tbody tr:last-child td {
+
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   COLUMN
+========================================================= */
+
+.col-no {
+
+    width: 45px;
+
+    text-align: center !important;
+}
+
+
+.col-action {
+
+    width: 120px;
+
+    text-align: center !important;
+}
+
+
+/* =========================================================
+   ARCHIVE NAME
+========================================================= */
+
+.archive-name {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 250px;
+}
+
+
+.archive-name > div:last-child {
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 0;
+}
+
+
+.archive-name strong {
+
+    color: #102b4d;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-bottom: 3px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.archive-name small {
+
+    max-width: 290px;
+
+    color: #788494;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   FILE ICON
+========================================================= */
+
+.file-icon {
+
+    width: 42px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    border-radius: 7px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 22px;
+}
+
+
+.file-icon.pdf {
+
+    background: #fff0ee;
+
+    color: #dc4b35;
+}
+
+
+.file-icon.doc {
+
+    background: #edf4ff;
+
+    color: #2d6fc9;
+}
+
+
+.file-icon.xls {
+
+    background: #eaf7ee;
+
+    color: #168442;
+}
+
+
+.file-icon.ppt {
+
+    background: #fff0e9;
+
+    color: #e85c2e;
+}
+
+
+.file-icon.jpg {
+
+    background: #eaf4ff;
+
+    color: #3498db;
+}
+
+
+.file-icon.zip {
+
+    background: #fff4df;
+
+    color: #d79a19;
+}
+
+
+/* =========================================================
+   CATEGORY
+========================================================= */
+
+.category-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 4px 8px;
+
+    border-radius: 5px;
+
+    background: #edf3f9;
+
+    color: #42617e;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   FORMAT
+========================================================= */
+
+.file-format {
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+.pdf-text {
+
+    color: #d94b35;
+}
+
+
+.doc-text {
+
+    color: #2870c7;
+}
+
+
+.xls-text {
+
+    color: #188247;
+}
+
+
+.ppt-text {
+
+    color: #e25b2d;
+}
+
+
+.jpg-text {
+
+    color: #348fd0;
+}
+
+
+.zip-text {
+
+    color: #d39112;
+}
+
+
+/* =========================================================
+   DATE
+========================================================= */
+
+.date-cell {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    white-space: nowrap;
+}
+
+
+.date-cell i {
+
+    color: #56677b;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   TABLE ACTIONS
+========================================================= */
+
+.table-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+}
+
+
+.table-actions a {
+
+    width: 32px;
+
+    height: 32px;
+
+    border-radius: 7px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    box-sizing: border-box;
+}
+
+
+.action-view {
+
+    color: #3e536c;
+
+    background: white;
+
+    border: 1px solid #d8dee6;
+}
+
+
+.action-view:hover {
+
+    border-color: #8d99a8;
+
+    background: #f7f8f9;
+}
+
+
+.action-edit {
+
+    color: var(--gold);
+
+    background: #fff9ec;
+
+    border: 1px solid #ead8ac;
+}
+
+
+.action-edit:hover {
+
+    background: var(--gold-light);
+}
+
+
+.action-delete {
+
+    color: #e04444;
+
+    background: #fff4f4;
+
+    border: 1px solid #f0c8c8;
+}
+
+
+.action-delete:hover {
+
+    background: #ffe9e9;
+}
+
+
+/* =========================================================
+   TABLE FOOTER
+========================================================= */
+
+.archive-table-footer {
+
+    min-height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding-top: 10px;
+}
+
+
+.archive-count {
+
+    color: #657181;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.pagination {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+}
+
+
+.pagination button {
+
+    width: 31px;
+
+    height: 31px;
+
+    border: 1px solid #dce1e6;
+
+    border-radius: 6px;
+
+    background: white;
+
+    color: #29415c;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+
+.pagination button:hover {
+
+    border-color: var(--gold);
+
+    color: var(--gold);
+}
+
+
+.pagination button.active {
+
+    background: var(--gold);
+
+    border-color: var(--gold);
+
+    color: white;
+}
+
+
+.pagination button:disabled {
+
+    color: #b8c0c9;
+
+    background: #fafafa;
+
+    cursor: not-allowed;
+}
+
+
+.pagination span {
+
+    padding: 0 3px;
+
+    color: #798493;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   PER PAGE
+========================================================= */
+
+.per-page {
+
+    height: 31px;
+
+    padding: 0 9px;
+
+    border: 1px solid #dce1e6;
+
+    border-radius: 6px;
+
+    background: white;
+
+    color: #29415c;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 10px;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .archive-statistics {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .archive-top {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .archive-actions {
+
+        width: 100%;
+    }
+
+    .archive-search {
+
+        flex: 1;
+
+        width: auto;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .archive-statistics {
+
+        grid-template-columns: 1fr;
+    }
+
+    .archive-filter-row {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .archive-filter-row select {
+
+        width: 100%;
+    }
+
+    .archive-table-footer {
+
+        flex-wrap: wrap;
+    }
+
+}

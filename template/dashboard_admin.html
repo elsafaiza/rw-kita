@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard Admin - RW Kita</title>
+
+    <!-- ================= Poppins ================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- ================= Font Awesome ================= -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ================= CSS ================= -->
+    <link rel="stylesheet" href="../static/css/dashboard_admin.css">
+    <link rel="stylesheet" href="../static/css/global.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="sidebar-logo">
+            <img
+                src="../static/image/Logo_Footer.png"
+                alt="RW Kita">
+        </div>
+
+
+        <!-- Menu Sidebar -->
+        <nav class="sidebar-menu">
+
+                <!-- ==================================================
+                    UTAMA
+                ================================================== -->
+
+                <div class="menu-label">
+                    UTAMA
+                </div>
+
+                <a href="dashboard_admin.html" class="menu-item active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+
+                <!-- ==================================================
+                    KONTEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    KONTEN
+                </div>
+
+                <a href="berita.html" class="menu-item">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <span>Berita</span>
+                </a>
+
+                <a href="artikel_admin.html" class="menu-item">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Artikel</span>
+                </a>
+
+                <a href="pengumuman.html" class="menu-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Pengumuman</span>
+                </a>
+
+                <a href="agenda.html" class="menu-item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Agenda</span>
+                </a>
+
+                <a href="cerita_warga.html" class="menu-item">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Cerita Warga</span>
+                </a>
+
+
+                <!-- ==================================================
+                    INFORMASI RW
+                ================================================== -->
+
+                <div class="menu-label">
+                    INFORMASI RW
+                </div>
+
+                <a href="profil_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Profil RW</span>
+                </a>
+
+                <a href="potensi_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Potensi RW</span>
+                </a>
+
+                <a href="dokumentasi.html" class="menu-item">
+                    <i class="fa-regular fa-images"></i>
+                    <span>Dokumentasi</span>
+                </a>
+
+
+                <!-- ==================================================
+                    DOKUMEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    DOKUMEN
+                </div>
+
+                <a href="produk_hukum_admin.html" class="menu-item">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Produk Hukum</span>
+                </a>
+
+                <a href="arsip_digital_admin.html" class="menu-item">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <span>Arsip Digital</span>
+                </a>
+
+
+                <!-- ==================================================
+                    PENGELOLAAN
+                ================================================== -->
+
+                <div class="menu-label">
+                    PENGELOLAAN
+                </div>
+
+                <a href="pengaturan-admin.html" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Pengaturan</span>
+                </a>
+
+            </nav>
+
+
+                <!-- ==================================================
+                PROFIL ADMIN
+            ================================================== -->
+
+            <details class="admin-profile">
+
+                <summary class="sidebar-admin">
+
+                    <div class="admin-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="admin-info">
+                        <strong>Admin RW01</strong>
+                        <small>Administrator</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down admin-arrow"></i>
+
+                </summary>
+
+
+                <!-- DROPDOWN LOGOUT -->
+
+                <div class="admin-dropdown">
+
+                    <a href="beranda_RW.html" class="admin-logout">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <span>Logout</span>
+
+                    </a>
+
+                </div>
+
+            </details>
+    </aside>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <header class="page-header">
+
+            <div class="header-title">
+
+                <h1>Dashboard</h1>
+
+                <p>
+                    Selamat Datang, Admin RW 01
+                </p>
+
+            </div>
+
+
+            <div class="header-right">
+
+
+                <!-- Notification -->
+                <button class="notification-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- Pilihan RW -->
+                <div class="rw-selector">
+
+                    <div class="rw-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="rw-text">
+
+                        <strong>RW 01</strong>
+
+                        <small>
+                            Kel. XYZ, Kec. XYZ
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+
+                <!-- Tanggal -->
+                <div class="date-box">
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    <span>
+                        Selasa, 26 Agustus 2026
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             STATISTICS
+        ================================================== -->
+
+        <section class="statistics-grid">
+
+
+            <!-- BERITA -->
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-regular fa-newspaper"></i>
+                </div>
+
+                <div class="stat-content">
+
+                    <strong>12</strong>
+
+                    <span>Berita</span>
+
+                    <a href="berita.html">
+                        Lihat Semua →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PENGUMUMAN -->
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+
+                <div class="stat-content">
+
+                    <strong>6</strong>
+
+                    <span>Pengumuman</span>
+
+                    <a href="pengumuman.html">
+                        Lihat Semua →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- AGENDA -->
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-regular fa-calendar"></i>
+                </div>
+
+                <div class="stat-content">
+
+                    <strong>6</strong>
+
+                    <span>Agenda</span>
+
+                    <a href="agenda.html">
+                        Lihat Semua →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CERITA WARGA -->
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <div class="stat-content">
+
+                    <strong>6</strong>
+
+                    <span>Cerita Warga</span>
+
+                    <a href="cerita_warga.html">
+                        Lihat Semua →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- POTENSI RW -->
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <div class="stat-content">
+
+                    <strong>12</strong>
+
+                    <span>Potensi RW</span>
+
+                    <a href="potensi_rw_admin.html">
+                        Lihat Semua →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             DASHBOARD GRID
+        ================================================== -->
+
+        <section class="dashboard-grid">
+
+
+            <!-- =================================================
+                 RINGKASAN KONTEN
+            ================================================== -->
+
+            <div class="dashboard-card chart-card">
+
+                <div class="card-header">
+
+                    <h2>Ringkasan Konten</h2>
+
+                    <select>
+                        <option>30 Hari Terakhir</option>
+                        <option>7 Hari Terakhir</option>
+                        <option>3 Bulan Terakhir</option>
+                    </select>
+
+                </div>
+
+
+                <div class="chart-container">
+
+                    <svg
+                        viewBox="0 0 700 300"
+                        preserveAspectRatio="none">
+
+
+                        <!-- Garis Grid -->
+
+                        <line
+                            x1="50"
+                            y1="40"
+                            x2="670"
+                            y2="40"
+                            class="chart-grid" />
+
+                        <line
+                            x1="50"
+                            y1="90"
+                            x2="670"
+                            y2="90"
+                            class="chart-grid" />
+
+                        <line
+                            x1="50"
+                            y1="140"
+                            x2="670"
+                            y2="140"
+                            class="chart-grid" />
+
+                        <line
+                            x1="50"
+                            y1="190"
+                            x2="670"
+                            y2="190"
+                            class="chart-grid" />
+
+                        <line
+                            x1="50"
+                            y1="240"
+                            x2="670"
+                            y2="240"
+                            class="chart-grid" />
+
+
+                        <!-- Berita -->
+
+                        <polyline
+                            points="
+                            50,145
+                            85,120
+                            120,130
+                            155,95
+                            190,110
+                            225,75
+                            260,85
+                            295,155
+                            330,175
+                            365,160
+                            400,135
+                            435,145
+                            470,155
+                            505,125
+                            540,105
+                            575,65
+                            610,110
+                            640,135
+                            670,135"
+                            class="line-blue" />
+
+
+                        <!-- Pengumuman -->
+
+                        <polyline
+                            points="
+                            50,210
+                            85,190
+                            120,195
+                            155,175
+                            190,160
+                            225,175
+                            260,180
+                            295,200
+                            330,190
+                            365,175
+                            400,165
+                            435,170
+                            470,160
+                            505,145
+                            540,150
+                            575,125
+                            610,150
+                            640,170
+                            670,160"
+                            class="line-gold" />
+
+
+                        <!-- Agenda -->
+
+                        <polyline
+                            points="
+                            50,225
+                            85,220
+                            120,215
+                            155,220
+                            190,215
+                            225,205
+                            260,220
+                            295,215
+                            330,205
+                            365,190
+                            400,200
+                            435,195
+                            470,180
+                            505,190
+                            540,175
+                            575,165
+                            610,185
+                            640,175
+                            670,170"
+                            class="line-green" />
+
+
+                        <!-- Cerita -->
+
+                        <polyline
+                            points="
+                            50,235
+                            85,230
+                            120,235
+                            155,225
+                            190,230
+                            225,220
+                            260,225
+                            295,215
+                            330,225
+                            365,215
+                            400,220
+                            435,210
+                            470,215
+                            505,205
+                            540,215
+                            575,200
+                            610,210
+                            640,205
+                            670,210"
+                            class="line-red" />
+
+                    </svg>
+
+                </div>
+
+
+                <!-- Legend -->
+
+                <div class="chart-legend">
+
+                    <span>
+                        <i class="legend-blue"></i>
+                        Berita
+                    </span>
+
+                    <span>
+                        <i class="legend-gold"></i>
+                        Pengumuman
+                    </span>
+
+                    <span>
+                        <i class="legend-green"></i>
+                        Agenda
+                    </span>
+
+                    <span>
+                        <i class="legend-red"></i>
+                        Cerita Warga
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 WARGA CERITA TERBARU
+            ================================================== -->
+
+            <div class="dashboard-card">
+
+                <div class="card-header">
+
+                    <h2>Warga Cerita Terbaru</h2>
+
+                    <a href="cerita_warga.html">
+                        Lihat Semua →
+                    </a>
+
+                </div>
+
+
+                <div class="story-list">
+
+
+                    <!-- Story 1 -->
+
+                    <div class="story-item">
+
+                        <img
+                            src="../static/image/bergotong royong.jpg"
+                            alt="Cerita warga">
+
+                        <div class="story-info">
+
+                            <h3>
+                                Dari Hobi Menjadi Usaha
+                            </h3>
+
+                            <span>
+                                Oleh Rani
+                            </span>
+
+                            <small>
+                                Dikirim : 26 Agustus 2026
+                            </small>
+
+                        </div>
+
+                        <span class="status waiting">
+                            Menunggu Review
+                        </span>
+
+                    </div>
+
+
+                    <!-- Story 2 -->
+
+                    <div class="story-item">
+
+                        <img
+                            src="../static/image/senamm.jpg"
+                            alt="Cerita warga">
+
+                        <div class="story-info">
+
+                            <h3>
+                                Gotong Royong Yang Menyatukan
+                            </h3>
+
+                            <span>
+                                Oleh Siti Aisyah
+                            </span>
+
+                            <small>
+                                Dikirim : 25 Agustus 2026
+                            </small>
+
+                        </div>
+
+                        <span class="status waiting">
+                            Menunggu Review
+                        </span>
+
+                    </div>
+
+
+                    <!-- Story 3 -->
+
+                    <div class="story-item">
+
+                        <img
+                            src="../static/image/ruang kreatif.jpg"
+                            alt="Cerita warga">
+
+                        <div class="story-info">
+
+                            <h3>
+                                Belajar Bersama di Taman Baca
+                            </h3>
+
+                            <span>
+                                Oleh Aldi
+                            </span>
+
+                            <small>
+                                Dikirim : 20 Agustus 2026
+                            </small>
+
+                        </div>
+
+                        <span class="status approved">
+                            Disetujui
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 AGENDA MENDATANG
+            ================================================== -->
+
+            <div class="dashboard-card agenda-card">
+
+                <div class="card-header">
+
+                    <h2>Agenda Mendatang</h2>
+
+                    <a href="agenda.html">
+                        Lihat Semua →
+                    </a>
+
+                </div>
+
+
+                <div class="agenda-list">
+
+
+                    <!-- Agenda 1 -->
+
+                    <div class="agenda-item">
+
+                        <div class="agenda-date">
+
+                            <strong>15</strong>
+
+                            <span>
+                                AGUSTUS
+                            </span>
+
+                        </div>
+
+                        <div class="agenda-info">
+
+                            <h3>
+                                Kerja Bakti Lingkungan
+                            </h3>
+
+                            <p>
+                                <i class="fa-regular fa-clock"></i>
+                                07.00 - 12.00 WIB
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Seluruh wilayah RW 01
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Agenda 2 -->
+
+                    <div class="agenda-item">
+
+                        <div class="agenda-date">
+
+                            <strong>17</strong>
+
+                            <span>
+                                AGUSTUS
+                            </span>
+
+                        </div>
+
+                        <div class="agenda-info">
+
+                            <h3>
+                                Lomba 17 Agustus
+                            </h3>
+
+                            <p>
+                                <i class="fa-regular fa-clock"></i>
+                                08.00 - 17.00 WIB
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Lapangan RW 01
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Agenda 3 -->
+
+                    <div class="agenda-item">
+
+                        <div class="agenda-date">
+
+                            <strong>21</strong>
+
+                            <span>
+                                AGUSTUS
+                            </span>
+
+                        </div>
+
+                        <div class="agenda-info">
+
+                            <h3>
+                                Posyandu Balita
+                            </h3>
+
+                            <p>
+                                <i class="fa-regular fa-clock"></i>
+                                08.00 - 10.00 WIB
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Posyandu RW 01
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 DOKUMENTASI TERBARU
+            ================================================== -->
+
+            <div class="dashboard-card documentation-card">
+
+                <div class="card-header">
+
+                    <h2>Dokumentasi Terbaru</h2>
+
+                    <a href="#">
+                        Lihat Semua →
+                    </a>
+
+                </div>
+
+
+                <div class="documentation-grid">
+
+
+                    <!-- Dokumentasi 1 -->
+
+                    <div class="documentation-item">
+
+                        <img
+                            src="../static/image/17 agustus.jpg"
+                            alt="Karnaval">
+
+                        <strong>
+                            Karnaval 17 Agustus
+                        </strong>
+
+                        <small>
+                            17 Agustus 2026
+                        </small>
+
+                    </div>
+
+
+                    <!-- Dokumentasi 2 -->
+
+                    <div class="documentation-item">
+
+                        <img
+                            src="../static/image/kerja bakti.jpg"
+                            alt="Kerja bakti">
+
+                        <strong>
+                            Kerja Bakti RW 01
+                        </strong>
+
+                        <small>
+                            15 Agustus 2026
+                        </small>
+
+                    </div>
+
+
+                    <!-- Dokumentasi 3 -->
+
+                    <div class="documentation-item">
+
+                        <img
+                            src="../static/image/malam tirakat.jpeg"
+                            alt="Malam tirakat">
+
+                        <strong>
+                            Malam Tirakat RW 01
+                        </strong>
+
+                        <small>
+                            15 Agustus 2026
+                        </small>
+
+                    </div>
+                     <div class="documentation-item">
+
+                        <img
+                            src="../static/image/17 agustus.jpg"
+                            alt="Karnaval">
+
+                        <strong>
+                            Karnaval 17 Agustus
+                        </strong>
+
+                        <small>
+                            17 Agustus 2026
+                        </small>
+
+                    </div>
+
+
+                    <!-- Dokumentasi 2 -->
+
+                    <div class="documentation-item">
+
+                        <img
+                            src="../static/image/kerja bakti.jpg"
+                            alt="Kerja bakti">
+
+                        <strong>
+                            Kerja Bakti RW 01
+                        </strong>
+
+                        <small>
+                            15 Agustus 2026
+                        </small>
+
+                    </div>
+
+
+                    <!-- Dokumentasi 3 -->
+
+                    <div class="documentation-item">
+
+                        <img
+                            src="../static/image/malam tirakat.jpeg"
+                            alt="Malam tirakat">
+
+                        <strong>
+                            Malam Tirakat RW 01
+                        </strong>
+
+                        <small>
+                            15 Agustus 2026
+                        </small>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+         <footer class="admin-footer">
+
+            © 2026 RW KITA | Suku Dinas Komunikasi,
+            Informatika dan Statistik Kota Administrasi
+            Jakarta Timur.
+
+        </footer>
+
+
+    </main>
+
+
+</body>
+
+</html>

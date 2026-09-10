@@ -1,0 +1,579 @@
+html.language-loading body {
+  opacity: 0;
+  pointer-events: none;
+}
+
+body {
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}
+
+.info-hero,
+.produk-filter,
+.produk-statistik,
+.produk-search,
+.produk-list,
+.produk-about{
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+/* ==================================================
+   STATISTIK
+================================================== */
+
+.produk-statistik {
+    margin: 15px auto 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}
+
+
+.statistik-card {
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+
+    padding: 18px 25px;
+
+    background: #fffdf8;
+
+    border: 1px solid #d09100;
+
+    border-radius: 15px;
+
+    box-sizing: border-box;
+}
+
+
+.statistik-icon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fff1d3;
+
+    border-radius: 50%;
+}
+
+
+.statistik-icon img {
+    width: 30px;
+    height: 30px;
+
+    object-fit: contain;
+}
+
+
+.statistik-content h3 {
+    margin: 0 0 5px;
+
+    color: #173a57;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.statistik-content strong {
+    color: #092c4c;
+
+    font-size:18px;
+    font-weight: 800;
+}
+
+
+/* ==================================================
+   FILTER
+================================================== */
+
+.produk-filter {
+    
+    margin: 0 auto 20px;
+    padding: 15px 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background: #fffdf8;
+    border: 1px solid #d09100;
+    border-radius: 15px;
+
+    box-sizing: border-box;
+}
+
+
+/* PENCARIAN */
+.produk-search {
+    flex: 1;
+    min-width: 0;
+}
+
+.produk-search input {
+    width: 100%;
+    height: 42px;
+
+    padding: 0 15px;
+
+    background: #fffdf8;
+    border: 1px solid #e1c47a;
+    border-radius: 10px;
+
+    color: #536b7d;
+    font-size: 13px;
+
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+/* SELECT */
+.produk-filter select {
+    width: 150px;
+    flex-shrink: 0;
+
+    height: 42px;
+    padding: 0 12px;
+
+    background: #fffdf8;
+    border: 1px solid #e1c47a;
+    border-radius: 10px;
+
+    color: #536b7d;
+    font-size: 13px;
+
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+/* FOCUS */
+.produk-search input:focus,
+.produk-filter select:focus {
+    border-color: #d09100;
+}
+
+
+/* TOMBOL CARI */
+.produk-search-btn {
+    width: 95px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #d09100;
+    color: white;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+.produk-search-btn img{
+     width: 12px;
+    height: 12px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+/* ==================================================
+   DAFTAR DOKUMEN
+================================================== */
+
+.produk-list {
+
+    margin: 0 auto 35px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px 35px;
+}
+
+
+.produk-card {
+    min-height: 205px;
+
+    padding: 12px;
+
+    background: #fffdf8;
+
+    border: 1px solid #d09100;
+
+    border-radius: 12px;
+
+    box-sizing: border-box;
+}
+
+
+.produk-label {
+    display: inline-block;
+
+    padding: 4px 15px;
+
+    margin-bottom: 8px;
+
+    background: #15548a;
+
+    color: white;
+
+    border-radius: 3px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+.produk-card h3 {
+    margin: 0 0 8px;
+
+    color: #173a57;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+
+.produk-card p {
+    margin: 0 0 8px;
+
+    color: #536b7d;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+.produk-card hr {
+    margin: 8px 0;
+
+    border: none;
+
+    border-top: 1px solid #e1c47a;
+}
+
+
+.produk-description {
+    min-height: 42px;
+}
+
+
+/* ==================================================
+   BUTTON
+================================================== */
+
+.produk-actions {
+     display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+
+.produk-actions a {
+    height: 32px;
+    min-width: 125px; /* bikin tombol sedikit lebih panjang */
+
+    padding: 0 15px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+.btn-detail {
+    background: #fffdf8;
+
+    color: #536b7d;
+
+    border: 1px solid #d09100;
+}
+
+
+.btn-unduh {
+    background: #d09100;
+
+    color: white;
+
+    border: 1px solid #d09100;
+
+}
+.btn-unduh img {
+   width: 12px;
+    height: 12px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin: 0 5px 0;
+}
+
+
+/* ==================================================
+   TENTANG PRODUK HUKUM
+================================================== */
+
+.produk-about {
+    margin: 0 auto 20px;
+
+    padding: 22px 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    background: #fffdf8;
+
+    border: 1px solid #d09100;
+
+    border-radius: 15px;
+
+    box-sizing: border-box;
+}
+
+
+.produk-about-content {
+    flex: 1;
+
+    padding-right: 30px;
+}
+
+
+.produk-about-content h2 {
+    margin: 0 0 8px;
+
+    color: #092c4c;
+
+    font-size: 15px;
+
+    font-weight: 800;
+}
+
+
+.produk-about-content p {
+    margin: 0;
+
+    color: #536b7d;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+.produk-about-side {
+     display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    width: 30%;
+
+    padding-left: 25px;
+
+    border-left: 2px solid #d09100;
+    box-sizing: border-box;
+}
+.produk-about-text {
+    flex: 1;
+}
+.produk-about-side img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.produk-about-text {
+    flex: 1;
+}
+
+.produk-about-side h3 {
+    margin: 0 0 6px;
+
+    color: #173a57;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+
+.produk-about-side p {
+    margin: 0;
+
+    color: #536b7d;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+}
+
+
+/* ==================================================
+   PAGINATION
+================================================== */
+
+.produk-pagination {
+    display: flex;
+
+    justify-content: center;
+
+    margin: 15px auto 20px;
+}
+
+
+.produk-pagination a {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #fffdf8;
+
+    border: 1px solid #ddd;
+
+    color: #173a57;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+
+.produk-pagination a:first-child {
+    border-radius: 6px 0 0 6px;
+}
+
+
+.produk-pagination a:last-child {
+    border-radius: 0 6px 6px 0;
+}
+
+
+.produk-pagination a.active {
+    background: #d09100;
+
+    color: white;
+
+    border-color: #d09100;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 900px) {
+
+    .produk-statistik {
+        gap: 15px;
+    }
+
+    .produk-list {
+        width: calc(100% - 50px);
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .produk-filter {
+        flex-wrap: wrap;
+    }
+
+    .produk-search {
+        width: 100%;
+    }
+
+    .produk-filter select {
+        width: calc(33.333% - 10px);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .info-page {
+        padding: 10px 15px 30px;
+    }
+
+    .info-hero {
+        width: 100%;
+
+        height: auto;
+
+        grid-template-columns: 1fr;
+    }
+
+    .info-hero-image {
+        height: 180px;
+    }
+
+    .produk-statistik {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+    }
+
+    .produk-filter {
+        width: 100%;
+    }
+
+    .produk-filter select {
+        width: 100%;
+    }
+
+    .produk-list {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+    }
+
+    .produk-about {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .produk-about-content {
+        padding-right: 0;
+    }
+
+    .produk-about-side {
+        width: 100%;
+
+        margin-top: 15px;
+
+        padding-left: 15px;
+    }
+}

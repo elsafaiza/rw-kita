@@ -1,0 +1,620 @@
+
+/* =========================================================
+   RESET KHUSUS HALAMAN
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    background: var(--cream);
+
+    font-family: "Poppins", sans-serif;
+
+    color: var(--text);
+
+}
+
+
+
+/* =========================================================
+   FORM CONTAINER
+========================================================= */
+
+.agenda-form-container {
+
+    width: 100%;
+
+    background: transparent;
+
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.agenda-form {
+
+    width: 100%;
+
+    min-height: 0;
+    height: auto;
+
+    padding: 5px 0 0;
+
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.form-group {
+
+    min-width: 0;
+
+    margin-bottom: 23px;
+
+}
+
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #071f41;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+.form-group label span {
+
+    color: #e04444;
+
+    margin-left: 2px;
+
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.form-group input {
+
+    width: 100%;
+
+    height: 43px;
+
+    padding: 0 13px;
+
+    border: 1px solid #082f57;
+
+    border-radius: 8px;
+
+    background: #fff;
+
+    color: #082f57;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    outline: none;
+
+    transition: 0.2s ease;
+
+}
+
+
+.form-group input::placeholder {
+
+    color: #b2bac5;
+
+}
+
+
+.form-group input:focus {
+
+    border-color: var(--gold);
+
+    box-shadow:
+        0 0 0 2px rgba(217, 151, 0, 0.10);
+
+}
+
+
+/* =========================================================
+   JUDUL
+========================================================= */
+
+.full-width {
+
+    width: 100%;
+
+}
+
+
+.input-with-counter {
+
+    position: relative;
+
+    width: 100%;
+
+}
+
+
+.input-with-counter input {
+
+    padding-right: 55px;
+
+}
+
+
+.input-with-counter small {
+
+    position: absolute;
+
+    right: 0;
+
+    bottom: -23px;
+
+    color: #1d1d1d;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   FORM ROW
+========================================================= */
+
+.form-row {
+
+    display: grid;
+
+    align-items: end;
+
+}
+
+
+.time-row {
+
+    grid-template-columns:
+        minmax(200px, 300px)
+        minmax(200px, 1fr)
+        35px
+        minmax(200px, 1fr);
+
+    gap: 20px;
+
+}
+
+
+/* =========================================================
+   TIME SEPARATOR
+========================================================= */
+
+.time-separator {
+
+    height: 43px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #303030;
+
+    font-size: 18px;
+
+}
+
+
+.invisible-label {
+
+    visibility: hidden;
+
+}
+
+
+/* =========================================================
+   DATE / TIME INPUT
+========================================================= */
+
+.input-icon {
+
+    position: relative;
+
+}
+
+
+.input-icon input {
+
+    padding-right: 15px;
+
+}
+
+/* =========================================================
+   LOCATION
+========================================================= */
+
+.location-group {
+
+    width: 290px;
+
+    margin-top: 5px;
+
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.status-group {
+
+    width: 290px;
+
+    margin-top: 28px;
+
+}
+
+
+/* =========================================================
+   SELECT
+========================================================= */
+
+.select-wrapper {
+
+    position: relative;
+
+    width: 100%;
+
+}
+
+
+.select-wrapper select {
+
+    width: 100%;
+
+    height: 43px;
+
+    padding: 0 40px 0 13px;
+
+    border: 1px solid #082f57;
+
+    border-radius: 8px;
+
+    background: #fff;
+
+    color: #082f57;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    outline: none;
+
+    appearance: none;
+
+    -webkit-appearance: none;
+
+    cursor: pointer;
+
+}
+
+
+.select-wrapper select:focus {
+
+    border-color: var(--gold);
+
+    box-shadow:
+        0 0 0 2px rgba(217, 151, 0, 0.10);
+
+}
+
+
+.select-wrapper > i {
+
+    position: absolute;
+
+    right: 14px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #4f5967;
+
+    font-size: 11px;
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================================
+   FORM ACTIONS
+========================================================= */
+
+.form-actions {
+
+     display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 35px;
+
+    padding-bottom: 25px;
+
+}
+
+
+/* =========================================================
+   BUTTON BASE
+========================================================= */
+
+.btn-cancel,
+.btn-draft,
+.btn-publish {
+
+    height: 42px;
+
+    border-radius: 9px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+
+}
+
+
+/* =========================================================
+   BATAL
+========================================================= */
+
+.btn-cancel {
+
+    min-width: 108px;
+
+    padding: 0 20px;
+
+    border: 1px solid #cfcfcf;
+
+    background: white;
+
+    color: #1b1b1b;
+
+}
+
+
+.btn-cancel:hover {
+
+    background: #f5f5f5;
+
+}
+
+
+/* =========================================================
+   SIMPAN DRAFT
+========================================================= */
+
+.btn-draft {
+
+    min-width: 170px;
+
+    padding: 0 20px;
+
+    border: 1px solid var(--gold);
+
+    background: white;
+
+    color: var(--gold);
+
+}
+
+
+.btn-draft:hover {
+
+    background: var(--gold-light);
+
+}
+
+
+/* =========================================================
+   SIMPAN & PUBLIKASIKAN
+========================================================= */
+
+.btn-publish {
+
+    min-width: 230px;
+
+    padding: 0 25px;
+
+    border: 1px solid var(--gold);
+
+    background: var(--gold);
+
+    color: white;
+
+}
+
+
+.btn-publish:hover {
+
+    background: var(--gold-dark);
+
+    border-color: var(--gold-dark);
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.page-footer {
+
+    width: 100%;
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    padding: 0 0 5px;
+
+    color: #718096;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .main-content {
+
+        padding: 25px;
+
+    }
+
+
+    .time-row {
+
+        grid-template-columns:
+            1fr
+            1fr;
+
+    }
+
+
+    .time-separator {
+
+        display: none;
+
+    }
+
+
+    .time-end .invisible-label {
+
+        display: none;
+
+    }
+
+
+    .location-group,
+    .status-group {
+
+        width: 100%;
+
+    }
+
+
+    .form-actions {
+
+        margin-top: 100px;
+
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .main-content {
+
+        margin-left: 0;
+
+        padding: 20px;
+
+    }
+
+
+    .page-header {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+    }
+
+
+    .header-right {
+
+        width: 100%;
+
+        justify-content: flex-end;
+
+    }
+
+
+    .time-row {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .form-actions {
+
+        justify-content: stretch;
+
+        flex-wrap: wrap;
+
+        margin-top: 60px;
+
+    }
+
+
+    .btn-cancel,
+    .btn-draft,
+    .btn-publish {
+
+        flex: 1;
+
+    }
+
+}

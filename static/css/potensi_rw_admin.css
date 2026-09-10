@@ -1,0 +1,998 @@
+/* =========================================================
+   POTENSI RW ADMIN
+========================================================= */
+
+
+/* =========================================================
+   PAGE TOOLBAR
+========================================================= */
+
+.potensi-toolbar {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.potensi-search {
+
+    width: 300px;
+
+    height: 42px;
+
+    border: 1px solid #cfd5dc;
+
+    border-radius: 8px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 13px;
+
+    box-sizing: border-box;
+
+}
+
+
+.potensi-search i {
+
+    font-size: 17px;
+
+    color: #687383;
+
+}
+
+
+.potensi-search input {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    color: var(--text);
+
+}
+
+
+.potensi-search input::placeholder {
+
+    color: #9aa2ad;
+
+}
+
+
+/* =========================================================
+   FILTER
+========================================================= */
+
+.potensi-filter {
+
+    width: 190px;
+
+    height: 42px;
+
+    padding: 0 12px;
+
+    border: 1px solid #cfd5dc;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: var(--text);
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    outline: none;
+
+    cursor: pointer;
+
+}
+
+
+.potensi-filter:focus {
+
+    border-color: var(--gold);
+
+}
+
+
+.potensi-sort {
+
+    width: 150px;
+
+}
+
+
+/* =========================================================
+   ADD BUTTON
+========================================================= */
+
+.btn-add-potensi {
+
+    margin-left: auto;
+
+    height: 42px;
+
+    padding: 0 18px;
+
+    border-radius: 8px;
+
+    background: var(--gold);
+
+    color: white;
+
+    text-decoration: none;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.2s ease;
+
+}
+
+
+.btn-add-potensi:hover {
+
+    background: var(--gold-dark);
+
+}
+
+
+/* =========================================================
+   POTENSI CARD
+========================================================= */
+
+.potensi-card {
+
+    width: 100%;
+
+    background: white;
+
+    border: 1px solid #e0e3e7;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* =========================================================
+   TABLE WRAPPER
+========================================================= */
+
+.table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.potensi-table {
+
+    width: 100%;
+
+    min-width: 1050px;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+
+}
+
+
+/* =========================================================
+   TABLE HEADER
+========================================================= */
+
+.potensi-table thead {
+
+    background: #ffffff;
+
+}
+
+
+.potensi-table th {
+
+    height: 52px;
+
+    padding: 0 14px;
+
+    border-bottom: 1px solid #e1e4e8;
+
+    color: #101f34;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    text-align: left;
+
+    white-space: nowrap;
+
+}
+
+
+/* =========================================================
+   COLUMN WIDTH
+========================================================= */
+
+.potensi-table .col-no {
+
+    width: 45px;
+
+    text-align: center;
+
+}
+
+
+.potensi-table .col-potensi {
+
+    width: 39%;
+
+}
+
+
+.potensi-table .col-kategori {
+
+    width: 115px;
+
+}
+
+
+.potensi-table .col-lokasi {
+
+    width: 155px;
+
+}
+
+
+.potensi-table .col-kontak {
+
+    width: 115px;
+
+}
+
+
+.potensi-table .col-aksi {
+
+    width: 115px;
+
+    text-align: center;
+
+}
+
+
+/* =========================================================
+   TABLE ROW
+========================================================= */
+
+.potensi-table tbody tr {
+
+    border-bottom: 1px solid #e5e7ea;
+
+    transition: background 0.15s ease;
+
+}
+
+
+.potensi-table tbody tr:hover {
+
+    background: #fffdf8;
+
+}
+
+
+.potensi-table tbody tr:last-child {
+
+    border-bottom: none;
+
+}
+
+
+/* =========================================================
+   TABLE CELL
+========================================================= */
+
+.potensi-table td {
+
+    padding: 12px 14px;
+
+    color: #172c46;
+
+    font-size: 11px;
+
+    vertical-align: middle;
+
+}
+
+
+.potensi-table td.number {
+
+    text-align: center;
+
+    font-weight: 600;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   POTENSI INFORMATION
+========================================================= */
+
+.potensi-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.potensi-info img {
+
+    width: 82px;
+
+    height: 62px;
+
+    object-fit: cover;
+
+    border-radius: 7px;
+
+    flex-shrink: 0;
+
+}
+
+
+.potensi-info h3 {
+
+    margin: 0 0 4px;
+
+    color: #082f57;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+.potensi-info p {
+
+    margin: 0;
+
+    color: #697688;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+    display: -webkit-box;
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================================
+   CATEGORY BADGE
+========================================================= */
+
+.category-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 25px;
+
+    padding: 3px 10px;
+
+    border-radius: 6px;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+}
+
+
+/* UMKM */
+
+.category-umkm {
+
+    color: #c18400;
+
+    border: 1px solid #e6bd66;
+
+    background: #fffaf0;
+
+}
+
+
+/* Bank Sampah */
+
+.category-sampah {
+
+    color: #4f8a48;
+
+    border: 1px solid #91c589;
+
+    background: #f4fbf3;
+
+}
+
+
+/* Urban Farming */
+
+.category-farming {
+
+    color: #4c5f3b;
+
+    border: 1px solid #a3b18f;
+
+    background: #daf4de;
+
+}
+
+
+/* Kampung Tematik */
+
+.category-kampung {
+
+    color: #df4141;
+
+    border: 1px solid #ee9292;
+
+    background: #fff6f6;
+
+}
+
+
+/* Wisata */
+
+.category-wisata {
+
+    color: #2589c8;
+
+    border: 1px solid #8ac7ec;
+
+    background: #f2f9fd;
+
+}
+
+
+/* Inovasi */
+
+.category-inovasi {
+
+    color: #bdbd00;
+
+    border: 1px solid #e4d86d;
+
+    background: #fffef0;
+
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.action-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+}
+
+
+.action-buttons a {
+
+    width: 29px;
+
+    height: 29px;
+
+    border: 1px solid #d8dce1;
+
+    border-radius: 7px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    background: white;
+
+    transition: 0.15s ease;
+
+}
+
+
+.action-buttons a i {
+
+    font-size: 13px;
+
+}
+
+
+/* View */
+
+.action-view {
+
+    color: #56606d;
+
+}
+
+
+.action-view:hover {
+
+    background: #f3f5f7;
+
+}
+
+
+/* Edit */
+
+.action-edit {
+
+    color: #56606d;
+
+}
+
+
+.action-edit:hover {
+
+    background: #fff8e8;
+
+    border-color: var(--gold);
+
+    color: var(--gold-dark);
+
+}
+
+
+/* Delete */
+
+.action-delete {
+
+    color: #e04444 !important;
+
+    border-color: #f08b8b !important;
+
+}
+
+
+.action-delete:hover {
+
+    background: #fff2f2 !important;
+
+}
+
+
+/* =========================================================
+   TABLE FOOTER
+========================================================= */
+
+.table-footer {
+
+    min-height: 65px;
+
+    padding: 0 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-top: 1px solid #e1e4e8;
+
+}
+
+
+.table-footer p {
+
+    margin: 0;
+
+    color: #687586;
+
+    font-size: 11px;
+
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.pagination {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+}
+
+
+.pagination a {
+
+    width: 32px;
+
+    height: 32px;
+
+    border: 1px solid #d9dde2;
+
+    border-radius: 7px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    color: #173554;
+
+    background: white;
+
+    font-size: 11px;
+
+    transition: 0.15s ease;
+
+}
+
+
+.pagination a:hover {
+
+    border-color: var(--gold);
+
+    color: var(--gold-dark);
+
+}
+
+
+.pagination a.active {
+
+    background: var(--gold);
+
+    border-color: var(--gold);
+
+    color: white;
+
+    font-weight: 600;
+
+}
+
+
+.pagination .page-arrow i {
+
+    font-size: 10px;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.page-footer {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #687586;
+
+    font-size: 10px;
+
+}
+
+
+/* =========================================================
+   ADMIN DROPDOWN
+========================================================= */
+
+.sidebar-admin-dropdown {
+
+    position: relative;
+
+    margin-top: auto;
+
+    margin-left: 20px;
+
+    margin-right: 20px;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* Hilangkan marker bawaan */
+
+.sidebar-admin-dropdown summary {
+
+    list-style: none;
+
+    cursor: pointer;
+
+}
+
+
+.sidebar-admin-dropdown summary::-webkit-details-marker {
+
+    display: none;
+
+}
+
+
+/* Jangan gunakan margin dari .sidebar-admin
+   karena parent sudah menangani margin */
+
+.sidebar-admin-dropdown .sidebar-admin {
+
+    margin: 0;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+}
+
+
+/* Saat dibuka */
+
+.sidebar-admin-dropdown[open] .admin-arrow {
+
+    transform: rotate(180deg);
+
+}
+
+
+.admin-arrow {
+
+    transition: transform 0.2s ease;
+
+}
+
+
+/* =========================================================
+   ADMIN DROPDOWN MENU
+========================================================= */
+
+.admin-dropdown-menu {
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 72px;
+
+    width: 100%;
+
+    background: white;
+
+    border-radius: 9px;
+
+    padding: 6px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.18);
+
+    border: 1px solid #e1e4e8;
+
+}
+
+
+.admin-dropdown-menu a {
+
+    height: 38px;
+
+    padding: 0 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    color: #e04444;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+}
+
+
+.admin-dropdown-menu a:hover {
+
+    background: #fff2f2;
+
+}
+
+
+.admin-dropdown-menu a i {
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .potensi-toolbar {
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .btn-add-potensi {
+
+        margin-left: 0;
+
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .potensi-search {
+
+        width: 100%;
+
+    }
+
+
+    .potensi-filter {
+
+        flex: 1;
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .main-content {
+
+        padding: 20px;
+
+    }
+
+
+    .dashboard-header {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+    }
+
+
+    .header-right {
+
+        width: 100%;
+
+        justify-content: flex-end;
+
+    }
+
+
+    .potensi-toolbar {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .potensi-search,
+
+    .potensi-filter,
+
+    .potensi-sort,
+
+    .btn-add-potensi {
+
+        width: 100%;
+
+    }
+
+
+    .table-footer {
+
+        flex-direction: column;
+
+        gap: 12px;
+
+        padding: 15px;
+
+    }
+
+}

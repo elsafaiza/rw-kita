@@ -1,0 +1,600 @@
+:root {
+
+    --navy: #062b52;
+    --navy-dark: #031f3c;
+
+    --gold: #dfa000;
+    --gold-dark: #c98c00;
+    --gold-light: #fff5d9;
+
+    --text: #10294b;
+    --muted: #718096;
+
+    --border: #dfe5ec;
+
+    --background: #f7f9fb;
+
+    --white: #ffffff;
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    font-family: "Poppins", sans-serif;
+
+    background: var(--background);
+
+    color: var(--text);
+
+}
+
+
+/* =========================================================
+   FORM CARD
+========================================================= */
+
+.form-card {
+
+    max-width: 1000px;
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    padding: 25px;
+
+}
+
+
+/* =========================================================
+   FORM HEADING
+========================================================= */
+
+.form-heading {
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #edf0f3;
+
+    margin-bottom: 23px;
+
+}
+
+
+.form-heading h2 {
+
+    font-size: 13px;
+
+    margin-bottom: 4px;
+
+}
+
+
+.form-heading p {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   FORM LAYOUT
+========================================================= */
+
+.form-layout {
+
+    display: grid;
+
+    grid-template-columns: 175px 1fr;
+
+    gap: 35px;
+
+}
+
+
+/* =========================================================
+   PHOTO
+========================================================= */
+
+.photo-section {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+
+.field-label {
+
+    align-self: flex-start;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-bottom: 9px;
+
+}
+
+
+.photo-preview {
+
+    width: 135px;
+
+    height: 150px;
+
+    border: 1px dashed #cbd3dc;
+
+    border-radius: 8px;
+
+    background: #fafbfc;
+
+    color: #9aa6b4;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+
+    overflow: hidden;
+
+}
+
+
+.photo-preview img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.upload-button {
+
+    margin-top: 11px;
+
+    height: 32px;
+
+    padding: 0 12px;
+
+    border: 1px solid #d6dde4;
+
+    border-radius: 6px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+
+.upload-button:hover {
+
+    border-color: var(--gold);
+
+    color: var(--gold-dark);
+
+}
+
+
+.photo-info {
+
+    margin-top: 8px;
+
+    text-align: center;
+
+    color: var(--muted);
+
+    font-size: 10px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================================
+   FIELDS
+========================================================= */
+
+.fields {
+
+    max-width: 650px;
+
+}
+
+
+.form-group {
+
+    margin-bottom: 16px;
+
+}
+
+
+.form-group label {
+
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-bottom: 6px;
+
+}
+
+
+.form-group label span {
+
+    color: #df2020;
+
+}
+
+
+.form-group label em {
+
+    color: var(--muted);
+
+    font-style: normal;
+
+    font-weight: 400;
+
+}
+
+
+.form-group input,
+.form-group textarea {
+
+    width: 100%;
+
+    border: 1px solid #dfe4ea;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    padding: 9px 11px;
+
+    background: white;
+
+    color: var(--text);
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    transition: .2s ease;
+
+}
+
+
+.form-group input {
+
+    height: 37px;
+
+}
+
+
+.form-group textarea {
+
+    min-height: 90px;
+
+    resize: vertical;
+
+    line-height: 1.6;
+
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+
+    border-color: var(--gold);
+
+    box-shadow:
+        0 0 0 2px
+        rgba(223,160,0,.08);
+
+}
+
+
+/* =========================================================
+   NOMOR RT
+========================================================= */
+
+.rt-input {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.rt-input span {
+
+    height: 37px;
+
+    padding: 0 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #dfe4ea;
+
+    border-right: none;
+
+    border-radius: 6px 0 0 6px;
+
+    background: #f8fafc;
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+}
+
+
+.rt-input input {
+
+    border-radius: 0 6px 6px 0;
+
+}
+
+
+/* =========================================================
+   PERIOD
+========================================================= */
+
+.period {
+
+    display: grid;
+
+    grid-template-columns: 1fr 35px 1fr;
+
+    align-items: center;
+
+    gap: 9px;
+
+}
+
+
+.period span {
+
+    text-align: center;
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+}
+
+
+.counter {
+
+    text-align: right;
+
+    margin-top: 4px;
+
+    color: var(--muted);
+
+    font-size: 10px;
+
+}
+
+
+/* =========================================================
+   ACTION
+========================================================= */
+
+.form-actions {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 9px;
+
+    margin-top: 27px;
+
+    padding-top: 17px;
+
+    border-top: 1px solid #edf0f3;
+
+}
+
+
+.btn-cancel,
+.btn-save {
+
+    height: 36px;
+
+    padding: 0 16px;
+
+    border-radius: 6px;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+}
+
+
+.btn-cancel {
+
+    border: 1px solid #d4dbe3;
+
+    background: white;
+
+    color: #687588;
+
+}
+
+
+.btn-save {
+
+    border: 1px solid var(--gold);
+
+    background: var(--gold);
+
+    color: white;
+
+}
+
+
+.btn-save:hover {
+
+    background: var(--gold-dark);
+
+}
+
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .sidebar {
+
+        width: 200px;
+
+    }
+
+
+    .main-content {
+
+        margin-left: 200px;
+
+        padding: 20px;
+
+    }
+
+
+    .header-right {
+
+        display: none;
+
+    }
+
+
+    .form-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .photo-section {
+
+        align-items: flex-start;
+
+    }
+
+
+    .field-label {
+
+        align-self: flex-start;
+
+    }
+
+
+    .fields {
+
+        max-width: none;
+
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .sidebar {
+
+        position: relative;
+
+        width: 100%;
+
+    }
+
+
+    .main-content {
+
+        margin-left: 0;
+
+    }
+
+
+    .page-header {
+
+        flex-direction: column;
+
+        gap: 12px;
+
+    }
+
+
+    .form-card {
+
+        padding: 18px;
+
+    }
+
+}

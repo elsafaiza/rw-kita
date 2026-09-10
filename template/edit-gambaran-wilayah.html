@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Gambaran Wilayah - RW Kita</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="../static/css/edit-gambaran-wilayah.css">
+    <link rel="stylesheet" href="../static/css/global.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+   <aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="sidebar-logo">
+            <img
+                src="../static/image/Logo_Footer.png"
+                alt="RW Kita">
+        </div>
+
+
+        <!-- Menu Sidebar -->
+        <nav class="sidebar-menu">
+
+                <!-- ==================================================
+                    UTAMA
+                ================================================== -->
+
+                <div class="menu-label">
+                    UTAMA
+                </div>
+
+                <a href="dashboard_admin.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+
+                <!-- ==================================================
+                    KONTEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    KONTEN
+                </div>
+
+                <a href="berita.html" class="menu-item">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <span>Berita</span>
+                </a>
+
+                <a href="artikel_admin.html" class="menu-item">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Artikel</span>
+                </a>
+
+                <a href="pengumuman.html" class="menu-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Pengumuman</span>
+                </a>
+
+                <a href="agenda.html" class="menu-item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Agenda</span>
+                </a>
+
+                <a href="cerita_warga.html" class="menu-item">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Cerita Warga</span>
+                </a>
+
+
+                <!-- ==================================================
+                    INFORMASI RW
+                ================================================== -->
+
+                <div class="menu-label">
+                    INFORMASI RW
+                </div>
+
+                <a href="profil_rw_admin.html" class="menu-item active">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Profil RW</span>
+                </a>
+
+                <a href="potensi_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Potensi RW</span>
+                </a>
+
+                <a href="dokumentasi.html" class="menu-item">
+                    <i class="fa-regular fa-images"></i>
+                    <span>Dokumentasi</span>
+                </a>
+
+
+                <!-- ==================================================
+                    DOKUMEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    DOKUMEN
+                </div>
+
+                <a href="produk_hukum_admin.html" class="menu-item">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Produk Hukum</span>
+                </a>
+
+                <a href="arsip_digital_admin.html" class="menu-item">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <span>Arsip Digital</span>
+                </a>
+
+
+                <!-- ==================================================
+                    PENGELOLAAN
+                ================================================== -->
+
+                <div class="menu-label">
+                    PENGELOLAAN
+                </div>
+
+                <a href="pengaturan-admin.html" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Pengaturan</span>
+                </a>
+
+            </nav>
+
+
+                <!-- ==================================================
+                PROFIL ADMIN
+            ================================================== -->
+
+            <details class="admin-profile">
+
+                <summary class="sidebar-admin">
+
+                    <div class="admin-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="admin-info">
+                        <strong>Admin RW01</strong>
+                        <small>Administrator</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down admin-arrow"></i>
+
+                </summary>
+
+
+                <!-- DROPDOWN LOGOUT -->
+
+                <div class="admin-dropdown">
+
+                    <a href="beranda_RW.html" class="admin-logout">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <span>Logout</span>
+
+                    </a>
+
+                </div>
+
+            </details>
+    </aside>
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main class="main-content">
+
+
+    <!-- HEADER -->
+
+     <header class="page-header">
+
+        <div class="header-title">
+            <h1>Edit Gambaran Wilayah</h1>
+
+            <p>
+                Kelola informasi wilayah yang ditampilkan pada halaman Profil RW.
+            </p>
+
+        </div>
+
+
+       <div class="header-right">
+
+
+                <!-- Notification -->
+                <button class="notification-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- Pilihan RW -->
+                <div class="rw-selector">
+
+                    <div class="rw-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="rw-text">
+
+                        <strong>RW 01</strong>
+
+                        <small>
+                            Kel. XYZ, Kec. XYZ
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+    <!-- =====================================================
+         CONTENT
+    ====================================================== -->
+
+    <section class="edit-layout">
+
+
+        <!-- FORM -->
+
+        <div class="form-card">
+
+            <div class="card-heading">
+
+                <div>
+                    <h2>Gambaran Wilayah</h2>
+
+                    <p>
+                        Informasi mengenai kondisi dan wilayah RW.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- DATA WILAYAH -->
+
+            <div class="form-section">
+
+                <div class="section-title">
+
+                    <div class="section-number">
+                        1
+                    </div>
+
+                    <div>
+                        <h3>Data Wilayah</h3>
+
+                        <p>
+                            Informasi dasar mengenai wilayah RW.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="input-grid">
+
+                    <div class="form-group">
+
+                        <label>
+                            Luas Wilayah
+                        </label>
+
+                        <div class="input-with-unit">
+
+                            <input
+                                type="text"
+                                value="12,5"
+                                placeholder="Contoh: 12,5"
+                            >
+
+                            <span>Ha</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Jumlah RT
+                        </label>
+
+                        <div class="input-with-unit">
+
+                            <input
+                                type="number"
+                                value="18"
+                                placeholder="Jumlah RT"
+                            >
+
+                            <span>RT</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Jumlah Kepala Keluarga
+                        </label>
+
+                        <div class="input-with-unit">
+
+                            <input
+                                type="number"
+                                value="245"
+                                placeholder="Jumlah KK"
+                            >
+
+                            <span>KK</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BATAS WILAYAH -->
+
+            <div class="form-section">
+
+                <div class="section-title">
+
+                    <div class="section-number">
+                        2
+                    </div>
+
+                    <div>
+                        <h3>Batas Wilayah</h3>
+
+                        <p>
+                            Masukkan batas wilayah RW berdasarkan arah mata angin.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="boundary-grid">
+
+                    <div class="form-group">
+
+                        <label>Utara</label>
+
+                        <input
+                            type="text"
+                            value="RW 02"
+                            placeholder="Batas wilayah utara"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Selatan</label>
+
+                        <input
+                            type="text"
+                            value="RW 05"
+                            placeholder="Batas wilayah selatan"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Timur</label>
+
+                        <input
+                            type="text"
+                            value="Kelurahan ABC"
+                            placeholder="Batas wilayah timur"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Barat</label>
+
+                        <input
+                            type="text"
+                            value="RW 03"
+                            placeholder="Batas wilayah barat"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DESKRIPSI -->
+
+            <div class="form-section">
+
+                <div class="section-title">
+
+                    <div class="section-number">
+                        3
+                    </div>
+
+                    <div>
+                        <h3>Deskripsi Wilayah</h3>
+
+                        <p>
+                            Jelaskan kondisi dan karakteristik wilayah RW.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Deskripsi <span>*</span>
+                    </label>
+
+                    <textarea
+                        id="deskripsi"
+                        maxlength="1000"
+                        placeholder="Tuliskan gambaran wilayah RW..."
+                    >RW 01 merupakan bagian dari Kelurahan XYZ yang memiliki lingkungan permukiman yang nyaman dan berkembang. Wilayah RW 01 terdiri dari beberapa RT dengan masyarakat yang aktif dalam berbagai kegiatan sosial dan kemasyarakatan.</textarea>
+
+
+                    <div class="textarea-footer">
+
+                        <span>
+                            Maksimal 1000 karakter
+                        </span>
+
+                        <span id="descCounter">
+                            0/1000
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- GAMBAR -->
+
+            <div class="form-section">
+
+                <div class="section-title">
+
+                    <div class="section-number">
+                        4
+                    </div>
+
+                    <div>
+                        <h3>Foto / Peta Wilayah</h3>
+
+                        <p>
+                            Tambahkan gambar yang mewakili wilayah RW.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="upload-box">
+
+                    <input
+                        type="file"
+                        id="wilayahImage"
+                        accept="image/png,image/jpeg,image/webp"
+                    >
+
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                    <strong>
+                        Klik untuk mengunggah gambar
+                    </strong>
+
+                    <span>
+                        atau seret file ke sini
+                    </span>
+
+                    <small>
+                        JPG, PNG, WebP (Maks. 2MB)
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PREVIEW
+        ================================================== -->
+
+        <aside class="preview-card">
+
+            <div class="preview-heading">
+
+                <div class="preview-icon">
+                    <i class="fa-regular fa-eye"></i>
+                </div>
+
+                <div>
+
+                    <h2>Preview</h2>
+
+                    <p>
+                        Tampilan pada halaman Profil RW
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="preview-content">
+
+                <div class="preview-image">
+
+                    <img
+                        id="previewImage"
+                        src="../static/image/gambaran wilayah.jpg"
+                        alt="Gambaran Wilayah"
+                    >
+
+                </div>
+
+
+                <h3>
+                    Gambaran Wilayah
+                </h3>
+
+                <div class="gold-line"></div>
+
+
+                <p
+                    class="preview-description"
+                    id="previewDescription"
+                >
+                    RW 01 merupakan bagian dari Kelurahan XYZ yang memiliki
+                    lingkungan permukiman yang nyaman dan berkembang.
+                </p>
+
+
+                <div class="preview-stats">
+
+                    <div class="preview-stat">
+
+                        <i class="fa-solid fa-map"></i>
+
+                        <div>
+                            <strong>12,5 Ha</strong>
+                            <small>Luas Wilayah</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="preview-stat">
+
+                        <i class="fa-solid fa-house"></i>
+
+                        <div>
+                            <strong>18 RT</strong>
+                            <small>Jumlah RT</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="preview-stat">
+
+                        <i class="fa-solid fa-users"></i>
+
+                        <div>
+                            <strong>245 KK</strong>
+                            <small>Kepala Keluarga</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="preview-boundary">
+
+                    <h4>
+                        <i class="fa-solid fa-compass"></i>
+                        Batas Wilayah
+                    </h4>
+
+                    <p>
+                        <strong>Utara:</strong> RW 02
+                    </p>
+
+                    <p>
+                        <strong>Selatan:</strong> RW 05
+                    </p>
+
+                    <p>
+                        <strong>Timur:</strong> Kelurahan ABC
+                    </p>
+
+                    <p>
+                        <strong>Barat:</strong> RW 03
+                    </p>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </section>
+
+
+
+    <!-- ACTION -->
+
+    <div class="bottom-actions">
+
+        <a
+            href="profil_rw_admin.html"
+            class="btn-cancel"
+        >
+            Batal
+        </a>
+
+
+        <button class="btn-save">
+
+            <i class="fa-solid fa-floppy-disk"></i>
+
+            Simpan Perubahan
+
+        </button>
+
+    </div>
+
+
+    <footer class="admin-footer">
+
+            © 2026 RW KITA | Suku Dinas Komunikasi,
+            Informatika dan Statistik Kota Administrasi
+            Jakarta Timur.
+
+        </footer>
+
+</main>
+
+
+
+<script>
+
+    /* =====================================================
+       ADMIN DROPDOWN
+    ====================================================== */
+
+    const adminProfile =
+        document.getElementById("adminProfile");
+
+    const adminDropdown =
+        document.getElementById("adminDropdown");
+
+
+    adminProfile.addEventListener("click", function () {
+
+        adminDropdown.classList.toggle("show");
+
+    });
+
+
+    document.addEventListener("click", function (event) {
+
+        if (
+            !adminProfile.contains(event.target) &&
+            !adminDropdown.contains(event.target)
+        ) {
+
+            adminDropdown.classList.remove("show");
+
+        }
+
+    });
+
+
+
+    /* =====================================================
+       DESKRIPSI COUNTER + PREVIEW
+    ====================================================== */
+
+    const description =
+        document.getElementById("deskripsi");
+
+    const descCounter =
+        document.getElementById("descCounter");
+
+    const previewDescription =
+        document.getElementById("previewDescription");
+
+
+    function updateDescription() {
+
+        descCounter.textContent =
+            description.value.length + "/1000";
+
+
+        previewDescription.textContent =
+            description.value.trim() ||
+            "Belum ada deskripsi wilayah.";
+
+    }
+
+
+    description.addEventListener(
+        "input",
+        updateDescription
+    );
+
+
+    updateDescription();
+
+
+
+    /* =====================================================
+       IMAGE PREVIEW
+    ====================================================== */
+
+    const imageInput =
+        document.getElementById("wilayahImage");
+
+    const previewImage =
+        document.getElementById("previewImage");
+
+
+    imageInput.addEventListener(
+        "change",
+        function () {
+
+            const file = this.files[0];
+
+            if (!file) return;
+
+
+            const reader =
+                new FileReader();
+
+
+            reader.onload = function (event) {
+
+                previewImage.src =
+                    event.target.result;
+
+            };
+
+
+            reader.readAsDataURL(file);
+
+        }
+    );
+
+</script>
+
+</body>
+</html>

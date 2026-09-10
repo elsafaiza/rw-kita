@@ -1,0 +1,853 @@
+/* =========================================================
+   TAMBAH DOKUMENTASI
+========================================================= */
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.main-content {
+
+    margin-left: 230px;
+
+    min-height: 100vh;
+
+    padding: 25px 35px 30px;
+}
+
+
+/* =========================================================
+   FORM CARD
+========================================================= */
+
+.documentation-form-card {
+
+    background: white;
+
+    border: 1px solid #e8e3dc;
+
+    border-radius: 11px;
+
+    padding: 28px 30px 22px;
+
+    box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================================================
+   FORM LAYOUT
+========================================================= */
+
+.form-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.65fr)
+        minmax(290px, 0.85fr);
+
+    gap: 32px;
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.form-group {
+
+    margin-bottom: 24px;
+
+    min-width: 0;
+}
+
+
+.form-group > label:not(.upload-box) {
+    display: block;
+    margin-bottom: 7px;
+    color: #071f41;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.form-group > label span {
+
+    color: #e04444;
+}
+/* =========================================================
+   UPLOAD BOX
+========================================================= */
+
+.form-group > .upload-box {
+    position: relative;
+
+    width: 100%;
+    min-height: 180px;
+
+    margin: 0;
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    border: 1px dashed #c7cfd8;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    transition: 0.2s ease;
+}
+
+
+/* Hover */
+
+.form-group > .upload-box:hover {
+    border-color: var(--gold);
+    background: #fffdf8;
+}
+
+
+/* File input */
+
+.form-group > .upload-box input[type="file"] {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+
+    cursor: pointer;
+}
+
+
+/* Icon */
+
+.form-group > .upload-box > i {
+    display: block;
+
+    margin: 0 0 5px;
+
+    color: #28b6d4;
+
+    font-size: 32px;
+}
+
+
+/* Text utama */
+
+.form-group > .upload-box strong {
+    display: block;
+
+    margin: 0;
+
+    color: #132d4d;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    text-align: center;
+}
+
+
+/* Text kedua */
+
+.form-group > .upload-box span {
+    display: block;
+
+    margin: 0;
+
+    color: #7a8592;
+
+    font-size: 11px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group select,
+.form-group textarea,
+.side-form-group input,
+.side-form-group select {
+
+    width: 100%;
+
+    border: 1px solid #c9d0d9;
+
+    border-radius: 9px;
+
+    background: white;
+
+    color: #082f57;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group select,
+.side-form-group input,
+.side-form-group select {
+
+    height: 43px;
+
+    padding: 0 13px;
+}
+
+
+.form-group textarea {
+
+    min-height: 135px;
+
+    padding: 12px 13px;
+
+    resize: vertical;
+
+    line-height: 1.6;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus,
+.side-form-group input:focus,
+.side-form-group select:focus {
+
+    border-color: var(--gold);
+
+    box-shadow:
+        0 0 0 2px rgba(217, 151, 0, 0.08);
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+
+    color: #aeb5bd;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.form-description {
+
+    margin: -1px 0 8px;
+
+    color: #657181;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   CHARACTER COUNT
+========================================================= */
+
+.character-count {
+
+    margin-top: 5px;
+
+    text-align: right;
+
+    color: #6d7785;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   UPLOAD BOX
+========================================================= */
+
+.upload-box {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 180px;
+
+    border: 1px dashed #c7cfd8;
+
+    border-radius: 10px;
+
+    background: #fff;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    transition: 0.2s ease;
+}
+
+
+.upload-box:hover {
+
+    border-color: var(--gold);
+
+    background: #fffdf8;
+}
+
+
+.upload-box input[type="file"] {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    opacity: 0;
+
+    cursor: pointer;
+}
+
+
+.upload-box > i {
+
+    margin-bottom: 5px;
+
+    color: #28b6d4;
+
+    font-size: 32px;
+}
+
+
+.upload-box strong {
+
+    color: #132d4d;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+.upload-box span {
+
+    color: #7a8592;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   UPLOAD INFO
+========================================================= */
+
+.upload-info {
+
+    display: block;
+
+    margin-top: 7px;
+
+    color: #667383;
+
+    font-size: 10px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   RIGHT SIDE
+========================================================= */
+
+.form-right {
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   SIDE CARD
+========================================================= */
+
+.side-card {
+
+    margin-bottom: 20px;
+
+    padding: 20px;
+
+    border: 1px solid #d8dee6;
+
+    border-radius: 10px;
+
+    background: white;
+}
+
+
+.side-card h2 {
+
+    margin: 0 0 20px;
+
+    color: #071f41;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.side-card h2::before {
+
+    content: "";
+
+    display: inline-block;
+
+    width: 3px;
+
+    height: 18px;
+
+    margin-right: 7px;
+
+    vertical-align: -4px;
+
+    background: var(--gold);
+}
+
+
+/* =========================================================
+   SIDE FORM
+========================================================= */
+
+.side-form-group {
+
+    margin-bottom: 18px;
+}
+
+
+.side-form-group:last-child {
+
+    margin-bottom: 0;
+}
+
+
+.side-form-group label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #071f41;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+.side-form-group label span {
+
+    color: #e04444;
+}
+
+
+.side-form-group input[readonly] {
+
+    background: #f6f7f8;
+
+    color: #657181;
+
+    cursor: default;
+}
+
+
+/* =========================================================
+   SELECT
+========================================================= */
+
+.side-form-group select {
+
+    appearance: none;
+
+    background-image:
+        linear-gradient(45deg, transparent 50%, #657181 50%),
+        linear-gradient(135deg, #657181 50%, transparent 50%);
+
+    background-position:
+        calc(100% - 17px) 18px,
+        calc(100% - 12px) 18px;
+
+    background-size:
+        5px 5px,
+        5px 5px;
+
+    background-repeat: no-repeat;
+
+    padding-right: 35px;
+}
+
+
+/* =========================================================
+   FIELD HELP
+========================================================= */
+
+.field-help {
+
+    display: block;
+
+    margin-top: 6px;
+
+    color: #7b8693;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   PREVIEW
+========================================================= */
+
+.preview-card {
+
+    min-height: 285px;
+}
+
+
+.preview-box {
+
+    min-height: 200px;
+
+    padding: 20px;
+
+    border: 1px dashed #d2d8df;
+
+    border-radius: 9px;
+
+    background: #fafbfc;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 7px;
+}
+
+
+.preview-box > i {
+
+    margin-bottom: 4px;
+
+    color: #aeb7c2;
+
+    font-size: 34px;
+}
+
+
+.preview-box strong {
+
+    color: #536276;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+.preview-box span {
+
+    max-width: 220px;
+
+    color: #89939f;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   FORM ACTIONS
+========================================================= */
+
+.form-actions {
+
+    margin-top: 8px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #e8e3dc;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+}
+
+
+/* =========================================================
+   BUTTON UMUM
+========================================================= */
+
+.btn-cancel,
+.btn-draft,
+.btn-publish {
+
+    height: 40px;
+
+    padding: 0 22px;
+
+    border-radius: 8px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+
+/* =========================================================
+   BATAL
+========================================================= */
+
+.btn-cancel {
+
+    border: 1px solid #cfd4da;
+
+    background: white;
+
+    color: #071f41;
+}
+
+
+.btn-cancel:hover {
+
+    background: #f7f7f7;
+}
+
+
+/* =========================================================
+   DRAFT
+========================================================= */
+
+.btn-draft {
+
+    border: 1px solid var(--gold);
+
+    background: white;
+
+    color: var(--gold);
+}
+
+
+.btn-draft:hover {
+
+    background: var(--gold-light);
+}
+
+
+/* =========================================================
+   PUBLISH
+========================================================= */
+
+.btn-publish {
+
+    min-width: 190px;
+
+    border: 1px solid var(--gold);
+
+    background: var(--gold);
+
+    color: white;
+}
+
+
+.btn-publish:hover {
+
+    background: var(--gold-dark);
+}
+
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .form-layout {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .form-right {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 18px;
+    }
+
+
+    .side-card {
+
+        margin-bottom: 0;
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .main-content {
+
+        margin-left: 0;
+
+        padding: 20px;
+    }
+
+
+    .dashboard-header {
+
+        min-height: auto;
+
+        gap: 20px;
+
+        flex-direction: column;
+    }
+
+
+    .header-right {
+
+        width: 100%;
+    }
+
+
+    .rw-selector {
+
+        flex: 1;
+    }
+
+
+    .form-right {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .documentation-form-card {
+
+        padding: 20px;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .header-title h1 {
+
+        font-size: 25px;
+    }
+
+
+    .header-right {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .notification-btn {
+
+        align-self: flex-end;
+    }
+
+
+    .rw-selector {
+
+        width: 100%;
+    }
+
+
+    .form-actions {
+
+        flex-direction: column-reverse;
+
+        align-items: stretch;
+    }
+
+
+    .btn-cancel,
+    .btn-draft,
+    .btn-publish {
+
+        width: 100%;
+    }
+
+}

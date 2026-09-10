@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tambah Berita - RW Kita</title>
+
+    <!-- Poppins -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- CSS Global -->
+    <link rel="stylesheet" href="../static/css/global.css">
+
+    <!-- CSS Halaman -->
+    <link rel="stylesheet" href="../static/css/tambah-berita.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="sidebar-logo">
+            <img
+                src="../static/image/Logo_Footer.png"
+                alt="RW Kita">
+        </div>
+
+
+        <!-- Menu Sidebar -->
+        <nav class="sidebar-menu">
+
+                <!-- ==================================================
+                    UTAMA
+                ================================================== -->
+
+                <div class="menu-label">
+                    UTAMA
+                </div>
+
+                <a href="dashboard_admin.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+
+                <!-- ==================================================
+                    KONTEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    KONTEN
+                </div>
+
+                <a href="berita.html" class="menu-item active">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <span>Berita</span>
+                </a>
+
+                <a href="artikel_admin.html" class="menu-item">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Artikel</span>
+                </a>
+
+                <a href="pengumuman.html" class="menu-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Pengumuman</span>
+                </a>
+
+                <a href="agenda.html" class="menu-item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Agenda</span>
+                </a>
+
+                <a href="cerita_warga.html" class="menu-item">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Cerita Warga</span>
+                </a>
+
+
+                <!-- ==================================================
+                    INFORMASI RW
+                ================================================== -->
+
+                <div class="menu-label">
+                    INFORMASI RW
+                </div>
+
+                <a href="profil_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Profil RW</span>
+                </a>
+
+                <a href="potensi_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Potensi RW</span>
+                </a>
+
+                <a href="dokumentasi.html" class="menu-item">
+                    <i class="fa-regular fa-images"></i>
+                    <span>Dokumentasi</span>
+                </a>
+
+
+                <!-- ==================================================
+                    DOKUMEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    DOKUMEN
+                </div>
+
+                <a href="produk_hukum_admin.html" class="menu-item">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Produk Hukum</span>
+                </a>
+
+                <a href="arsip_digital_admin.html" class="menu-item">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <span>Arsip Digital</span>
+                </a>
+
+
+                <!-- ==================================================
+                    PENGELOLAAN
+                ================================================== -->
+
+                <div class="menu-label">
+                    PENGELOLAAN
+                </div>
+
+                <a href="pengaturan-admin.html" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Pengaturan</span>
+                </a>
+
+            </nav>
+
+
+                <!-- ==================================================
+                PROFIL ADMIN
+            ================================================== -->
+
+            <details class="admin-profile">
+
+                <summary class="sidebar-admin">
+
+                    <div class="admin-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="admin-info">
+                        <strong>Admin RW01</strong>
+                        <small>Administrator</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down admin-arrow"></i>
+
+                </summary>
+
+
+                <!-- DROPDOWN LOGOUT -->
+
+                <div class="admin-dropdown">
+
+                    <a href="beranda_RW.html" class="admin-logout">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <span>Logout</span>
+
+                    </a>
+
+                </div>
+
+            </details>
+    </aside>
+
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main class="main-content">
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="page-header">
+
+
+        <div class="header-title">
+
+            <h1>Tambah Berita</h1>
+
+            <p>
+                Kelola semua berita yang ada di website
+            </p>
+
+        </div>
+
+
+         <div class="header-right">
+
+
+                <!-- Notification -->
+                <button class="notification-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- Pilihan RW -->
+                <div class="rw-selector">
+
+                    <div class="rw-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="rw-text">
+
+                        <strong>RW 01</strong>
+
+                        <small>
+                            Kel. XYZ, Kec. XYZ
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+
+    <!-- =====================================================
+         FORM TAMBAH BERITA
+    ====================================================== -->
+
+    <form class="news-form">
+
+
+        <!-- =================================================
+             LEFT COLUMN
+        ================================================== -->
+
+        <section class="form-left">
+
+
+            <!-- JUDUL -->
+
+            <div class="form-group">
+
+                <label for="judul">
+
+                    Judul Berita
+
+                    <span>*</span>
+
+                </label>
+
+
+                <div class="input-counter">
+
+                    <input
+                        type="text"
+                        id="judul"
+                        name="judul"
+                        placeholder="Masukkan judul berita"
+                        maxlength="100"
+                    >
+
+                    <small>0/100</small>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- KATEGORI -->
+
+            <div class="form-group">
+
+                <label for="kategori">
+
+                    Kategori
+
+                    <span>*</span>
+
+                </label>
+
+
+                <div class="select-wrapper">
+
+                    <select id="kategori" name="kategori">
+
+                        <option value="">
+                            Pilih kategori berita
+                        </option>
+
+                        <option value="kegiatan">
+                            Kegiatan
+                        </option>
+
+                        <option value="lingkungan">
+                            Lingkungan
+                        </option>
+
+                        <option value="kemasyarakatan">
+                            Kemasyarakatan
+                        </option>
+
+                        <option value="pengumuman">
+                            Pengumuman
+                        </option>
+
+                        <option value="lainnya">
+                            Lainnya
+                        </option>
+
+                    </select>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RINGKASAN -->
+
+            <div class="form-group">
+
+                <label for="ringkasan">
+
+                    Ringkasan Berita
+
+                    <span>*</span>
+
+                </label>
+
+
+                <p class="form-description">
+
+                    Tulis ringkasan singkat berita yang akan ditampilkan
+                    di halaman utama.
+
+                </p>
+
+
+                <div class="textarea-counter">
+
+                    <textarea
+                        id="ringkasan"
+                        name="ringkasan"
+                        maxlength="200"
+                        placeholder="Masukkan ringkasan berita"
+                    ></textarea>
+
+
+                    <small>0/200</small>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ISI BERITA
+            ================================================== -->
+
+            <div class="form-group editor-group">
+
+
+                <label>
+
+                    Isi Berita
+
+                    <span>*</span>
+
+                </label>
+
+
+                <p class="form-description">
+
+                    Tuliskan isi berita secara lengkap
+
+                </p>
+
+
+                <div class="editor-box">
+
+
+                    <!-- TOOLBAR -->
+
+                    <div class="editor-toolbar">
+
+
+                        <!-- PARAGRAPH -->
+
+                        <div class="paragraph-dropdown">
+
+                            <select>
+
+                                <option value="p">
+                                    Paragraph
+                                </option>
+
+                                <option value="h1">
+                                    Heading 1
+                                </option>
+
+                                <option value="h2">
+                                    Heading 2
+                                </option>
+
+                                <option value="h3">
+                                    Heading 3
+                                </option>
+
+                                <option value="blockquote">
+                                    Quote
+                                </option>
+
+                            </select>
+
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </div>
+
+
+
+                        <!-- BOLD -->
+
+                        <button
+                            type="button"
+                            title="Bold"
+                        >
+
+                            <b>B</b>
+
+                        </button>
+
+
+
+                        <!-- ITALIC -->
+
+                        <button
+                            type="button"
+                            title="Italic"
+                        >
+
+                            <i>I</i>
+
+                        </button>
+
+
+
+                        <!-- UNDERLINE -->
+
+                        <button
+                            type="button"
+                            title="Underline"
+                        >
+
+                            <u>U</u>
+
+                        </button>
+
+
+
+                        <!-- BULLET LIST -->
+
+                        <button
+                            type="button"
+                            title="Bullet List"
+                        >
+
+                            <i class="fa-solid fa-list-ul"></i>
+
+                        </button>
+
+
+
+                        <!-- NUMBER LIST -->
+
+                        <button
+                            type="button"
+                            title="Number List"
+                        >
+
+                            <i class="fa-solid fa-list-ol"></i>
+
+                        </button>
+
+
+
+                        <!-- ALIGN LEFT -->
+
+                        <button
+                            type="button"
+                            title="Align Left"
+                        >
+
+                            <i class="fa-solid fa-align-left"></i>
+
+                        </button>
+
+
+
+                        <!-- ALIGN CENTER -->
+
+                        <button
+                            type="button"
+                            title="Align Center"
+                        >
+
+                            <i class="fa-solid fa-align-center"></i>
+
+                        </button>
+
+
+
+                        <!-- ALIGN RIGHT -->
+
+                        <button
+                            type="button"
+                            title="Align Right"
+                        >
+
+                            <i class="fa-solid fa-align-right"></i>
+
+                        </button>
+
+
+
+                        <!-- LINK -->
+
+                        <button
+                            type="button"
+                            title="Insert Link"
+                        >
+
+                            <i class="fa-solid fa-link"></i>
+
+                        </button>
+
+
+
+                        <!-- IMAGE -->
+
+                        <button
+                            type="button"
+                            title="Insert Image"
+                        >
+
+                            <i class="fa-regular fa-image"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+
+                    <!-- EDITOR CONTENT -->
+
+                    <div
+                        class="editor-content"
+                        contenteditable="true"
+                        data-placeholder="Tulis isi berita di sini..."
+                    ></div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 GAMBAR UTAMA
+            ================================================== -->
+
+                <div class="form-group">
+
+                    <label>
+                        Gambar Utama
+                        <span>*</span>
+                    </label>
+
+                    <p class="form-description">
+                        Gambar akan ditampilkan di halaman utama berita
+                    </p>
+
+                    <label
+                        class="main-upload-box"
+                        for="gambar-utama"
+                    >
+
+                        <input
+                            type="file"
+                            id="gambar-utama"
+                            name="gambar-utama"
+                            accept=".jpg,.jpeg,.png,.webp"
+                        >
+
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                        <strong>
+                            Klik untuk mengunggah gambar
+                        </strong>
+
+                        <span>
+                            atau seret file ke sini
+                        </span>
+
+                    </label>
+
+                    <small class="upload-info">
+                        Format: JPG, PNG, WebP (Maks. 2MB)
+                    </small>
+
+                </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             RIGHT COLUMN
+        ================================================== -->
+
+        <aside class="form-right">
+
+
+            <!-- INFORMASI TAMBAHAN -->
+
+            <div class="side-card">
+
+
+                <h2>
+                    Informasi Tambahan
+                </h2>
+
+
+                <!-- PENULIS -->
+
+                <div class="side-form-group">
+
+                    <label for="penulis">
+                        Penulis
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="penulis"
+                        value="Admin RW 01"
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- TANGGAL -->
+
+                <div class="side-form-group">
+
+                    <label for="tanggal">
+
+                        Tanggal Terbit
+
+                        <span>*</span>
+
+                    </label>
+
+
+                    <div class="date-input">
+
+                        <input
+                            type="datetime-local"
+                            id="tanggal"
+                            name="tanggal"
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- STATUS -->
+
+                <div class="side-form-group">
+
+                    <label for="status">
+
+                        Status
+
+                        <span>*</span>
+
+                    </label>
+
+
+                    <div class="select-wrapper">
+
+                        <select
+                            id="status"
+                            name="status"
+                        >
+
+                            <option value="published">
+                                Dipublikasikan
+                            </option>
+
+                            <option value="draft">
+                                Draft
+                            </option>
+
+                        </select>
+
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </div>
+
+
+                    <small class="status-description">
+
+                        Berita akan langsung tampil di website.
+
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 GAMBAR TAMBAHAN
+            ================================================== -->
+
+            <div class="side-card">
+
+
+                <h2>
+                    Gambar Tambahan
+                    <span class="optional">(Opsional)</span>
+                </h2>
+
+
+                <p class="side-description">
+
+                    Tambahkan beberapa gambar pendukung
+                    (maks. 5 gambar).
+
+                </p>
+
+
+                <label
+                    class="upload-box upload-small"
+                    for="gambar-tambahan"
+                >
+
+
+                    <input
+                        type="file"
+                        id="gambar-tambahan"
+                        name="gambar-tambahan"
+                        accept=".jpg,.jpeg,.png,.webp"
+                        multiple
+                    >
+
+
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+
+                    <strong>
+                        Klik untuk mengunggah gambar
+                    </strong>
+
+
+                    <span>
+                        atau seret file ke sini
+                    </span>
+
+
+                </label>
+
+
+                <small class="upload-info">
+
+                    Format: JPG, PNG, WebP
+                    (Maks. 2MB per gambar)
+
+                </small>
+
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- =================================================
+             BUTTON
+        ================================================== -->
+
+        <div class="form-actions">
+
+
+            <button
+                type="button"
+                class="btn-cancel"
+                onclick="window.location.href='berita.html'"
+            >
+
+                Batal
+
+            </button>
+
+
+            <button
+                type="button"
+                class="btn-draft"
+                onclick="window.location.href='berita.html'"
+            >
+
+                Simpan Draft
+
+            </button>
+
+
+            <button
+                type="submit"
+                class="btn-publish"
+                onclick="window.location.href='berita.html'"
+            >
+
+                Simpan & Publikasikan
+
+            </button>
+
+
+        </div>
+
+
+    </form>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="admin-footer">
+
+        © 2026 RW KITA | Suku Dinas Komunikasi,
+        Informatika dan Statistik Kota Administrasi Jakarta Timur.
+
+    </footer>
+
+
+</main>
+
+
+</body>
+
+</html>

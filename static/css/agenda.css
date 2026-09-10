@@ -1,0 +1,788 @@
+
+
+/* =========================================================
+   TOOLBAR
+========================================================= */
+
+.agenda-toolbar {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 14px;
+
+    gap: 20px;
+
+}
+
+
+/* =========================================================
+   TABS
+========================================================= */
+
+.agenda-tabs {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 55px;
+
+    height: 40px;
+
+}
+
+
+.agenda-tab {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    height: 40px;
+
+    color: #071f41;
+
+    text-decoration: none;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+}
+
+
+.agenda-tab.active {
+
+    color: var(--gold);
+
+}
+
+
+.agenda-tab.active::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    height: 2px;
+
+    background: var(--gold);
+
+}
+
+
+/* =========================================================
+   ACTION AREA
+========================================================= */
+
+.agenda-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.agenda-search {
+
+    width: 260px;
+
+    height: 38px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #aeb4bc;
+
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 0 10px;
+
+}
+
+
+.agenda-search i {
+
+    font-size: 18px;
+
+    color: #454b53;
+
+}
+
+
+.agenda-search input {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    color: var(--text);
+
+}
+
+
+.agenda-search input::placeholder {
+
+    color: #777d84;
+
+}
+
+
+/* =========================================================
+   ADD BUTTON
+========================================================= */
+
+.btn-add-agenda {
+
+    height: 38px;
+
+    padding: 0 17px;
+
+    border-radius: 5px;
+
+    background: var(--gold);
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: 0.2s ease;
+
+}
+
+
+.btn-add-agenda:hover {
+
+    background: var(--gold-dark);
+
+}
+
+
+/* =========================================================
+   TABLE CARD
+========================================================= */
+
+.agenda-card {
+
+    width: 100%;
+
+    min-height: 0;
+    height: auto;
+
+    background: #ffffff;
+
+    border-radius: 10px;
+
+    box-shadow: var(--shadow);
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+
+/* =========================================================
+   TABLE WRAPPER
+========================================================= */
+
+.agenda-table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.agenda-table {
+
+    width: 100%;
+
+    min-width: 920px;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+/* =========================================================
+   COLUMN WIDTH
+========================================================= */
+
+.agenda-table .col-no {
+
+    width: 55px;
+
+}
+
+
+.agenda-table .col-title {
+
+    width: 235px;
+
+}
+
+
+.agenda-table .col-date {
+
+    width: 145px;
+
+}
+
+
+.agenda-table .col-time {
+
+    width: 145px;
+
+}
+
+
+.agenda-table .col-location {
+
+    width: 175px;
+
+}
+
+
+.agenda-table .col-status {
+
+    width: 145px;
+
+}
+
+
+.agenda-table .col-action {
+
+    width: 125px;
+
+}
+
+
+/* =========================================================
+   TABLE HEADER
+========================================================= */
+
+.agenda-table thead {
+
+    background: #ffffff;
+
+}
+
+
+.agenda-table th {
+
+    height: 58px;
+
+    padding: 0 10px;
+
+    color: #111820;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-align: left;
+
+    vertical-align: middle;
+
+    border-bottom: 1px solid #e2e2e2;
+
+}
+
+
+.agenda-table th:first-child {
+
+    padding-left: 18px;
+
+}
+
+
+.agenda-table th:last-child {
+
+    text-align: center;
+
+}
+
+
+/* =========================================================
+   TABLE BODY
+========================================================= */
+
+.agenda-table tbody tr {
+
+    height: 68px;
+
+    border-bottom: 2px solid #d5d5d5;
+
+}
+
+
+.agenda-table tbody tr:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.agenda-table td {
+
+    padding: 8px 10px;
+
+    color: #161c24;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    vertical-align: middle;
+
+    line-height: 1.5;
+
+}
+
+
+.agenda-table td:first-child {
+
+    padding-left: 18px;
+
+}
+
+
+.agenda-table td:last-child {
+
+    text-align: center;
+
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.agenda-table .number {
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #101820;
+
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.agenda-table .agenda-title {
+
+    color: #082f57;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.status {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 118px;
+
+    height: 29px;
+
+    box-sizing: border-box;
+
+    padding: 0 12px;
+
+    border-radius: 16px;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+}
+
+
+/* MENDATANG */
+
+.status-coming {
+
+    background: #b7d8f7;
+
+    border: 1px solid #368be8;
+
+    color: #1875d1;
+
+}
+
+
+/* SELESAI */
+
+.status-done {
+
+    background: #a9e8a5;
+
+    border: 1px solid #49a849;
+
+    color: #39853a;
+
+}
+
+
+/* DIBATALKAN */
+
+.status-cancelled {
+
+    background: #ffaaaa;
+
+    border: 1px solid #ff3d3d;
+
+    color: #e32828;
+
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.action-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+}
+
+
+.action-btn {
+
+    width: 30px;
+
+    height: 30px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d2d2d2;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #4c5259;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.2s ease;
+
+}
+
+
+.action-btn:hover {
+
+    border-color: var(--gold);
+
+    color: var(--gold);
+
+    background: #fffaf0;
+
+}
+
+
+/* DELETE */
+
+.action-btn.delete {
+
+    color: #ff4141;
+
+    border-color: #ff6868;
+
+}
+
+
+.action-btn.delete:hover {
+
+    background: #fff1f1;
+
+    border-color: #ff4141;
+
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.pagination {
+
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+}
+.agenda-footer {
+
+     display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    padding-top: 20px;
+
+    padding-right: 27px;
+
+    padding-bottom: 20px;
+
+}
+
+
+.page-arrow,
+.page-number {
+
+    width: 39px;
+
+    height: 36px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+}
+
+
+.page-arrow {
+
+    border: 1px solid #d8dde3;
+
+    background: #ffffff;
+
+    color: #777e85;
+
+}
+
+
+.page-number {
+
+    border: 1px solid #e1a300;
+
+    background: #ffffff;
+
+    color: var(--gold);
+
+    font-weight: 500;
+
+}
+
+
+.page-arrow:hover {
+
+    border-color: var(--gold);
+
+    color: var(--gold);
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.page-footer {
+
+    margin-top: 60px;
+
+    padding-bottom: 15px;
+
+    text-align: center;
+
+    color: #718092;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .agenda-toolbar {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+
+    .agenda-actions {
+
+        width: 100%;
+
+        justify-content: space-between;
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .agenda-tabs {
+
+        gap: 25px;
+
+        overflow-x: auto;
+
+        width: 100%;
+
+    }
+
+
+    .agenda-actions {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .agenda-search {
+
+        width: 100%;
+
+    }
+
+
+    .btn-add-agenda {
+
+        width: 100%;
+
+    }
+
+
+    .agenda-card {
+
+        min-height: 600px;
+
+    }
+
+
+    .page-footer {
+
+        font-size: 10px;
+
+    }
+
+}

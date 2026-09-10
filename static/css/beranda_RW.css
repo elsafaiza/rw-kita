@@ -1,0 +1,660 @@
+html.language-loading body {
+  opacity: 0;
+  pointer-events: none;
+}
+
+body {
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.rw-page{
+  background:#fff9e9;;  
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.rw-hero {
+    position: relative;
+
+    min-height: 430px;
+
+    display: grid;
+    grid-template-columns: 47% 53%;
+
+    overflow: hidden;
+
+    background: #032b4d;
+}
+
+
+/* POLA KIRI */
+
+.hero-pattern {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 48%;
+    opacity: .25;
+    background-size: 70px 70px;
+}
+
+
+/* TEKS */
+
+.hero-content {
+    position: relative;
+    z-index: 5;
+    padding: 70px 40px 60px 7%;
+    color: white;
+}
+
+.hero-welcome {
+    display: block;
+    margin-bottom: 10px;
+    color: #d09100;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.hero-content h1 {
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h3 {
+    color: #d09100;
+
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.hero-content p {
+    max-width: 520px;
+
+    font-size: 14px;
+    line-height: 1.55;
+
+    margin-bottom: 28px;
+
+    color: #f5f5f5;
+}
+
+.hero-btn {
+    display: inline-flex;
+
+    padding: 13px 30px;
+
+    background: #d09100;
+    color: white;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+.hero-btn img{
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    margin-top: 3px;
+    margin-right: 7px;
+    
+}
+
+
+/* FOTO */
+
+.hero-image {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.hero-image::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background: linear-gradient(
+        90deg,
+        #032b4d 0%,
+        rgba(3,43,77,.7) 8%,
+        rgba(3,43,77,0) 35%
+    );
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.content-section {
+    width: 94%;
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 40px 0;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.25fr;
+    gap: 20px;
+}
+
+
+/* TITLE */
+
+.section-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+
+.section-title-row h2 {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.section-title-row span {
+    display: block;
+
+    width: 55px;
+    height: 3px;
+
+    margin-top: 7px;
+
+    background: #c88a08;
+}
+
+.section-title-row a {
+    color: #6f7610;
+
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+
+/* =====================================================
+   BERITA
+===================================================== */
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.news-card {
+    background: #fffdf5;
+
+    border: 1px solid #d7a51d;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+.news-card > img {
+    width: 100%;
+    height: 105px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.news-date {
+    background: #727812;
+    color: white;
+
+    padding: 5px 10px;
+
+    font-size: 10px;
+    font-weight: 700;
+    left: 5px;
+    bottom: 5px;
+}
+
+
+.news-content {
+    padding: 10px;
+}
+
+.news-content h3 {
+    font-size: 13px;
+    line-height: 1.4;
+
+    margin-bottom: 7px;
+}
+
+.news-content p {
+    font-size: 12px;
+    line-height: 1.6;
+
+    color: #536b7d;
+
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.news-content a {
+    font-size: 12px;
+    font-weight: 700;
+
+    color: #727812;
+    margin-bottom: 7px;
+    
+}
+
+
+/* =====================================================
+   SAMBUTAN
+===================================================== */
+
+.welcome-card {
+    min-height: 275px;
+
+    padding: 20px;
+
+    background: #fffdf8;
+
+    border: 1px solid #d7a51d;
+
+    border-radius: 15px;
+
+    display: grid;
+    grid-template-columns: 105px 1fr;
+    gap: 18px;
+    text-align: justify;
+}
+
+.leader {
+    text-align: center;
+}
+
+.leader-photo {
+    width: 95px;
+    height: 125px;
+
+    margin: 0 auto 10px;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+    background: #edf1ff;
+}
+
+.leader-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.leader h3 {
+    font-size: 13px;
+}
+
+.leader span {
+    display: inline-block;
+
+    margin-top: 5px;
+
+    padding: 5px 9px;
+
+    background: #727812;
+    color: white;
+
+    border-radius: 4px;
+
+    font-size: 12px;
+}
+
+.welcome-text {
+    font-size: 13px;
+    line-height: 1.65;
+
+    color: #404040;
+}
+
+.welcome-text p {
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   STATISTIK
+===================================================== */
+
+.statistics-section {
+    width: 90%;
+    max-width: 1250px;
+
+    margin: 0 auto 35px;
+
+    padding: 25px 35px;
+
+    background: #032b4d;
+
+    border-radius: 20px;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+.statistics-title {
+    font-size: 15px;
+    font-weight: 600;
+
+    margin-right: 45px;
+
+    white-space: nowrap;
+}
+
+.stat-item {
+    flex: 1;
+
+    min-height: 55px;
+
+    padding-left: 20px;
+
+    border-left: 1px solid rgba(255,255,255,.4);
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.stat-icon img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+.people-icon{
+    width: 50px !important;
+    height: 50px !important;
+    object-fit: contain;
+}
+.stat-item strong {
+    display: block;
+
+    color: #d09100;
+
+    font-size: 20px;
+}
+
+.stat-item span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   BOTTOM
+===================================================== */
+
+.bottom-section {
+    width: 94%;
+    max-width: 1300px;
+
+    margin: auto;
+    padding-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.15fr;
+
+    gap: 25px;
+}
+
+
+/* AGENDA */
+
+.agenda-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    margin-bottom: 14px;
+}
+
+.agenda-date {
+    width: 55px;
+    min-width: 55px;
+    height: 55px;
+
+    background: #727812;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.agenda-date strong {
+    font-size: 17px;
+  
+}
+
+.agenda-date span {
+    font-size: 7px;
+    font-weight: 700;
+}
+.agenda-item p img{
+    width: 10px;
+    height: 10px;
+    object-fit: contain;
+}
+.agenda-item > div:last-child {
+    flex: 1;
+}
+
+.agenda-item h3 {
+    font-size: 12px;
+    margin: 0 0 3px;
+}
+
+.agenda-item p {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 11px;
+    margin: 2px 0;
+    color: #555;
+}
+
+.see-all {
+    color: #727812;
+
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+
+/* POTENSI */
+
+.potential-card {
+    display: grid;
+    grid-template-columns: 115px 1fr 20px;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 6px;
+
+    margin-bottom: 7px;
+
+    border: 1px solid #d7a51d;
+
+    border-radius: 8px;
+
+    background: #fffdf8;
+}
+
+.potential-card img {
+    width: 115px;
+    height: 65px;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+}
+
+.potential-card h3 {
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+.potential-card p {
+    font-size: 12px;
+    line-height: 1.4;
+
+    color: #536b7d;
+}
+
+.potential-card > strong {
+    font-size: 30px;
+    color: #888;
+}
+
+
+/* =====================================================
+   GALERI
+===================================================== */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.gallery-item {
+    position: relative;
+
+    height: 75px;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.gallery-item span {
+    position: absolute;
+
+    left: 5px;
+    bottom: 5px;
+    margin-top: 7px;
+    padding: 3px 5px;
+
+    background: #727812;
+    color: white;
+
+    font-size: 7px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .nav-menu {
+        gap: 12px;
+    }
+
+    .nav-link {
+        font-size: 11px;
+    }
+
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-section {
+        grid-template-columns: 1fr;
+    }
+
+    .statistics-section {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .stat-item {
+        min-width: 150px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .nav-menu {
+        display: none;
+    }
+
+    .rw-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+        min-height: 300px;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+}

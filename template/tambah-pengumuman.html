@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Tambah Pengumuman - Admin RW Kita</title>
+
+
+    <!-- GLOBAL CSS -->
+    <link
+        rel="stylesheet"
+        href="../static/css/global.css"
+    >
+
+    <!-- CSS HALAMAN -->
+    <link
+        rel="stylesheet"
+        href="../static/css/tambah-pengumuman.css"
+    >
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================================
+         SIDEBAR
+    ========================================================== -->
+
+    <aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="sidebar-logo">
+            <img
+                src="../static/image/Logo_Footer.png"
+                alt="RW Kita">
+        </div>
+
+
+        <!-- Menu Sidebar -->
+        <nav class="sidebar-menu">
+
+                <!-- ==================================================
+                    UTAMA
+                ================================================== -->
+
+                <div class="menu-label">
+                    UTAMA
+                </div>
+
+                <a href="dashboard_admin.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+
+                <!-- ==================================================
+                    KONTEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    KONTEN
+                </div>
+
+                <a href="berita.html" class="menu-item">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <span>Berita</span>
+                </a>
+
+                <a href="artikel_admin.html" class="menu-item">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Artikel</span>
+                </a>
+
+                <a href="pengumuman.html" class="menu-item active">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Pengumuman</span>
+                </a>
+
+                <a href="agenda.html" class="menu-item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Agenda</span>
+                </a>
+
+                <a href="cerita_warga.html" class="menu-item">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Cerita Warga</span>
+                </a>
+
+
+                <!-- ==================================================
+                    INFORMASI RW
+                ================================================== -->
+
+                <div class="menu-label">
+                    INFORMASI RW
+                </div>
+
+                <a href="profil_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Profil RW</span>
+                </a>
+
+                <a href="potensi_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Potensi RW</span>
+                </a>
+
+                <a href="dokumentasi.html" class="menu-item">
+                    <i class="fa-regular fa-images"></i>
+                    <span>Dokumentasi</span>
+                </a>
+
+
+                <!-- ==================================================
+                    DOKUMEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    DOKUMEN
+                </div>
+
+                <a href="produk_hukum_admin.html" class="menu-item">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Produk Hukum</span>
+                </a>
+
+                <a href="arsip_digital_admin.html" class="menu-item">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <span>Arsip Digital</span>
+                </a>
+
+
+                <!-- ==================================================
+                    PENGELOLAAN
+                ================================================== -->
+
+                <div class="menu-label">
+                    PENGELOLAAN
+                </div>
+
+                <a href="pengaturan-admin.html" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Pengaturan</span>
+                </a>
+
+            </nav>
+
+
+                <!-- ==================================================
+                PROFIL ADMIN
+            ================================================== -->
+
+            <details class="admin-profile">
+
+                <summary class="sidebar-admin">
+
+                    <div class="admin-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="admin-info">
+                        <strong>Admin RW01</strong>
+                        <small>Administrator</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down admin-arrow"></i>
+
+                </summary>
+
+
+                <!-- DROPDOWN LOGOUT -->
+
+                <div class="admin-dropdown">
+
+                    <a href="beranda_RW.html" class="admin-logout">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <span>Logout</span>
+
+                    </a>
+
+                </div>
+
+            </details>
+    </aside>
+
+
+
+    <!-- =========================================================
+         MAIN CONTENT
+    ========================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- HEADER -->
+
+        <header class="page-header">
+
+
+            <div class="header-title">
+
+                <h1>
+                    Tambah Pengumuman
+                </h1>
+
+                <p>
+                    Buat pengumuman baru untuk disampaikan kepada warga.
+                </p>
+
+            </div>
+
+
+            <!-- HEADER RIGHT -->
+
+           <div class="header-right">
+
+
+                <!-- Notification -->
+                <button class="notification-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- Pilihan RW -->
+                <div class="rw-selector">
+
+                    <div class="rw-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="rw-text">
+
+                        <strong>RW 01</strong>
+
+                        <small>
+                            Kel. XYZ, Kec. XYZ
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =====================================================
+             FORM PENGUMUMAN
+        ====================================================== -->
+
+        <section class="announcement-form-card">
+
+
+            <!-- FORM HEADER -->
+
+            <div class="form-card-header">
+
+                <div class="form-header-icon">
+
+                    <i class="fa-solid fa-bullhorn"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h2>
+                        Informasi Pengumuman
+                    </h2>
+
+                    <p>
+                        Lengkapi informasi pengumuman yang akan disampaikan
+                        kepada warga.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FORM -->
+
+            <form class="announcement-form">
+
+
+                <!-- JUDUL -->
+
+                <div class="form-group">
+
+                    <label for="judul-pengumuman">
+
+                        Judul Pengumuman
+                        <span>*</span>
+
+                    </label>
+
+
+                    <p class="form-description">
+
+                        Masukkan judul pengumuman yang singkat dan jelas.
+
+                    </p>
+
+
+                    <input
+                        type="text"
+                        id="judul-pengumuman"
+                        name="judul-pengumuman"
+                        placeholder="Masukkan judul pengumuman"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- TANGGAL -->
+
+                <div class="form-group">
+
+                    <label for="tanggal-pengumuman">
+
+                        Tanggal Pengumuman
+                        <span>*</span>
+
+                    </label>
+
+
+                    <p class="form-description">
+
+                        Tentukan tanggal pengumuman.
+
+                    </p>
+
+
+                    <div class="input-icon">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        <input
+                            type="date"
+                            id="tanggal-pengumuman"
+                            name="tanggal-pengumuman"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ISI PENGUMUMAN -->
+
+                <div class="form-group">
+
+                    <label for="isi-pengumuman">
+
+                        Isi Pengumuman
+                        <span>*</span>
+
+                    </label>
+
+
+                    <p class="form-description">
+
+                        Tuliskan informasi lengkap yang ingin disampaikan
+                        kepada warga.
+
+                    </p>
+
+
+                    <textarea
+                        id="isi-pengumuman"
+                        name="isi-pengumuman"
+                        placeholder="Tulis isi pengumuman di sini..."
+                        rows="9"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- CATATAN -->
+
+                <div class="form-group">
+
+                    <label for="catatan-pengumuman">
+
+                        Catatan Tambahan
+
+                        <span class="optional">
+                            (Opsional)
+                        </span>
+
+                    </label>
+
+
+                    <p class="form-description">
+
+                        Tambahkan informasi tambahan jika diperlukan.
+
+                    </p>
+
+
+                    <textarea
+                        id="catatan-pengumuman"
+                        name="catatan-pengumuman"
+                        placeholder="Masukkan catatan tambahan..."
+                        rows="4"
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     BUTTON
+                ================================================== -->
+
+                <div class="form-actions">
+
+
+                    <a
+                        href="pengumuman.html"
+                        class="btn-cancel"
+                    >
+
+                        Batal
+
+                    </a>
+
+
+                    <button
+                        type="submit"
+                        class="btn-publish"
+                    >
+
+                        <i class="fa-solid fa-bullhorn"></i>
+
+                        Simpan & Publikasikan
+
+                    </button>
+
+
+                </div>
+
+
+            </form>
+
+
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>

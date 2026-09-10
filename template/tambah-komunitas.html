@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard Admin - RW Kita</title>
+
+    <!-- ================= Poppins ================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- ================= Font Awesome ================= -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ================= CSS ================= -->
+    <link rel="stylesheet" href="../static/css/tambah-komunitas.css">
+    <link rel="stylesheet" href="../static/css/global.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="sidebar-logo">
+            <img
+                src="../static/image/Logo_Footer.png"
+                alt="RW Kita">
+        </div>
+
+
+        <!-- Menu Sidebar -->
+        <nav class="sidebar-menu">
+
+                <!-- ==================================================
+                    UTAMA
+                ================================================== -->
+
+                <div class="menu-label">
+                    UTAMA
+                </div>
+
+                <a href="dashboard_admin.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+
+                <!-- ==================================================
+                    KONTEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    KONTEN
+                </div>
+
+                <a href="berita.html" class="menu-item">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <span>Berita</span>
+                </a>
+
+                <a href="artikel_admin.html" class="menu-item">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Artikel</span>
+                </a>
+
+                <a href="pengumuman.html" class="menu-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Pengumuman</span>
+                </a>
+
+                <a href="agenda.html" class="menu-item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Agenda</span>
+                </a>
+
+                <a href="cerita_warga.html" class="menu-item">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Cerita Warga</span>
+                </a>
+
+
+                <!-- ==================================================
+                    INFORMASI RW
+                ================================================== -->
+
+                <div class="menu-label">
+                    INFORMASI RW
+                </div>
+
+                <a href="profil_rw_admin.html" class="menu-item active">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Profil RW</span>
+                </a>
+
+                <a href="potensi_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Potensi RW</span>
+                </a>
+
+                <a href="dokumentasi.html" class="menu-item">
+                    <i class="fa-regular fa-images"></i>
+                    <span>Dokumentasi</span>
+                </a>
+
+
+                <!-- ==================================================
+                    DOKUMEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    DOKUMEN
+                </div>
+
+                <a href="produk_hukum_admin.html" class="menu-item">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Produk Hukum</span>
+                </a>
+
+                <a href="arsip_digital_admin.html" class="menu-item">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <span>Arsip Digital</span>
+                </a>
+
+
+                <!-- ==================================================
+                    PENGELOLAAN
+                ================================================== -->
+
+                <div class="menu-label">
+                    PENGELOLAAN
+                </div>
+
+                <a href="pengaturan-admin.html" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Pengaturan</span>
+                </a>
+
+            </nav>
+
+
+                <!-- ==================================================
+                PROFIL ADMIN
+            ================================================== -->
+
+            <details class="admin-profile">
+
+                <summary class="sidebar-admin">
+
+                    <div class="admin-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="admin-info">
+                        <strong>Admin RW01</strong>
+                        <small>Administrator</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down admin-arrow"></i>
+
+                </summary>
+
+
+                <!-- DROPDOWN LOGOUT -->
+
+                <div class="admin-dropdown">
+
+                    <a href="beranda_RW.html" class="admin-logout">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <span>Logout</span>
+
+                    </a>
+
+                </div>
+
+            </details>
+    </aside>
+
+
+
+<!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <header class="page-header">
+
+            <div class="header-title">
+
+                <h1>Tambah Komunitas</h1>
+
+                <p>
+                    Kelola Komunitas yang akan ditampilkan di website
+                </p>
+
+            </div>
+
+
+            <div class="header-right">
+
+
+                <!-- Notification -->
+                <button class="notification-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- Pilihan RW -->
+                <div class="rw-selector">
+
+                    <div class="rw-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="rw-text">
+
+                        <strong>RW 01</strong>
+
+                        <small>
+                            Kel. XYZ, Kec. XYZ
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+
+            </div>
+
+        </header>
+
+
+
+    <!-- =========================================================
+         FORM
+    ========================================================= -->
+
+    <section class="form-card">
+
+
+        <div class="form-heading">
+
+            <h2>
+                Informasi Komunitas
+            </h2>
+
+            <p>
+                Data berikut akan ditampilkan pada halaman detail komunitas.
+            </p>
+
+        </div>
+
+
+
+        <form id="formKomunitas">
+
+
+
+            <!-- =================================================
+                 INFORMASI DASAR
+            ================================================== -->
+
+            <div class="form-section">
+
+
+                <div class="section-title">
+
+                    <div class="section-number">
+                        01
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Informasi Dasar
+                        </h3>
+
+                        <p>
+                            Masukkan informasi utama komunitas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="basic-layout">
+
+
+                    <!-- LOGO -->
+
+                    <div class="logo-section">
+
+                        <label class="field-label">
+
+                            Logo Komunitas
+                            <span>*</span>
+
+                        </label>
+
+
+                        <div
+                            class="logo-preview"
+                            id="logoPreview"
+                        >
+
+                            <i class="fa-regular fa-image"></i>
+
+                        </div>
+
+
+                        <label
+                            for="logoKomunitas"
+                            class="upload-button"
+                        >
+
+                            <i class="fa-solid fa-camera"></i>
+
+                            Upload Logo
+
+                        </label>
+
+
+                        <input
+                            type="file"
+                            id="logoKomunitas"
+                            accept=".jpg,.jpeg,.png,.webp"
+                            hidden
+                        >
+
+
+                        <small class="upload-info">
+
+                            JPG, PNG, WebP<br>
+                            Maksimal 2 MB
+
+                        </small>
+
+                    </div>
+
+
+
+                    <!-- NAME + DESCRIPTION -->
+
+                    <div class="basic-fields">
+
+
+                        <div class="form-group">
+
+                            <label for="namaKomunitas">
+
+                                Nama Komunitas
+                                <span>*</span>
+
+                            </label>
+
+
+                            <input
+                                type="text"
+                                id="namaKomunitas"
+                                placeholder="Contoh: PKK"
+                                maxlength="100"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="deskripsiSingkat">
+
+                                Deskripsi Singkat
+                                <span>*</span>
+
+                            </label>
+
+
+                            <textarea
+                                id="deskripsiSingkat"
+                                maxlength="200"
+                                placeholder="Tuliskan deskripsi singkat komunitas..."
+                                required
+                            ></textarea>
+
+
+                            <div
+                                class="counter"
+                                id="counterSingkat"
+                            >
+                                0/200 karakter
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 TENTANG KOMUNITAS
+            ================================================== -->
+
+            <div class="form-section">
+
+
+                <div class="section-title">
+
+                    <div class="section-number">
+                        02
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Tentang Komunitas
+                        </h3>
+
+                        <p>
+                            Jelaskan mengenai komunitas secara lebih lengkap.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="tentang">
+
+                        Tentang Komunitas
+                        <span>*</span>
+
+                    </label>
+
+
+                    <textarea
+                        id="tentang"
+                        class="large-textarea"
+                        maxlength="1000"
+                        placeholder="Jelaskan latar belakang, tujuan, dan peran komunitas di lingkungan RW..."
+                        required
+                    ></textarea>
+
+
+                    <div
+                        class="counter"
+                        id="counterTentang"
+                    >
+                        0/1000 karakter
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 KEGIATAN UTAMA
+            ================================================== -->
+
+            <div class="form-section">
+
+
+                <div class="section-title">
+
+                    <div class="section-number">
+                        03
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Kegiatan Utama
+                        </h3>
+
+                        <p>
+                            Tambahkan kegiatan atau program utama komunitas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div
+                    class="activity-list"
+                    id="activityList"
+                >
+
+
+                    <div class="activity-item">
+
+                        <input
+                            type="text"
+                            placeholder="Contoh: Kegiatan pemberdayaan keluarga"
+                            name="activities[]"
+                        >
+
+
+                        <button
+                            type="button"
+                            class="remove-activity"
+                            title="Hapus kegiatan"
+                        >
+
+                            <i class="fa-solid fa-trash"></i>
+
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="add-activity"
+                    id="addActivity"
+                >
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Tambah Kegiatan
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 DOKUMENTASI
+            ================================================== -->
+
+            <div class="form-section">
+
+
+                <div class="section-title">
+
+                    <div class="section-number">
+                        04
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Dokumentasi Kegiatan
+                        </h3>
+
+                        <p>
+                            Tambahkan foto kegiatan komunitas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <label
+                    for="dokumentasi"
+                    class="documentation-upload"
+                >
+
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+
+                    <strong>
+                        Upload Foto Dokumentasi
+                    </strong>
+
+
+                    <span>
+                        Pilih beberapa foto sekaligus
+                    </span>
+
+
+                    <small>
+                        JPG, PNG, WebP · Maksimal 2 MB per foto
+                    </small>
+
+                </label>
+
+
+                <input
+                    type="file"
+                    id="dokumentasi"
+                    accept=".jpg,.jpeg,.png,.webp"
+                    multiple
+                    hidden
+                >
+
+
+                <div
+                    class="documentation-preview"
+                    id="documentationPreview"
+                ></div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ACTION
+            ================================================== -->
+
+            <div class="form-actions">
+
+
+                <a
+                    href="profil_rw_admin.html"
+                    class="btn-cancel"
+                >
+
+                    Batal
+
+                </a>
+
+
+                <button
+                    type="submit"
+                    class="btn-save"
+                >
+
+                    <i class="fa-regular fa-floppy-disk"></i>
+
+                    Simpan Komunitas
+
+                </button>
+
+            </div>
+
+
+        </form>
+
+    </section>
+
+
+
+    <footer class="admin-footer">
+
+            © 2026 RW KITA | Suku Dinas Komunikasi,
+            Informatika dan Statistik Kota Administrasi
+            Jakarta Timur.
+
+        </footer>
+
+</main>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+
+/* =========================================================
+   ADMIN DROPDOWN
+========================================================= */
+
+const adminProfile =
+    document.getElementById("adminProfile");
+
+const adminDropdown =
+    document.getElementById("adminDropdown");
+
+
+adminProfile.addEventListener(
+    "click",
+    function () {
+
+        adminDropdown.classList.toggle("show");
+
+    }
+);
+
+
+document.addEventListener(
+    "click",
+    function (event) {
+
+        if (
+            !adminProfile.contains(event.target) &&
+            !adminDropdown.contains(event.target)
+        ) {
+
+            adminDropdown.classList.remove("show");
+
+        }
+
+    }
+);
+
+
+
+/* =========================================================
+   LOGO PREVIEW
+========================================================= */
+
+const logoInput =
+    document.getElementById("logoKomunitas");
+
+const logoPreview =
+    document.getElementById("logoPreview");
+
+
+logoInput.addEventListener(
+    "change",
+    function () {
+
+        const file = this.files[0];
+
+
+        if (!file) {
+            return;
+        }
+
+
+        if (file.size > 2 * 1024 * 1024) {
+
+            alert(
+                "Ukuran logo maksimal 2 MB."
+            );
+
+            this.value = "";
+
+            return;
+
+        }
+
+
+        const imageURL =
+            URL.createObjectURL(file);
+
+
+        logoPreview.innerHTML = `
+
+            <img
+                src="${imageURL}"
+                alt="Preview Logo Komunitas"
+            >
+
+        `;
+
+    }
+);
+
+
+
+/* =========================================================
+   COUNTER
+========================================================= */
+
+function setupCounter(
+    textareaId,
+    counterId
+) {
+
+    const textarea =
+        document.getElementById(textareaId);
+
+    const counter =
+        document.getElementById(counterId);
+
+
+    textarea.addEventListener(
+        "input",
+        function () {
+
+            counter.textContent =
+                `${this.value.length}/${this.maxLength} karakter`;
+
+        }
+    );
+
+}
+
+
+setupCounter(
+    "deskripsiSingkat",
+    "counterSingkat"
+);
+
+
+setupCounter(
+    "tentang",
+    "counterTentang"
+);
+
+
+
+/* =========================================================
+   KEGIATAN
+========================================================= */
+
+const activityList =
+    document.getElementById("activityList");
+
+const addActivity =
+    document.getElementById("addActivity");
+
+
+addActivity.addEventListener(
+    "click",
+    function () {
+
+        const item =
+            document.createElement("div");
+
+
+        item.className =
+            "activity-item";
+
+
+        item.innerHTML = `
+
+            <input
+                type="text"
+                placeholder="Masukkan kegiatan komunitas"
+                name="activities[]"
+            >
+
+            <button
+                type="button"
+                class="remove-activity"
+                title="Hapus kegiatan"
+            >
+
+                <i class="fa-solid fa-trash"></i>
+
+            </button>
+
+        `;
+
+
+        activityList.appendChild(item);
+
+
+        addRemoveEvent(
+            item.querySelector(
+                ".remove-activity"
+            )
+        );
+
+    }
+);
+
+
+
+function addRemoveEvent(button) {
+
+    button.addEventListener(
+        "click",
+        function () {
+
+            const items =
+                activityList.querySelectorAll(
+                    ".activity-item"
+                );
+
+
+            if (items.length <= 1) {
+
+                items[0]
+                    .querySelector("input")
+                    .value = "";
+
+                return;
+
+            }
+
+
+            this.parentElement.remove();
+
+        }
+    );
+
+}
+
+
+document
+    .querySelectorAll(".remove-activity")
+    .forEach(
+        addRemoveEvent
+    );
+
+
+
+/* =========================================================
+   DOKUMENTASI PREVIEW
+========================================================= */
+
+const dokumentasi =
+    document.getElementById("dokumentasi");
+
+const documentationPreview =
+    document.getElementById(
+        "documentationPreview"
+    );
+
+
+dokumentasi.addEventListener(
+    "change",
+    function () {
+
+        documentationPreview.innerHTML = "";
+
+
+        const files =
+            Array.from(this.files);
+
+
+        files.forEach(
+            function (file) {
+
+                if (
+                    file.size >
+                    2 * 1024 * 1024
+                ) {
+
+                    return;
+
+                }
+
+
+                const imageURL =
+                    URL.createObjectURL(file);
+
+
+                const image =
+                    document.createElement("img");
+
+
+                image.src =
+                    imageURL;
+
+
+                image.alt =
+                    "Dokumentasi komunitas";
+
+
+                documentationPreview
+                    .appendChild(image);
+
+            }
+        );
+
+    }
+);
+
+
+
+/* =========================================================
+   SUBMIT
+========================================================= */
+
+const form =
+    document.getElementById(
+        "formKomunitas"
+    );
+
+
+form.addEventListener(
+    "submit",
+    function (event) {
+
+        event.preventDefault();
+
+
+        alert(
+            "Komunitas berhasil disimpan."
+        );
+
+
+        window.location.href =
+            "profil_rw_admin.html";
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>

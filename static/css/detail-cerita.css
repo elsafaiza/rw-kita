@@ -1,0 +1,826 @@
+
+/* =========================================================
+   RESET KHUSUS
+   ========================================================= */
+
+.detail-cerita-page *,
+.detail-cerita-page *::before,
+.detail-cerita-page *::after {
+  box-sizing: border-box;
+}
+
+.navbar-main-only .nav-right {
+  margin-left: 765px;
+}
+
+/* =========================================================
+   HALAMAN UTAMA
+   ========================================================= */
+
+.detail-cerita-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #fffdf7;
+
+  color: #102b50;
+}
+
+.detail-cerita-container {
+  width: 100%;
+  max-width: 1450px;
+
+  margin: 0 auto;
+
+  padding: 18px 42px 35px;
+}
+
+/* =========================================================
+   BREADCRUMB
+   ========================================================= */
+
+.detail-breadcrumb {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  margin-bottom: 10px;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  color: #5f6d7d;
+}
+
+.detail-breadcrumb a {
+  color: #334b68;
+
+  text-decoration: none;
+}
+
+.detail-breadcrumb a:hover {
+  color: #d89200;
+}
+
+.detail-breadcrumb span {
+  white-space: nowrap;
+}
+
+/* =========================================================
+   LAYOUT UTAMA
+   ========================================================= */
+
+.detail-layout {
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) 265px;
+
+  gap: 28px;
+
+  align-items: start;
+}
+
+/* =========================================================
+   KOLOM UTAMA
+   ========================================================= */
+
+.detail-main {
+  min-width: 0;
+}
+
+/* =========================================================
+   JUDUL
+   ========================================================= */
+
+.detail-main > h1 {
+  margin: 0 0 11px;
+
+  max-width: 850px;
+
+  font-size: 18px;
+  line-height: 1.25;
+
+  font-weight: 800;
+
+  color: #102b50;
+}
+
+/* =========================================================
+   META CERITA
+   ========================================================= */
+
+.detail-meta {
+  display: flex;
+  align-items: center;
+
+  gap: 28px;
+
+  min-height: 30px;
+
+  margin-bottom: 10px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  color: #183655;
+}
+
+.meta-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+
+  color: #111f2e;
+}
+
+/* =========================================================
+   TOMBOL BAGIKAN
+   ========================================================= */
+
+.share-button {
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  height: 30px;
+
+  padding: 0 12px;
+
+  border: 1px solid #bfc5ca;
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+
+  color: #25384e;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.share-button:hover {
+  border-color: #d89200;
+
+  color: #d89200;
+}
+
+.share-button span {
+  font-size: 14px;
+}
+
+/* =========================================================
+   GAMBAR UTAMA
+   ========================================================= */
+
+.detail-hero-image {
+  width: 100%;
+  max-width: 900px;
+
+  height: 350px;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  background: #e9ecef;
+}
+
+.detail-hero-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+/* =========================================================
+   ISI ARTIKEL
+   ========================================================= */
+
+.detail-article-content {
+  width: 100%;
+  max-width: 900px;
+
+  padding-top: 13px;
+}
+
+.detail-article-content p {
+  margin: 0 0 17px;
+
+  font-size: 13px;
+  line-height: 1.65;
+
+  font-weight: 400;
+
+  color: #173554;
+
+  text-align: justify;
+}
+
+.detail-article-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   DOKUMENTASI
+   ========================================================= */
+
+.documentation-section {
+  width: 100%;
+  max-width: 900px;
+
+  margin-top: 17px;
+
+  padding-top: 11px;
+
+  border-top: 1px solid #d9ddd9;
+}
+
+.documentation-section h2 {
+  margin: 0 0 9px;
+
+  font-size: 14px;
+  line-height: 1.3;
+
+  font-weight: 700;
+
+  color: #102b50;
+}
+
+.documentation-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px;
+}
+
+.documentation-image {
+  width: 100%;
+  height: 150px;
+
+  overflow: hidden;
+
+  border-radius: 9px;
+
+  background: #e9ecef;
+}
+
+.documentation-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.3s ease;
+}
+
+.documentation-image:hover img {
+  transform: scale(1.04);
+}
+
+/* =========================================================
+   TOMBOL KEMBALI
+   ========================================================= */
+
+.back-story-wrapper {
+  margin-top: 10px;
+}
+
+.back-story-button {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 6px;
+
+  height: 30px;
+
+  padding: 0 10px;
+
+  border: 1px solid #e3a124;
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  color: #d58b00;
+
+  transition: 0.2s ease;
+}
+
+.back-story-button:hover {
+  background: #d89200;
+
+  color: #ffffff;
+}
+
+.back-story-button span {
+  font-size: 12px;
+}
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.detail-sidebar {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 17px;
+}
+
+/* =========================================================
+   INFORMASI KEGIATAN
+   ========================================================= */
+
+.activity-info-card {
+  width: 100%;
+
+  padding: 17px 14px 15px;
+
+  border: 1px solid #e5e0d5;
+  border-radius: 8px;
+
+  background: #fffef9;
+
+  box-shadow: 0 2px 4px rgba(16, 43, 80, 0.12);
+}
+
+.activity-info-card h2 {
+  margin: 0 0 15px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  color: #102b50;
+}
+
+/* =========================================================
+   ITEM INFORMASI
+   ========================================================= */
+
+.activity-item {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 10px;
+
+  margin-bottom: 15px;
+}
+
+.activity-item:last-child {
+  margin-bottom: 0;
+}
+
+.activity-icon {
+  width: 25px;
+  min-width: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 1px;
+
+  font-size: 18px;
+
+  color: #101820;
+}
+
+.activity-text {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.activity-text span {
+  font-size: 12px;
+  font-weight: 500;
+
+  color: #6c7784;
+}
+
+.activity-text strong {
+  font-size: 11px;
+  line-height: 1.5;
+
+  font-weight: 600;
+
+  color: #173554;
+}
+
+/* =========================================================
+   CERITA LAINNYA
+   ========================================================= */
+
+.other-stories-card {
+  width: 100%;
+
+  padding: 16px 13px 13px;
+
+  border: 1px solid #e5e0d5;
+  border-radius: 8px;
+
+  background: #fffef9;
+
+  box-shadow: 0 2px 4px rgba(16, 43, 80, 0.12);
+}
+
+.other-stories-card > h2 {
+  margin: 0 0 12px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  color: #102b50;
+}
+
+/* =========================================================
+   LIST CERITA LAIN
+   ========================================================= */
+
+.other-stories-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.other-story {
+  min-height: 52px;
+
+  display: grid;
+
+  grid-template-columns: 55px minmax(0, 1fr) 12px;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 3px;
+
+  border: 1px solid #e2a13a;
+  border-radius: 6px;
+
+  background: #fffdf8;
+
+  text-decoration: none;
+
+  transition: 0.2s ease;
+}
+
+.other-story:hover {
+  background: #fff5e3;
+
+  transform: translateX(2px);
+}
+
+/* =========================================================
+   GAMBAR CERITA LAIN
+   ========================================================= */
+
+.other-story-image {
+  width: 55px;
+  height: 45px;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  background: #e9ecef;
+}
+
+.other-story-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+/* =========================================================
+   ISI CERITA LAIN
+   ========================================================= */
+
+.other-story-content {
+  min-width: 0;
+}
+
+.other-story-content h3 {
+  margin: 0 0 2px;
+
+  overflow: hidden;
+
+  font-size: 11px;
+  line-height: 1.3;
+
+  font-weight: 700;
+
+  color: #102b50;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.other-story-content p {
+  margin: 0;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+
+  overflow: hidden;
+
+  font-size: 10px;
+  line-height: 1.35;
+
+  color: #56677d;
+}
+
+.other-story-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+
+  color: #102b50;
+}
+
+/* =========================================================
+   LIHAT SEMUA CERITA
+   ========================================================= */
+
+.see-all-story {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 6px;
+
+  margin-top: 11px;
+
+  text-decoration: none;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  color: #d58b00;
+}
+
+.see-all-story:hover {
+  color: #ad6e00;
+}
+
+.see-all-story span {
+  font-size: 13px;
+
+  transition: transform 0.2s ease;
+}
+
+.see-all-story:hover span {
+  transform: translateX(3px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .detail-cerita-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .detail-layout {
+    grid-template-columns: minmax(0, 1fr) 235px;
+
+    gap: 20px;
+  }
+
+  .detail-main > h1 {
+    font-size: 24px;
+  }
+
+  .detail-hero-image {
+    height: 320px;
+  }
+
+  .footer-container {
+    gap: 35px;
+
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 850px) {
+  .detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-sidebar {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    align-items: start;
+  }
+
+  .detail-hero-image {
+    max-width: 100%;
+
+    height: 330px;
+  }
+
+  .detail-article-content,
+  .documentation-section {
+    max-width: 100%;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+  }
+
+  .footer-location {
+    grid-column: 1 / -1;
+  }
+}
+
+/* =========================================================
+   HP
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .detail-cerita-container {
+    padding: 16px 15px 30px;
+  }
+
+  .detail-breadcrumb {
+    font-size: 8px;
+
+    overflow-x: auto;
+
+    white-space: nowrap;
+  }
+
+  .detail-main > h1 {
+    font-size: 21px;
+  }
+
+  .detail-meta {
+    flex-wrap: wrap;
+
+    gap: 10px 18px;
+  }
+
+  .share-button {
+    margin-left: 0;
+  }
+
+  .detail-hero-image {
+    height: 240px;
+
+    border-radius: 6px;
+  }
+
+  .detail-article-content p {
+    font-size: 10px;
+
+    line-height: 1.7;
+
+    text-align: left;
+  }
+
+  .documentation-grid {
+    grid-template-columns: 1fr;
+
+    gap: 8px;
+  }
+
+  .documentation-image {
+    height: 150px;
+  }
+
+  .detail-sidebar {
+    display: flex;
+  }
+
+  .other-story {
+    grid-template-columns: 70px minmax(0, 1fr) 14px;
+  }
+
+  .other-story-image {
+    width: 70px;
+    height: 52px;
+  }
+
+  .other-story-content h3 {
+    font-size: 9px;
+  }
+
+  .other-story-content p {
+    font-size: 8px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+
+    padding: 25px 25px 20px;
+  }
+
+  .footer-location {
+    grid-column: auto;
+  }
+
+  .footer-about {
+    max-width: 100%;
+  }
+}
+
+/* =========================================================
+   HP KECIL
+   ========================================================= */
+
+@media (max-width: 400px) {
+  .detail-main > h1 {
+    font-size: 19px;
+  }
+
+  .meta-item {
+    font-size: 8px;
+  }
+
+  .detail-hero-image {
+    height: 210px;
+  }
+
+  .detail-article-content p {
+    font-size: 9.5px;
+  }
+}
+
+
+.detail-cerita-page.is-loading .detail-breadcrumb,
+.detail-cerita-page.is-loading .detail-layout,
+.detail-cerita-page.is-error .detail-breadcrumb,
+.detail-cerita-page.is-error .detail-layout {
+  visibility: hidden;
+}
+
+.detail-cerita-page.is-loading
+  .detail-cerita-container::after {
+  content: "Memuat cerita...";
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+  color: #102b50;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.detail-cerita-page.is-error
+  .detail-cerita-container::after {
+  content: "Cerita tidak ditemukan atau belum dipublikasikan.";
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+  color: #102b50;
+  font-size: 18px;
+  font-weight: 600;
+}

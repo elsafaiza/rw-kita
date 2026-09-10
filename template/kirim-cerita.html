@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>RW KITA | Tulis Cerita Warga</title>
+
+    <!-- ==================================================
+         GOOGLE FONT
+    ================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+     <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- ==================================================
+         CSS
+    ================================================== -->
+
+    <link rel="stylesheet" href="../static/css/global.css" />
+
+    <link rel="stylesheet" href="../static/css/navbar.css" />
+
+    <link rel="stylesheet" href="../static/css/footer.css" />
+
+    <link rel="stylesheet" href="../static/css/kirim-cerita.css" />
+  </head>
+
+  <body>
+    <!-- ==================================================
+         NAVBAR
+    ================================================== -->
+
+    <header class="navbar navbar-main-only">
+      <div class="navbar-container">
+        <!-- LOGO -->
+
+        <a href="index.html" class="logo">
+          <img src="../static/image/logo.png" alt="RW KITA" />
+        </a>
+
+        <!-- MENU -->
+
+        <!-- <nav class="nav-menu">
+          <a href="index.html" class="nav-link active"> Beranda </a>
+
+          <a href="profilRW.html" class="nav-link"> Profil RW </a>
+
+          <a href="informasi.html" class="nav-link"> Informasi </a>
+
+          <a href="hubungi_kami.html" class="nav-link"> Hubungi Kami </a>
+        </nav> -->
+
+        <!-- BAGIAN KANAN -->
+
+        <div class="nav-right">
+          <!-- BAHASA -->
+
+                            <div class="language-wrapper">
+
+                        <div class="language-switch">
+                            <span class="language-label">ID</span>
+
+                            <label class="switch">
+                                <input
+                                type="checkbox"
+                                id="languageToggle"
+                                aria-label="Switch language"
+                                >
+
+                                <span class="slider"></span>
+                            </label>
+
+                            <span class="language-label">EN</span>
+                            </div>
+
+                            </div>
+
+          <!-- LOGIN ADMIN -->
+
+          <a href="login-admin.html" class="login-btn">
+            <span class="User">
+              <img src="../static/icon/user.png" alt="User" />
+            </span>
+
+            Login Admin
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==================================================
+         MAIN
+    ================================================== -->
+
+    <main class="kirim-cerita-page">
+      <div class="kirim-cerita-container">
+        <!-- ==================================================
+                 BREADCRUMB
+            ================================================== -->
+
+        <div class="kirim-breadcrumb">
+          <a href="index.html">Beranda </a>
+
+          <span>›</span>
+
+          <a href="cerita.html"> Cerita Warga </a>
+
+          <span>›</span>
+
+          <span> Tulis Cerita </span>
+        </div>
+
+        <!-- ==================================================
+                 HEADER
+            ================================================== -->
+
+        <div class="kirim-header">
+          <h1>Tulis Cerita Anda</h1>
+
+          <p>Bagikan cerita, kegiatan, dan pengalaman menarik di lingkungan RW Kita.</p>
+        </div>
+
+        <!-- ==================================================
+                 CONTENT
+            ================================================== -->
+
+        <div class="kirim-content">
+          <!-- ==================================================
+                     FORM
+                ================================================== -->
+
+          <section class="form-card">
+            <!-- HEADER FORM -->
+
+            <div class="form-card-header">
+              <h2>Bagikan Cerita Warga</h2>
+
+              <p>Isi formulir berikut dengan lengkap agar cerita Anda dapat ditampilkan di halaman Cerita Warga.</p>
+            </div>
+
+            <!-- FORM -->
+
+            <form id="ceritaForm" class="cerita-form" enctype="multipart/form-data">
+              <!-- ==================================================
+                             NAMA PENULIS
+                        ================================================== -->
+
+              <div class="form-group">
+                <label for="namaPenulis">
+                  Nama Penulis
+                  <span>*</span>
+                </label>
+
+                <input type="text" id="namaPenulis" name="namaPenulis" placeholder="Masukkan nama Anda" required />
+              </div>
+
+              <!-- ==================================================
+                             JUDUL CERITA
+                        ================================================== -->
+
+              <div class="form-group">
+                <label for="judulCerita">
+                  Judul Cerita
+                  <span>*</span>
+                </label>
+
+                <input type="text" id="judulCerita" name="judulCerita" placeholder="Contoh: Semangat Gotong Royong Warga RW 01" required />
+              </div>
+
+              <!-- ==================================================
+                             KATEGORI + TANGGAL
+                        ================================================== -->
+
+              <div class="form-row">
+
+                <!-- TANGGAL -->
+
+                <div class="form-group">
+                  <label for="tanggalCerita">
+                    Tanggal Kegiatan
+                    <span>*</span>
+                  </label>
+
+                  <input type="date" id="tanggalCerita" name="tanggalCerita" required />
+                </div>
+              </div>
+
+              <!-- ==================================================
+                             LOKASI
+                        ================================================== -->
+
+              <div class="form-group">
+                <label for="lokasiCerita">
+                  Lokasi Kegiatan
+                  <span>*</span>
+                </label>
+
+                <input type="text" id="lokasiCerita" name="lokasiCerita" placeholder="Contoh: Lingkungan RW 01 Kelurahan Pulo Gebang" required />
+              </div>
+
+              <!-- ==================================================
+                             ISI CERITA
+                        ================================================== -->
+
+              <div class="form-group">
+                <div class="label-row">
+                  <label for="isiCerita">
+                    Isi Cerita
+                    <span>*</span>
+                  </label>
+
+                  <span class="character-count" id="characterCount"> 0 / 3000 </span>
+                </div>
+
+                <textarea id="isiCerita" name="isiCerita" rows="10" maxlength="3000" placeholder="Ceritakan kegiatan atau pengalaman warga secara lengkap..." required></textarea>
+
+                <small> Maksimal 3000 karakter. </small>
+              </div>
+
+              <!-- ==================================================
+                             FOTO UTAMA
+                        ================================================== -->
+
+              <div class="form-group">
+                <label for="fotoUtama">
+                  Foto Utama
+                  <span>*</span>
+                </label>
+
+                <div class="upload-box" id="uploadMainBox">
+                  <input type="file" id="fotoUtama" name="fotoUtama" accept="image/jpeg,image/png,image/webp" hidden />
+
+                  <label for="fotoUtama" class="upload-label">
+                    <div class="upload-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+
+                    <strong> Klik untuk memilih foto </strong>
+
+                    <span> atau seret foto ke area ini </span>
+
+                    <small> JPG, PNG, atau WEBP maksimal 5 MB </small>
+                  </label>
+                </div>
+
+                <!-- PREVIEW -->
+
+                <div class="image-preview" id="mainImagePreview">
+                  <img id="mainPreviewImage" src="" alt="Preview foto utama" />
+
+                  <button type="button" id="removeMainImage" class="remove-image">×</button>
+                </div>
+              </div>
+
+              <!-- ==================================================
+                             DOKUMENTASI
+                        ================================================== -->
+
+              <div class="form-group">
+                <label for="dokumentasiCerita"> Dokumentasi Tambahan </label>
+
+                <div class="upload-box documentation-upload">
+                  <input type="file" id="dokumentasiCerita" name="dokumentasiCerita" accept="image/jpeg,image/png,image/webp" multiple hidden />
+
+                  <label for="dokumentasiCerita" class="upload-label">
+                    <div class="upload-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+
+                    <strong> Tambahkan foto dokumentasi </strong>
+
+                    <span> Anda dapat memilih beberapa foto </span>
+
+                    <small> Maksimal 5 foto </small>
+                  </label>
+                </div>
+
+                <!-- PREVIEW DOCUMENTATION -->
+
+                <div class="documentation-preview" id="documentationPreview"></div>
+              </div>
+
+              <!-- ==================================================
+                             PERNYATAAN
+                        ================================================== -->
+
+              <div class="agreement-box">
+                <label class="checkbox-wrapper">
+                  <input type="checkbox" id="persetujuan" name="persetujuan" required />
+
+                  <span class="custom-checkbox"></span>
+
+                  <span class="agreement-text">
+                    Saya menyatakan bahwa cerita dan foto yang saya kirim merupakan informasi yang benar dan saya bersedia cerita tersebut ditampilkan pada platform RW Kita setelah melalui proses verifikasi admin.
+                  </span>
+                </label>
+              </div>
+
+              <!-- ==================================================
+                             BUTTON
+                        ================================================== -->
+
+              <div class="form-actions">
+                <a href="cerita.html" class="cancel-button"> Batal </a>
+
+                <button type="submit" class="submit-button">
+                  Kirim Cerita
+                  <span>→</span>
+                </button>
+              </div>
+            </form>
+          </section>
+
+          <!-- ==================================================
+                     SIDEBAR INFORMASI
+                ================================================== -->
+
+          <aside class="kirim-sidebar">
+            <!-- ==================================================
+                         INFO
+                    ================================================== -->
+
+            <div class="info-card">
+
+              <div>
+                <h3>Tips Menulis Cerita</h3>
+
+                <ul>
+                  <li>Gunakan judul yang singkat dan menarik.</li>
+
+                  <li>Ceritakan kegiatan secara jelas dan mudah dipahami.</li>
+
+                  <li>Sertakan foto kegiatan yang relevan.</li>
+
+                  <li>Gunakan bahasa yang sopan dan informatif.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- ==================================================
+                         ALUR
+                    ================================================== -->
+
+            <div class="process-card">
+              <h3>Alur Cerita Warga</h3>
+
+              <div class="process-item">
+                <div class="process-number">1</div>
+
+                <div>
+                  <strong> Kirim Cerita </strong>
+
+                  <p>Isi dan kirim formulir cerita warga.</p>
+                </div>
+              </div>
+
+              <div class="process-line"></div>
+
+              <div class="process-item">
+                <div class="process-number">2</div>
+
+                <div>
+                  <strong> Verifikasi Admin </strong>
+
+                  <p>Cerita akan diperiksa oleh admin.</p>
+                </div>
+              </div>
+
+              <div class="process-line"></div>
+
+              <div class="process-item">
+                <div class="process-number">3</div>
+
+                <div>
+                  <strong> Cerita Ditampilkan </strong>
+
+                  <p>Cerita yang disetujui akan tampil di website.</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+     <!-- ==================================================
+         FOOTER
+    ================================================== -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-about">
+
+                <img src="../static/image/Logo_Footer.png"
+                     alt="RW KITA"
+                     class="footer-logo">
+
+                <p>
+                    RW KITA merupakan platform microsite bagi
+                    10 RW yang menyediakan informasi, layanan
+                    digital, serta transparansi administrasi
+                    guna mewujudkan lingkungan yang kolaboratif,
+                    informatif, dan mudah diakses oleh masyarakat.
+                </p>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>Kontak Kami</h3>
+
+                <div class="contact-item">
+                    <span>
+                        <img src="../static/icon/location (1).png">
+                    </span>
+                    <p>
+                         Jl.Dr.Sumarno, Kel. Pulo Gebang<br>
+                        Kec. Cakung, Kota Jakarta Timur, DKI Jakarta
+                    </p>
+                </div>
+
+                <div class="contact-item">
+                    <span>
+                        <img src="../static/icon/phone-call (1).png">
+                    </span>
+                    <p>(+62)822334455</p>
+                </div>
+
+                <div class="contact-item">
+                    <span>
+                        <img src="../static/icon/email (1).png">
+                    </span>
+                    <p id="footer-email">Email belum tersedia.</p>
+                </div>
+
+            </div>
+
+
+            <div class="footer-location">
+
+                <h3>Lokasi Kami</h3>
+
+                <div class="map-box">
+                    <div class="map-placeholder">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=..."
+                            width="100%"
+                            height="300"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                         </iframe>
+                    </div>
+                </div>
+
+                <h3 class="social-title">
+                    Ikuti Kami
+                </h3>
+
+                <div class="social-media">
+
+                    <a href="#">
+                        <img src="../static/icon/whatsapp (3).png">
+                    </a>
+                    <a href="#">
+                        <img src="../static/icon/instagram (2).png">
+                    </a>
+                    <a href="#">
+                        <img src="../static/icon/youtube (3).png">
+                    </a>
+                    <a href="#">
+                        <img src="../static/icon/social (2).png">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 RW KITA | Suku Dinas Komunikasi,
+                Informatika dan Statistik Kota Administrasi Jakarta Timur
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ==================================================
+         JAVASCRIPT
+    ================================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="../static/js/supabase.js"></script>
+<script src="../static/js/rw-core.js"></script>
+<script src="../static/js/footer.js"></script>
+<script src="../static/js/language.js"></script>
+<script src="../static/js/rw-navigation.js"></script>
+<script src="../static/js/kirim-cerita.js"></script>
+  </body>
+</html>

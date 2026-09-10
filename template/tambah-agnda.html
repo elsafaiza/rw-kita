@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Tambah Agenda - RW Kita</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONT - POPPINS
+    ====================================================== -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <link
+        rel="stylesheet"
+        href="../static/css/global.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../static/css/tambah-agenda.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<aside class="sidebar">
+
+
+    <!-- LOGO -->
+
+    <div class="sidebar-logo">
+
+        <img
+            src="../static/image/Logo_Footer.png"
+            alt="RW Kita"
+        >
+
+    </div>
+
+
+    <!-- MENU -->
+
+    <nav class="sidebar-menu">
+
+                <!-- ==================================================
+                    UTAMA
+                ================================================== -->
+
+                <div class="menu-label">
+                    UTAMA
+                </div>
+
+                <a href="dashboard_admin.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+
+                <!-- ==================================================
+                    KONTEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    KONTEN
+                </div>
+
+                <a href="berita.html" class="menu-item">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <span>Berita</span>
+                </a>
+
+                <a href="artikel_admin.html" class="menu-item">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Artikel</span>
+                </a>
+
+                <a href="pengumuman.html" class="menu-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Pengumuman</span>
+                </a>
+
+                <a href="agenda.html" class="menu-item active">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Agenda</span>
+                </a>
+
+                <a href="cerita_warga.html" class="menu-item">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Cerita Warga</span>
+                </a>
+
+
+                <!-- ==================================================
+                    INFORMASI RW
+                ================================================== -->
+
+                <div class="menu-label">
+                    INFORMASI RW
+                </div>
+
+                <a href="profil_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Profil RW</span>
+                </a>
+
+                <a href="potensi_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Potensi RW</span>
+                </a>
+
+                <a href="dokumentasi.html" class="menu-item">
+                    <i class="fa-regular fa-images"></i>
+                    <span>Dokumentasi</span>
+                </a>
+
+
+                <!-- ==================================================
+                    DOKUMEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    DOKUMEN
+                </div>
+
+                <a href="produk_hukum_admin.html" class="menu-item">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Produk Hukum</span>
+                </a>
+
+                <a href="arsip_digital_admin.html" class="menu-item">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <span>Arsip Digital</span>
+                </a>
+
+
+                <!-- ==================================================
+                    PENGELOLAAN
+                ================================================== -->
+
+                <div class="menu-label">
+                    PENGELOLAAN
+                </div>
+
+                <a href="pengaturan-admin.html" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Pengaturan</span>
+                </a>
+
+            </nav>
+
+
+                <!-- ==================================================
+                PROFIL ADMIN
+            ================================================== -->
+
+            <details class="admin-profile">
+
+                <summary class="sidebar-admin">
+
+                    <div class="admin-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="admin-info">
+                        <strong>Admin RW01</strong>
+                        <small>Administrator</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down admin-arrow"></i>
+
+                </summary>
+
+
+                <!-- DROPDOWN LOGOUT -->
+
+                <div class="admin-dropdown">
+
+                    <a href="beranda_RW.html" class="admin-logout">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <span>Logout</span>
+
+                    </a>
+
+                </div>
+
+            </details>
+    </aside>
+
+
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main class="main-content">
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="page-header">
+
+
+        <!-- LEFT -->
+
+        <div class="header-title">
+
+            <h1>Tambah Agenda</h1>
+
+            <p>
+                Buat Agenda baru untuk ditampilkan di website RW Kita
+            </p>
+
+        </div>
+
+
+        <!-- RIGHT -->
+
+        <div class="header-right">
+
+
+                <!-- Notification -->
+                <button class="notification-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- Pilihan RW -->
+                <div class="rw-selector">
+
+                    <div class="rw-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="rw-text">
+
+                        <strong>RW 01</strong>
+
+                        <small>
+                            Kel. XYZ, Kec. XYZ
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+
+        </div>
+
+
+    </header>
+
+
+
+    <!-- =====================================================
+         FORM AGENDA
+    ====================================================== -->
+
+    <section class="agenda-form-container">
+
+
+        <form class="agenda-form">
+
+
+            <!-- =================================================
+                 JUDUL AGENDA
+            ================================================== -->
+
+            <div class="form-group full-width">
+
+                <label for="judul-agenda">
+
+                    Judul Agenda
+
+                    <span>*</span>
+
+                </label>
+
+
+                <div class="input-with-counter">
+
+                    <input
+                        type="text"
+                        id="judul-agenda"
+                        name="judul-agenda"
+                        placeholder="Masukan Judul Agenda"
+                        maxlength="100"
+                    >
+
+
+                    <small>
+                        0/100
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 TANGGAL + WAKTU
+            ================================================== -->
+
+            <div class="form-row time-row">
+
+
+                <!-- TANGGAL -->
+
+                <div class="form-group">
+
+                    <label for="tanggal">
+
+                        Tanggal
+
+                    </label>
+
+
+                    <div class="input-icon">
+
+                        <input
+                            type="date"
+                            id="tanggal"
+                            name="tanggal"
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- WAKTU MULAI -->
+
+                <div class="form-group">
+
+                    <label for="waktu-mulai">
+
+                        Waktu
+
+                    </label>
+
+
+                    <input
+                        type="time"
+                        id="waktu-mulai"
+                        name="waktu-mulai"
+                        placeholder="Pilih Waktu Mulai"
+                    >
+
+                </div>
+
+
+
+                <!-- PEMISAH -->
+
+                <div class="time-separator">
+
+                    <span>–</span>
+
+                </div>
+
+
+
+                <!-- WAKTU SELESAI -->
+
+                <div class="form-group time-end">
+
+                    <label
+                        class="invisible-label"
+                    >
+
+                        Waktu Selesai
+
+                    </label>
+
+
+                    <input
+                        type="time"
+                        id="waktu-selesai"
+                        name="waktu-selesai"
+                    >
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 LOKASI
+            ================================================== -->
+
+            <div class="form-group location-group">
+
+                <label for="lokasi">
+
+                    Lokasi
+
+                </label>
+
+
+                <input
+                    type="text"
+                    id="lokasi"
+                    name="lokasi"
+                    placeholder="Masukkan lokasi agenda"
+                >
+
+            </div>
+
+
+
+            <!-- =================================================
+                 STATUS
+            ================================================== -->
+
+            <div class="form-group status-group">
+
+                <label for="status-agenda">
+
+                    Status Agenda
+
+                </label>
+
+
+                <div class="select-wrapper">
+
+
+                    <select
+                        id="status-agenda"
+                        name="status-agenda"
+                    >
+
+                        <option
+                            value="mendatang"
+                            selected
+                        >
+                            Mendatang
+                        </option>
+
+
+                        <option value="selesai">
+
+                            Selesai
+
+                        </option>
+
+
+                        <option value="dibatalkan">
+
+                            Dibatalkan
+
+                        </option>
+
+                    </select>
+
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 BUTTON
+            ================================================== -->
+
+            <div class="form-actions">
+
+
+                <!-- BATAL -->
+
+                <a
+                    href="agenda.html"
+                    class="btn-cancel"
+                >
+
+                    Batal
+
+                </a>
+
+
+                <!-- SIMPAN DRAFT -->
+
+                <button
+                    type="submit"
+                    class="btn-draft"
+                >
+
+                    Simpan Draft
+
+                </button>
+
+
+                <!-- SIMPAN & PUBLIKASIKAN -->
+
+                <button
+                    type="submit"
+                    class="btn-publish"
+                >
+
+                    Simpan & Publikasikan
+
+                </button>
+
+
+            </div>
+
+
+        </form>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="page-footer">
+
+        © 2026 RW KITA | Suku Dinas Komunikasi, Informatika dan Statistik
+        Kota Administrasi Jakarta Timur.
+
+    </footer>
+
+
+</main>
+
+
+</body>
+
+</html>

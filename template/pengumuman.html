@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pengumuman - Admin RW Kita</title>
+
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="../static/css/global.css">
+
+    <!-- CSS HALAMAN -->
+    <link rel="stylesheet" href="../static/css/pengumuman.css">
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+    <!-- ================= Poppins ================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================================
+         SIDEBAR
+    ========================================================== -->
+
+    <aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="sidebar-logo">
+            <img
+                src="../static/image/Logo_Footer.png"
+                alt="RW Kita">
+        </div>
+
+
+        <!-- Menu Sidebar -->
+        <nav class="sidebar-menu">
+
+                <!-- ==================================================
+                    UTAMA
+                ================================================== -->
+
+                <div class="menu-label">
+                    UTAMA
+                </div>
+
+                <a href="dashboard_admin.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+
+                <!-- ==================================================
+                    KONTEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    KONTEN
+                </div>
+
+                <a href="berita.html" class="menu-item">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <span>Berita</span>
+                </a>
+
+                <a href="artikel_admin.html" class="menu-item">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Artikel</span>
+                </a>
+
+                <a href="pengumuman.html" class="menu-item active">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Pengumuman</span>
+                </a>
+
+                <a href="agenda.html" class="menu-item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Agenda</span>
+                </a>
+
+                <a href="cerita_warga.html" class="menu-item">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Cerita Warga</span>
+                </a>
+
+
+                <!-- ==================================================
+                    INFORMASI RW
+                ================================================== -->
+
+                <div class="menu-label">
+                    INFORMASI RW
+                </div>
+
+                <a href="profil_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Profil RW</span>
+                </a>
+
+                <a href="potensi_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Potensi RW</span>
+                </a>
+
+                <a href="dokumentasi.html" class="menu-item">
+                    <i class="fa-regular fa-images"></i>
+                    <span>Dokumentasi</span>
+                </a>
+
+
+                <!-- ==================================================
+                    DOKUMEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    DOKUMEN
+                </div>
+
+                <a href="produk_hukum_admin.html" class="menu-item">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Produk Hukum</span>
+                </a>
+
+                <a href="arsip_digital_admin.html" class="menu-item">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <span>Arsip Digital</span>
+                </a>
+
+
+                <!-- ==================================================
+                    PENGELOLAAN
+                ================================================== -->
+
+                <div class="menu-label">
+                    PENGELOLAAN
+                </div>
+
+                <a href="pengaturan-admin.html" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Pengaturan</span>
+                </a>
+
+            </nav>
+
+
+                <!-- ==================================================
+                PROFIL ADMIN
+            ================================================== -->
+
+            <details class="admin-profile">
+
+                <summary class="sidebar-admin">
+
+                    <div class="admin-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="admin-info">
+                        <strong>Admin RW01</strong>
+                        <small>Administrator</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down admin-arrow"></i>
+
+                </summary>
+
+
+                <!-- DROPDOWN LOGOUT -->
+
+                <div class="admin-dropdown">
+
+                    <a href="beranda_RW.html" class="admin-logout">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <span>Logout</span>
+
+                    </a>
+
+                </div>
+
+            </details>
+    </aside>
+
+
+
+    <!-- =========================================================
+         MAIN CONTENT
+    ========================================================== -->
+
+    <main class="main-content">
+
+
+
+        <!-- =====================================================
+             HEADER
+        ====================================================== -->
+
+        <header class="page-header">
+
+
+            <div class="header-title">
+
+                <h1>
+                    Pengumuman
+                </h1>
+
+                <p>
+                    Kelola pengumuman yang ditampilkan kepada warga.
+                </p>
+
+            </div>
+
+
+
+            <!-- HEADER RIGHT -->
+
+             <div class="header-right">
+
+
+                <!-- Notification -->
+                <button class="notification-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- Pilihan RW -->
+                <div class="rw-selector">
+
+                    <div class="rw-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="rw-text">
+
+                        <strong>RW 01</strong>
+
+                        <small>
+                            Kel. XYZ, Kec. XYZ
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- =====================================================
+             STATISTIK
+        ====================================================== -->
+
+        <section class="announcement-statistics">
+
+
+            <div class="announcement-stat-card">
+
+
+                <div class="announcement-stat-icon">
+
+                    <i class="fa-solid fa-bullhorn"></i>
+
+                </div>
+
+
+                <div class="announcement-stat-content">
+
+                    <strong>
+                        12
+                    </strong>
+
+                    <span>
+                        Total Pengumuman
+                    </span>
+
+                    <small>
+                        Seluruh pengumuman RW
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CONTENT CARD
+        ====================================================== -->
+
+        <section class="announcement-card">
+
+
+
+            <!-- TOP BAR -->
+
+            <div class="announcement-top">
+
+
+                <!-- TITLE -->
+
+                <div class="announcement-heading">
+
+                    <h2>
+                        Semua Pengumuman
+                    </h2>
+
+                    <p>
+                        Daftar pengumuman yang telah dibuat.
+                    </p>
+
+                </div>
+
+
+
+                <!-- ACTION -->
+
+                <div class="announcement-actions">
+
+
+                    <!-- SEARCH -->
+
+                    <div class="announcement-search">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            placeholder="Cari pengumuman..."
+                        >
+
+                    </div>
+
+
+
+                    <!-- TAMBAH -->
+
+                    <a
+                        href="tambah-pengumuman.html"
+                        class="btn-add-announcement"
+                    >
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Tambah Pengumuman
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 TABLE
+            ================================================== -->
+
+            <div class="announcement-table-wrapper">
+
+
+                <table class="announcement-table">
+
+
+                    <thead>
+
+                        <tr>
+
+                            <th class="col-no">
+                                No
+                            </th>
+
+                            <th>
+                                Judul Pengumuman
+                            </th>
+
+                            <th>
+                                Tanggal
+                            </th>
+
+                            <th class="col-action">
+                                Aksi
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+
+                    <tbody>
+
+
+
+                        <!-- =====================================
+                             DATA 1
+                        ====================================== -->
+
+                        <tr>
+
+
+                            <td class="number">
+                                1
+                            </td>
+
+
+                            <td>
+
+                                <div class="announcement-title">
+
+
+                                    <div class="announcement-icon">
+
+                                        <i class="fa-solid fa-bullhorn"></i>
+
+                                    </div>
+
+
+                                    <div class="announcement-info">
+
+                                        <strong>
+                                            Libur Hari Raya Idul Adha
+                                        </strong>
+
+                                        <small>
+                                            Pemberitahuan mengenai libur
+                                            kegiatan lingkungan RW.
+                                        </small>
+
+                                    </div>
+
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="announcement-date">
+
+                                    <i class="fa-regular fa-calendar"></i>
+
+                                    3 Juni 2026
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+
+                                <div class="announcement-actions-table">
+
+
+                                    <a
+                                        href="#"
+                                        class="action-view"
+                                        title="Lihat"
+                                    >
+
+                                        <i class="fa-regular fa-eye"></i>
+
+                                    </a>
+
+
+                                    <a
+                                        href="#"
+                                        class="action-edit"
+                                        title="Edit"
+                                    >
+
+                                        <i class="fa-regular fa-pen-to-square"></i>
+
+                                    </a>
+
+
+                                    <a
+                                        href="#"
+                                        class="action-delete"
+                                        title="Hapus"
+                                    >
+
+                                        <i class="fa-regular fa-trash-can"></i>
+
+                                    </a>
+
+
+                                </div>
+
+
+                            </td>
+
+
+                        </tr>
+
+
+
+                        <!-- =====================================
+                             DATA 2
+                        ====================================== -->
+
+                        <tr>
+
+
+                            <td class="number">
+                                2
+                            </td>
+
+
+                            <td>
+
+                                <div class="announcement-title">
+
+
+                                    <div class="announcement-icon">
+
+                                        <i class="fa-solid fa-bullhorn"></i>
+
+                                    </div>
+
+
+                                    <div class="announcement-info">
+
+                                        <strong>
+                                            Kerja Bakti Lingkungan
+                                        </strong>
+
+                                        <small>
+                                            Kerja bakti lingkungan akan
+                                            dilaksanakan pada hari Minggu.
+                                        </small>
+
+                                    </div>
+
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="announcement-date">
+
+                                    <i class="fa-regular fa-calendar"></i>
+
+                                    6 Agustus 2026
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="announcement-actions-table">
+
+
+                                    <a
+                                        href="#"
+                                        class="action-view"
+                                        title="Lihat"
+                                    >
+
+                                        <i class="fa-regular fa-eye"></i>
+
+                                    </a>
+
+
+                                    <a
+                                        href="#"
+                                        class="action-edit"
+                                        title="Edit"
+                                    >
+
+                                        <i class="fa-regular fa-pen-to-square"></i>
+
+                                    </a>
+
+
+                                    <a
+                                        href="#"
+                                        class="action-delete"
+                                        title="Hapus"
+                                    >
+
+                                        <i class="fa-regular fa-trash-can"></i>
+
+                                    </a>
+
+
+                                </div>
+
+                            </td>
+
+
+                        </tr>
+
+
+
+                        <!-- =====================================
+                             DATA 3
+                        ====================================== -->
+
+                        <tr>
+
+
+                            <td class="number">
+                                3
+                            </td>
+
+
+                            <td>
+
+                                <div class="announcement-title">
+
+
+                                    <div class="announcement-icon">
+
+                                        <i class="fa-solid fa-bullhorn"></i>
+
+                                    </div>
+
+
+                                    <div class="announcement-info">
+
+                                        <strong>
+                                            Pembayaran Iuran Bulanan
+                                        </strong>
+
+                                        <small>
+                                            Pengingat pembayaran iuran
+                                            warga bulan Agustus.
+                                        </small>
+
+                                    </div>
+
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="announcement-date">
+
+                                    <i class="fa-regular fa-calendar"></i>
+
+                                    1 Agustus 2026
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="announcement-actions-table">
+
+
+                                    <a
+                                        href="#"
+                                        class="action-view"
+                                        title="Lihat"
+                                    >
+
+                                        <i class="fa-regular fa-eye"></i>
+
+                                    </a>
+
+
+                                    <a
+                                        href="#"
+                                        class="action-edit"
+                                        title="Edit"
+                                    >
+
+                                        <i class="fa-regular fa-pen-to-square"></i>
+
+                                    </a>
+
+
+                                    <a
+                                        href="#"
+                                        class="action-delete"
+                                        title="Hapus"
+                                    >
+
+                                        <i class="fa-regular fa-trash-can"></i>
+
+                                    </a>
+
+
+                                </div>
+
+                            </td>
+
+
+                        </tr>
+
+
+
+                        <!-- =====================================
+                             DATA 4
+                        ====================================== -->
+
+                        <tr>
+
+
+                            <td class="number">
+                                4
+                            </td>
+
+
+                            <td>
+
+                                <div class="announcement-title">
+
+
+                                    <div class="announcement-icon">
+
+                                        <i class="fa-solid fa-bullhorn"></i>
+
+                                    </div>
+
+
+                                    <div class="announcement-info">
+
+                                        <strong>
+                                            Pendataan Warga Baru
+                                        </strong>
+
+                                        <small>
+                                            Pendataan warga yang baru
+                                            berdomisili di lingkungan RW.
+                                        </small>
+
+                                    </div>
+
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="announcement-date">
+
+                                    <i class="fa-regular fa-calendar"></i>
+
+                                    28 Juli 2026
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="announcement-actions-table">
+
+
+                                    <a
+                                        href="#"
+                                        class="action-view"
+                                        title="Lihat"
+                                    >
+
+                                        <i class="fa-regular fa-eye"></i>
+
+                                    </a>
+
+
+                                    <a
+                                        href="#"
+                                        class="action-edit"
+                                        title="Edit"
+                                    >
+
+                                        <i class="fa-regular fa-pen-to-square"></i>
+
+                                    </a>
+
+
+                                    <a
+                                        href="#"
+                                        class="action-delete"
+                                        title="Hapus"
+                                    >
+
+                                        <i class="fa-regular fa-trash-can"></i>
+
+                                    </a>
+
+
+                                </div>
+
+                            </td>
+
+
+                        </tr>
+
+
+
+                        <!-- =====================================
+                             DATA 5
+                        ====================================== -->
+
+                        <tr>
+
+
+                            <td class="number">
+                                5
+                            </td>
+
+
+                            <td>
+
+                                <div class="announcement-title">
+
+
+                                    <div class="announcement-icon">
+
+                                        <i class="fa-solid fa-bullhorn"></i>
+
+                                    </div>
+
+
+                                    <div class="announcement-info">
+
+                                        <strong>
+                                            Rapat Pengurus RW
+                                        </strong>
+
+                                        <small>
+                                            Pemberitahuan jadwal rapat
+                                            pengurus RW.
+                                        </small>
+
+                                    </div>
+
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="announcement-date">
+
+                                    <i class="fa-regular fa-calendar"></i>
+
+                                    20 Juli 2026
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="announcement-actions-table">
+
+
+                                    <a
+                                        href="#"
+                                        class="action-view"
+                                        title="Lihat"
+                                    >
+
+                                        <i class="fa-regular fa-eye"></i>
+
+                                    </a>
+
+
+                                    <a
+                                        href="#"
+                                        class="action-edit"
+                                        title="Edit"
+                                    >
+
+                                        <i class="fa-regular fa-pen-to-square"></i>
+
+                                    </a>
+
+
+                                    <a
+                                        href="#"
+                                        class="action-delete"
+                                        title="Hapus"
+                                    >
+
+                                        <i class="fa-regular fa-trash-can"></i>
+
+                                    </a>
+
+
+                                </div>
+
+                            </td>
+
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 FOOTER TABLE
+            ================================================== -->
+
+            <div class="announcement-table-footer">
+
+
+                <span>
+                    Menampilkan 1 - 5 dari 12 pengumuman
+                </span>
+
+
+                <div class="announcement-pagination">
+
+
+                    <button disabled>
+
+                        <i class="fa-solid fa-chevron-left"></i>
+
+                    </button>
+
+
+                    <button class="active">
+                        1
+                    </button>
+
+
+                    <button>
+                        2
+                    </button>
+
+
+                    <button>
+                        3
+                    </button>
+
+
+                    <button>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             FOOTER
+        ====================================================== -->
+
+        <footer class="admin-footer">
+
+            © 2026 RW KITA | Suku Dinas Komunikasi,
+            Informatika dan Statistik Kota Administrasi
+            Jakarta Timur.
+
+        </footer>
+
+
+    </main>
+
+
+</body>
+
+</html>

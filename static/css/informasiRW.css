@@ -1,0 +1,568 @@
+/* ==================================================
+   INFORMASI
+================================================== */
+html.language-loading body {
+  opacity: 0;
+  pointer-events: none;
+}
+
+body {
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}
+
+.info-page {
+    background: #fff9e9;
+    padding: 35px 6% 60px;
+}
+
+
+/* ==================================================
+   MENU INFORMASI
+================================================== */
+
+.info-menu {
+    width: 100%;
+    max-width: 1100px;
+
+    height: 65px;
+
+    margin: 9px auto 15px;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    border: 1px solid #d09100;
+
+    border-radius: 18px;
+
+    background: #fffdf8;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+.info-menu-item {
+    min-height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    color: #063258;
+    text-decoration: none;
+
+    border-right: 1px solid #ddd;
+}
+
+
+.info-menu-item:last-child {
+    border-right: none;
+}
+
+
+.info-menu-item img {
+    width: 34px;
+    height: 34px;
+
+    object-fit: contain;
+}
+
+
+.info-menu-item span {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* ==================================================
+   SECTION
+================================================== */
+
+.info-section {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto 18px;
+}
+
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+
+.section-header h2 {
+    margin: 0;
+
+    color: #063258;
+
+    font-size: 15px;
+    font-weight: 800;
+}
+
+
+.section-header a {
+    color: #697014;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+/* ==================================================
+   BERITA TERBARU
+================================================== */
+
+.news-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+
+.news-card {
+    overflow: hidden;
+
+    background: #fffdf8;
+
+    border: 1px solid #d09100;
+
+    border-radius: 14px;
+}
+
+
+.news-card > img {
+    width: 100%;
+    height: 145px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.news-body {
+    padding: 10px 12px 12px;
+}
+
+
+.news-body h3 {
+    margin: 0 10px 10px;
+
+    color: #063258;
+
+    font-size: 13px;
+    line-height: 1.35;
+}
+
+
+.news-body p {
+    margin: 0 10px 12px;
+
+    color: #536b7d;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+.news-body a {
+    color: #697014;
+    margin: 0 10px 8px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+/* ==================================================
+   PENGUMUMAN
+================================================== */
+
+.announcement-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px 25px;
+}
+
+
+.announcement-card {
+    min-height: 60px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #d09100;
+
+    border-radius: 18px;
+
+    background: #fffdf8;
+
+    overflow: hidden;
+}
+
+
+.announcement-icon {
+    width: 70px;
+    height: 100%;
+
+    min-height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fff1bf;
+
+    flex-shrink: 0;
+}
+
+
+.announcement-icon img {
+    width: 35px;
+    height: 35px;
+
+    object-fit: contain;
+}
+
+
+.announcement-text {
+    flex: 1;
+
+    padding: 7px 12px;
+}
+
+
+.announcement-text h3 {
+    margin: 0 0 4px;
+
+    color: #173a57;
+
+    font-size: 13px;
+}
+
+
+.announcement-text p {
+    margin: 0;
+
+    color: #536b7d;
+
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+
+.announcement-date {
+    margin-right: 12px;
+
+    padding: 5px 10px;
+
+    background: #fff1d3;
+
+    border-radius: 15px;
+
+    color: #d09100;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* ==================================================
+   TWO COLUMN
+================================================== */
+
+.info-two-column {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto 20px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.6fr;
+
+    gap: 15px;
+}
+.info-two-column1 {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto 20px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+
+.info-box {
+    padding: 15px;
+
+    border: 1px solid #d09100;
+
+    border-radius: 18px;
+
+    background: #fff8dd;
+
+    box-sizing: border-box;
+}
+
+
+/* ==================================================
+   AGENDA
+================================================== */
+
+.agenda-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.agenda-item {
+    display: flex;
+
+    min-height: 55px;
+
+    border: 1px solid #d09100;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    background: #fffdf8;
+}
+
+
+.agenda-date {
+    width: 60px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #697014;
+
+    color: white;
+}
+
+
+.agenda-date strong {
+    font-size: 19px;
+    line-height: 1;
+}
+
+
+.agenda-date span {
+    margin-top: 3px;
+
+    font-size: 8px;
+    font-weight: 700;
+}
+
+
+.agenda-detail {
+    padding: 6px 10px;
+}
+
+
+.agenda-detail h3 {
+    margin: 0 0 4px;
+
+    color: #173a57;
+
+    font-size: 12px;
+}
+
+
+.agenda-detail p {
+    margin: 2px 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    color: #536b7d;
+
+    font-size: 10px;
+}
+
+
+.agenda-detail p img {
+    width: 11px;
+    height: 11px;
+
+    object-fit: contain;
+}
+
+
+/* ==================================================
+   DOKUMENTASI
+================================================== */
+
+.documentation-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 8px;
+}
+
+
+.documentation-grid img {
+    width: 100%;
+    height: 100px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+}
+
+
+/* ==================================================
+   ARTIKEL
+================================================== */
+
+.article-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.article-item {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 4px;
+
+    border: 1px solid #d09100;
+
+    border-radius: 8px;
+
+    background: #fffdf8;
+}
+
+
+.article-item img {
+    width: 85px;
+    height: 62px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    flex-shrink: 0;
+}
+
+
+.article-item h3 {
+    margin: 0;
+
+    color: #173a57;
+
+    font-size: 13px;
+}
+
+
+.article-item span {
+    color: #536b7d;
+
+    font-size: 12px;
+    margin-top: 0;
+}
+
+
+/* ==================================================
+   PUBLIKASI
+================================================== */
+
+.publication-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.publication-item {
+    min-height: 55px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 5px 10px;
+
+    border: 1px solid #d09100;
+
+    border-radius: 8px;
+
+    background: #fffdf8;
+}
+
+
+.publication-item img {
+    width: 32px;
+    height: 32px;
+
+    object-fit: contain;
+
+    margin-right: 10px;
+
+    flex-shrink: 0;
+}
+
+
+.publication-item div {
+    flex: 1;
+}
+
+
+.publication-item h3 {
+    margin: 0;
+
+    color: #173a57;
+
+    font-size: 13px;
+}
+
+
+.publication-item span {
+    color: #536b7d;
+    font-size: 12px;
+    margin: 0;
+}
+.publication-item > a .download {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}

@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Potensi RW - RW Kita</title>
+
+
+    <!-- =====================================================
+         FONT POPPINS
+    ====================================================== -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../static/css/global.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../static/css/potensi_rw_admin.css"
+    >
+
+</head>
+
+
+<body>
+
+
+
+ <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="sidebar-logo">
+            <img
+                src="../static/image/Logo_Footer.png"
+                alt="RW Kita">
+        </div>
+
+
+        <!-- Menu Sidebar -->
+        <nav class="sidebar-menu">
+
+                <!-- ==================================================
+                    UTAMA
+                ================================================== -->
+
+                <div class="menu-label">
+                    UTAMA
+                </div>
+
+                <a href="dashboard_admin.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+
+                <!-- ==================================================
+                    KONTEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    KONTEN
+                </div>
+
+                <a href="berita.html" class="menu-item">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <span>Berita</span>
+                </a>
+
+                <a href="artikel_admin.html" class="menu-item">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Artikel</span>
+                </a>
+
+                <a href="pengumuman.html" class="menu-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Pengumuman</span>
+                </a>
+
+                <a href="agenda.html" class="menu-item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Agenda</span>
+                </a>
+
+                <a href="cerita_warga.html" class="menu-item">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Cerita Warga</span>
+                </a>
+
+
+                <!-- ==================================================
+                    INFORMASI RW
+                ================================================== -->
+
+                <div class="menu-label">
+                    INFORMASI RW
+                </div>
+
+                <a href="profil_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Profil RW</span>
+                </a>
+
+                <a href="potensi_rw_admin.html" class="menu-item active">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Potensi RW</span>
+                </a>
+
+                <a href="dokumentasi.html" class="menu-item">
+                    <i class="fa-regular fa-images"></i>
+                    <span>Dokumentasi</span>
+                </a>
+
+
+                <!-- ==================================================
+                    DOKUMEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    DOKUMEN
+                </div>
+
+                <a href="produk_hukum_admin.html" class="menu-item">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Produk Hukum</span>
+                </a>
+
+                <a href="arsip_digital_admin.html" class="menu-item">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <span>Arsip Digital</span>
+                </a>
+
+
+                <!-- ==================================================
+                    PENGELOLAAN
+                ================================================== -->
+
+                <div class="menu-label">
+                    PENGELOLAAN
+                </div>
+
+                <a href="pengaturan-admin.html" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Pengaturan</span>
+                </a>
+
+            </nav>
+
+
+                <!-- ==================================================
+                PROFIL ADMIN
+            ================================================== -->
+
+            <details class="admin-profile">
+
+                <summary class="sidebar-admin">
+
+                    <div class="admin-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="admin-info">
+                        <strong>Admin RW01</strong>
+                        <small>Administrator</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down admin-arrow"></i>
+
+                </summary>
+
+
+                <!-- DROPDOWN LOGOUT -->
+
+                <div class="admin-dropdown">
+
+                    <a href="beranda_RW.html" class="admin-logout">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <span>Logout</span>
+
+                    </a>
+
+                </div>
+
+            </details>
+    </aside>
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main class="main-content">
+
+    <header class="page-header">
+
+
+        <div class="header-title">
+
+            <h1>Potensi RW</h1>
+
+            <p>
+                Kelola potensi unggulan RW untuk ditampilkan di website
+            </p>
+
+        </div>
+
+
+       <div class="header-right">
+
+
+                <!-- Notification -->
+                <button class="notification-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- Pilihan RW -->
+                <div class="rw-selector">
+
+                    <div class="rw-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="rw-text">
+
+                        <strong>RW 01</strong>
+
+                        <small>
+                            Kel. XYZ, Kec. XYZ
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         PAGE TOOLBAR
+    ====================================================== -->
+
+    <section class="potensi-toolbar">
+
+
+        <!-- Search -->
+
+        <div class="potensi-search">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                placeholder="Cari potensi..."
+            >
+
+        </div>
+
+
+        <!-- Category -->
+
+        <select class="potensi-filter">
+
+            <option>Semua Kategori</option>
+
+            <option>UMKM</option>
+
+            <option>Bank Sampah</option>
+
+            <option>Urban Farming</option>
+
+            <option>Kampung Tematik</option>
+
+            <option>Wisata Lokal</option>
+
+            <option>Inovasi RW</option>
+
+        </select>
+
+
+        <!-- Sort -->
+
+        <select class="potensi-filter potensi-sort">
+
+            <option>Terbaru</option>
+
+            <option>Terlama</option>
+
+            <option>Nama A-Z</option>
+
+            <option>Nama Z-A</option>
+
+        </select>
+
+
+        <!-- Add -->
+
+        <a
+            href="tambah-potensi.html"
+            class="btn-add-potensi"
+        >
+
+            <i class="fa-solid fa-plus"></i>
+
+            Tambah Potensi
+
+        </a>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         TABLE CARD
+    ====================================================== -->
+
+    <section class="potensi-card">
+
+
+        <!-- TABLE -->
+
+        <div class="table-wrapper">
+
+            <table class="potensi-table">
+
+
+                <thead>
+
+                    <tr>
+
+                        <th class="col-no">
+                            No
+                        </th>
+
+                        <th class="col-potensi">
+                            Potensi
+                        </th>
+
+                        <th class="col-kategori">
+                            Kategori
+                        </th>
+
+                        <th class="col-lokasi">
+                            Lokasi
+                        </th>
+
+                        <th class="col-kontak">
+                            Kontak
+                        </th>
+
+                        <th class="col-aksi">
+                            Aksi
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+
+                    <!-- =================================================
+                         DATA 1
+                    ================================================== -->
+
+                    <tr>
+
+                        <td class="number">
+                            1
+                        </td>
+
+
+                        <td>
+
+                            <div class="potensi-info">
+
+                                <img
+                                    src="../static/image/umkm.jpeg"
+                                    alt="Dapoer Bu Tati"
+                                >
+
+
+                                <div>
+
+                                    <h3>
+                                        Dapoer Bu Tati
+                                    </h3>
+
+                                    <p>
+                                        UMKM makanan ringan khas RW 01
+                                        yang menggunakan bahan alami
+                                        dan tanpa pengawet.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="category-badge category-umkm">
+                                UMKM
+                            </span>
+
+                        </td>
+
+
+                        <td>
+                            Jl. xyz RT 03 / RW 01
+                        </td>
+
+
+                        <td>
+                            081-2345-6789
+                        </td>
+
+
+                        <td>
+
+                            <div class="action-buttons">
+
+
+                                <a
+                                    href="detail-potensi.html"
+                                    class="action-view"
+                                    title="Lihat"
+                                >
+
+                                    <i class="fa-regular fa-eye"></i>
+
+                                </a>
+
+
+                                <a
+                                    href="edit-potensi.html"
+                                    class="action-edit"
+                                    title="Edit"
+                                >
+
+                                    <i class="fa-regular fa-pen-to-square"></i>
+
+                                </a>
+
+
+                                <a
+                                    href="#"
+                                    class="action-delete"
+                                    title="Hapus"
+                                >
+
+                                    <i class="fa-regular fa-trash-can"></i>
+
+                                </a>
+
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- =================================================
+                         DATA 2
+                    ================================================== -->
+
+                    <tr>
+
+                        <td class="number">
+                            2
+                        </td>
+
+
+                        <td>
+
+                            <div class="potensi-info">
+
+                                <img
+                                    src="../static/image/bank sampah.jpg"
+                                    alt="Bank Sampah RW 01"
+                                >
+
+
+                                <div>
+
+                                    <h3>
+                                        Bank Sampah RW 01
+                                    </h3>
+
+                                    <p>
+                                        Mengelola sampah rumah tangga
+                                        menjadi barang bernilai ekonomi
+                                        dan lingkungan lebih bersih.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="category-badge category-sampah">
+                                Bank Sampah
+                            </span>
+
+                        </td>
+
+
+                        <td>
+                            Jl. xyz RT 05 / RW 01
+                        </td>
+
+
+                        <td>
+                            081-5678-8888
+                        </td>
+
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <a
+                                    href="detail-potensi.html"
+                                    class="action-view"
+                                >
+
+                                    <i class="fa-regular fa-eye"></i>
+
+                                </a>
+
+
+                                <a
+                                    href="edit-potensi.html"
+                                    class="action-edit"
+                                >
+
+                                    <i class="fa-regular fa-pen-to-square"></i>
+
+                                </a>
+
+
+                                <a
+                                    href="#"
+                                    class="action-delete"
+                                >
+
+                                    <i class="fa-regular fa-trash-can"></i>
+
+                                </a>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- =================================================
+                         DATA 3
+                    ================================================== -->
+
+                    <tr>
+
+                        <td class="number">
+                            3
+                        </td>
+
+
+                        <td>
+
+                            <div class="potensi-info">
+
+                                <img
+                                    src="../static/image/urban farming.jpg"
+                                    alt="Urban Farming RW 01"
+                                >
+
+
+                                <div>
+
+                                    <h3>
+                                        Urban Farming RW 01
+                                    </h3>
+
+                                    <p>
+                                        Budidaya sayuran segar dengan
+                                        metode hidroponik untuk
+                                        ketahanan pangan masyarakat.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="category-badge category-farming">
+                                Urban Farming
+                            </span>
+
+                        </td>
+
+
+                        <td>
+                            Jl. xyz RT 04 / RW 01
+                        </td>
+
+
+                        <td>
+                            081-2224-5656
+                        </td>
+
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <a
+                                    href="detail-potensi.html"
+                                    class="action-view"
+                                >
+
+                                    <i class="fa-regular fa-eye"></i>
+
+                                </a>
+
+
+                                <a
+                                    href="edit-potensi.html"
+                                    class="action-edit"
+                                >
+
+                                    <i class="fa-regular fa-pen-to-square"></i>
+
+                                </a>
+
+
+                                <a
+                                    href="#"
+                                    class="action-delete"
+                                >
+
+                                    <i class="fa-regular fa-trash-can"></i>
+
+                                </a>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- =================================================
+                         DATA 4
+                    ================================================== -->
+
+                    <tr>
+
+                        <td class="number">
+                            4
+                        </td>
+
+
+                        <td>
+
+                            <div class="potensi-info">
+
+                                <img
+                                    src="../static/image/kmp tematik.jpg"
+                                    alt="Kampung Tematik RW 01"
+                                >
+
+
+                                <div>
+
+                                    <h3>
+                                        Kampung Tematik RW 01
+                                    </h3>
+
+                                    <p>
+                                        Lingkungan kreatif dengan konsep
+                                        tematik yang menarik dan edukatif
+                                        bagi warga.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="category-badge category-kampung">
+                                Kampung Tematik
+                            </span>
+
+                        </td>
+
+
+                        <td>
+                            Jl. xyz RT 05 / RW 01
+                        </td>
+
+
+                        <td>
+                            081-2224-5656
+                        </td>
+
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <a
+                                    href="detail-potensi.html"
+                                    class="action-view"
+                                >
+
+                                    <i class="fa-regular fa-eye"></i>
+
+                                </a>
+
+
+                                <a
+                                    href="edit-potensi.html"
+                                    class="action-edit"
+                                >
+
+                                    <i class="fa-regular fa-pen-to-square"></i>
+
+                                </a>
+
+
+                                <a
+                                    href="#"
+                                    class="action-delete"
+                                >
+
+                                    <i class="fa-regular fa-trash-can"></i>
+
+                                </a>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- =================================================
+                         DATA 5
+                    ================================================== -->
+
+                    <tr>
+
+                        <td class="number">
+                            5
+                        </td>
+
+
+                        <td>
+
+                            <div class="potensi-info">
+
+                                <img
+                                    src="../static/image/desa wisata.jpg"
+                                    alt="Wisata perahu lokal RW 01"
+                                >
+
+
+                                <div>
+
+                                    <h3>
+                                        Wisata Perahu Lokal RW 01
+                                    </h3>
+
+                                    <p>
+                                        Potensi wisata warga yang menjadi
+                                        daya tarik dan ruang rekreasi
+                                        masyarakat.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="category-badge category-wisata">
+                                Wisata Lokal
+                            </span>
+
+                        </td>
+
+
+                        <td>
+                            Jl. xyz RT 08 / RW 01
+                        </td>
+
+
+                        <td>
+                            081-3564-2222
+                        </td>
+
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <a
+                                    href="detail-potensi.html"
+                                    class="action-view"
+                                >
+
+                                    <i class="fa-regular fa-eye"></i>
+
+                                </a>
+
+
+                                <a
+                                    href="edit-potensi.html"
+                                    class="action-edit"
+                                >
+
+                                    <i class="fa-regular fa-pen-to-square"></i>
+
+                                </a>
+
+
+                                <a
+                                    href="#"
+                                    class="action-delete"
+                                >
+
+                                    <i class="fa-regular fa-trash-can"></i>
+
+                                </a>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- =================================================
+                         DATA 6
+                    ================================================== -->
+
+                    <tr>
+
+                        <td class="number">
+                            6
+                        </td>
+
+
+                        <td>
+
+                            <div class="potensi-info">
+
+                                <img
+                                    src="../static/image/inovasi.jpg"
+                                    alt="Inovasi Biopori Jumbo"
+                                >
+
+
+                                <div>
+
+                                    <h3>
+                                        Inovasi Biopori Jumbo
+                                    </h3>
+
+                                    <p>
+                                        Solusi pengelolaan sampah untuk
+                                        menjaga kebersihan dan
+                                        kelestarian lingkungan.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="category-badge category-inovasi">
+                                Inovasi RW
+                            </span>
+
+                        </td>
+
+
+                        <td>
+                            Jl. xyz RT 10 / RW 01
+                        </td>
+
+
+                        <td>
+                            081-8884-5656
+                        </td>
+
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <a
+                                    href="detail-potensi.html"
+                                    class="action-view"
+                                >
+
+                                    <i class="fa-regular fa-eye"></i>
+
+                                </a>
+
+
+                                <a
+                                    href="edit-potensi.html"
+                                    class="action-edit"
+                                >
+
+                                    <i class="fa-regular fa-pen-to-square"></i>
+
+                                </a>
+
+
+                                <a
+                                    href="#"
+                                    class="action-delete"
+                                >
+
+                                    <i class="fa-regular fa-trash-can"></i>
+
+                                </a>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             TABLE FOOTER
+        ====================================================== -->
+
+        <div class="table-footer">
+
+
+            <p>
+                Menampilkan 1 – 6 dari 18 data
+            </p>
+
+
+            <div class="pagination">
+
+
+                <a
+                    href="#"
+                    class="page-arrow"
+                >
+
+                    <i class="fa-solid fa-chevron-left"></i>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="page-number active"
+                >
+                    1
+                </a>
+
+
+                <a
+                    href="#"
+                    class="page-number"
+                >
+                    2
+                </a>
+
+
+                <a
+                    href="#"
+                    class="page-number"
+                >
+                    3
+                </a>
+
+
+                <a
+                    href="#"
+                    class="page-arrow"
+                >
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="page-footer">
+
+        © 2026 RW KITA | Suku Dinas Komunikasi, Informatika
+        dan Statistik Kota Administrasi Jakarta Timur.
+
+    </footer>
+
+
+</main>
+
+
+</body>
+
+</html>

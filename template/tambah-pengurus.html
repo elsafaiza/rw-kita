@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tambah Pengurus RW - RW Kita</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="../static/css/tambah-pengurus.css">
+    <link rel="stylesheet" href="../static/css/global.css">
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+ <aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="sidebar-logo">
+            <img
+                src="../static/image/Logo_Footer.png"
+                alt="RW Kita">
+        </div>
+
+
+        <!-- Menu Sidebar -->
+        <nav class="sidebar-menu">
+
+                <!-- ==================================================
+                    UTAMA
+                ================================================== -->
+
+                <div class="menu-label">
+                    UTAMA
+                </div>
+
+                <a href="dashboard_admin.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+
+                <!-- ==================================================
+                    KONTEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    KONTEN
+                </div>
+
+                <a href="berita.html" class="menu-item">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <span>Berita</span>
+                </a>
+
+                <a href="artikel_admin.html" class="menu-item">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Artikel</span>
+                </a>
+
+                <a href="pengumuman.html" class="menu-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Pengumuman</span>
+                </a>
+
+                <a href="agenda.html" class="menu-item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Agenda</span>
+                </a>
+
+                <a href="cerita_warga.html" class="menu-item">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Cerita Warga</span>
+                </a>
+
+
+                <!-- ==================================================
+                    INFORMASI RW
+                ================================================== -->
+
+                <div class="menu-label">
+                    INFORMASI RW
+                </div>
+
+                <a href="profil_rw_admin.html" class="menu-item active">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Profil RW</span>
+                </a>
+
+                <a href="potensi_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Potensi RW</span>
+                </a>
+
+                <a href="dokumentasi.html" class="menu-item">
+                    <i class="fa-regular fa-images"></i>
+                    <span>Dokumentasi</span>
+                </a>
+
+
+                <!-- ==================================================
+                    DOKUMEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    DOKUMEN
+                </div>
+
+                <a href="produk_hukum_admin.html" class="menu-item">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Produk Hukum</span>
+                </a>
+
+                <a href="arsip_digital_admin.html" class="menu-item">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <span>Arsip Digital</span>
+                </a>
+
+
+                <!-- ==================================================
+                    PENGELOLAAN
+                ================================================== -->
+
+                <div class="menu-label">
+                    PENGELOLAAN
+                </div>
+
+                <a href="pengaturan-admin.html" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Pengaturan</span>
+                </a>
+
+            </nav>
+
+
+                <!-- ==================================================
+                PROFIL ADMIN
+            ================================================== -->
+
+            <details class="admin-profile">
+
+                <summary class="sidebar-admin">
+
+                    <div class="admin-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="admin-info">
+                        <strong>Admin RW01</strong>
+                        <small>Administrator</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down admin-arrow"></i>
+
+                </summary>
+
+
+                <!-- DROPDOWN LOGOUT -->
+
+                <div class="admin-dropdown">
+
+                    <a href="beranda_RW.html" class="admin-logout">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <span>Logout</span>
+
+                    </a>
+
+                </div>
+
+            </details>
+    </aside>
+
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main class="main-content">
+
+
+    <!-- HEADER -->
+
+    <header class="page-header">
+
+
+        <div class="header-title">
+            <h1>
+                Tambah Pengurus RW
+            </h1>
+
+
+            <p>
+                Tambahkan data pengurus RW baru.
+            </p>
+
+        </div>
+
+
+
+       <div class="header-right">
+
+
+                <!-- Notification -->
+                <button class="notification-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- Pilihan RW -->
+                <div class="rw-selector">
+
+                    <div class="rw-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="rw-text">
+
+                        <strong>RW 01</strong>
+
+                        <small>
+                            Kel. XYZ, Kec. XYZ
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+    <!-- =====================================================
+         FORM
+    ====================================================== -->
+
+    <section class="form-card">
+
+
+        <div class="form-heading">
+
+            <h2>
+                Data Pengurus
+            </h2>
+
+            <p>
+                Isi informasi pengurus yang akan ditampilkan pada halaman Profil RW.
+            </p>
+
+        </div>
+
+
+
+        <form id="formPengurus">
+
+
+            <div class="form-layout">
+
+
+                <!-- =================================================
+                     FOTO
+                ================================================== -->
+
+                <div class="photo-section">
+
+
+                    <label class="field-label">
+                        Foto Pengurus
+                    </label>
+
+
+                    <div
+                        class="photo-preview"
+                        id="photoPreview"
+                    >
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+
+                    <label
+                        for="fotoPengurus"
+                        class="upload-button"
+                    >
+
+                        <i class="fa-solid fa-camera"></i>
+
+                        Upload Foto
+
+                    </label>
+
+
+                    <input
+                        type="file"
+                        id="fotoPengurus"
+                        accept=".jpg,.jpeg,.png,.webp"
+                        hidden
+                    >
+
+
+                    <small class="photo-info">
+
+                        Format JPG, PNG, WebP.<br>
+                        Ukuran maksimal 2 MB.
+
+                    </small>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     FIELDS
+                ================================================== -->
+
+                <div class="fields">
+
+
+                    <!-- NAMA -->
+
+                    <div class="form-group">
+
+                        <label for="nama">
+
+                            Nama Lengkap
+                            <span>*</span>
+
+                        </label>
+
+
+                        <input
+                            type="text"
+                            id="nama"
+                            placeholder="Masukkan nama lengkap pengurus"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- JABATAN -->
+
+                    <div class="form-group">
+
+                        <label for="jabatan">
+
+                            Jabatan
+                            <span>*</span>
+
+                        </label>
+
+
+                        <input
+                            type="text"
+                            id="jabatan"
+                            placeholder="Contoh: Sekretaris RW"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- PERIODE -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Periode Kepengurusan
+                            <em>(Opsional)</em>
+                        </label>
+
+
+                        <div class="period">
+
+                            <input
+                                type="number"
+                                placeholder="Tahun mulai"
+                                min="1900"
+                                max="2100"
+                            >
+
+
+                            <span>
+                                s/d
+                            </span>
+
+
+                            <input
+                                type="number"
+                                placeholder="Tahun selesai"
+                                min="1900"
+                                max="2100"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- DESKRIPSI -->
+
+                    <div class="form-group">
+
+                        <label for="deskripsi">
+
+                            Deskripsi
+                            <em>(Opsional)</em>
+
+                        </label>
+
+
+                        <textarea
+                            id="deskripsi"
+                            maxlength="300"
+                            placeholder="Masukkan deskripsi tugas atau peran pengurus..."
+                        ></textarea>
+
+
+                        <div class="counter">
+                            0/300 karakter
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ACTION
+            ================================================== -->
+
+            <div class="form-actions">
+
+
+                <a
+                    href="struktur-organisasi.html"
+                    class="btn-cancel"
+                >
+                    Batal
+                </a>
+
+
+                <button
+                    type="submit"
+                    class="btn-save"
+                >
+
+                    <i class="fa-regular fa-floppy-disk"></i>
+
+                    Simpan Pengurus
+
+                </button>
+
+            </div>
+
+
+        </form>
+
+    </section>
+
+
+
+    <footer class="admin-footer">
+
+            © 2026 RW KITA | Suku Dinas Komunikasi,
+            Informatika dan Statistik Kota Administrasi
+            Jakarta Timur.
+
+        </footer>
+
+
+</main>
+
+</body>
+</html>

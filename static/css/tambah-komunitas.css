@@ -1,0 +1,878 @@
+
+/* =========================================================
+   FORM CARD
+========================================================= */
+
+.form-card {
+
+    max-width: 1000px;
+
+    background: white;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 10px;
+
+    padding: 28px;
+
+}
+
+
+/* =========================================================
+   FORM HEADING
+========================================================= */
+
+.form-heading {
+
+    padding-bottom: 20px;
+
+    border-bottom:
+        1px solid
+        #edf0f3;
+
+    margin-bottom: 25px;
+
+}
+
+
+.form-heading h2 {
+
+    font-size: 16px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.form-heading p {
+
+    color:
+        var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   FORM SECTION
+========================================================= */
+
+.form-section {
+
+    padding-bottom: 25px;
+
+    margin-bottom: 25px;
+
+    border-bottom:
+        1px solid
+        #edf0f3;
+
+}
+
+
+.form-section:last-of-type {
+
+    border-bottom: none;
+
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.section-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.section-number {
+
+    width: 31px;
+
+    height: 31px;
+
+    border-radius: 7px;
+
+    background:
+        var(--gold-light);
+
+    color:
+        var(--gold-dark);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.section-title h3 {
+
+    font-size: 12px;
+
+    margin-bottom: 2px;
+
+}
+
+
+.section-title p {
+
+    font-size: 12px;
+
+    color:
+        var(--muted);
+
+}
+
+
+/* =========================================================
+   BASIC LAYOUT
+========================================================= */
+
+.basic-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        180px 1fr;
+
+    gap: 30px;
+
+}
+
+
+.logo-section {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+
+.field-label {
+
+    align-self: flex-start;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+}
+
+
+/* =========================================================
+   LOGO PREVIEW
+========================================================= */
+
+.logo-preview {
+
+    width: 125px;
+
+    height: 125px;
+
+    border-radius: 10px;
+
+    border:
+        1px dashed
+        #cbd3dc;
+
+    background:
+        #fafbfc;
+
+    color:
+        #a0aab6;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 30px;
+
+    overflow: hidden;
+
+}
+
+
+.logo-preview img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+}
+
+
+/* =========================================================
+   UPLOAD BUTTON
+========================================================= */
+
+.upload-button {
+
+    margin-top: 10px;
+
+    height: 34px;
+
+    padding:
+        0 13px;
+
+    border:
+        1px solid
+        #d4dbe3;
+
+    border-radius: 6px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+
+.upload-button:hover {
+
+    border-color:
+        var(--gold);
+
+    color:
+        var(--gold-dark);
+
+}
+
+
+.upload-info {
+
+    margin-top: 7px;
+
+    text-align: center;
+
+    color:
+        var(--muted);
+
+    font-size: 10x;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.form-group {
+
+    margin-bottom: 17px;
+
+}
+
+
+.form-group:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.form-group label {
+
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+
+}
+
+
+.form-group label span {
+
+    color:
+        #df2020;
+
+}
+
+
+.form-group input,
+.form-group textarea {
+
+    width: 100%;
+
+    border:
+        1px solid
+        #dfe4ea;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    padding:
+        10px 12px;
+
+    background: white;
+
+    color:
+        var(--text);
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    transition: .2s ease;
+
+}
+
+
+.form-group input {
+
+    height: 40px;
+
+}
+
+
+.form-group textarea {
+
+    min-height: 85px;
+
+    resize: vertical;
+
+    line-height: 1.6;
+
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+
+    border-color:
+        var(--gold);
+
+    box-shadow:
+        0 0 0 2px
+        rgba(223,160,0,.08);
+
+}
+
+
+/* =========================================================
+   LARGE TEXTAREA
+========================================================= */
+
+.large-textarea {
+
+    min-height: 130px !important;
+
+}
+
+
+/* =========================================================
+   COUNTER
+========================================================= */
+
+.counter {
+
+    text-align: right;
+
+    margin-top: 4px;
+
+    color:
+        var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   ACTIVITY
+========================================================= */
+
+.activity-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+
+}
+
+
+.activity-item {
+
+    display: flex;
+
+    gap: 8px;
+
+}
+
+
+.activity-item input {
+
+    flex: 1;
+
+    height: 38px;
+
+    border:
+        1px solid
+        #dfe4ea;
+
+    border-radius: 7px;
+
+    padding:
+        0 11px;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    outline: none;
+
+}
+
+
+.activity-item input:focus {
+
+    border-color:
+        var(--gold);
+
+}
+
+
+.remove-activity {
+
+    width: 38px;
+
+    height: 38px;
+
+    border:
+        1px solid
+        #f2c1c1;
+
+    border-radius: 7px;
+
+    background: white;
+
+    color:
+        #e05252;
+
+    cursor: pointer;
+
+}
+
+
+.remove-activity:hover {
+
+    background:
+        #fff3f3;
+
+}
+
+
+.add-activity {
+
+    margin-top: 10px;
+
+    height: 34px;
+
+    padding:
+        0 12px;
+
+    border:
+        1px dashed
+        var(--gold);
+
+    border-radius: 6px;
+
+    background:
+        #fffaf0;
+
+    color:
+        var(--gold-dark);
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+
+.add-activity:hover {
+
+    background:
+        var(--gold-light);
+
+}
+
+
+/* =========================================================
+   DOCUMENTATION UPLOAD
+========================================================= */
+
+.documentation-upload {
+
+    min-height: 125px;
+
+    border:
+        1px dashed
+        #cbd3dc;
+
+    border-radius: 9px;
+
+    background:
+        #fafbfc;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: .2s ease;
+
+}
+
+
+.documentation-upload:hover {
+
+    border-color:
+        var(--gold);
+
+    background:
+        #fffaf0;
+
+}
+
+
+.documentation-upload > i {
+
+    font-size: 24px;
+
+    color:
+        var(--blue--);
+
+    margin-bottom: 8px;
+
+}
+
+
+.documentation-upload strong {
+
+    font-size: 10px;
+
+}
+
+
+.documentation-upload span {
+
+    margin-top: 3px;
+
+    color:
+        var(--muted);
+
+    font-size: 10px;
+
+}
+
+
+.documentation-upload small {
+
+    margin-top: 7px;
+
+    color:
+        var(--muted);
+
+    font-size: 10px;
+
+}
+
+
+/* =========================================================
+   DOCUMENTATION PREVIEW
+========================================================= */
+
+.documentation-preview {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 9px;
+
+    margin-top: 12px;
+
+}
+
+
+.documentation-preview img {
+
+    width: 100%;
+
+    height: 90px;
+
+    object-fit: cover;
+
+    border-radius: 7px;
+
+    border:
+        1px solid
+        #e1e5ea;
+
+}
+
+
+/* =========================================================
+   FORM ACTIONS
+========================================================= */
+
+.form-actions {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 9px;
+
+    padding-top: 20px;
+
+}
+
+
+.btn-cancel,
+.btn-save {
+
+    height: 38px;
+
+    padding:
+        0 17px;
+
+    border-radius: 7px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+}
+
+
+.btn-cancel {
+
+    border:
+        1px solid
+        #d4dbe3;
+
+    background: white;
+
+    color:
+        #687588;
+
+}
+
+
+.btn-save {
+
+    border:
+        1px solid
+        var(--gold);
+
+    background:
+        var(--gold);
+
+    color: white;
+
+}
+
+
+.btn-save:hover {
+
+    background:
+        var(--gold-dark);
+
+}
+
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .basic-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .logo-section {
+
+        align-items: flex-start;
+
+    }
+
+
+    .field-label {
+
+        align-self: flex-start;
+
+    }
+
+
+    .documentation-preview {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .sidebar {
+
+        width: 200px;
+
+    }
+
+
+    .main-content {
+
+        margin-left: 200px;
+
+        padding: 20px;
+
+    }
+
+
+    .header-right {
+
+        display: none;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .sidebar {
+
+        position: relative;
+
+        width: 100%;
+
+    }
+
+
+    .main-content {
+
+        margin-left: 0;
+
+    }
+
+
+    .page-header {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    .form-card {
+
+        padding: 20px;
+
+    }
+
+
+    .documentation-preview {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .form-actions {
+
+        flex-direction: column-reverse;
+
+    }
+
+
+    .btn-cancel,
+    .btn-save {
+
+        width: 100%;
+
+    }
+
+}

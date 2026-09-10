@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tambah Produk Hukum - RW Kita</title>
+
+    <!-- Poppins -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="../static/css/tambah-produk-hukum.css">
+     <link rel="stylesheet" href="../static/css/global.css">
+
+</head>
+
+<body>
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="sidebar-logo">
+            <img
+                src="../static/image/Logo_Footer.png"
+                alt="RW Kita">
+        </div>
+
+
+        <!-- Menu Sidebar -->
+        <nav class="sidebar-menu">
+
+                <!-- ==================================================
+                    UTAMA
+                ================================================== -->
+
+                <div class="menu-label">
+                    UTAMA
+                </div>
+
+                <a href="dashboard_admin.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+
+                <!-- ==================================================
+                    KONTEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    KONTEN
+                </div>
+
+                <a href="berita.html" class="menu-item">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <span>Berita</span>
+                </a>
+
+                <a href="artikel_admin.html" class="menu-item">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Artikel</span>
+                </a>
+
+                <a href="pengumuman.html" class="menu-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Pengumuman</span>
+                </a>
+
+                <a href="agenda.html" class="menu-item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Agenda</span>
+                </a>
+
+                <a href="cerita_warga.html" class="menu-item">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Cerita Warga</span>
+                </a>
+
+
+                <!-- ==================================================
+                    INFORMASI RW
+                ================================================== -->
+
+                <div class="menu-label">
+                    INFORMASI RW
+                </div>
+
+                <a href="profil_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Profil RW</span>
+                </a>
+
+                <a href="potensi_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Potensi RW</span>
+                </a>
+
+                <a href="dokumentasi.html" class="menu-item">
+                    <i class="fa-regular fa-images"></i>
+                    <span>Dokumentasi</span>
+                </a>
+
+
+                <!-- ==================================================
+                    DOKUMEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    DOKUMEN
+                </div>
+
+                <a href="produk_hukum_admin.html" class="menu-item active">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Produk Hukum</span>
+                </a>
+
+                <a href="arsip_digital_admin.html" class="menu-item">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <span>Arsip Digital</span>
+                </a>
+
+
+                <!-- ==================================================
+                    PENGELOLAAN
+                ================================================== -->
+
+                <div class="menu-label">
+                    PENGELOLAAN
+                </div>
+
+                <a href="pengaturan-admin.html" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Pengaturan</span>
+                </a>
+
+            </nav>
+
+
+                <!-- ==================================================
+                PROFIL ADMIN
+            ================================================== -->
+
+            <details class="admin-profile">
+
+                <summary class="sidebar-admin">
+
+                    <div class="admin-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="admin-info">
+                        <strong>Admin RW01</strong>
+                        <small>Administrator</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down admin-arrow"></i>
+
+                </summary>
+
+
+                <!-- DROPDOWN LOGOUT -->
+
+                <div class="admin-dropdown">
+
+                    <a href="beranda_RW.html" class="admin-logout">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <span>Logout</span>
+
+                    </a>
+
+                </div>
+
+            </details>
+    </aside>
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main class="main-content">
+
+
+    <!-- HEADER -->
+
+    <header class="page-header">
+
+        <div class="header-title">
+
+            <h1>Tambah Produk Hukum</h1>
+
+            <p>
+                Tambahkan dokumen hukum baru untuk dikelola dan ditampilkan.
+            </p>
+
+        </div>
+
+
+        <div class="header-right">
+
+
+                <!-- Notification -->
+                <button class="notification-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- Pilihan RW -->
+                <div class="rw-selector">
+
+                    <div class="rw-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="rw-text">
+
+                        <strong>RW 01</strong>
+
+                        <small>
+                            Kel. XYZ, Kec. XYZ
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+    <!-- =====================================================
+         FORM
+    ====================================================== -->
+
+    <form class="document-form">
+
+
+        <!-- =================================================
+             INFORMASI DOKUMEN
+        ================================================== -->
+
+        <section class="form-card">
+
+            <div class="card-title">
+
+                <h2>Informasi Dokumen</h2>
+
+                <p>
+                    Lengkapi informasi dasar dokumen hukum.
+                </p>
+
+            </div>
+
+
+            <!-- JUDUL -->
+
+            <div class="form-group full">
+
+                <label for="judul">
+                    Nama / Judul Dokumen
+                    <span>*</span>
+                </label>
+
+                <input
+                    type="text"
+                    id="judul"
+                    name="judul"
+                    placeholder="Masukkan nama atau judul dokumen"
+                    maxlength="150"
+                >
+
+                <small class="counter">
+                    0/150
+                </small>
+
+            </div>
+
+
+
+            <!-- ROW -->
+
+            <div class="form-row">
+
+
+                <!-- KATEGORI -->
+
+                <div class="form-group">
+
+                    <label for="kategori">
+                        Kategori Dokumen
+                        <span>*</span>
+                    </label>
+
+                    <div class="select-wrapper">
+
+                        <select id="kategori" name="kategori">
+
+                            <option value="">
+                                Pilih kategori dokumen
+                            </option>
+
+                            <option value="keputusan">
+                                Keputusan
+                            </option>
+
+                            <option value="peraturan">
+                                Peraturan
+                            </option>
+
+                            <option value="pedoman">
+                                Pedoman
+                            </option>
+
+                            <option value="surat">
+                                Surat
+                            </option>
+
+                            <option value="laporan">
+                                Laporan
+                            </option>
+
+                            <option value="lainnya">
+                                Lainnya
+                            </option>
+
+                        </select>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- NOMOR -->
+
+                <div class="form-group">
+
+                    <label for="nomor">
+                        Nomor Dokumen
+                        <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nomor"
+                        name="nomor"
+                        placeholder="Contoh: 001/SK/RW/2026"
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TANGGAL + TAHUN -->
+
+            <div class="form-row">
+
+
+                <div class="form-group">
+
+                    <label for="tanggal">
+                        Tanggal Dokumen
+                        <span>*</span>
+                    </label>
+
+                    <div class="input-icon">
+
+                        <input
+                            type="date"
+                            id="tanggal"
+                            name="tanggal"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="tahun">
+                        Tahun
+                    </label>
+
+                    <input
+                        type="text"
+                        id="tahun"
+                        name="tahun"
+                        placeholder="Otomatis dari tanggal"
+                        readonly
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DESKRIPSI -->
+
+            <div class="form-group full">
+
+                <label for="deskripsi">
+                    Deskripsi / Keterangan
+                </label>
+
+                <textarea
+                    id="deskripsi"
+                    name="deskripsi"
+                    placeholder="Tuliskan deskripsi singkat mengenai dokumen..."
+                    maxlength="300"
+                ></textarea>
+
+                <small class="counter">
+                    0/300
+                </small>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             UPLOAD DOKUMEN
+        ================================================== -->
+
+        <section class="form-card">
+
+            <div class="card-title">
+
+                <h2>
+                    Upload Dokumen
+                    <span>*</span>
+                </h2>
+
+                <p>
+                    Unggah file dokumen hukum yang akan disimpan.
+                </p>
+
+            </div>
+
+
+            <label
+                class="document-upload"
+                for="file-dokumen"
+            >
+
+                <input
+                    type="file"
+                    id="file-dokumen"
+                    name="file-dokumen"
+                    accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx"
+                >
+
+
+                <div class="upload-icon">
+
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                </div>
+
+
+                <strong>
+                    Klik untuk mengunggah dokumen
+                </strong>
+
+
+                <span>
+                    atau seret file ke sini
+                </span>
+
+            </label>
+
+
+            <div class="upload-info">
+
+                <span>
+                    <i class="fa-regular fa-file-pdf"></i>
+                    PDF
+                </span>
+
+                <span>
+                    <i class="fa-regular fa-file-word"></i>
+                    DOC / DOCX
+                </span>
+
+                <span>
+                    <i class="fa-regular fa-file-excel"></i>
+                    XLS / XLSX
+                </span>
+
+                <span>
+                    <i class="fa-regular fa-file-powerpoint"></i>
+                    PPT / PPTX
+                </span>
+
+                <em>
+                    Maks. ukuran 10 MB
+                </em>
+
+            </div>
+
+
+            <!-- FILE PREVIEW -->
+
+            <div
+                class="selected-file"
+                id="selected-file"
+            >
+
+                <div class="selected-file-icon">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </div>
+
+                <div class="selected-file-info">
+
+                    <strong id="file-name">
+                        Nama file
+                    </strong>
+
+                    <small id="file-size">
+                        0 MB
+                    </small>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="remove-file"
+                >
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             TOMBOL
+        ================================================== -->
+
+        <div class="form-actions">
+
+            <a
+                href="produk_hukum_admin.html"
+                class="btn-cancel"
+            >
+                Batal
+            </a>
+
+
+            <button
+                type="button"
+                class="btn-draft"
+            >
+                Simpan Draft
+            </button>
+
+
+            <button
+                type="submit"
+                class="btn-publish"
+            >
+                Simpan & Publikasikan
+            </button>
+
+        </div>
+
+
+    </form>
+
+
+
+    <!-- FOOTER -->
+
+   <footer class="admin-footer">
+
+            © 2026 RW KITA | Suku Dinas Komunikasi,
+            Informatika dan Statistik Kota Administrasi
+            Jakarta Timur.
+
+        </footer>
+
+</main>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+const tanggal = document.getElementById("tanggal");
+const tahun = document.getElementById("tahun");
+
+tanggal.addEventListener("change", function () {
+
+    if (this.value) {
+
+        const date = new Date(this.value);
+
+        tahun.value = date.getFullYear();
+
+    }
+
+});
+
+
+const fileInput =
+    document.getElementById("file-dokumen");
+
+const selectedFile =
+    document.getElementById("selected-file");
+
+const fileName =
+    document.getElementById("file-name");
+
+const fileSize =
+    document.getElementById("file-size");
+
+const removeFile =
+    document.querySelector(".remove-file");
+
+
+fileInput.addEventListener("change", function () {
+
+    if (!this.files.length) return;
+
+    const file = this.files[0];
+
+    fileName.textContent = file.name;
+
+    fileSize.textContent =
+        (file.size / (1024 * 1024)).toFixed(2) + " MB";
+
+    selectedFile.classList.add("show");
+
+});
+
+
+removeFile.addEventListener("click", function () {
+
+    fileInput.value = "";
+
+    selectedFile.classList.remove("show");
+
+});
+
+
+</script>
+
+</body>
+</html>

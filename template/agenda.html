@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Agenda - RW Kita</title>
+
+
+    <!-- =====================================================
+         FONT POPPINS
+    ====================================================== -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../static/css/global.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../static/css/agenda.css"
+    >
+
+</head>
+
+
+<body>
+
+
+ <aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="sidebar-logo">
+            <img
+                src="../static/image/Logo_Footer.png"
+                alt="RW Kita">
+        </div>
+
+        <nav class="sidebar-menu">
+
+                <!-- ==================================================
+                    UTAMA
+                ================================================== -->
+
+                <div class="menu-label">
+                    UTAMA
+                </div>
+
+                <a href="dashboard_admin.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+
+                <!-- ==================================================
+                    KONTEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    KONTEN
+                </div>
+
+                <a href="berita.html" class="menu-item">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <span>Berita</span>
+                </a>
+
+                <a href="artikel_admin.html" class="menu-item">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Artikel</span>
+                </a>
+
+                <a href="pengumuman.html" class="menu-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Pengumuman</span>
+                </a>
+
+                <a href="agenda.html" class="menu-item active">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Agenda</span>
+                </a>
+
+                <a href="cerita_warga.html" class="menu-item">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Cerita Warga</span>
+                </a>
+
+
+                <!-- ==================================================
+                    INFORMASI RW
+                ================================================== -->
+
+                <div class="menu-label">
+                    INFORMASI RW
+                </div>
+
+                <a href="profil_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Profil RW</span>
+                </a>
+
+                <a href="potensi_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Potensi RW</span>
+                </a>
+
+                <a href="dokumentasi.html" class="menu-item">
+                    <i class="fa-regular fa-images"></i>
+                    <span>Dokumentasi</span>
+                </a>
+
+
+                <!-- ==================================================
+                    DOKUMEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    DOKUMEN
+                </div>
+
+                <a href="produk_hukum_admin.html" class="menu-item">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Produk Hukum</span>
+                </a>
+
+                <a href="arsip_digital_admin.html" class="menu-item">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <span>Arsip Digital</span>
+                </a>
+
+
+                <!-- ==================================================
+                    PENGELOLAAN
+                ================================================== -->
+
+                <div class="menu-label">
+                    PENGELOLAAN
+                </div>
+
+                <a href="pengaturan-admin.html" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Pengaturan</span>
+                </a>
+
+            </nav>
+
+
+                <!-- ==================================================
+                PROFIL ADMIN
+            ================================================== -->
+
+            <details class="admin-profile">
+
+                <summary class="sidebar-admin">
+
+                    <div class="admin-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="admin-info">
+                        <strong>Admin RW01</strong>
+                        <small>Administrator</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down admin-arrow"></i>
+
+                </summary>
+
+
+                <!-- DROPDOWN LOGOUT -->
+
+                <div class="admin-dropdown">
+
+                    <a href="beranda_RW.html" class="admin-logout">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <span>Logout</span>
+
+                    </a>
+
+                </div>
+
+            </details>
+    </aside>
+
+
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main class="main-content">
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="page-header">
+
+
+        <!-- HEADER TITLE -->
+
+        <div class="header-title">
+
+            <h1>Agenda</h1>
+
+            <p>
+                Kelola semua Agenda kegiatan di lingkungan RW
+            </p>
+
+        </div>
+
+
+        <!-- HEADER RIGHT -->
+
+        <div class="header-right">
+
+
+                <!-- Notification -->
+                <button class="notification-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- Pilihan RW -->
+                <div class="rw-selector">
+
+                    <div class="rw-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="rw-text">
+
+                        <strong>RW 01</strong>
+
+                        <small>
+                            Kel. XYZ, Kec. XYZ
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         AGENDA TOOLBAR
+    ====================================================== -->
+
+    <section class="agenda-toolbar">
+
+
+        <!-- TABS -->
+
+        <div class="agenda-tabs">
+
+
+            <a
+                href="#"
+                class="agenda-tab active"
+            >
+                Semua Agenda
+            </a>
+
+
+            <a
+                href="#"
+                class="agenda-tab"
+            >
+                Agenda Mendatang
+            </a>
+
+
+            <a
+                href="#"
+                class="agenda-tab"
+            >
+                Agenda Selesai
+            </a>
+
+
+        </div>
+
+
+        <!-- SEARCH + BUTTON -->
+
+        <div class="agenda-actions">
+
+
+            <div class="agenda-search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Cari Agenda"
+                >
+
+            </div>
+
+
+            <a
+                href="tambah-agnda.html"
+                class="btn-add-agenda"
+            >
+
+                <i class="fa-solid fa-plus"></i>
+
+                Tambah Agenda
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         TABLE CARD
+    ====================================================== -->
+
+    <section class="agenda-card">
+
+
+        <div class="agenda-table-wrapper">
+
+            <table class="agenda-table">
+
+
+                <!-- =================================================
+                     TABLE HEADER
+                ================================================== -->
+
+                <thead>
+
+                    <tr>
+
+                        <th class="col-no">
+                            No
+                        </th>
+
+                        <th class="col-title">
+                            Judul Agenda
+                        </th>
+
+                        <th class="col-date">
+                            Tanggal
+                        </th>
+
+                        <th class="col-time">
+                            Waktu
+                        </th>
+
+                        <th class="col-location">
+                            Lokasi
+                        </th>
+
+                        <th class="col-status">
+                            Status
+                        </th>
+
+                        <th class="col-action">
+                            Aksi
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+
+                <!-- =================================================
+                     TABLE BODY
+                ================================================== -->
+
+                <tbody>
+
+
+                    <!-- ROW 1 -->
+
+                    <tr>
+
+                        <td class="number">
+                            1
+                        </td>
+
+
+                        <td class="agenda-title">
+                            Kerja Bakti Lingkungan RW 01
+                        </td>
+
+
+                        <td>
+                            29 Agustus 2026
+                        </td>
+
+
+                        <td>
+                            07.00 - 12.00 WIB
+                        </td>
+
+
+                        <td>
+                            Sepanjang Jl. Melati RW 01
+                        </td>
+
+
+                        <td>
+
+                            <span class="status status-coming">
+                                Mendatang
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <a
+                                    href="#"
+                                    class="action-btn"
+                                    title="Lihat"
+                                >
+                                    <i class="fa-regular fa-eye"></i>
+                                </a>
+
+
+                                <a
+                                    href="#"
+                                    class="action-btn"
+                                    title="Edit"
+                                >
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </a>
+
+
+                                <a
+                                    href="#"
+                                    class="action-btn delete"
+                                    title="Hapus"
+                                >
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </a>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- ROW 2 -->
+
+                    <tr>
+
+                        <td class="number">
+                            2
+                        </td>
+
+
+                        <td class="agenda-title">
+                            Rapat Karang Taruna RW 01
+                        </td>
+
+
+                        <td>
+                            2 September 2026
+                        </td>
+
+
+                        <td>
+                            18.30 - 20.00 WIB
+                        </td>
+
+
+                        <td>
+                            Balai RW 01
+                        </td>
+
+
+                        <td>
+
+                            <span class="status status-coming">
+                                Mendatang
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <a
+                                    href="#"
+                                    class="action-btn"
+                                >
+                                    <i class="fa-regular fa-eye"></i>
+                                </a>
+
+
+                                <a
+                                    href="#"
+                                    class="action-btn"
+                                >
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </a>
+
+
+                                <a
+                                    href="#"
+                                    class="action-btn delete"
+                                >
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </a>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- ROW 3 -->
+
+                    <tr>
+
+                        <td class="number">
+                            3
+                        </td>
+
+
+                        <td class="agenda-title">
+                            Rapat Rutin Bulanan RW 01
+                        </td>
+
+
+                        <td>
+                            15 September 2026
+                        </td>
+
+
+                        <td>
+                            18.30 - 20.00 WIB
+                        </td>
+
+
+                        <td>
+                            Balai RW 01
+                        </td>
+
+
+                        <td>
+
+                            <span class="status status-coming">
+                                Mendatang
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <a
+                                    href="#"
+                                    class="action-btn"
+                                >
+                                    <i class="fa-regular fa-eye"></i>
+                                </a>
+
+
+                                <a
+                                    href="#"
+                                    class="action-btn"
+                                >
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </a>
+
+
+                                <a
+                                    href="#"
+                                    class="action-btn delete"
+                                >
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </a>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- ROW 4 -->
+
+                    <tr>
+
+                        <td class="number">
+                            4
+                        </td>
+
+
+                        <td class="agenda-title">
+                            Posyandu Ibu dan Balita RW 01
+                        </td>
+
+
+                        <td>
+                            21 Agustus 2026
+                        </td>
+
+
+                        <td>
+                            07.30 - 12.00 WIB
+                        </td>
+
+
+                        <td>
+                            Posyandu RW 01
+                        </td>
+
+
+                        <td>
+
+                            <span class="status status-done">
+                                Selesai
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <a
+                                    href="#"
+                                    class="action-btn"
+                                >
+                                    <i class="fa-regular fa-eye"></i>
+                                </a>
+
+
+                                <a
+                                    href="#"
+                                    class="action-btn"
+                                >
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </a>
+
+
+                                <a
+                                    href="#"
+                                    class="action-btn delete"
+                                >
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </a>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- ROW 5 -->
+
+                    <tr>
+
+                        <td class="number">
+                            5
+                        </td>
+
+
+                        <td class="agenda-title">
+                            Rapat Rutin Bulanan RW 01
+                        </td>
+
+
+                        <td>
+                            1 September 2026
+                        </td>
+
+
+                        <td>
+                            18.30 - 20.00 WIB
+                        </td>
+
+
+                        <td>
+                            Balai RW 01
+                        </td>
+
+
+                        <td>
+
+                            <span class="status status-cancelled">
+                                Dibatalkan
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <a
+                                    href="#"
+                                    class="action-btn"
+                                >
+                                    <i class="fa-regular fa-eye"></i>
+                                </a>
+
+
+                                <a
+                                    href="#"
+                                    class="action-btn"
+                                >
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </a>
+
+
+                                <a
+                                    href="#"
+                                    class="action-btn delete"
+                                >
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </a>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             PAGINATION
+        ====================================================== -->
+
+        <div class="agenda-footer">
+
+            <div class="pagination">
+
+                <a href="#" class="page-arrow">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+
+                <a href="#" class="page-number">
+                    1
+                </a>
+
+                <a href="#" class="page-arrow">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="page-footer">
+
+        © 2026 RW KITA | Suku Dinas Komunikasi, Informatika dan Statistik Kota Administrasi Jakarta Timur.
+
+    </footer>
+
+
+</main>
+
+
+</body>
+
+</html>

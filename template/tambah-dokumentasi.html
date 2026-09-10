@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Tambah Dokumentasi - RW Kita</title>
+
+
+    <!-- ==================================================
+         FONT POPPINS
+    ================================================== -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../static/css/global.css"
+    >
+
+
+    <!-- ==================================================
+         TAMBAH DOKUMENTASI CSS
+    ================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../static/css/tambah-dokumentasi.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+  <aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="sidebar-logo">
+            <img
+                src="../static/image/Logo_Footer.png"
+                alt="RW Kita">
+        </div>
+
+
+        <!-- Menu Sidebar -->
+        <nav class="sidebar-menu">
+
+                <!-- ==================================================
+                    UTAMA
+                ================================================== -->
+
+                <div class="menu-label">
+                    UTAMA
+                </div>
+
+                <a href="dashboard_admin.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+
+                <!-- ==================================================
+                    KONTEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    KONTEN
+                </div>
+
+                <a href="berita.html" class="menu-item">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <span>Berita</span>
+                </a>
+
+                <a href="artikel_admin.html" class="menu-item">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Artikel</span>
+                </a>
+
+                <a href="pengumuman.html" class="menu-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Pengumuman</span>
+                </a>
+
+                <a href="agenda.html" class="menu-item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Agenda</span>
+                </a>
+
+                <a href="cerita_warga.html" class="menu-item">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Cerita Warga</span>
+                </a>
+
+
+                <!-- ==================================================
+                    INFORMASI RW
+                ================================================== -->
+
+                <div class="menu-label">
+                    INFORMASI RW
+                </div>
+
+                <a href="profil_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Profil RW</span>
+                </a>
+
+                <a href="potensi_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Potensi RW</span>
+                </a>
+
+                <a href="dokumentasi.html" class="menu-item active">
+                    <i class="fa-regular fa-images"></i>
+                    <span>Dokumentasi</span>
+                </a>
+
+
+                <!-- ==================================================
+                    DOKUMEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    DOKUMEN
+                </div>
+
+                <a href="produk_hukum_admin.html" class="menu-item">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Produk Hukum</span>
+                </a>
+
+                <a href="arsip_digital_admin.html" class="menu-item">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <span>Arsip Digital</span>
+                </a>
+
+
+                <!-- ==================================================
+                    PENGELOLAAN
+                ================================================== -->
+
+                <div class="menu-label">
+                    PENGELOLAAN
+                </div>
+
+                <a href="pengaturan-admin.html" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Pengaturan</span>
+                </a>
+
+            </nav>
+
+
+                <!-- ==================================================
+                PROFIL ADMIN
+            ================================================== -->
+
+            <details class="admin-profile">
+
+                <summary class="sidebar-admin">
+
+                    <div class="admin-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="admin-info">
+                        <strong>Admin RW01</strong>
+                        <small>Administrator</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down admin-arrow"></i>
+
+                </summary>
+
+
+                <!-- DROPDOWN LOGOUT -->
+
+                <div class="admin-dropdown">
+
+                    <a href="beranda_RW.html" class="admin-logout">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <span>Logout</span>
+
+                    </a>
+
+                </div>
+
+            </details>
+    </aside>
+
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main class="main-content">
+
+
+    <!-- ==================================================
+         HEADER
+    ================================================== -->
+
+    <header class="page-header">
+
+
+        <div class="header-title">
+
+            <h1>Tambah Dokumentasi</h1>
+
+            <p>
+                Tambahkan foto atau video baru untuk dokumentasi RW.
+            </p>
+
+        </div>
+
+
+         <div class="header-right">
+
+
+                <!-- Notification -->
+                <button class="notification-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- Pilihan RW -->
+                <div class="rw-selector">
+
+                    <div class="rw-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="rw-text">
+
+                        <strong>RW 01</strong>
+
+                        <small>
+                            Kel. XYZ, Kec. XYZ
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+
+                </div>
+
+        </header>
+
+
+
+    <!-- =========================================================
+         FORM
+    ========================================================= -->
+
+    <section class="documentation-form-card">
+
+
+        <div class="form-layout">
+
+
+            <!-- ==================================================
+                 LEFT SIDE
+            ================================================== -->
+
+            <div class="form-left">
+
+
+                <!-- JUDUL -->
+
+                <div class="form-group">
+
+                    <label for="judul-dokumentasi">
+
+                        Judul Dokumentasi
+
+                        <span>*</span>
+
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="judul-dokumentasi"
+                        name="judul-dokumentasi"
+                        placeholder="Masukkan judul dokumentasi"
+                    >
+
+
+                    <div class="character-count">
+
+                        0/100
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- TIPE -->
+
+                <div class="form-group">
+
+                    <label for="tipe-dokumentasi">
+
+                        Tipe Dokumentasi
+
+                        <span>*</span>
+
+                    </label>
+
+
+                    <select
+                        id="tipe-dokumentasi"
+                        name="tipe-dokumentasi"
+                    >
+
+                        <option value="">
+                            Pilih tipe dokumentasi
+                        </option>
+
+                        <option value="foto">
+                            Foto
+                        </option>
+
+                        <option value="video">
+                            Video
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- DESKRIPSI -->
+
+                <div class="form-group">
+
+                    <label for="deskripsi">
+
+                        Deskripsi
+
+                        <span>*</span>
+
+                    </label>
+
+
+                    <p class="form-description">
+
+                        Tuliskan keterangan singkat mengenai dokumentasi.
+
+                    </p>
+
+
+                    <textarea
+                        id="deskripsi"
+                        name="deskripsi"
+                        placeholder="Masukkan deskripsi dokumentasi"
+                    ></textarea>
+
+
+                    <div class="character-count">
+
+                        0/300
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- MEDIA UTAMA -->
+
+                <div class="form-group">
+
+
+                    <label>
+
+                        Upload Dokumentasi
+
+                        <span>*</span>
+
+                    </label>
+
+
+                    <p class="form-description">
+
+                        Unggah foto atau video yang ingin ditampilkan
+                        pada halaman dokumentasi.
+
+                    </p>
+
+
+                    <label
+                        class="upload-box"
+                        for="media-dokumentasi"
+                    >
+
+
+                        <input
+                            type="file"
+                            id="media-dokumentasi"
+                            name="media-dokumentasi"
+                            accept=".jpg,.jpeg,.png,.webp,.mp4,.webm"
+                        >
+
+
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+
+
+                        <strong>
+
+                            Klik untuk mengunggah file
+
+                        </strong>
+
+
+                        <span>
+
+                            atau seret file ke sini
+
+                        </span>
+
+
+                    </label>
+
+
+                    <small class="upload-info">
+
+                        Foto: JPG, PNG, WebP (Maks. 2MB)
+
+                        <br>
+
+                        Video: MP4, WebM (Maks. 20MB)
+
+                    </small>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 RIGHT SIDE
+            ================================================== -->
+
+            <div class="form-right">
+
+
+                <!-- INFORMASI -->
+
+                <div class="side-card">
+
+
+                    <h2>
+                        Informasi Dokumentasi
+                    </h2>
+
+
+
+                    <!-- TANGGAL -->
+
+                    <div class="side-form-group">
+
+                        <label for="tanggal">
+
+                            Tanggal
+
+                            <span>*</span>
+
+                        </label>
+
+
+                        <input
+                            type="date"
+                            id="tanggal"
+                            name="tanggal"
+                        >
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- PREVIEW -->
+
+                <div class="side-card preview-card">
+
+
+                    <h2>
+                        Preview
+                    </h2>
+
+
+                    <div class="preview-box">
+
+
+                        <i class="fa-regular fa-image"></i>
+
+
+                        <strong>
+                            Belum ada file
+                        </strong>
+
+
+                        <span>
+                            Preview akan ditampilkan
+                            setelah file dipilih.
+                        </span>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ==================================================
+             FORM ACTION
+        ================================================== -->
+
+        <div class="form-actions">
+
+
+            <a
+                href="dokumentasi.html"
+                class="btn-cancel"
+            >
+
+                Batal
+
+            </a>
+
+
+            <button
+                type="button"
+                class="btn-draft"
+            >
+
+                Simpan Draft
+
+            </button>
+
+
+            <button
+                type="button"
+                class="btn-publish"
+            >
+
+                Simpan & Publikasikan
+
+            </button>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ==================================================
+         FOOTER
+    ================================================== -->
+
+    <footer class="admin-footer">
+
+            © 2026 RW KITA | Suku Dinas Komunikasi,
+            Informatika dan Statistik Kota Administrasi
+            Jakarta Timur.
+
+        </footer>
+
+
+</main>
+
+
+</body>
+
+</html>

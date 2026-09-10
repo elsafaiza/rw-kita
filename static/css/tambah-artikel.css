@@ -1,0 +1,779 @@
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.article-form {
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 2fr) minmax(260px, .9fr);
+
+    gap: 24px;
+
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.form-group {
+
+    margin-bottom: 22px;
+
+    position: relative;
+
+}
+
+
+.form-group > label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #071f41;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+.form-group > label span {
+
+    color: #e04444;
+
+}
+
+
+.form-description {
+
+    margin: -1px 0 8px;
+
+    color: #7a8592;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.form-group input[type="text"] {
+
+    width: 100%;
+
+    height: 43px;
+
+    padding: 0 13px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #cbd3dc;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #fff;
+
+    color: #132d4d;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    transition: .2s ease;
+
+}
+
+
+.form-group input[type="text"]:focus {
+
+    border-color: #d99a00;
+
+    box-shadow: 0 0 0 2px rgba(217,154,0,.08);
+
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+
+    color: #a5adb7;
+
+}
+
+
+/* =========================================================
+   TEXTAREA
+========================================================= */
+
+.form-group textarea {
+
+    width: 100%;
+
+    min-height: 230px;
+
+    padding: 13px;
+
+    box-sizing: border-box;
+
+    resize: vertical;
+
+    border: 1px solid #cbd3dc;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #fff;
+
+    color: #132d4d;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+}
+
+
+.form-group textarea:focus {
+
+    border-color: #d99a00;
+
+    box-shadow: 0 0 0 2px rgba(217,154,0,.08);
+
+}
+
+
+/* =========================================================
+   CHARACTER COUNT
+========================================================= */
+
+.char-count {
+
+    margin-top: 4px;
+
+    text-align: right;
+
+    color: #687383;
+
+    font-size: 10px;
+
+}
+
+
+
+.main-upload-box {
+
+    position: relative;
+
+    width: 100%;
+    height: 135px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #c7cdd5;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    padding: 20px;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    transition: all 0.2s ease;
+}
+
+
+/* =========================================================
+   INPUT FILE
+========================================================= */
+
+.main-upload-box input[type="file"] {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+
+    cursor: pointer;
+
+    z-index: 10;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.main-upload-box > i {
+
+    display: block;
+
+    margin: 0 0 5px 0;
+
+    font-size: 30px;
+
+    color: #28b6d4;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   TEKS UTAMA
+========================================================= */
+
+.main-upload-box > strong {
+
+    display: block;
+
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #132d4d;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   TEKS KEDUA
+========================================================= */
+
+.main-upload-box > span {
+
+    display: block;
+
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    color: #7a8592;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.main-upload-box:hover {
+
+    border-color: var(--gold);
+
+    background: #fffdf8;
+
+}
+
+
+/* =========================================================
+   INFO FORMAT
+========================================================= */
+
+.upload-info {
+
+    display: block;
+
+    margin-top: 7px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    color: #667383;
+
+}
+.upload-box {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 135px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #c7cdd5;
+
+    border-radius: 10px;
+
+    background: #fff;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    transition: 0.2s ease;
+
+}
+
+
+.upload-box:hover {
+
+    border-color: var(--gold);
+
+    background: #fffdf8;
+
+}
+
+
+.upload-box input[type="file"] {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    opacity: 0;
+
+    cursor: pointer;
+
+}
+
+
+.upload-box > i {
+
+    font-size: 28px;
+
+    color: #28b6d4;
+
+    margin-bottom: 5px;
+
+}
+
+
+.upload-box strong {
+
+    color: #132d4d;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+.upload-box span {
+
+    color: #7a8592;
+
+    font-size: 12px;
+
+}
+
+
+.upload-info {
+
+    display: block;
+
+    margin-top: 6px;
+
+    color: #667383;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   RIGHT SIDE
+========================================================= */
+
+.form-right {
+
+    min-width: 0;
+
+}
+
+
+/* =========================================================
+   SIDE CARD
+========================================================= */
+
+.side-card {
+
+    padding: 19px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #d8dee6;
+
+    border-radius: 9px;
+
+    background: #fff;
+
+}
+
+
+.side-card h2 {
+
+    margin: 0 0 20px;
+
+    color: #071f41;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+}
+
+
+.side-card h2::before {
+
+    content: "";
+
+    display: inline-block;
+
+    width: 3px;
+
+    height: 16px;
+
+    margin-right: 7px;
+
+    vertical-align: -3px;
+
+    background: var(--gold);
+
+}
+
+
+/* =========================================================
+   SIDE FORM
+========================================================= */
+
+.side-form-group {
+
+    margin-bottom: 18px;
+
+}
+
+
+.side-form-group:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.side-form-group label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #071f41;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+.side-form-group label span {
+
+    color: #e04444;
+
+}
+
+
+/* =========================================================
+   SELECT + DATE
+========================================================= */
+
+.side-form-group select,
+.side-form-group input[type="date"] {
+
+    width: 100%;
+
+    height: 41px;
+
+    padding: 0 11px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #cbd3dc;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    background: #fff;
+
+    color: #132d4d;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+}
+
+
+.side-form-group select:focus,
+.side-form-group input[type="date"]:focus {
+
+    border-color: var(--gold);
+
+}
+
+
+/* =========================================================
+   INFORMATION CARD
+========================================================= */
+
+.article-info-card {
+
+    background: #fffdf8;
+
+}
+
+
+.info-row {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+}
+
+
+.info-row i {
+
+    margin-top: 2px;
+
+    color: var(--gold);
+
+    font-size: 15px;
+
+}
+
+
+.info-row p {
+
+    margin: 0;
+
+    color: #687383;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   ACTION BUTTON
+========================================================= */
+
+.form-actions {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 10px;
+
+}
+
+
+.form-actions a,
+.form-actions button {
+
+    height: 40px;
+
+    padding: 0 23px;
+
+    box-sizing: border-box;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+}
+
+
+.btn-cancel {
+
+    border: 1px solid #cbd0d5;
+
+    background: #fff;
+
+    color: #172a43;
+
+}
+
+
+.btn-cancel:hover {
+
+    background: #f7f7f7;
+
+}
+
+
+.btn-draft {
+
+    border: 1px solid var(--gold);
+
+    background: #fff;
+
+    color: var(--gold);
+
+}
+
+
+.btn-draft:hover {
+
+    background: #fff9ed;
+
+}
+
+
+.btn-publish {
+
+    border: 1px solid var(--gold);
+
+    background: var(--gold);
+
+    color: #fff;
+
+}
+
+
+.btn-publish:hover {
+
+    background: var(--gold-dark);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .article-form {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .form-actions {
+
+        justify-content: flex-start;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .page-header {
+
+        flex-direction: column;
+
+    }
+
+
+    .header-right {
+
+        width: 100%;
+
+    }
+
+
+    .rw-selector {
+
+        flex: 1;
+
+    }
+
+
+    .form-actions {
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .form-actions a,
+    .form-actions button {
+
+        flex: 1;
+
+    }
+
+}

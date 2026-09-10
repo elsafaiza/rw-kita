@@ -1,0 +1,1164 @@
+/* =========================================================
+   FORM LAYOUT
+========================================================= */
+
+.news-form {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        390px;
+
+    gap: 28px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 2px 7px rgba(0, 0, 0, 0.08);
+        margin-top: 0;
+
+}
+
+
+/* =========================================================
+   LEFT COLUMN
+========================================================= */
+
+.form-left {
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.form-group {
+
+    margin-bottom: 25px;
+
+}
+
+
+.form-group > label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #071f41;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+.form-group > label span {
+
+    color: #e04444;
+
+    margin-left: 2px;
+
+}
+
+
+.form-description {
+
+    margin: -2px 0 10px;
+
+    color: #6d7785;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.form-group input[type="text"],
+.form-group textarea,
+.side-form-group input[type="text"],
+.side-form-group input[type="datetime-local"] {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid #bfc9d5;
+
+    border-radius: 9px;
+
+    background: white;
+
+    color: var(--text);
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+
+}
+
+
+.form-group input[type="text"] {
+
+    height: 48px;
+
+    padding: 0 15px;
+
+}
+
+
+.form-group input[type="text"]:focus,
+.form-group textarea:focus,
+.side-form-group input:focus {
+
+    border-color: var(--navy);
+
+    box-shadow:
+        0 0 0 2px rgba(3, 40, 76, 0.06);
+
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+
+    color: #aeb5bd;
+
+}
+
+
+/* =========================================================
+   COUNTER
+========================================================= */
+
+.input-counter,
+.textarea-counter {
+
+    position: relative;
+
+}
+
+
+.input-counter small,
+.textarea-counter small {
+
+    display: block;
+
+    text-align: right;
+
+    margin-top: 4px;
+
+    color: #1c1c1c;
+
+    font-size: 11px;
+
+}
+
+
+.textarea-counter textarea {
+
+    height: 125px;
+
+    resize: vertical;
+
+    padding: 13px 15px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================================
+   SELECT
+========================================================= */
+
+.select-wrapper {
+
+    position: relative;
+
+}
+
+
+.select-wrapper select {
+
+    width: 100%;
+
+    height: 48px;
+
+    appearance: none;
+
+    -webkit-appearance: none;
+
+    border: 1px solid #bfc9d5;
+
+    border-radius: 9px;
+
+    background: white;
+
+    color: var(--text);
+
+    padding: 0 42px 0 15px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    outline: none;
+
+    cursor: pointer;
+
+}
+
+
+.select-wrapper select:focus {
+
+    border-color: var(--navy);
+
+}
+
+
+.select-wrapper > i {
+
+    position: absolute;
+
+    right: 15px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #506070;
+
+    font-size: 12px;
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================================
+   EDITOR
+========================================================= */
+
+.editor-box {
+
+    width: 100%;
+
+    border: 1px solid #bfc9d5;
+
+    border-radius: 9px;
+
+    background: white;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================================
+   EDITOR TOOLBAR
+========================================================= */
+
+.editor-toolbar {
+
+    width: 100%;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    border-bottom: 1px solid #d8dee6;
+
+    background: white;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+
+    scrollbar-width: thin;
+
+    scrollbar-color:
+        #bfc5cc
+        transparent;
+
+}
+
+
+/* Chrome */
+
+.editor-toolbar::-webkit-scrollbar {
+
+    height: 5px;
+
+}
+
+
+.editor-toolbar::-webkit-scrollbar-track {
+
+    background: transparent;
+
+}
+
+
+.editor-toolbar::-webkit-scrollbar-thumb {
+
+    background: #c4c8cc;
+
+    border-radius: 10px;
+
+}
+
+
+/* =========================================================
+   PARAGRAPH DROPDOWN
+========================================================= */
+
+.paragraph-dropdown {
+
+    position: relative;
+
+    flex-shrink: 0;
+
+    height: 48px;
+
+    border-right: 1px solid #d8dee6;
+
+}
+
+
+.paragraph-dropdown select {
+
+    appearance: none;
+
+    -webkit-appearance: none;
+
+    width: 112px;
+
+    height: 48px;
+
+    border: none;
+
+    outline: none;
+
+    background: white;
+
+    padding: 0 32px 0 12px;
+
+    color: var(--navy);
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+}
+
+
+.paragraph-dropdown > i {
+
+    position: absolute;
+
+    right: 11px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: var(--navy);
+
+    font-size: 11px;
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================================
+   EDITOR BUTTON
+========================================================= */
+
+.editor-toolbar button {
+
+    flex: 0 0 58px;
+
+    width: 58px;
+
+    height: 48px;
+
+    padding: 0;
+
+    border: none;
+
+    border-right: 1px solid #d8dee6;
+
+    background: white;
+
+    color: var(--navy);
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: 0.2s ease;
+
+}
+
+
+.editor-toolbar button:hover,
+.paragraph-dropdown:hover {
+
+    background: var(--gold-light);
+
+}
+
+
+.editor-toolbar button b {
+
+    font-size: 18px;
+
+}
+
+
+.editor-toolbar button i {
+
+    font-size: 17px;
+
+}
+
+
+/* =========================================================
+   EDITOR CONTENT
+========================================================= */
+
+.editor-content {
+
+    min-height: 220px;
+
+    padding: 15px;
+
+    outline: none;
+
+    color: var(--text);
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    white-space: normal;
+
+}
+
+
+.editor-content:empty::before {
+
+    content: attr(data-placeholder);
+
+    color: #aeb5bd;
+
+    pointer-events: none;
+
+}
+
+/* =========================================================
+   GAMBAR UTAMA - UPLOAD BOX
+========================================================= */
+
+.main-upload-box {
+
+    position: relative;
+
+    width: 100%;
+    height: 135px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #c7cdd5;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    padding: 20px;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    transition: all 0.2s ease;
+}
+
+
+/* =========================================================
+   INPUT FILE
+========================================================= */
+
+.main-upload-box input[type="file"] {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+
+    cursor: pointer;
+
+    z-index: 10;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.main-upload-box > i {
+
+    display: block;
+
+    margin: 0 0 5px 0;
+
+    font-size: 30px;
+
+    color: #28b6d4;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   TEKS UTAMA
+========================================================= */
+
+.main-upload-box > strong {
+
+    display: block;
+
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #132d4d;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   TEKS KEDUA
+========================================================= */
+
+.main-upload-box > span {
+
+    display: block;
+
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    color: #7a8592;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.main-upload-box:hover {
+
+    border-color: var(--gold);
+
+    background: #fffdf8;
+
+}
+
+
+/* =========================================================
+   INFO FORMAT
+========================================================= */
+
+.upload-info {
+
+    display: block;
+
+    margin-top: 7px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    color: #667383;
+
+}
+.upload-box {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 135px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #c7cdd5;
+
+    border-radius: 10px;
+
+    background: #fff;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    transition: 0.2s ease;
+
+}
+
+
+.upload-box:hover {
+
+    border-color: var(--gold);
+
+    background: #fffdf8;
+
+}
+
+
+.upload-box input[type="file"] {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    opacity: 0;
+
+    cursor: pointer;
+
+}
+
+
+.upload-box > i {
+
+    font-size: 28px;
+
+    color: #28b6d4;
+
+    margin-bottom: 5px;
+
+}
+
+
+.upload-box strong {
+
+    color: #132d4d;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+.upload-box span {
+
+    color: #7a8592;
+
+    font-size: 12px;
+
+}
+
+
+.upload-info {
+
+    display: block;
+
+    margin-top: 6px;
+
+    color: #667383;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   RIGHT SIDE
+========================================================= */
+
+.form-right {
+
+    min-width: 0;
+
+}
+
+
+.side-card {
+
+    border: 1px solid #d8dee6;
+
+    border-radius: 10px;
+
+    padding: 22px;
+
+    background: white;
+
+    margin-bottom: 22px;
+
+}
+
+
+.side-card h2 {
+
+    margin: 0 0 22px;
+
+    color: #071f41;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+.side-card h2::before {
+
+    content: "";
+
+    display: inline-block;
+
+    width: 3px;
+
+    height: 18px;
+
+    background: var(--gold);
+
+    margin-right: 7px;
+
+    vertical-align: -4px;
+
+}
+
+
+.side-card h2 .optional {
+
+    color: #7c8792;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+}
+
+
+/* =========================================================
+   SIDE FORM
+========================================================= */
+
+.side-form-group {
+
+    margin-bottom: 20px;
+
+}
+
+
+.side-form-group:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.side-form-group label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #071f41;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+.side-form-group label span {
+
+    color: #e04444;
+
+}
+
+
+.side-form-group input {
+
+    height: 43px;
+
+    padding: 0 12px;
+
+}
+
+
+.side-form-group input[readonly] {
+
+    background: #f6f7f8;
+
+    color: #657181;
+
+}
+
+
+/* =========================================================
+   DATE
+========================================================= */
+
+.date-input input {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+}
+
+
+/* =========================================================
+   STATUS DESCRIPTION
+========================================================= */
+
+.status-description {
+
+    display: block;
+
+    margin-top: 6px;
+
+    color: #6d7785;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   SIDE DESCRIPTION
+========================================================= */
+
+.side-description {
+
+    margin: -12px 0 14px;
+
+    color: #6d7785;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================================================
+   SMALL UPLOAD
+========================================================= */
+
+.upload-small {
+
+    min-height: 95px;
+
+}
+
+
+.upload-small > i {
+
+    font-size: 22px;
+
+}
+
+
+.upload-small strong {
+
+    font-size: 12px;
+
+}
+
+
+.upload-small span {
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.form-actions {
+
+    grid-column: 1 / -1;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding-top: 5px;
+
+    border-top: 1px solid #e4e6e8;
+
+}
+
+
+.form-actions button {
+
+    height: 42px;
+
+    padding: 0 25px;
+
+    border-radius: 8px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+}
+
+
+/* BATAL */
+
+.btn-cancel {
+
+    border: 1px solid #c8cdd2;
+
+    background: white;
+
+    color: #17283d;
+
+}
+
+
+.btn-cancel:hover {
+
+    background: #f5f5f5;
+
+}
+
+
+/* DRAFT */
+
+.btn-draft {
+
+    border: 1px solid var(--gold);
+
+    background: white;
+
+    color: var(--gold-dark);
+
+}
+
+
+.btn-draft:hover {
+
+    background: var(--gold-light);
+
+}
+
+
+/* PUBLISH */
+
+.btn-publish {
+
+    border: 1px solid var(--gold);
+
+    background: var(--gold);
+
+    color: white;
+
+}
+
+
+.btn-publish:hover {
+
+    background: var(--gold-dark);
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.admin-footer {
+
+    text-align: center;
+
+    padding: 22px 0 5px;
+
+    color: #6d7785;
+
+    font-size: 11px;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .news-form {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .form-right {
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .side-card {
+
+        margin-bottom: 0;
+
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .main-content {
+
+        margin-left: 0;
+
+        padding: 20px;
+
+    }
+
+
+    .sidebar {
+
+        width: 210px;
+
+    }
+
+
+    .form-right {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .header-right {
+
+        gap: 8px;
+
+    }
+
+
+    .rw-selector {
+
+        min-width: 150px;
+
+    }
+
+
+    .form-actions {
+
+        justify-content: stretch;
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .form-actions button {
+
+        flex: 1;
+
+    }
+
+}

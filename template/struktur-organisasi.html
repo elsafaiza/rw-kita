@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Struktur Organisasi - RW Kita</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/struktur-organisasi.css">
+     <link rel="stylesheet" href="../static/css/global.css">
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<aside class="sidebar">
+
+
+    <!-- LOGO -->
+
+   <div class="sidebar-logo">
+            <img
+                src="../static/image/Logo_Footer.png"
+                alt="RW Kita">
+        </div>
+
+    
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+        <nav class="sidebar-menu">
+
+                <!-- ==================================================
+                    UTAMA
+                ================================================== -->
+
+                <div class="menu-label">
+                    UTAMA
+                </div>
+
+                <a href="dashboard_admin.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+
+                <!-- ==================================================
+                    KONTEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    KONTEN
+                </div>
+
+                <a href="berita.html" class="menu-item">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <span>Berita</span>
+                </a>
+
+                <a href="artikel_admin.html" class="menu-item">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Artikel</span>
+                </a>
+
+                <a href="pengumuman.html" class="menu-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Pengumuman</span>
+                </a>
+
+                <a href="agenda.html" class="menu-item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Agenda</span>
+                </a>
+
+                <a href="cerita_warga.html" class="menu-item">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Cerita Warga</span>
+                </a>
+
+
+                <!-- ==================================================
+                    INFORMASI RW
+                ================================================== -->
+
+                <div class="menu-label">
+                    INFORMASI RW
+                </div>
+
+                <a href="profil_rw_admin.html" class="menu-item active">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Profil RW</span>
+                </a>
+
+                <a href="potensi_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Potensi RW</span>
+                </a>
+
+                <a href="dokumentasi.html" class="menu-item">
+                    <i class="fa-regular fa-images"></i>
+                    <span>Dokumentasi</span>
+                </a>
+
+
+                <!-- ==================================================
+                    DOKUMEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    DOKUMEN
+                </div>
+
+                <a href="produk_hukum_admin.html" class="menu-item">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Produk Hukum</span>
+                </a>
+
+                <a href="arsip_digital_admin.html" class="menu-item">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <span>Arsip Digital</span>
+                </a>
+
+
+                <!-- ==================================================
+                    PENGELOLAAN
+                ================================================== -->
+
+                <div class="menu-label">
+                    PENGELOLAAN
+                </div>
+
+                <a href="pengaturan-admin.html" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Pengaturan</span>
+                </a>
+
+            </nav>
+
+
+                <!-- ==================================================
+                PROFIL ADMIN
+            ================================================== -->
+
+            <details class="admin-profile">
+
+                <summary class="sidebar-admin">
+
+                    <div class="admin-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="admin-info">
+                        <strong>Admin RW01</strong>
+                        <small>Administrator</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down admin-arrow"></i>
+
+                </summary>
+
+
+                <!-- DROPDOWN LOGOUT -->
+
+                <div class="admin-dropdown">
+
+                    <a href="beranda_RW.html" class="admin-logout">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <span>Logout</span>
+
+                    </a>
+
+                </div>
+
+            </details>
+    </aside>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <header class="page-header">
+
+            <div class="header-title">
+
+                <h1>Struktur Organisasi</h1>
+
+                <p>
+                    Kelola Struktur Organisasi yang akan ditampilkan di website
+                </p>
+
+            </div>
+
+
+            <div class="header-right">
+
+
+                <!-- Notification -->
+                <button class="notification-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- Pilihan RW -->
+                <div class="rw-selector">
+
+                    <div class="rw-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="rw-text">
+
+                        <strong>RW 01</strong>
+
+                        <small>
+                            Kel. XYZ, Kec. XYZ
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+    <!-- =====================================================
+         TABS
+    ====================================================== -->
+
+    <div class="organization-tabs">
+
+
+        <button
+            class="tab-button active"
+            data-tab="ketua"
+        >
+            Ketua RW
+        </button>
+
+
+        <button
+            class="tab-button"
+            data-tab="pengurus"
+        >
+            Pengurus RW
+        </button>
+
+
+        <button
+            class="tab-button"
+            data-tab="rt"
+        >
+            RT
+        </button>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         FORM CONTAINER
+    ====================================================== -->
+
+    <section class="form-card">
+
+
+        <!-- =================================================
+             TAB KETUA RW
+        ================================================== -->
+
+        <div
+            class="tab-content active"
+            id="ketua"
+        >
+
+
+            <div class="rt-heading-text">
+                
+
+                <h2>
+                    Ketua RW
+                </h2>
+
+                <p>
+                    Informasi Ketua RW yang akan ditampilkan.
+                </p>
+
+            </div>
+
+
+            <div class="form-layout">
+
+
+                <!-- FOTO -->
+
+                <div class="photo-section">
+
+
+                    <div class="photo-preview">
+
+                        <img
+                            src="assets/ketua-rw.jpg"
+                            id="ketuaPreview"
+                        >
+
+                    </div>
+
+
+                    <label
+                        for="ketuaPhoto"
+                        class="change-photo"
+                    >
+
+                        <i class="fa-solid fa-camera"></i>
+
+                        Ganti Foto
+
+                    </label>
+
+
+                    <input
+                        type="file"
+                        id="ketuaPhoto"
+                        accept=".jpg,.jpeg,.png,.webp"
+                        hidden
+                    >
+
+
+                    <small class="photo-info">
+                        Format: JPG, PNG, WebP.<br>
+                        Maks. 2MB.
+                    </small>
+
+                </div>
+
+
+
+                <!-- FORM -->
+
+                <div class="form-fields">
+
+
+                    <!-- NAMA -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Nama Lengkap
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            value="Budi Santoso"
+                            placeholder="Masukkan nama lengkap"
+                        >
+
+                    </div>
+
+
+
+                    <!-- JABATAN -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Jabatan
+                        </label>
+
+                        <input
+                            type="text"
+                            value="Ketua RW 01"
+                            placeholder="Masukkan jabatan"
+                        >
+
+                    </div>
+
+
+
+                    <!-- PERIODE -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Periode
+                            <span>*</span>
+                        </label>
+
+
+                        <div class="period">
+
+                            <input
+                                type="number"
+                                value="2024"
+                                placeholder="Tahun"
+                            >
+
+                            <span>
+                                s/d
+                            </span>
+
+                            <input
+                                type="number"
+                                value="2027"
+                                placeholder="Tahun"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- DESKRIPSI -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Deskripsi
+                            <em>(Opsional)</em>
+                        </label>
+
+
+                        <textarea
+                            maxlength="300"
+                            placeholder="Masukkan deskripsi..."
+                        >Ketua RW 01 periode 2024 - 2027 yang bertanggung jawab atas pengelolaan dan pelayanan warga.</textarea>
+
+
+                        <div class="counter">
+                            82/300 karakter
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BUTTON -->
+
+            <div class="form-actions">
+
+                <button class="btn-cancel">
+                    Batal
+                </button>
+
+                <button class="btn-save">
+
+                    <i class="fa-regular fa-floppy-disk"></i>
+
+                    Simpan Perubahan
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             TAB PENGURUS RW
+        ================================================== -->
+
+        <div
+            class="tab-content"
+            id="pengurus"
+        >
+
+
+            <div class="rt-heading-text">
+
+                <h2>
+                    Pengurus RW
+                </h2>
+
+                <p>
+                    Kelola data pengurus RW yang akan ditampilkan.
+                </p>
+
+            </div>
+
+
+            <div class="pengurus-list">
+
+
+                <!-- PENGURUS 1 -->
+
+                <div class="pengurus-item">
+
+
+                    <div class="mini-photo">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+
+                    <div class="pengurus-data">
+
+                        <strong>
+                            Budi Santoso
+                        </strong>
+
+                        <span>
+                            Sekretaris RW
+                        </span>
+
+                    </div>
+
+
+                    <button class="edit-person">
+
+                        <i class="fa-solid fa-pen"></i>
+
+                        Edit
+
+                    </button>
+
+
+                    <button class="delete-person">
+
+                        <i class="fa-regular fa-trash-can"></i>
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- PENGURUS 2 -->
+
+                <div class="pengurus-item">
+
+
+                    <div class="mini-photo">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+
+                    <div class="pengurus-data">
+
+                        <strong>
+                            Siti Nurhayati
+                        </strong>
+
+                        <span>
+                            Bendahara RW
+                        </span>
+
+                    </div>
+
+
+                    <button class="edit-person">
+
+                        <i class="fa-solid fa-pen"></i>
+
+                        Edit
+
+                    </button>
+
+
+                    <button class="delete-person">
+
+                        <i class="fa-regular fa-trash-can"></i>
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- PENGURUS 3 -->
+
+                <div class="pengurus-item">
+
+
+                    <div class="mini-photo">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+
+                    <div class="pengurus-data">
+
+                        <strong>
+                            Ahmad Fauzi
+                        </strong>
+
+                        <span>
+                            Wakil Ketua RW
+                        </span>
+
+                    </div>
+
+
+                    <button class="edit-person">
+
+                        <i class="fa-solid fa-pen"></i>
+
+                        Edit
+
+                    </button>
+
+
+                    <button class="delete-person">
+
+                        <i class="fa-regular fa-trash-can"></i>
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+            <button class="add-person"
+            onclick="window.location.href='tambah-pengurus.html'"
+            >
+
+                <i class="fa-solid fa-plus"></i>
+
+                Tambah Pengurus
+
+            </button>
+    
+            <div class="form-actions">
+
+                <button class="btn-cancel">
+                    Batal
+                </button>
+
+                <button class="btn-save">
+
+                    <i class="fa-regular fa-floppy-disk"></i>
+
+                    Simpan Perubahan
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             TAB RT
+        ================================================== -->
+
+        <div
+            class="tab-content"
+            id="rt"
+        >
+
+        <div class="rt-heading">
+            <div class="rt-heading-text">
+
+                <h2>
+                    Ketua RT
+                </h2>
+
+                <p>
+                    Kelola data Ketua RT di lingkungan RW 01.
+                </p>
+
+            </div>
+            <a href="tambah-rt.html" class="add-rt">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Tambah RT
+
+            </a>
+
+        </div>
+
+
+           <div class="rt-grid">
+
+            <!-- RT 01 -->
+            <div class="rt-card">
+
+                <div class="rt-number">
+                    RT 01
+                </div>
+
+                <div class="rt-content">
+
+                    <div class="mini-photo">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Ahmad Fauzi
+                        </strong>
+
+                        <span>
+                            Ketua RT 01
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <button class="edit-rt">
+
+                    <i class="fa-solid fa-pen"></i>
+
+                    Edit
+
+                </button>
+
+            </div>
+
+
+            <!-- RT 02 -->
+            <div class="rt-card">
+
+                <div class="rt-number">
+                    RT 02
+                </div>
+
+                <div class="rt-content">
+
+                    <div class="mini-photo">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Rina Marlina
+                        </strong>
+
+                        <span>
+                            Ketua RT 02
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <button class="edit-rt">
+
+                    <i class="fa-solid fa-pen"></i>
+
+                    Edit
+
+                </button>
+
+            </div>
+
+
+            <!-- RT 03 -->
+            <div class="rt-card">
+
+                <div class="rt-number">
+                    RT 03
+                </div>
+
+                <div class="rt-content">
+
+                    <div class="mini-photo">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Andi Setiawan
+                        </strong>
+
+                        <span>
+                            Ketua RT 03
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <button class="edit-rt">
+
+                    <i class="fa-solid fa-pen"></i>
+
+                    Edit
+
+                </button>
+
+            </div>
+
+
+            <!-- RT 04 -->
+            <div class="rt-card">
+
+                <div class="rt-number">
+                    RT 04
+                </div>
+
+                <div class="rt-content">
+
+                    <div class="mini-photo">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Dewi Lestari
+                        </strong>
+
+                        <span>
+                            Ketua RT 04
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <button class="edit-rt">
+
+                    <i class="fa-solid fa-pen"></i>
+
+                    Edit
+
+                </button>
+
+            </div>
+
+        </div>
+               
+
+            <div class="form-actions">
+
+                <button class="btn-cancel">
+                    Batal
+                </button>
+
+                <button class="btn-save">
+
+                    <i class="fa-regular fa-floppy-disk"></i>
+
+                    Simpan Perubahan
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 RW KITA. All rights reserved.
+    </footer>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+
+/* =========================================================
+   TAB SYSTEM
+========================================================= */
+
+const tabButtons =
+    document.querySelectorAll(".tab-button");
+
+
+const tabContents =
+    document.querySelectorAll(".tab-content");
+
+
+tabButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+
+        const target =
+            button.dataset.tab;
+
+
+        /* Hapus active */
+
+        tabButtons.forEach(btn => {
+
+            btn.classList.remove("active");
+
+        });
+
+
+        tabContents.forEach(content => {
+
+            content.classList.remove("active");
+
+        });
+
+
+        /* Aktifkan tab */
+
+        button.classList.add("active");
+
+
+        document
+            .getElementById(target)
+            .classList.add("active");
+
+    });
+
+});
+
+
+
+/* =========================================================
+   ADMIN DROPDOWN
+========================================================= */
+
+const adminProfile =
+    document.getElementById("adminProfile");
+
+
+const adminDropdown =
+    document.getElementById("adminDropdown");
+
+
+adminProfile.addEventListener(
+    "click",
+    function () {
+
+        adminDropdown.classList.toggle("show");
+
+    }
+);
+
+
+document.addEventListener(
+    "click",
+    function (event) {
+
+        if (
+            !adminProfile.contains(event.target) &&
+            !adminDropdown.contains(event.target)
+        ) {
+
+            adminDropdown.classList.remove("show");
+
+        }
+
+    }
+);
+
+
+
+/* =========================================================
+   PREVIEW FOTO KETUA RW
+========================================================= */
+
+const ketuaPhoto =
+    document.getElementById("ketuaPhoto");
+
+
+const ketuaPreview =
+    document.getElementById("ketuaPreview");
+
+
+ketuaPhoto.addEventListener(
+    "change",
+    function () {
+
+        const file = this.files[0];
+
+
+        if (file) {
+
+            ketuaPreview.src =
+                URL.createObjectURL(file);
+
+        }
+
+    }
+);
+
+
+</script>
+
+           
+</body>
+</html>

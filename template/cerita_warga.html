@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Kelola Cerita Warga - RW Kita</title>
+
+
+    <!-- POPPINS -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- FONT AWESOME -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- GLOBAL -->
+
+    <link
+        rel="stylesheet"
+        href="../static/css/global.css"
+    >
+
+
+    <!-- CERITA WARGA -->
+
+    <link
+        rel="stylesheet"
+        href="../static/css/cerita_warga.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+ <aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="sidebar-logo">
+            <img
+                src="../static/image/Logo_Footer.png"
+                alt="RW Kita">
+        </div>
+
+
+        <!-- Menu Sidebar -->
+        <nav class="sidebar-menu">
+
+                <!-- ==================================================
+                    UTAMA
+                ================================================== -->
+
+                <div class="menu-label">
+                    UTAMA
+                </div>
+
+                <a href="dashboard_admin.html" class="menu-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+
+                <!-- ==================================================
+                    KONTEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    KONTEN
+                </div>
+
+                <a href="berita.html" class="menu-item">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <span>Berita</span>
+                </a>
+
+                <a href="artikel_admin.html" class="menu-item">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Artikel</span>
+                </a>
+
+                <a href="pengumuman.html" class="menu-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Pengumuman</span>
+                </a>
+
+                <a href="agenda.html" class="menu-item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Agenda</span>
+                </a>
+
+                <a href="cerita_warga.html" class="menu-item active">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Cerita Warga</span>
+                </a>
+
+
+                <!-- ==================================================
+                    INFORMASI RW
+                ================================================== -->
+
+                <div class="menu-label">
+                    INFORMASI RW
+                </div>
+
+                <a href="profil_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Profil RW</span>
+                </a>
+
+                <a href="potensi_rw_admin.html" class="menu-item">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Potensi RW</span>
+                </a>
+
+                <a href="dokumentasi.html" class="menu-item">
+                    <i class="fa-regular fa-images"></i>
+                    <span>Dokumentasi</span>
+                </a>
+
+
+                <!-- ==================================================
+                    DOKUMEN
+                ================================================== -->
+
+                <div class="menu-label">
+                    DOKUMEN
+                </div>
+
+                <a href="produk_hukum_admin.html" class="menu-item">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Produk Hukum</span>
+                </a>
+
+                <a href="arsip_digital_admin.html" class="menu-item">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <span>Arsip Digital</span>
+                </a>
+
+
+                <!-- ==================================================
+                    PENGELOLAAN
+                ================================================== -->
+
+                <div class="menu-label">
+                    PENGELOLAAN
+                </div>
+
+                <a href="pengaturan-admin.html" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Pengaturan</span>
+                </a>
+
+            </nav>
+
+
+                <!-- ==================================================
+                PROFIL ADMIN
+            ================================================== -->
+
+            <details class="admin-profile">
+
+                <summary class="sidebar-admin">
+
+                    <div class="admin-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="admin-info">
+                        <strong>Admin RW01</strong>
+                        <small>Administrator</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down admin-arrow"></i>
+
+                </summary>
+
+
+                <!-- DROPDOWN LOGOUT -->
+
+                <div class="admin-dropdown">
+
+                    <a href="beranda_RW.html" class="admin-logout">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <span>Logout</span>
+
+                    </a>
+
+                </div>
+
+            </details>
+    </aside>
+
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main class="main-content">
+
+
+    <!-- HEADER -->
+
+    <header class="page-header">
+
+
+        <div class="header-title">
+
+            <h1>
+                Cerita Warga
+            </h1>
+
+
+            <p>
+                Kelola cerita dan pengalaman yang dikirimkan oleh warga RW 01.
+            </p>
+
+        </div>
+
+
+
+        <div class="header-right">
+
+
+                <!-- Notification -->
+                <button class="notification-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- Pilihan RW -->
+                <div class="rw-selector">
+
+                    <div class="rw-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="rw-text">
+
+                        <strong>RW 01</strong>
+
+                        <small>
+                            Kel. XYZ, Kec. XYZ
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+            </div>
+    </header>
+
+
+
+    <!-- =========================================================
+         STATISTIK
+    ========================================================== -->
+
+    <section class="story-statistics">
+
+
+        <div class="story-stat-card">
+
+            <div class="stat-icon">
+                <i class="fa-regular fa-comments"></i>
+            </div>
+
+
+            <div>
+
+                <span>
+                    Total Cerita
+                </span>
+
+                <strong>
+                    24
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="story-stat-card">
+
+            <div class="stat-icon pending">
+                <i class="fa-regular fa-clock"></i>
+            </div>
+
+
+            <div>
+
+                <span>
+                    Menunggu Moderasi
+                </span>
+
+                <strong>
+                    5
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="story-stat-card">
+
+            <div class="stat-icon published">
+                <i class="fa-solid fa-check"></i>
+            </div>
+
+
+            <div>
+
+                <span>
+                    Dipublikasikan
+                </span>
+
+                <strong>
+                    17
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="story-stat-card">
+
+            <div class="stat-icon rejected">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+
+            <div>
+
+                <span>
+                    Ditolak
+                </span>
+
+                <strong>
+                    2
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         TABLE CARD
+    ========================================================== -->
+
+    <section class="story-table-card">
+
+
+        <!-- TOP -->
+
+        <div class="table-top">
+
+
+            <div>
+
+                <h2>
+                    Daftar Cerita Warga
+                </h2>
+
+                <p>
+                    Kelola cerita yang dikirimkan oleh warga.
+                </p>
+
+            </div>
+
+
+
+            <button class="export-button">
+
+                <i class="fa-solid fa-download"></i>
+
+                Export
+
+            </button>
+
+        </div>
+
+
+
+        <!-- TABS -->
+
+        <div class="story-tabs">
+
+
+            <button
+                class="story-tab active"
+                data-status="all"
+            >
+                Semua
+                <span>24</span>
+            </button>
+
+
+            <button
+                class="story-tab"
+                data-status="pending"
+            >
+                Menunggu
+                <span>5</span>
+            </button>
+
+
+            <button
+                class="story-tab"
+                data-status="published"
+            >
+                Dipublikasikan
+                <span>17</span>
+            </button>
+
+
+            <button
+                class="story-tab"
+                data-status="rejected"
+            >
+                Ditolak
+                <span>2</span>
+            </button>
+
+        </div>
+
+
+
+        <!-- TOOLS -->
+
+        <div class="table-tools">
+
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchStory"
+                    placeholder="Cari cerita atau nama warga..."
+                >
+
+            </div>
+        </div>
+
+
+
+        <!-- TABLE -->
+
+        <div class="table-wrapper">
+
+
+            <table class="story-table">
+
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Cerita
+                        </th>
+
+                        <th>
+                            Pengirim
+                        </th>
+
+                        <th>
+                            Tanggal
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                        <th>
+                            Aksi
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+
+                <tbody>
+
+
+                    <!-- STORY 1 -->
+
+                    <tr data-status="published">
+
+
+                        <td>
+
+                            <div class="story-info">
+
+                                <div class="story-thumbnail">
+
+                                    <img
+                                        src="../static/image/gotongroyong 1.jpg"
+                                        alt="Cerita warga"
+                                    >
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Gotong Royong Membersihkan Lingkungan
+                                    </strong>
+
+                                    <p>
+                                        Kegiatan warga membersihkan lingkungan...
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+
+                        <td>
+
+                            <div class="author-info">
+
+                                <strong>
+                                    Budi Santoso
+                                </strong>
+
+                                <span>
+                                    Warga RW 01
+                                </span>
+
+                            </div>
+
+                        </td>
+
+
+
+
+                        <td>
+
+                            <div class="date-info">
+
+                                26 Agustus 2026
+
+                            </div>
+
+                        </td>
+
+
+
+                        <td>
+
+                            <span class="status published">
+                                Dipublikasikan
+                            </span>
+
+                        </td>
+
+
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <button
+                                    class="action-view"
+                                    title="Lihat"
+                                >
+
+                                    <i class="fa-regular fa-eye"></i>
+
+                                </button>
+
+
+                                <button
+                                    class="action-edit"
+                                    title="Edit"
+                                >
+
+                                    <i class="fa-solid fa-pen"></i>
+
+                                </button>
+
+
+                                <button
+                                    class="action-delete"
+                                    title="Hapus"
+                                >
+
+                                    <i class="fa-regular fa-trash-can"></i>
+
+                                </button>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- STORY 2 -->
+
+                    <tr data-status="pending">
+
+
+                        <td>
+
+                            <div class="story-info">
+
+                                <div class="story-thumbnail">
+
+                                    <img
+                                        src="../static/image/belajar di taman.jpeg"
+                                        alt="Cerita warga"
+                                    >
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Pengalaman Mengikuti Kegiatan RW
+                                    </strong>
+
+                                    <p>
+                                        Saya sangat senang mengikuti...
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+
+                        <td>
+
+                            <div class="author-info">
+
+                                <strong>
+                                    Siti Nurhayati
+                                </strong>
+
+                                <span>
+                                    Warga RW 01
+                                </span>
+
+                            </div>
+
+                        </td>
+
+
+
+           
+
+                        <td>
+                            <div class="date-info">
+                                25 Agustus 2026
+                            </div>
+                        </td>
+
+
+
+                        <td>
+
+                            <span class="status pending">
+                                Menunggu
+                            </span>
+
+                        </td>
+
+
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <button
+                                    class="action-view"
+                                    title="Lihat"
+                                >
+
+                                    <i class="fa-regular fa-eye"></i>
+
+                                </button>
+
+
+                                <button
+                                    class="action-edit"
+                                    title="Edit"
+                                >
+
+                                    <i class="fa-solid fa-pen"></i>
+
+                                </button>
+
+
+                                <button
+                                    class="action-delete"
+                                    title="Hapus"
+                                >
+
+                                    <i class="fa-regular fa-trash-can"></i>
+
+                                </button>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- STORY 3 -->
+
+                    <tr data-status="published">
+
+
+                        <td>
+
+                            <div class="story-info">
+
+                                <div class="story-thumbnail">
+
+                                    <img
+                                        src="../static/image/kebun warga.jpg"
+                                        alt="Cerita warga"
+                                    >
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Kebun Warga yang Semakin Produktif
+                                    </strong>
+
+                                    <p>
+                                        Pemanfaatan lahan kosong menjadi...
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+
+                        <td>
+
+                            <div class="author-info">
+
+                                <strong>
+                                    Ahmad Fauzi
+                                </strong>
+
+                                <span>
+                                    Warga RW 01
+                                </span>
+
+                            </div>
+
+                        </td>
+
+
+
+                        <td>
+
+                            <div class="date-info">
+                                23 Agustus 2026
+                            </div>
+
+                        </td>
+
+
+
+                        <td>
+
+                            <span class="status published">
+                                Dipublikasikan
+                            </span>
+
+                        </td>
+
+
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <button
+                                    class="action-view"
+                                    title="Lihat"
+                                >
+
+                                    <i class="fa-regular fa-eye"></i>
+
+                                </button>
+
+
+                                <button
+                                    class="action-edit"
+                                    title="Edit"
+                                >
+
+                                    <i class="fa-solid fa-pen"></i>
+
+                                </button>
+
+
+                                <button
+                                    class="action-delete"
+                                    title="Hapus"
+                                >
+
+                                    <i class="fa-regular fa-trash-can"></i>
+
+                                </button>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- STORY 4 -->
+
+                    <tr data-status="rejected">
+
+
+                        <td>
+
+                            <div class="story-info">
+
+                                <div class="story-thumbnail">
+
+                                    <img
+                                        src="../static/image/kegiatan warga.jpg"
+                                        alt="Cerita warga"
+                                    >
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Cerita Kegiatan Warga
+                                    </strong>
+
+                                    <p>
+                                        Cerita mengenai kegiatan warga...
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+
+                        <td>
+
+                            <div class="author-info">
+
+                                <strong>
+                                    Rina Marlina
+                                </strong>
+
+                                <span>
+                                    Warga RW 01
+                                </span>
+
+                            </div>
+
+                        </td>
+
+
+
+                        <td>
+
+                            <div class="date-info">
+                                20 Agustus 2026
+                            </div>
+
+                        </td>
+
+
+
+                        <td>
+
+                            <span class="status rejected">
+                                Ditolak
+                            </span>
+
+                        </td>
+
+
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <button
+                                    class="action-view"
+                                    title="Lihat"
+                                >
+
+                                    <i class="fa-regular fa-eye"></i>
+
+                                </button>
+
+
+                                <button
+                                    class="action-edit"
+                                    title="Edit"
+                                >
+
+                                    <i class="fa-solid fa-pen"></i>
+
+                                </button>
+
+
+                                <button
+                                    class="action-delete"
+                                    title="Hapus"
+                                >
+
+                                    <i class="fa-regular fa-trash-can"></i>
+
+                                </button>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+
+        <!-- BOTTOM -->
+
+        <div class="table-bottom">
+
+
+            <span>
+                Menampilkan 1–4 dari 24 cerita
+            </span>
+
+
+            <div class="pagination">
+
+                <button disabled>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <button class="active">
+                    1
+                </button>
+
+                <button>
+                    2
+                </button>
+
+                <button>
+                    3
+                </button>
+
+                <button>
+                    4
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<script>
+
+
+/* =========================================================
+   TAB STATUS
+========================================================= */
+
+const tabs =
+    document.querySelectorAll(".story-tab");
+
+const rows =
+    document.querySelectorAll(".story-table tbody tr");
+
+
+tabs.forEach(function(tab) {
+
+    tab.addEventListener("click", function() {
+
+        tabs.forEach(function(item) {
+
+            item.classList.remove("active");
+
+        });
+
+
+        this.classList.add("active");
+
+
+        const status =
+            this.dataset.status;
+
+
+        rows.forEach(function(row) {
+
+            if (
+                status === "all" ||
+                row.dataset.status === status
+            ) {
+
+                row.style.display = "";
+
+            } else {
+
+                row.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+});
+
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+const searchInput =
+    document.getElementById("searchStory");
+
+
+searchInput.addEventListener(
+    "input",
+    function() {
+
+        const keyword =
+            this.value.toLowerCase();
+
+
+        rows.forEach(function(row) {
+
+            const text =
+                row.innerText.toLowerCase();
+
+
+            if (
+                text.includes(keyword)
+            ) {
+
+                row.style.display = "";
+
+            } else {
+
+                row.style.display = "none";
+
+            }
+
+        });
+
+    }
+);
+
+
+
+/* =========================================================
+   DELETE
+========================================================= */
+
+document
+    .querySelectorAll(".action-delete")
+    .forEach(function(button) {
+
+        button.addEventListener(
+            "click",
+            function() {
+
+                const confirmDelete =
+                    confirm(
+                        "Apakah kamu yakin ingin menghapus cerita ini?"
+                    );
+
+
+                if (confirmDelete) {
+
+                    this.closest("tr").remove();
+
+                }
+
+            }
+        );
+
+    });
+
+
+</script>
+
+
+</body>
+
+</html>

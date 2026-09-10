@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RW KITA | Informasi</title>
+
+    <script>
+        document.documentElement.classList.add("language-loading");
+    </script>
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="../static/css/global.css">
+  <link rel="stylesheet" href="../static/css/navbar.css">
+  <link rel="stylesheet" href="../static/css/informasiRW.css">
+  <link rel="stylesheet" href="../static/css/footer.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-container">
+
+      <a href="index.html" class="logo">
+        <img src="../static/image/logo.png" alt="RW KITA">
+      </a>
+
+      <nav class="nav-menu">
+        <a href="beranda_RW.html" class="nav-link">Beranda</a>
+        <a href="profilRW.html" class="nav-link">Profil RW</a>
+        <a href="informasiRW.html" class="nav-link active">Informasi</a>
+        <a href="potensi.html" class="nav-link">Potensi RW</a>
+        <a href="produk_hukum.html" class="nav-link">Produk Hukum</a>
+        <a href="arsip_digital.html" class="nav-link">Arsip Digital</a>
+        <a href="hubungi_kami.html" class="nav-link">Hubungi Kami</a>
+      </nav>
+
+      <div class="nav-right">
+        <div class="language-wrapper">
+          <div class="language-switch">
+            <span class="language-label">ID</span>
+            <label class="switch">
+              <input type="checkbox" id="languageToggle" aria-label="Switch language">
+              <span class="slider"></span>
+            </label>
+            <span class="language-label">EN</span>
+          </div>
+        </div>
+
+        <a href="login-admin.html" class="login-btn">
+          <span class="User">
+            <img src="../static/icon/user.png" alt="Login">
+          </span>
+          Login Admin
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="info-page">
+
+    <!-- BANNER -->
+    <section class="banner-hero">
+
+      <div class="banner-hero-content">
+        <span class="banner-line"></span>
+
+        <h1 id="informasi-title">
+          Informasi RW 01
+        </h1>
+
+        <p id="informasi-description">
+          Temukan berbagai informasi terbaru seputar kegiatan RW.
+        </p>
+
+        <div class="breadcrumb">
+          <span>⌂</span>
+          Beranda /
+          <strong>Informasi</strong>
+        </div>
+      </div>
+
+      <div class="banner-hero-image">
+        <img
+          id="informasi-banner-image"
+          src="../static/image/informasi.jpg"
+          alt="Informasi RW"
+        >
+      </div>
+
+    </section>
+
+    <!-- MENU INFORMASI -->
+    <section class="info-menu">
+
+      <a href="#berita" class="info-menu-item">
+        <img src="../static/icon/news.png" alt="Berita">
+        <span>Berita</span>
+      </a>
+
+      <a href="#pengumuman" class="info-menu-item">
+        <img src="../static/icon/marketing.png" alt="Pengumuman">
+        <span>Pengumuman</span>
+      </a>
+
+      <a href="#agenda" class="info-menu-item">
+        <img src="../static/icon/calendar.png" alt="Agenda">
+        <span>Agenda</span>
+      </a>
+
+      <a href="#dokumentasi" class="info-menu-item">
+        <img src="../static/icon/camera.png" alt="Dokumentasi">
+        <span>Dokumentasi</span>
+      </a>
+
+      <a href="#artikel" class="info-menu-item">
+        <img src="../static/icon/pen.png" alt="Artikel">
+        <span>Artikel</span>
+      </a>
+
+      <a href="#publikasi" class="info-menu-item">
+        <img src="../static/icon/document.png" alt="Publikasi">
+        <span>Publikasi RW</span>
+      </a>
+
+    </section>
+
+    <!-- BERITA -->
+    <section class="info-section" id="berita">
+
+      <div class="section-header">
+        <h2>Berita Terbaru</h2>
+        <a href="#">Lihat Semua →</a>
+      </div>
+
+      <div
+        class="news-grid"
+        id="informasi-news-list"
+      ></div>
+
+    </section>
+
+    <!-- PENGUMUMAN -->
+    <section class="info-section" id="pengumuman">
+
+      <div class="section-header">
+        <h2>Pengumuman Terbaru</h2>
+        <a href="#">Lihat Semua →</a>
+      </div>
+
+      <div
+        class="announcement-grid"
+        id="pengumuman-list"
+      ></div>
+
+    </section>
+
+    <!-- AGENDA DAN DOKUMENTASI -->
+    <section class="info-two-column">
+
+      <!-- AGENDA -->
+      <div class="info-box" id="agenda">
+
+        <div class="section-header">
+          <h2>Agenda Mendatang</h2>
+          <a href="#">Lihat Semua →</a>
+        </div>
+
+        <div
+          class="agenda-list"
+          id="informasi-agenda-list"
+        ></div>
+
+      </div>
+
+      <!-- DOKUMENTASI -->
+      <div class="info-box" id="dokumentasi">
+
+        <div class="section-header">
+          <h2>Dokumentasi Kegiatan</h2>
+          <a href="#">Lihat Semua →</a>
+        </div>
+
+        <div
+          class="documentation-grid"
+          id="informasi-galeri-list"
+        ></div>
+
+      </div>
+
+    </section>
+
+    <!-- ARTIKEL DAN PUBLIKASI -->
+    <section class="info-two-column1">
+
+      <!-- ARTIKEL -->
+      <div class="info-box" id="artikel">
+
+        <div class="section-header">
+          <h2>Artikel Terbaru</h2>
+          <a href="#">Lihat Semua →</a>
+        </div>
+
+        <div
+          class="article-list"
+          id="artikel-list"
+        ></div>
+
+      </div>
+
+      <!-- PUBLIKASI -->
+      <div class="info-box" id="publikasi">
+
+        <div class="section-header">
+          <h2>Publikasi RW</h2>
+          <a href="#">Lihat Semua →</a>
+        </div>
+
+        <div
+          class="publication-list"
+          id="publikasi-list"
+        ></div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-container">
+
+      <div class="footer-about">
+        <img
+          src="../static/image/Logo_Footer.png"
+          alt="RW KITA"
+          class="footer-logo"
+        >
+
+        <p>
+          RW KITA merupakan platform microsite bagi 10 RW
+          yang menyediakan informasi, layanan digital, serta
+          transparansi administrasi guna mewujudkan lingkungan
+          yang kolaboratif, informatif, dan mudah diakses oleh
+          masyarakat.
+        </p>
+      </div>
+
+      <div class="footer-contact">
+
+        <h3>Kontak Kami</h3>
+
+        <div class="contact-item">
+          <span>
+            <img
+              src="../static/icon/location (1).png"
+              alt="Lokasi"
+            >
+          </span>
+
+          <p>
+            Jl. XYZ No. 123, Kel. XYZ,
+            Kec. XYZ, Jakarta Timur,
+            DKI Jakarta
+          </p>
+        </div>
+
+        <div class="contact-item">
+          <span>
+            <img
+              src="../static/icon/phone-call (1).png"
+              alt="Telepon"
+            >
+          </span>
+
+          <p>(021) 1234 5678</p>
+        </div>
+
+        <div class="contact-item">
+          <span>
+            <img
+              src="../static/icon/email (1).png"
+              alt="Email"
+            >
+          </span>
+
+          <p id="footer-email">
+  Email belum tersedia.
+</p>
+        </div>
+
+      </div>
+
+      <div class="footer-location">
+
+        <h3>Lokasi Kami</h3>
+
+        <div class="map-box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=..."
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <h3 class="social-title">
+          Ikuti Kami
+        </h3>
+
+        <div class="social-media">
+
+          <a href="#">
+            <img
+              src="../static/icon/whatsapp (3).png"
+              alt="WhatsApp"
+            >
+          </a>
+
+          <a href="#">
+            <img
+              src="../static/icon/instagram (2).png"
+              alt="Instagram"
+            >
+          </a>
+
+          <a href="#">
+            <img
+              src="../static/icon/youtube (3).png"
+              alt="YouTube"
+            >
+          </a>
+
+          <a href="#">
+            <img
+              src="../static/icon/social (2).png"
+              alt="Facebook"
+            >
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © 2026 RW KITA | Suku Dinas Komunikasi,
+        Informatika dan Statistik Kota Administrasi Jakarta Timur
+      </p>
+    </div>
+
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../static/js/supabase.js"></script>
+  <script src="../static/js/footer.js"></script>
+  <script src="../static/js/rw-navigation.js"></script>
+  <script src="../static/js/informasi.js"></script>
+  <script src="../static/js/language.js"></script>
+
+</body>
+
+</html>
