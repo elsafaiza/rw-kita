@@ -21,7 +21,7 @@ body {
     min-height: 590px;
 
     display: grid;
-    grid-template-columns: minmax(0, 1fr)minmax(0, 1fr)
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 
     gap: 60px;
@@ -31,7 +31,6 @@ body {
 
 .hero-content {
     max-width: 600px;
-    min-width: 0;
 }
 
 .hero-label,
@@ -183,9 +182,8 @@ body {
 
 .hero-visual {
     position: relative;
-    height: 900px;
-    width: 460px;
-    min-width: 0;
+    height: 460px;
+    width: 800px;
 
     display: flex;
     align-items: center;
