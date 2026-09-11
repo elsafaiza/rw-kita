@@ -163,26 +163,25 @@
           );
         }
 
-        const payload = {
-          rw_id: rw.id,
-          nama_penulis: nama,
-          judul,
-          tanggal,
-          lokasi,
-          isi,
-          foto_utama_url: mainUrl,
-          dokumentasi_urls: extraUrls,
-          status: "pending"
-        };
+const payload = {
+  rw_id: rw.id,
+  nama_penulis: nama,
+  judul,
+  tanggal,
+  lokasi,
+  isi,
+  foto_utama_url: mainUrl,
+  dokumentasi_urls: extraUrls,
+  status: "pending"
+};
 
-        const result = await RWKita
-          .requireClient()
-          .from("cerita_warga")
-          .insert(payload);
+const result = await RWKita.requireClient()
+  .from("cerita_warga")
+  .insert(payload);
 
-        if (result.error) {
-          throw result.error;
-        }
+if (result.error) {
+  throw result.error;
+}
 
         RWKita.toast(
           "Cerita berhasil dikirim dan menunggu moderasi admin.",

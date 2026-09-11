@@ -132,9 +132,7 @@
 
     const result = await RWKita.requireClient()
       .from("cerita_warga")
-      .select(
-        "id, judul, isi, foto_utama_url, tanggal, created_at"
-      )
+      .select("id, judul, isi, foto_utama_url, tanggal, created_at")
       .eq("status", "published")
       .neq("id", currentId)
       .order("created_at", {

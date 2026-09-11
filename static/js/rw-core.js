@@ -100,62 +100,56 @@
     return data || [];
   };
 
-  RWKita.uploadFile = async function (
-    file,
-    folder = "media"
-  ) {
-    if (!file) return null;
+RWKita.uploadFile = async function (file, folder = "media") {
+  if (!file) return null;
 
-    const client = RWKita.requireClient();
+  const client = RWKita.requireClient();
 
-    const extension = (
-      file.name.split(".").pop() || "bin"
-    ).toLowerCase();
+  const extension = (
+    file.name.split(".").pop() || "bin"
+  ).toLowerCase();
 
-    const filename =
-      `${Date.now()}-${Math.random()
-        .toString(36)
-        .slice(2, 9)}.${extension}`;
+  const filename = `${Date.now()}-${Math.random()
+    .toString(36)
+    .slice(2, 9)}.${extension}`;
 
-    const filePath = `${folder}/${filename}`;
+  const path = `${folder}/${filename}`;
 
-    const bucketCandidates = [
-      "rw-kita",
-      "rwkita",
-      "media",
-      "uploads",
-      "public"
-    ];
+  const buckets = [
+    "cerita",
+    "rw-kita",
+    "rwkita",
+    "media",
+    "uploads",
+    "public"
+  ];
 
-    let lastError = null;
+  let lastError = null;
 
-    for (const bucket of bucketCandidates) {
-      const result = await client.storage
+  for (const bucket of buckets) {
+    const result = await client.storage
+      .from(bucket)
+      .upload(path, file, {
+        cacheControl: "3600",
+        upsert: false,
+        contentType: file.type || undefined
+      });
+
+    if (!result.error) {
+      const publicUrl = client.storage
         .from(bucket)
-        .upload(filePath, file, {
-          cacheControl: "3600",
-          upsert: false,
-          contentType: file.type || undefined
-        });
+        .getPublicUrl(path);
 
-      if (!result.error) {
-        const publicURL = client.storage
-          .from(bucket)
-          .getPublicUrl(filePath);
-
-        return publicURL.data.publicUrl;
-      }
-
-      lastError = result.error;
+      return publicUrl.data.publicUrl;
     }
 
-    throw (
-      lastError ||
-      new Error(
-        "Tidak ada bucket storage Supabase yang dapat digunakan."
-      )
-    );
-  };
+    lastError = result.error;
+  }
+
+  throw lastError || new Error(
+    "Foto gagal di-upload ke Supabase Storage."
+  );
+};
 
   RWKita.toast = function (
     message,

@@ -292,34 +292,33 @@
                  FILTER TAB
             ================================================== -->
 
-            <div class="berita-tabs">
+<div class="berita-tabs">
 
+    <a
+        href="#"
+        class="berita-tab active"
+        data-status="all"
+    >
+        Semua Berita
+    </a>
 
-                <a
-                    href="#"
-                    class="berita-tab active"
-                >
-                    Semua Berita
-                </a>
+    <a
+        href="#"
+        class="berita-tab"
+        data-status="published"
+    >
+        Dipublikasikan
+    </a>
 
+    <a
+        href="#"
+        class="berita-tab"
+        data-status="draft"
+    >
+        Draft
+    </a>
 
-                <a
-                    href="#"
-                    class="berita-tab"
-                >
-                    Dipublikasikan
-                </a>
-
-
-                <a
-                    href="#"
-                    class="berita-tab"
-                >
-                    Draft
-                </a>
-
-
-            </div>
+</div>
 
 
 
@@ -1009,7 +1008,12 @@
 
     </main>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
+<script src="../static/js/supabase.js"></script>
+<script src="../static/js/rw-core.js"></script>
+<script src="../static/js/admin-core.js"></script>
+<script src="../static/js/admin-pages.js"></script>
 </body>
 
 </html>

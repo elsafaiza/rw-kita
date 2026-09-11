@@ -2,21 +2,24 @@
   "use strict";
 
   const PAGE_SIZE = 8;
-  const FALLBACK_IMAGE = "../static/image/bergotong royong.jpg";
+  const FALLBACK_IMAGE =
+    "../static/image/bergotong royong.jpg";
 
   let allStories = [];
   let filteredStories = [];
   let currentPage = 1;
 
-  document.addEventListener("DOMContentLoaded", async () => {
+  document.addEventListener("DOMContentLoaded", async function () {
     const listGrid = document.getElementById("ceritaGrid");
     const homeGrid = document.querySelector(".story-grid");
 
-    if (!listGrid && !homeGrid) return;
+    if (!listGrid && !homeGrid) {
+      return;
+    }
 
     try {
       allStories = await loadStories();
-      filteredStories = allStories;
+      filteredStories = [...allStories];
 
       renderHomeStories(homeGrid, allStories.slice(0, 4));
       renderListStories();
@@ -24,151 +27,155 @@
     } catch (error) {
       console.error("Gagal memuat cerita warga:", error);
 
+      if (homeGrid) {
+        homeGrid.innerHTML =
+          '<p class="empty-state">Cerita warga belum dapat dimuat.</p>';
+      }
+
       if (listGrid) {
         listGrid.innerHTML =
           '<p class="empty-state">Cerita warga belum dapat dimuat.</p>';
+
         hidePagination();
       }
-
-if (homeGrid) {
-  // Jangan hapus card statis di beranda
-  // Card tetap ditampilkan jika database belum berisi data
-}
     }
   });
 
   async function loadStories() {
     const client = RWKita.requireClient();
-    let lastError = null;
 
-    for (const table of ["cerita_warga", "cerita"]) {
-      let result = await client
-        .from(table)
-        .select("*")
-        .eq("status", "published")
-        .order("created_at", { ascending: false });
-
-      if (result.error) {
-        result = await client
-          .from(table)
-          .select("*")
-          .eq("status", "published")
-          .order("tanggal", { ascending: false });
-      }
-
-      if (!result.error) {
-        return result.data || [];
-      }
-
-      lastError = result.error;
-    }
-
-    throw lastError || new Error("Tabel cerita warga tidak ditemukan.");
-  }
-
-  function bindSearch() {
-    const search = document.getElementById("searchCerita");
-    if (!search) return;
-
-    search.addEventListener("input", () => {
-      const keyword = search.value.toLowerCase().trim();
-
-      filteredStories = allStories.filter((row) => {
-        const text = [
-          row.judul,
-          row.isi,
-          row.ringkasan,
-          row.lokasi,
-          row.nama_penulis,
-          row.penulis
-        ]
-          .map((value) => String(value || ""))
-          .join(" ")
-          .toLowerCase();
-
-        return text.includes(keyword);
+    const result = await client
+      .from("cerita_warga")
+      .select("*")
+      .eq("status", "published")
+      .order("created_at", {
+        ascending: false
       });
 
-      currentPage = 1;
-      renderListStories();
-    });
+    if (result.error) {
+      throw result.error;
+    }
+
+    return result.data || [];
   }
 
-function renderHomeStories(grid, rows) {
-  if (!grid) return;
+  function renderHomeStories(grid, rows) {
+    if (!grid) {
+      return;
+    }
 
-  // Jika database kosong, pertahankan card statis dari index.html
-  if (!rows.length) {
-    return;
+    if (!rows.length) {
+      grid.innerHTML =
+        '<p class="empty-state">Belum ada cerita warga.</p>';
+      return;
+    }
+
+    grid.innerHTML = rows
+      .map(function (row) {
+        const id = encodeURIComponent(row.id);
+        const title = safe(row.judul || "Cerita Warga");
+        const description = safe(
+          row.ringkasan || row.isi || ""
+        );
+        const image = safe(
+          row.foto_utama_url || FALLBACK_IMAGE
+        );
+
+        return `
+          <article class="story-card">
+            <div class="story-image">
+              <img
+                src="${image}"
+                alt="${title}"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="story-content">
+              <h3>${title}</h3>
+
+              <p>
+                ${description.slice(0, 150)}
+              </p>
+
+              <a href="detail-cerita.html?id=${id}">
+                Baca cerita →
+              </a>
+            </div>
+          </article>
+        `;
+      })
+      .join("");
   }
-
-  grid.innerHTML = rows
-    .map((row) => {
-      const id = encodeURIComponent(row.id);
-      const title = safe(row.judul || "Cerita Warga");
-      const text = safe(row.ringkasan || row.isi || "");
-      const image = safe(getImage(row));
-
-      return `
-        <article class="story-card">
-          <div class="story-image">
-            <img src="${image}" alt="${title}" loading="lazy">
-          </div>
-
-          <div class="story-content">
-            <h3>${title}</h3>
-            <p>${text.slice(0, 150)}</p>
-
-            <a href="detail-cerita.html?id=${id}">
-              Baca cerita →
-            </a>
-          </div>
-        </article>
-      `;
-    })
-    .join("");
-}
 
   function renderListStories() {
     const grid = document.getElementById("ceritaGrid");
-    if (!grid) return;
+
+    if (!grid) {
+      return;
+    }
 
     const total = document.querySelector(".total-cerita");
 
     if (total) {
-      total.textContent = `Total ${filteredStories.length} cerita`;
+      total.textContent =
+        `Total ${filteredStories.length} cerita`;
     }
 
     if (!filteredStories.length) {
       grid.innerHTML =
         '<p class="empty-state">Belum ada cerita warga.</p>';
+
       hidePagination();
       return;
     }
 
-    const start = (currentPage - 1) * PAGE_SIZE;
-    const rows = filteredStories.slice(start, start + PAGE_SIZE);
+    const start =
+      (currentPage - 1) * PAGE_SIZE;
+
+    const rows = filteredStories.slice(
+      start,
+      start + PAGE_SIZE
+    );
 
     grid.innerHTML = rows
-      .map((row) => {
+      .map(function (row) {
         const id = encodeURIComponent(row.id);
         const title = safe(row.judul || "Cerita Warga");
-        const text = safe(row.ringkasan || row.isi || "");
-        const date = safe(
-          formatDate(row.tanggal || row.tanggal_kegiatan || row.created_at)
+        const description = safe(
+          row.ringkasan || row.isi || ""
         );
-        const image = safe(getImage(row));
+        const date = safe(
+          formatDate(
+            row.tanggal ||
+            row.tanggal_kegiatan ||
+            row.created_at
+          )
+        );
+        const image = safe(
+          row.foto_utama_url || FALLBACK_IMAGE
+        );
 
         return `
           <article class="cerita-card">
             <div class="cerita-card-image">
-              <img src="${image}" alt="${title}" loading="lazy">
+              <img
+                src="${image}"
+                alt="${title}"
+                loading="lazy"
+              >
             </div>
 
             <div class="cerita-card-content">
               <h2>${title}</h2>
-              <p>${text.slice(0, 180)}</p>
-              <div class="cerita-date">${date}</div>
+
+              <p>
+                ${description.slice(0, 180)}
+              </p>
+
+              <div class="cerita-date">
+                ${date}
+              </div>
 
               <a
                 href="detail-cerita.html?id=${id}"
@@ -186,9 +193,47 @@ function renderHomeStories(grid, rows) {
     renderPagination();
   }
 
+  function bindSearch() {
+    const search =
+      document.getElementById("searchCerita");
+
+    if (!search) {
+      return;
+    }
+
+    search.addEventListener("input", function () {
+      const keyword =
+        search.value.toLowerCase().trim();
+
+      filteredStories = allStories.filter(function (row) {
+        const text = [
+          row.judul,
+          row.isi,
+          row.ringkasan,
+          row.lokasi,
+          row.nama_penulis
+        ]
+          .map(function (value) {
+            return String(value || "");
+          })
+          .join(" ")
+          .toLowerCase();
+
+        return text.includes(keyword);
+      });
+
+      currentPage = 1;
+      renderListStories();
+    });
+  }
+
   function renderPagination() {
-    const pagination = document.querySelector(".pagination");
-    if (!pagination) return;
+    const pagination =
+      document.querySelector(".pagination");
+
+    if (!pagination) {
+      return;
+    }
 
     const totalPages = Math.ceil(
       filteredStories.length / PAGE_SIZE
@@ -210,21 +255,24 @@ function renderHomeStories(grid, rows) {
         ‹
       </button>
 
-      ${Array.from({ length: totalPages }, (_, index) => {
-        const page = index + 1;
+      ${Array.from(
+        { length: totalPages },
+        function (_, index) {
+          const page = index + 1;
 
-        return `
-          <button
-            type="button"
-            class="page-number ${
-              page === currentPage ? "active" : ""
-            }"
-            data-page="${page}"
-          >
-            ${page}
-          </button>
-        `;
-      }).join("")}
+          return `
+            <button
+              type="button"
+              class="page-number ${
+                page === currentPage ? "active" : ""
+              }"
+              data-page="${page}"
+            >
+              ${page}
+            </button>
+          `;
+        }
+      ).join("")}
 
       <button
         type="button"
@@ -237,7 +285,7 @@ function renderHomeStories(grid, rows) {
 
     pagination
       .querySelector(".pagination-prev")
-      ?.addEventListener("click", () => {
+      ?.addEventListener("click", function () {
         if (currentPage > 1) {
           currentPage--;
           renderListStories();
@@ -246,44 +294,48 @@ function renderHomeStories(grid, rows) {
 
     pagination
       .querySelector(".pagination-next")
-      ?.addEventListener("click", () => {
+      ?.addEventListener("click", function () {
         if (currentPage < totalPages) {
           currentPage++;
           renderListStories();
         }
       });
 
-    pagination.querySelectorAll("[data-page]").forEach((button) => {
-      button.addEventListener("click", () => {
-        currentPage = Number(button.dataset.page);
-        renderListStories();
+    pagination
+      .querySelectorAll("[data-page]")
+      .forEach(function (button) {
+        button.addEventListener("click", function () {
+          currentPage =
+            Number(button.dataset.page);
+
+          renderListStories();
+        });
       });
-    });
   }
 
   function hidePagination() {
-    const pagination = document.querySelector(".pagination");
+    const pagination =
+      document.querySelector(".pagination");
 
-    if (pagination) {
-      pagination.hidden = true;
-      pagination.innerHTML = "";
+    if (!pagination) {
+      return;
     }
-  }
 
-  function getImage(row) {
-    return (
-      row.foto_utama_url ||
-      row.gambar_url ||
-      FALLBACK_IMAGE
-    );
+    pagination.hidden = true;
+    pagination.innerHTML = "";
   }
 
   function formatDate(value) {
-    if (window.RWKita?.formatDate) {
-      return RWKita.formatDate(value);
+    if (
+      window.RWKita &&
+      typeof window.RWKita.formatDate === "function"
+    ) {
+      return window.RWKita.formatDate(value);
     }
 
-    if (!value) return "-";
+    if (!value) {
+      return "-";
+    }
 
     const date = new Date(value);
 
@@ -299,8 +351,11 @@ function renderHomeStories(grid, rows) {
   }
 
   function safe(value) {
-    if (window.RWKita?.escapeHTML) {
-      return RWKita.escapeHTML(value);
+    if (
+      window.RWKita &&
+      typeof window.RWKita.escapeHTML === "function"
+    ) {
+      return window.RWKita.escapeHTML(value);
     }
 
     return String(value || "")
